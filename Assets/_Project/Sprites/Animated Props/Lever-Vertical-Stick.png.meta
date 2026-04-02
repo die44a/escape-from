@@ -1,0 +1,429 @@
+fileFormatVersion: 2
+guid: 9fbea6178668eae4b9697d8744e854c8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8046512741364398295
+    second: Lever-Vertical-Stick_0
+  - first:
+      213: 8672321882090838535
+    second: Lever-Vertical-Stick_1
+  - first:
+      213: 3698319980716687351
+    second: Lever-Vertical-Stick_2
+  - first:
+      213: 1033661313589911278
+    second: Lever-Vertical-Stick_3
+  - first:
+      213: -726989301587604681
+    second: Lever-Vertical-Stick_4
+  - first:
+      213: 8936743018377414690
+    second: Lever-Vertical-Stick_5
+  - first:
+      213: -1565257134905152418
+    second: Lever-Vertical-Stick_6
+  - first:
+      213: -8471762703276321764
+    second: Lever-Vertical-Stick_7
+  - first:
+      213: -3137489722942560445
+    second: Lever-Vertical-Stick_8
+  - first:
+      213: 5171890988609222408
+    second: Lever-Vertical-Stick_9
+  - first:
+      213: 7587132610713409658
+    second: Lever-Vertical-Stick_10
+  - first:
+      213: -5924402452885686038
+    second: Lever-Vertical-Stick_11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 24
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Lever-Vertical-Stick_0
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 28
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92702524b4b055090800000000000000
+      internalID: -8046512741364398295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lever-Vertical-Stick_1
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 27
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70a1fd7cdc64a5870800000000000000
+      internalID: 8672321882090838535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lever-Vertical-Stick_2
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 27
+        width: 6
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fff85c8d62135330800000000000000
+      internalID: 3698319980716687351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lever-Vertical-Stick_3
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 26
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eee1796fc7d485e00800000000000000
+      internalID: 1033661313589911278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lever-Vertical-Stick_4
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 25
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73b8c5bf41739e5f0800000000000000
+      internalID: -726989301587604681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lever-Vertical-Stick_5
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 24
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22886532d60b50c70800000000000000
+      internalID: 8936743018377414690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lever-Vertical-Stick_6
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 23
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5c25dbcde6174ae0800000000000000
+      internalID: -1565257134905152418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lever-Vertical-Stick_7
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 20
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c14dfc9e4b04e6a80800000000000000
+      internalID: -8471762703276321764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lever-Vertical-Stick_8
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 17
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 347e19958b56574d0800000000000000
+      internalID: -3137489722942560445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lever-Vertical-Stick_9
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 14
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 807b819c37f36c740800000000000000
+      internalID: 5171890988609222408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lever-Vertical-Stick_10
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 12
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a78da5d39e8ea4960800000000000000
+      internalID: 7587132610713409658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lever-Vertical-Stick_11
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 10
+        width: 6
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae8bb41ab5b48cda0800000000000000
+      internalID: -5924402452885686038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Lever-Vertical-Stick_0: -8046512741364398295
+      Lever-Vertical-Stick_1: 8672321882090838535
+      Lever-Vertical-Stick_10: 7587132610713409658
+      Lever-Vertical-Stick_11: -5924402452885686038
+      Lever-Vertical-Stick_2: 3698319980716687351
+      Lever-Vertical-Stick_3: 1033661313589911278
+      Lever-Vertical-Stick_4: -726989301587604681
+      Lever-Vertical-Stick_5: 8936743018377414690
+      Lever-Vertical-Stick_6: -1565257134905152418
+      Lever-Vertical-Stick_7: -8471762703276321764
+      Lever-Vertical-Stick_8: -3137489722942560445
+      Lever-Vertical-Stick_9: 5171890988609222408
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

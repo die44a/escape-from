@@ -1,0 +1,1001 @@
+fileFormatVersion: 2
+guid: e94c94fd657026d498b4014c9cf3c1e1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6728145868744332086
+    second: BossGate-Animated-Entance_0
+  - first:
+      213: 2956716661815537434
+    second: BossGate-Animated-Entance_1
+  - first:
+      213: -3507453811951802321
+    second: BossGate-Animated-Entance_2
+  - first:
+      213: 5710703985539761600
+    second: BossGate-Animated-Entance_3
+  - first:
+      213: -5225165663631432406
+    second: BossGate-Animated-Entance_4
+  - first:
+      213: -3371887502034225097
+    second: BossGate-Animated-Entance_5
+  - first:
+      213: 6983115906360451072
+    second: BossGate-Animated-Entance_6
+  - first:
+      213: 704989478916893536
+    second: BossGate-Animated-Entance_7
+  - first:
+      213: -1271025561915993014
+    second: BossGate-Animated-Entance_8
+  - first:
+      213: 5550945875281514602
+    second: BossGate-Animated-Entance_9
+  - first:
+      213: -5823574447408498430
+    second: BossGate-Animated-Entance_10
+  - first:
+      213: 7415627034106490999
+    second: BossGate-Animated-Entance_11
+  - first:
+      213: 5215217319999202015
+    second: BossGate-Animated-Entance_12
+  - first:
+      213: 2732497565206973018
+    second: BossGate-Animated-Entance_13
+  - first:
+      213: -7491713482541244318
+    second: BossGate-Animated-Entance_14
+  - first:
+      213: -6064586871075482898
+    second: BossGate-Animated-Entance_15
+  - first:
+      213: 732928646057915661
+    second: BossGate-Animated-Entance_16
+  - first:
+      213: 1380756516677726403
+    second: BossGate-Animated-Entance_17
+  - first:
+      213: -4194897921003468778
+    second: BossGate-Animated-Entance_18
+  - first:
+      213: 5917149106768469533
+    second: BossGate-Animated-Entance_19
+  - first:
+      213: -6208303109947151456
+    second: BossGate-Animated-Entance_20
+  - first:
+      213: -6736571428447345496
+    second: BossGate-Animated-Entance_21
+  - first:
+      213: -3219370231941648062
+    second: BossGate-Animated-Entance_22
+  - first:
+      213: -7188619103583309153
+    second: BossGate-Animated-Entance_23
+  - first:
+      213: -8486317240260967689
+    second: BossGate-Animated-Entance_24
+  - first:
+      213: -2191930480293329285
+    second: BossGate-Animated-Entance_25
+  - first:
+      213: -1082222235858862478
+    second: BossGate-Animated-Entance_26
+  - first:
+      213: 992673481250429682
+    second: BossGate-Animated-Entance_27
+  - first:
+      213: -2553923507528159262
+    second: BossGate-Animated-Entance_28
+  - first:
+      213: -9206325973950758360
+    second: BossGate-Animated-Entance_29
+  - first:
+      213: -8243457570740099810
+    second: BossGate-Animated-Entance_30
+  - first:
+      213: 5397398665095365591
+    second: BossGate-Animated-Entance_31
+  - first:
+      213: -5964672041846833080
+    second: BossGate-Animated-Entance_32
+  - first:
+      213: 4390304342868235518
+    second: BossGate-Animated-Entance_33
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 24
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BossGate-Animated-Entance_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 0
+        width: 74
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acc6b78caf2d0a2a0800000000000000
+      internalID: -6728145868744332086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossGate-Animated-Entance_1
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 0
+        width: 74
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1f6ef8732e580920800000000000000
+      internalID: 2956716661815537434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossGate-Animated-Entance_2
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 0
+        width: 74
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f28e5806755035fc0800000000000000
+      internalID: -3507453811951802321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossGate-Animated-Entance_3
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 0
+        width: 74
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c5418ba40f704f40800000000000000
+      internalID: 5710703985539761600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossGate-Animated-Entance_4
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 0
+        width: 74
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a252ea6538b7c77b0800000000000000
+      internalID: -5225165663631432406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossGate-Animated-Entance_5
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 0
+        width: 74
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 738bba29e26a431d0800000000000000
+      internalID: -3371887502034225097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossGate-Animated-Entance_6
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 0
+        width: 74
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 000aeff2be209e060800000000000000
+      internalID: 6983115906360451072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossGate-Animated-Entance_7
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 0
+        width: 74
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06baa352230a8c900800000000000000
+      internalID: 704989478916893536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossGate-Animated-Entance_8
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 0
+        width: 74
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a445e815cf86c5ee0800000000000000
+      internalID: -1271025561915993014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossGate-Animated-Entance_9
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 0
+        width: 74
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6013970ddbe80d40800000000000000
+      internalID: 5550945875281514602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossGate-Animated-Entance_10
+      rect:
+        serializedVersion: 2
+        x: 971
+        y: 0
+        width: 74
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 209bc2b05e18e2fa0800000000000000
+      internalID: -5823574447408498430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossGate-Animated-Entance_11
+      rect:
+        serializedVersion: 2
+        x: 1067
+        y: 0
+        width: 74
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77073b27f7999e660800000000000000
+      internalID: 7415627034106490999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossGate-Animated-Entance_12
+      rect:
+        serializedVersion: 2
+        x: 1163
+        y: 0
+        width: 74
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd26409658c206840800000000000000
+      internalID: 5215217319999202015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossGate-Animated-Entance_13
+      rect:
+        serializedVersion: 2
+        x: 1259
+        y: 0
+        width: 74
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5a08c3ee08cbe520800000000000000
+      internalID: 2732497565206973018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossGate-Animated-Entance_14
+      rect:
+        serializedVersion: 2
+        x: 1355
+        y: 0
+        width: 74
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 260ef1ac746180890800000000000000
+      internalID: -7491713482541244318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossGate-Animated-Entance_15
+      rect:
+        serializedVersion: 2
+        x: 1451
+        y: 0
+        width: 74
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee25c005f5246dba0800000000000000
+      internalID: -6064586871075482898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossGate-Animated-Entance_16
+      rect:
+        serializedVersion: 2
+        x: 1547
+        y: 0
+        width: 74
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d057df968b2eb2a00800000000000000
+      internalID: 732928646057915661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossGate-Animated-Entance_17
+      rect:
+        serializedVersion: 2
+        x: 1643
+        y: 0
+        width: 74
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c0b1e18cbe692310800000000000000
+      internalID: 1380756516677726403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossGate-Animated-Entance_18
+      rect:
+        serializedVersion: 2
+        x: 1739
+        y: 0
+        width: 74
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 618409df09ab8c5c0800000000000000
+      internalID: -4194897921003468778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossGate-Animated-Entance_19
+      rect:
+        serializedVersion: 2
+        x: 1835
+        y: 0
+        width: 74
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1e54ff13cfed1250800000000000000
+      internalID: 5917149106768469533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossGate-Animated-Entance_20
+      rect:
+        serializedVersion: 2
+        x: 1931
+        y: 0
+        width: 74
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0aba5a9e63da7d9a0800000000000000
+      internalID: -6208303109947151456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossGate-Animated-Entance_21
+      rect:
+        serializedVersion: 2
+        x: 2027
+        y: 0
+        width: 74
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a4a95b4af3e282a0800000000000000
+      internalID: -6736571428447345496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossGate-Animated-Entance_22
+      rect:
+        serializedVersion: 2
+        x: 2123
+        y: 0
+        width: 74
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 241b6acb4df7253d0800000000000000
+      internalID: -3219370231941648062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossGate-Animated-Entance_23
+      rect:
+        serializedVersion: 2
+        x: 2219
+        y: 0
+        width: 74
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9274512305ec3c90800000000000000
+      internalID: -7188619103583309153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossGate-Animated-Entance_24
+      rect:
+        serializedVersion: 2
+        x: 2315
+        y: 0
+        width: 74
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f2c8f2be6b8a3a80800000000000000
+      internalID: -8486317240260967689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossGate-Animated-Entance_25
+      rect:
+        serializedVersion: 2
+        x: 2411
+        y: 0
+        width: 74
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b76c3cd67d2b491e0800000000000000
+      internalID: -2191930480293329285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossGate-Animated-Entance_26
+      rect:
+        serializedVersion: 2
+        x: 2507
+        y: 0
+        width: 74
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27e7a9f3c9c2bf0f0800000000000000
+      internalID: -1082222235858862478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossGate-Animated-Entance_27
+      rect:
+        serializedVersion: 2
+        x: 2603
+        y: 0
+        width: 74
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fad1e3954fa6cd00800000000000000
+      internalID: 992673481250429682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossGate-Animated-Entance_28
+      rect:
+        serializedVersion: 2
+        x: 2699
+        y: 0
+        width: 74
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2efa346e914ae8cd0800000000000000
+      internalID: -2553923507528159262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossGate-Animated-Entance_29
+      rect:
+        serializedVersion: 2
+        x: 2795
+        y: 0
+        width: 74
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 822863ccd4f8c3080800000000000000
+      internalID: -9206325973950758360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossGate-Animated-Entance_30
+      rect:
+        serializedVersion: 2
+        x: 2891
+        y: 0
+        width: 74
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e15280fd30b599d80800000000000000
+      internalID: -8243457570740099810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossGate-Animated-Entance_31
+      rect:
+        serializedVersion: 2
+        x: 2987
+        y: 0
+        width: 74
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d34d204d7967ea40800000000000000
+      internalID: 5397398665095365591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossGate-Animated-Entance_32
+      rect:
+        serializedVersion: 2
+        x: 3083
+        y: 0
+        width: 74
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8400400516a393da0800000000000000
+      internalID: -5964672041846833080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossGate-Animated-Entance_33
+      rect:
+        serializedVersion: 2
+        x: 3179
+        y: 0
+        width: 74
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef4148cf98e7dec30800000000000000
+      internalID: 4390304342868235518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      BossGate-Animated-Entance_0: -6728145868744332086
+      BossGate-Animated-Entance_1: 2956716661815537434
+      BossGate-Animated-Entance_10: -5823574447408498430
+      BossGate-Animated-Entance_11: 7415627034106490999
+      BossGate-Animated-Entance_12: 5215217319999202015
+      BossGate-Animated-Entance_13: 2732497565206973018
+      BossGate-Animated-Entance_14: -7491713482541244318
+      BossGate-Animated-Entance_15: -6064586871075482898
+      BossGate-Animated-Entance_16: 732928646057915661
+      BossGate-Animated-Entance_17: 1380756516677726403
+      BossGate-Animated-Entance_18: -4194897921003468778
+      BossGate-Animated-Entance_19: 5917149106768469533
+      BossGate-Animated-Entance_2: -3507453811951802321
+      BossGate-Animated-Entance_20: -6208303109947151456
+      BossGate-Animated-Entance_21: -6736571428447345496
+      BossGate-Animated-Entance_22: -3219370231941648062
+      BossGate-Animated-Entance_23: -7188619103583309153
+      BossGate-Animated-Entance_24: -8486317240260967689
+      BossGate-Animated-Entance_25: -2191930480293329285
+      BossGate-Animated-Entance_26: -1082222235858862478
+      BossGate-Animated-Entance_27: 992673481250429682
+      BossGate-Animated-Entance_28: -2553923507528159262
+      BossGate-Animated-Entance_29: -9206325973950758360
+      BossGate-Animated-Entance_3: 5710703985539761600
+      BossGate-Animated-Entance_30: -8243457570740099810
+      BossGate-Animated-Entance_31: 5397398665095365591
+      BossGate-Animated-Entance_32: -5964672041846833080
+      BossGate-Animated-Entance_33: 4390304342868235518
+      BossGate-Animated-Entance_4: -5225165663631432406
+      BossGate-Animated-Entance_5: -3371887502034225097
+      BossGate-Animated-Entance_6: 6983115906360451072
+      BossGate-Animated-Entance_7: 704989478916893536
+      BossGate-Animated-Entance_8: -1271025561915993014
+      BossGate-Animated-Entance_9: 5550945875281514602
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

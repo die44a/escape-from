@@ -1,0 +1,585 @@
+fileFormatVersion: 2
+guid: 382e20032d33f174387648bb59931b3a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7638707836379920594
+    second: Sarcophagus-Animated-1_0
+  - first:
+      213: 3367883244476367545
+    second: Sarcophagus-Animated-1_1
+  - first:
+      213: -2923659177551249426
+    second: Sarcophagus-Animated-1_2
+  - first:
+      213: -5035713069302883220
+    second: Sarcophagus-Animated-1_3
+  - first:
+      213: -4786479792236850772
+    second: Sarcophagus-Animated-1_4
+  - first:
+      213: 8609885421009811774
+    second: Sarcophagus-Animated-1_5
+  - first:
+      213: -6654454644463364825
+    second: Sarcophagus-Animated-1_6
+  - first:
+      213: 5137233846934795494
+    second: Sarcophagus-Animated-1_7
+  - first:
+      213: 2527407630518588891
+    second: Sarcophagus-Animated-1_8
+  - first:
+      213: -4959455387517116934
+    second: Sarcophagus-Animated-1_9
+  - first:
+      213: -2198724760094717217
+    second: Sarcophagus-Animated-1_10
+  - first:
+      213: 3001479520060093840
+    second: Sarcophagus-Animated-1_11
+  - first:
+      213: -2016001508590777054
+    second: Sarcophagus-Animated-1_12
+  - first:
+      213: 8224488187389203756
+    second: Sarcophagus-Animated-1_13
+  - first:
+      213: 3016922852248471224
+    second: Sarcophagus-Animated-1_14
+  - first:
+      213: -6403850674179191786
+    second: Sarcophagus-Animated-1_15
+  - first:
+      213: 2528861538241518604
+    second: Sarcophagus-Animated-1_16
+  - first:
+      213: -9203125584773471578
+    second: Sarcophagus-Animated-1_17
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 24
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Sarcophagus-Animated-1_0
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 17
+        width: 52
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d8fa6a3e44220a60800000000000000
+      internalID: 7638707836379920594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sarcophagus-Animated-1_1
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 17
+        width: 53
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b2010097ff1dbe20800000000000000
+      internalID: 3367883244476367545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sarcophagus-Animated-1_2
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 17
+        width: 66
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eef3fbdd7731d67d0800000000000000
+      internalID: -2923659177551249426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sarcophagus-Animated-1_3
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 31
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6cd861d4ad8d1ab0800000000000000
+      internalID: -5035713069302883220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sarcophagus-Animated-1_4
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 17
+        width: 52
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca113232df1039db0800000000000000
+      internalID: -4786479792236850772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sarcophagus-Animated-1_5
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 28
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e39ba1c5c257c7770800000000000000
+      internalID: 8609885421009811774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sarcophagus-Animated-1_6
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 17
+        width: 52
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72510d6f1c0a6a3a0800000000000000
+      internalID: -6654454644463364825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sarcophagus-Animated-1_7
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 17
+        width: 52
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e479ae27fe1b4740800000000000000
+      internalID: 5137233846934795494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sarcophagus-Animated-1_8
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 17
+        width: 52
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd51ca369d7231320800000000000000
+      internalID: 2527407630518588891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sarcophagus-Animated-1_9
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 17
+        width: 52
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afd15a3f9997c2bb0800000000000000
+      internalID: -4959455387517116934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sarcophagus-Animated-1_10
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 15
+        width: 52
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdac2b3ea7f8c71e0800000000000000
+      internalID: -2198724760094717217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sarcophagus-Animated-1_11
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 12
+        width: 52
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 095bac198b567a920800000000000000
+      internalID: 3001479520060093840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sarcophagus-Animated-1_12
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 12
+        width: 52
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22d8bc52f49b504e0800000000000000
+      internalID: -2016001508590777054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sarcophagus-Animated-1_13
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 9
+        width: 52
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c25dab46e60432270800000000000000
+      internalID: 8224488187389203756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sarcophagus-Animated-1_14
+      rect:
+        serializedVersion: 2
+        x: 874
+        y: 9
+        width: 52
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b6470b89534ed920800000000000000
+      internalID: 3016922852248471224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sarcophagus-Animated-1_15
+      rect:
+        serializedVersion: 2
+        x: 946
+        y: 9
+        width: 52
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61c47eaadb3f027a0800000000000000
+      internalID: -6403850674179191786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sarcophagus-Animated-1_16
+      rect:
+        serializedVersion: 2
+        x: 1018
+        y: 9
+        width: 52
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0c9809ab22581320800000000000000
+      internalID: 2528861538241518604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sarcophagus-Animated-1_17
+      rect:
+        serializedVersion: 2
+        x: 1090
+        y: 9
+        width: 52
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a2a4487a0ee74080800000000000000
+      internalID: -9203125584773471578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Sarcophagus-Animated-1_0: 7638707836379920594
+      Sarcophagus-Animated-1_1: 3367883244476367545
+      Sarcophagus-Animated-1_10: -2198724760094717217
+      Sarcophagus-Animated-1_11: 3001479520060093840
+      Sarcophagus-Animated-1_12: -2016001508590777054
+      Sarcophagus-Animated-1_13: 8224488187389203756
+      Sarcophagus-Animated-1_14: 3016922852248471224
+      Sarcophagus-Animated-1_15: -6403850674179191786
+      Sarcophagus-Animated-1_16: 2528861538241518604
+      Sarcophagus-Animated-1_17: -9203125584773471578
+      Sarcophagus-Animated-1_2: -2923659177551249426
+      Sarcophagus-Animated-1_3: -5035713069302883220
+      Sarcophagus-Animated-1_4: -4786479792236850772
+      Sarcophagus-Animated-1_5: 8609885421009811774
+      Sarcophagus-Animated-1_6: -6654454644463364825
+      Sarcophagus-Animated-1_7: 5137233846934795494
+      Sarcophagus-Animated-1_8: 2527407630518588891
+      Sarcophagus-Animated-1_9: -4959455387517116934
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

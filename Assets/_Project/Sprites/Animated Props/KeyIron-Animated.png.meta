@@ -1,0 +1,559 @@
+fileFormatVersion: 2
+guid: 0935f8e566b08494c92ca481ce5a3744
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6740720996625773243
+    second: KeyIron-Animated_0
+  - first:
+      213: -7307769337761430169
+    second: KeyIron-Animated_1
+  - first:
+      213: 5361660647387886532
+    second: KeyIron-Animated_2
+  - first:
+      213: -2891337347370242531
+    second: KeyIron-Animated_3
+  - first:
+      213: -2678598383502986892
+    second: KeyIron-Animated_4
+  - first:
+      213: -8277050711962122229
+    second: KeyIron-Animated_5
+  - first:
+      213: -7739424384821726507
+    second: KeyIron-Animated_6
+  - first:
+      213: -5300817199797587402
+    second: KeyIron-Animated_7
+  - first:
+      213: 1076649564389273448
+    second: KeyIron-Animated_8
+  - first:
+      213: -2705765812201368137
+    second: KeyIron-Animated_9
+  - first:
+      213: -5824057083701935901
+    second: KeyIron-Animated_10
+  - first:
+      213: -5648847227543590483
+    second: KeyIron-Animated_11
+  - first:
+      213: -2966303857496229709
+    second: KeyIron-Animated_12
+  - first:
+      213: -8650126227721960847
+    second: KeyIron-Animated_13
+  - first:
+      213: -4891134343885623904
+    second: KeyIron-Animated_14
+  - first:
+      213: 8274437024295422618
+    second: KeyIron-Animated_15
+  - first:
+      213: -8315575798706651845
+    second: KeyIron-Animated_16
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 24
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: KeyIron-Animated_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 7
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54d8a1aa7f52472a0800000000000000
+      internalID: -6740720996625773243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KeyIron-Animated_1
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 7
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7650d3a6186959a90800000000000000
+      internalID: -7307769337761430169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KeyIron-Animated_2
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 7
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c3feb593f1786a40800000000000000
+      internalID: 5361660647387886532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KeyIron-Animated_3
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 7
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1e2d246008efd7d0800000000000000
+      internalID: -2891337347370242531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KeyIron-Animated_4
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 7
+        width: 29
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4717e5746f4b3dad0800000000000000
+      internalID: -2678598383502986892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KeyIron-Animated_5
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 7
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b088a9d2b32022d80800000000000000
+      internalID: -8277050711962122229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KeyIron-Animated_6
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 7
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d274b8f68a089490800000000000000
+      internalID: -7739424384821726507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KeyIron-Animated_7
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 7
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 632b8ca77d6bf66b0800000000000000
+      internalID: -5300817199797587402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KeyIron-Animated_8
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 7
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86f6001131701fe00800000000000000
+      internalID: 1076649564389273448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KeyIron-Animated_9
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 7
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b5575e5450337ad0800000000000000
+      internalID: -2705765812201368137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KeyIron-Animated_10
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 7
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e0495680facc2fa0800000000000000
+      internalID: -5824057083701935901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KeyIron-Animated_11
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 7
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da960db10634b91b0800000000000000
+      internalID: -5648847227543590483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KeyIron-Animated_12
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 7
+        width: 30
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b8f0169b5295d6d0800000000000000
+      internalID: -2966303857496229709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KeyIron-Animated_13
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 7
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 172c756b60494f780800000000000000
+      internalID: -8650126227721960847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KeyIron-Animated_14
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 7
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0adebf38a333f1cb0800000000000000
+      internalID: -4891134343885623904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KeyIron-Animated_15
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 7
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9a087d32a4b4d270800000000000000
+      internalID: 8274437024295422618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KeyIron-Animated_16
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 7
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3d314f6ed3299c80800000000000000
+      internalID: -8315575798706651845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      KeyIron-Animated_0: -6740720996625773243
+      KeyIron-Animated_1: -7307769337761430169
+      KeyIron-Animated_10: -5824057083701935901
+      KeyIron-Animated_11: -5648847227543590483
+      KeyIron-Animated_12: -2966303857496229709
+      KeyIron-Animated_13: -8650126227721960847
+      KeyIron-Animated_14: -4891134343885623904
+      KeyIron-Animated_15: 8274437024295422618
+      KeyIron-Animated_16: -8315575798706651845
+      KeyIron-Animated_2: 5361660647387886532
+      KeyIron-Animated_3: -2891337347370242531
+      KeyIron-Animated_4: -2678598383502986892
+      KeyIron-Animated_5: -8277050711962122229
+      KeyIron-Animated_6: -7739424384821726507
+      KeyIron-Animated_7: -5300817199797587402
+      KeyIron-Animated_8: 1076649564389273448
+      KeyIron-Animated_9: -2705765812201368137
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

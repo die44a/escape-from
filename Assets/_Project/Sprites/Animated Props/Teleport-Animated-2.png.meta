@@ -1,0 +1,975 @@
+fileFormatVersion: 2
+guid: 953181c563252914fbb63adafd0c876e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3990729201304419017
+    second: Teleport-Animated-2_0
+  - first:
+      213: -6957102438987470714
+    second: Teleport-Animated-2_1
+  - first:
+      213: -5373061970141963465
+    second: Teleport-Animated-2_2
+  - first:
+      213: -1723118781778487812
+    second: Teleport-Animated-2_3
+  - first:
+      213: -4176364014219810384
+    second: Teleport-Animated-2_4
+  - first:
+      213: -8631898349906235034
+    second: Teleport-Animated-2_5
+  - first:
+      213: -1163734408398394418
+    second: Teleport-Animated-2_6
+  - first:
+      213: -1530379902792708904
+    second: Teleport-Animated-2_7
+  - first:
+      213: -8296684252153122811
+    second: Teleport-Animated-2_8
+  - first:
+      213: 4224946671254216390
+    second: Teleport-Animated-2_9
+  - first:
+      213: 5336670920902674624
+    second: Teleport-Animated-2_10
+  - first:
+      213: 7061894784851774178
+    second: Teleport-Animated-2_11
+  - first:
+      213: -4356877371159456202
+    second: Teleport-Animated-2_12
+  - first:
+      213: -5218208210007958508
+    second: Teleport-Animated-2_13
+  - first:
+      213: 7121396464952973520
+    second: Teleport-Animated-2_14
+  - first:
+      213: 2838825126239692660
+    second: Teleport-Animated-2_15
+  - first:
+      213: 5774185827402401119
+    second: Teleport-Animated-2_16
+  - first:
+      213: -3459636196231892287
+    second: Teleport-Animated-2_17
+  - first:
+      213: -6547742943642379369
+    second: Teleport-Animated-2_18
+  - first:
+      213: 5739868258784169434
+    second: Teleport-Animated-2_19
+  - first:
+      213: -7152379975617263159
+    second: Teleport-Animated-2_20
+  - first:
+      213: 1860254672086134103
+    second: Teleport-Animated-2_21
+  - first:
+      213: 2656870050833672070
+    second: Teleport-Animated-2_22
+  - first:
+      213: -594333894045821684
+    second: Teleport-Animated-2_23
+  - first:
+      213: -572551410224454018
+    second: Teleport-Animated-2_24
+  - first:
+      213: -4733344195351967958
+    second: Teleport-Animated-2_25
+  - first:
+      213: -9001292769377331346
+    second: Teleport-Animated-2_26
+  - first:
+      213: -8664708296471332703
+    second: Teleport-Animated-2_27
+  - first:
+      213: 6623206495640706425
+    second: Teleport-Animated-2_28
+  - first:
+      213: 7271913637354098754
+    second: Teleport-Animated-2_29
+  - first:
+      213: -4235606068985489899
+    second: Teleport-Animated-2_30
+  - first:
+      213: -2220382206094990183
+    second: Teleport-Animated-2_31
+  - first:
+      213: 5957027221920667676
+    second: Teleport-Animated-2_32
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 24
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Teleport-Animated-2_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 0
+        width: 70
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 735c8796fe41e98c0800000000000000
+      internalID: -3990729201304419017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teleport-Animated-2_1
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 0
+        width: 70
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 688e52a2138637f90800000000000000
+      internalID: -6957102438987470714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teleport-Animated-2_2
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 0
+        width: 70
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73b17891b9c0f65b0800000000000000
+      internalID: -5373061970141963465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teleport-Animated-2_3
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 0
+        width: 70
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf51a42f8904618e0800000000000000
+      internalID: -1723118781778487812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teleport-Animated-2_4
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 0
+        width: 70
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b924bf6e039a06c0800000000000000
+      internalID: -4176364014219810384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teleport-Animated-2_5
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 0
+        width: 70
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 661fe8c3f26553880800000000000000
+      internalID: -8631898349906235034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teleport-Animated-2_6
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 0
+        width: 70
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecba386a8b599dfe0800000000000000
+      internalID: -1163734408398394418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teleport-Animated-2_7
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 0
+        width: 70
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8dcc4a2369ff2cae0800000000000000
+      internalID: -1530379902792708904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teleport-Animated-2_8
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 0
+        width: 70
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 500f5d061a14cdc80800000000000000
+      internalID: -8296684252153122811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teleport-Animated-2_9
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 0
+        width: 70
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ce931fdc9602aa30800000000000000
+      internalID: 4224946671254216390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teleport-Animated-2_10
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 0
+        width: 70
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c88f8b7de9af0a40800000000000000
+      internalID: 5336670920902674624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teleport-Animated-2_11
+      rect:
+        serializedVersion: 2
+        x: 793
+        y: 0
+        width: 70
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ea064c24e3e00260800000000000000
+      internalID: 7061894784851774178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teleport-Animated-2_12
+      rect:
+        serializedVersion: 2
+        x: 865
+        y: 0
+        width: 70
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6365a1a5d134983c0800000000000000
+      internalID: -4356877371159456202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teleport-Animated-2_13
+      rect:
+        serializedVersion: 2
+        x: 937
+        y: 0
+        width: 70
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41cd27eb7433597b0800000000000000
+      internalID: -5218208210007958508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teleport-Animated-2_14
+      rect:
+        serializedVersion: 2
+        x: 1009
+        y: 0
+        width: 70
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d89e36aa5844d260800000000000000
+      internalID: 7121396464952973520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teleport-Animated-2_15
+      rect:
+        serializedVersion: 2
+        x: 1081
+        y: 0
+        width: 70
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47768fc5968856720800000000000000
+      internalID: 2838825126239692660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teleport-Animated-2_16
+      rect:
+        serializedVersion: 2
+        x: 1153
+        y: 0
+        width: 70
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f554a65ca67022050800000000000000
+      internalID: 5774185827402401119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teleport-Animated-2_17
+      rect:
+        serializedVersion: 2
+        x: 1225
+        y: 0
+        width: 70
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c2b38f9537ecffc0800000000000000
+      internalID: -3459636196231892287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teleport-Animated-2_18
+      rect:
+        serializedVersion: 2
+        x: 1297
+        y: 0
+        width: 70
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79b10a3fb7eb125a0800000000000000
+      internalID: -6547742943642379369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teleport-Animated-2_19
+      rect:
+        serializedVersion: 2
+        x: 1369
+        y: 0
+        width: 70
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: addce5e25cb18af40800000000000000
+      internalID: 5739868258784169434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teleport-Animated-2_20
+      rect:
+        serializedVersion: 2
+        x: 1441
+        y: 0
+        width: 70
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c947be9e44adbc90800000000000000
+      internalID: -7152379975617263159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teleport-Animated-2_21
+      rect:
+        serializedVersion: 2
+        x: 1513
+        y: 0
+        width: 70
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75d6479a4c3f0d910800000000000000
+      internalID: 1860254672086134103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teleport-Animated-2_22
+      rect:
+        serializedVersion: 2
+        x: 1585
+        y: 0
+        width: 70
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 687a05a0c391fd420800000000000000
+      internalID: 2656870050833672070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teleport-Animated-2_23
+      rect:
+        serializedVersion: 2
+        x: 1657
+        y: 0
+        width: 70
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c059c67e87080c7f0800000000000000
+      internalID: -594333894045821684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teleport-Animated-2_24
+      rect:
+        serializedVersion: 2
+        x: 1729
+        y: 0
+        width: 70
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e762ce1a683ed08f0800000000000000
+      internalID: -572551410224454018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teleport-Animated-2_25
+      rect:
+        serializedVersion: 2
+        x: 1801
+        y: 0
+        width: 70
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a27836c5888cf4eb0800000000000000
+      internalID: -4733344195351967958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teleport-Animated-2_26
+      rect:
+        serializedVersion: 2
+        x: 1873
+        y: 0
+        width: 70
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e67d8f9caebf41380800000000000000
+      internalID: -9001292769377331346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teleport-Animated-2_27
+      rect:
+        serializedVersion: 2
+        x: 1945
+        y: 0
+        width: 70
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a8327246b5c0c780800000000000000
+      internalID: -8664708296471332703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teleport-Animated-2_28
+      rect:
+        serializedVersion: 2
+        x: 2017
+        y: 0
+        width: 70
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97d59be673b5aeb50800000000000000
+      internalID: 6623206495640706425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teleport-Animated-2_29
+      rect:
+        serializedVersion: 2
+        x: 2089
+        y: 0
+        width: 70
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2405fc7cce60be460800000000000000
+      internalID: 7271913637354098754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teleport-Animated-2_30
+      rect:
+        serializedVersion: 2
+        x: 2161
+        y: 0
+        width: 70
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51691a1b8ba1835c0800000000000000
+      internalID: -4235606068985489899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teleport-Animated-2_31
+      rect:
+        serializedVersion: 2
+        x: 2233
+        y: 0
+        width: 70
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9942c1cc52e9f21e0800000000000000
+      internalID: -2220382206094990183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teleport-Animated-2_32
+      rect:
+        serializedVersion: 2
+        x: 2305
+        y: 0
+        width: 70
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c18d9e752bc9ba250800000000000000
+      internalID: 5957027221920667676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Teleport-Animated-2_0: -3990729201304419017
+      Teleport-Animated-2_1: -6957102438987470714
+      Teleport-Animated-2_10: 5336670920902674624
+      Teleport-Animated-2_11: 7061894784851774178
+      Teleport-Animated-2_12: -4356877371159456202
+      Teleport-Animated-2_13: -5218208210007958508
+      Teleport-Animated-2_14: 7121396464952973520
+      Teleport-Animated-2_15: 2838825126239692660
+      Teleport-Animated-2_16: 5774185827402401119
+      Teleport-Animated-2_17: -3459636196231892287
+      Teleport-Animated-2_18: -6547742943642379369
+      Teleport-Animated-2_19: 5739868258784169434
+      Teleport-Animated-2_2: -5373061970141963465
+      Teleport-Animated-2_20: -7152379975617263159
+      Teleport-Animated-2_21: 1860254672086134103
+      Teleport-Animated-2_22: 2656870050833672070
+      Teleport-Animated-2_23: -594333894045821684
+      Teleport-Animated-2_24: -572551410224454018
+      Teleport-Animated-2_25: -4733344195351967958
+      Teleport-Animated-2_26: -9001292769377331346
+      Teleport-Animated-2_27: -8664708296471332703
+      Teleport-Animated-2_28: 6623206495640706425
+      Teleport-Animated-2_29: 7271913637354098754
+      Teleport-Animated-2_3: -1723118781778487812
+      Teleport-Animated-2_30: -4235606068985489899
+      Teleport-Animated-2_31: -2220382206094990183
+      Teleport-Animated-2_32: 5957027221920667676
+      Teleport-Animated-2_4: -4176364014219810384
+      Teleport-Animated-2_5: -8631898349906235034
+      Teleport-Animated-2_6: -1163734408398394418
+      Teleport-Animated-2_7: -1530379902792708904
+      Teleport-Animated-2_8: -8296684252153122811
+      Teleport-Animated-2_9: 4224946671254216390
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

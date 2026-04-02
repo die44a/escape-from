@@ -1,0 +1,455 @@
+fileFormatVersion: 2
+guid: 4db16764d95b0204fb09b6d94e9bb9c3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7753599344656614366
+    second: IronChest-Open-Empty_0
+  - first:
+      213: -1946603677608383723
+    second: IronChest-Open-Empty_1
+  - first:
+      213: 5575110928564573140
+    second: IronChest-Open-Empty_2
+  - first:
+      213: 3826860544356875741
+    second: IronChest-Open-Empty_3
+  - first:
+      213: 599304576768412220
+    second: IronChest-Open-Empty_4
+  - first:
+      213: 435555197045381390
+    second: IronChest-Open-Empty_5
+  - first:
+      213: -3120399406457577766
+    second: IronChest-Open-Empty_6
+  - first:
+      213: 9020206746211284131
+    second: IronChest-Open-Empty_7
+  - first:
+      213: 4173413690587490737
+    second: IronChest-Open-Empty_8
+  - first:
+      213: 3687600317371830019
+    second: IronChest-Open-Empty_9
+  - first:
+      213: -441557127387564725
+    second: IronChest-Open-Empty_10
+  - first:
+      213: -6391797965112657849
+    second: IronChest-Open-Empty_11
+  - first:
+      213: -5045563074003632944
+    second: IronChest-Open-Empty_12
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 24
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: IronChest-Open-Empty_0
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 4
+        width: 25
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22c7a03f97ea56490800000000000000
+      internalID: -7753599344656614366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IronChest-Open-Empty_1
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 4
+        width: 25
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51beeadc4464cf4e0800000000000000
+      internalID: -1946603677608383723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IronChest-Open-Empty_2
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 4
+        width: 33
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d35d70f9d5ce5d40800000000000000
+      internalID: 5575110928564573140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IronChest-Open-Empty_3
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 4
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddd7957b36dbb1530800000000000000
+      internalID: 3826860544356875741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IronChest-Open-Empty_4
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 4
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3a0c8a5658215800800000000000000
+      internalID: 599304576768412220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IronChest-Open-Empty_5
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 4
+        width: 25
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0917ffd4276b0600800000000000000
+      internalID: 435555197045381390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IronChest-Open-Empty_6
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 8
+        width: 25
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ade91ccb54d12b4d0800000000000000
+      internalID: -3120399406457577766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IronChest-Open-Empty_7
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 5
+        width: 25
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a4718c9e363e2d70800000000000000
+      internalID: 9020206746211284131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IronChest-Open-Empty_8
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 4
+        width: 25
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b92830d3a1fae930800000000000000
+      internalID: 4173413690587490737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IronChest-Open-Empty_9
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 6
+        width: 25
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30fc09e63fcfc2330800000000000000
+      internalID: 3687600317371830019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IronChest-Open-Empty_10
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 4
+        width: 25
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b45b502d1264fd9f0800000000000000
+      internalID: -441557127387564725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IronChest-Open-Empty_11
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 5
+        width: 25
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 748356dad95cb47a0800000000000000
+      internalID: -6391797965112657849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IronChest-Open-Empty_12
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 4
+        width: 25
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0dc7f22ed1f8af9b0800000000000000
+      internalID: -5045563074003632944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      IronChest-Open-Empty_0: -7753599344656614366
+      IronChest-Open-Empty_1: -1946603677608383723
+      IronChest-Open-Empty_10: -441557127387564725
+      IronChest-Open-Empty_11: -6391797965112657849
+      IronChest-Open-Empty_12: -5045563074003632944
+      IronChest-Open-Empty_2: 5575110928564573140
+      IronChest-Open-Empty_3: 3826860544356875741
+      IronChest-Open-Empty_4: 599304576768412220
+      IronChest-Open-Empty_5: 435555197045381390
+      IronChest-Open-Empty_6: -3120399406457577766
+      IronChest-Open-Empty_7: 9020206746211284131
+      IronChest-Open-Empty_8: 4173413690587490737
+      IronChest-Open-Empty_9: 3687600317371830019
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

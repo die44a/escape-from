@@ -1,0 +1,559 @@
+fileFormatVersion: 2
+guid: 9d7e9152f35bc2f478779c3115746247
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -751757269946671500
+    second: KeyIron-Animated-wOutline_0
+  - first:
+      213: 1282919896406368924
+    second: KeyIron-Animated-wOutline_1
+  - first:
+      213: -4071252560744990508
+    second: KeyIron-Animated-wOutline_2
+  - first:
+      213: 7507240505410075277
+    second: KeyIron-Animated-wOutline_3
+  - first:
+      213: -3139582075679293929
+    second: KeyIron-Animated-wOutline_4
+  - first:
+      213: -7020548987380400436
+    second: KeyIron-Animated-wOutline_5
+  - first:
+      213: -6637293646927883278
+    second: KeyIron-Animated-wOutline_6
+  - first:
+      213: 5560948645057118001
+    second: KeyIron-Animated-wOutline_7
+  - first:
+      213: 4857411263482116003
+    second: KeyIron-Animated-wOutline_8
+  - first:
+      213: 7470189058704932074
+    second: KeyIron-Animated-wOutline_9
+  - first:
+      213: 2498517662447632803
+    second: KeyIron-Animated-wOutline_10
+  - first:
+      213: -4104614629359231199
+    second: KeyIron-Animated-wOutline_11
+  - first:
+      213: 6640203389944858372
+    second: KeyIron-Animated-wOutline_12
+  - first:
+      213: 7225199268476327492
+    second: KeyIron-Animated-wOutline_13
+  - first:
+      213: -5810542764008383323
+    second: KeyIron-Animated-wOutline_14
+  - first:
+      213: 2341424774109949291
+    second: KeyIron-Animated-wOutline_15
+  - first:
+      213: -5302619658474316795
+    second: KeyIron-Animated-wOutline_16
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 24
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: KeyIron-Animated-wOutline_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 7
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47ed287feb83195f0800000000000000
+      internalID: -751757269946671500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KeyIron-Animated-wOutline_1
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 7
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c92259c39d8ddc110800000000000000
+      internalID: 1282919896406368924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KeyIron-Animated-wOutline_2
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 7
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d835edcd510087c0800000000000000
+      internalID: -4071252560744990508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KeyIron-Animated-wOutline_3
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 7
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8a3460f6731f2860800000000000000
+      internalID: 7507240505410075277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KeyIron-Animated-wOutline_4
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 7
+        width: 29
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71eb3f38cb6fd64d0800000000000000
+      internalID: -3139582075679293929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KeyIron-Animated-wOutline_5
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 7
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cce76f674eff19e90800000000000000
+      internalID: -7020548987380400436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KeyIron-Animated-wOutline_6
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 7
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f318e0189893e3a0800000000000000
+      internalID: -6637293646927883278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KeyIron-Animated-wOutline_7
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 7
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13fb1da54557c2d40800000000000000
+      internalID: 5560948645057118001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KeyIron-Animated-wOutline_8
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 7
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a735d7fecdf86340800000000000000
+      internalID: 4857411263482116003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KeyIron-Animated-wOutline_9
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 7
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aecfd11ce517ba760800000000000000
+      internalID: 7470189058704932074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KeyIron-Animated-wOutline_10
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 7
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a10b3783948ca220800000000000000
+      internalID: 2498517662447632803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KeyIron-Animated-wOutline_11
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 7
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12fdb25edba7907c0800000000000000
+      internalID: -4104614629359231199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KeyIron-Animated-wOutline_12
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 7
+        width: 30
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40702064dcdb62c50800000000000000
+      internalID: 6640203389944858372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KeyIron-Animated-wOutline_13
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 7
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44691f43470154460800000000000000
+      internalID: 7225199268476327492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KeyIron-Animated-wOutline_14
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 7
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ac5017442ecc5fa0800000000000000
+      internalID: -5810542764008383323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KeyIron-Animated-wOutline_15
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 7
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6d6f193d696e7020800000000000000
+      internalID: 2341424774109949291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KeyIron-Animated-wOutline_16
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 7
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50c92add38f4966b0800000000000000
+      internalID: -5302619658474316795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      KeyIron-Animated-wOutline_0: -751757269946671500
+      KeyIron-Animated-wOutline_1: 1282919896406368924
+      KeyIron-Animated-wOutline_10: 2498517662447632803
+      KeyIron-Animated-wOutline_11: -4104614629359231199
+      KeyIron-Animated-wOutline_12: 6640203389944858372
+      KeyIron-Animated-wOutline_13: 7225199268476327492
+      KeyIron-Animated-wOutline_14: -5810542764008383323
+      KeyIron-Animated-wOutline_15: 2341424774109949291
+      KeyIron-Animated-wOutline_16: -5302619658474316795
+      KeyIron-Animated-wOutline_2: -4071252560744990508
+      KeyIron-Animated-wOutline_3: 7507240505410075277
+      KeyIron-Animated-wOutline_4: -3139582075679293929
+      KeyIron-Animated-wOutline_5: -7020548987380400436
+      KeyIron-Animated-wOutline_6: -6637293646927883278
+      KeyIron-Animated-wOutline_7: 5560948645057118001
+      KeyIron-Animated-wOutline_8: 4857411263482116003
+      KeyIron-Animated-wOutline_9: 7470189058704932074
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

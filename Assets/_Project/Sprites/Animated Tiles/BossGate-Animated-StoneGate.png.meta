@@ -1,0 +1,845 @@
+fileFormatVersion: 2
+guid: 36e0c02e7544aef4eaf531497366adfb
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -945985170644142330
+    second: BossGate-Animated-StoneGate_0
+  - first:
+      213: 4225977805837852610
+    second: BossGate-Animated-StoneGate_1
+  - first:
+      213: -3012884841346190551
+    second: BossGate-Animated-StoneGate_2
+  - first:
+      213: -5952132846659610500
+    second: BossGate-Animated-StoneGate_3
+  - first:
+      213: -3308182234551495133
+    second: BossGate-Animated-StoneGate_4
+  - first:
+      213: -3944706335439351062
+    second: BossGate-Animated-StoneGate_5
+  - first:
+      213: 3945374612633779373
+    second: BossGate-Animated-StoneGate_6
+  - first:
+      213: 8618370837967189167
+    second: BossGate-Animated-StoneGate_7
+  - first:
+      213: 3816319384338742050
+    second: BossGate-Animated-StoneGate_8
+  - first:
+      213: 6104153456166677948
+    second: BossGate-Animated-StoneGate_9
+  - first:
+      213: -1072323380710388548
+    second: BossGate-Animated-StoneGate_10
+  - first:
+      213: 6405484019459271225
+    second: BossGate-Animated-StoneGate_11
+  - first:
+      213: -5627361702110796548
+    second: BossGate-Animated-StoneGate_12
+  - first:
+      213: -4116339764612006569
+    second: BossGate-Animated-StoneGate_13
+  - first:
+      213: 3071362423709946164
+    second: BossGate-Animated-StoneGate_14
+  - first:
+      213: 6276473455708762617
+    second: BossGate-Animated-StoneGate_15
+  - first:
+      213: -7930852933838415184
+    second: BossGate-Animated-StoneGate_16
+  - first:
+      213: 3543584703752767059
+    second: BossGate-Animated-StoneGate_17
+  - first:
+      213: 6313094969074572126
+    second: BossGate-Animated-StoneGate_18
+  - first:
+      213: 6496918194056872051
+    second: BossGate-Animated-StoneGate_19
+  - first:
+      213: 3723040930997595798
+    second: BossGate-Animated-StoneGate_20
+  - first:
+      213: -4102531804183852416
+    second: BossGate-Animated-StoneGate_21
+  - first:
+      213: -3240918314872430878
+    second: BossGate-Animated-StoneGate_22
+  - first:
+      213: 3657004712285923090
+    second: BossGate-Animated-StoneGate_23
+  - first:
+      213: 6457813614833585257
+    second: BossGate-Animated-StoneGate_24
+  - first:
+      213: 303120704789618399
+    second: BossGate-Animated-StoneGate_25
+  - first:
+      213: -5629856297874156085
+    second: BossGate-Animated-StoneGate_26
+  - first:
+      213: 5262905601522297313
+    second: BossGate-Animated-StoneGate_27
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 24
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BossGate-Animated-StoneGate_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 2
+        width: 74
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 607f7f4df7f2fd2f0800000000000000
+      internalID: -945985170644142330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossGate-Animated-StoneGate_1
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 2
+        width: 74
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cf56a99c60b5aa30800000000000000
+      internalID: 4225977805837852610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossGate-Animated-StoneGate_2
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 2
+        width: 74
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 923b66223351036d0800000000000000
+      internalID: -3012884841346190551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossGate-Animated-StoneGate_3
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 2
+        width: 74
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c785be236b6c56da0800000000000000
+      internalID: -5952132846659610500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossGate-Animated-StoneGate_4
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 2
+        width: 74
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 326dc4109c9f612d0800000000000000
+      internalID: -3308182234551495133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossGate-Animated-StoneGate_5
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 2
+        width: 74
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae297e4ec769149c0800000000000000
+      internalID: -3944706335439351062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossGate-Animated-StoneGate_6
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 2
+        width: 74
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dac71e38e49c0c630800000000000000
+      internalID: 3945374612633779373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossGate-Animated-StoneGate_7
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 2
+        width: 74
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa4be937d9a9a9770800000000000000
+      internalID: 8618370837967189167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossGate-Animated-StoneGate_8
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 2
+        width: 74
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22bb2f4a24a46f430800000000000000
+      internalID: 3816319384338742050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossGate-Animated-StoneGate_9
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 2
+        width: 74
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbda9492a3f46b450800000000000000
+      internalID: 6104153456166677948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossGate-Animated-StoneGate_10
+      rect:
+        serializedVersion: 2
+        x: 971
+        y: 2
+        width: 74
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbc496011975e11f0800000000000000
+      internalID: -1072323380710388548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossGate-Animated-StoneGate_11
+      rect:
+        serializedVersion: 2
+        x: 1067
+        y: 2
+        width: 74
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93aaf4a27c9d4e850800000000000000
+      internalID: 6405484019459271225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossGate-Animated-StoneGate_12
+      rect:
+        serializedVersion: 2
+        x: 1163
+        y: 2
+        width: 74
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf46c03d85897e1b0800000000000000
+      internalID: -5627361702110796548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossGate-Animated-StoneGate_13
+      rect:
+        serializedVersion: 2
+        x: 1259
+        y: 2
+        width: 74
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75d7c7b1bc2dfd6c0800000000000000
+      internalID: -4116339764612006569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossGate-Animated-StoneGate_14
+      rect:
+        serializedVersion: 2
+        x: 1355
+        y: 2
+        width: 74
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 431d6b10adbaf9a20800000000000000
+      internalID: 3071362423709946164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossGate-Animated-StoneGate_15
+      rect:
+        serializedVersion: 2
+        x: 1451
+        y: 3
+        width: 74
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f170b19a538a1750800000000000000
+      internalID: 6276473455708762617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossGate-Animated-StoneGate_16
+      rect:
+        serializedVersion: 2
+        x: 1547
+        y: 3
+        width: 74
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ba52b0b643ffe190800000000000000
+      internalID: -7930852933838415184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossGate-Animated-StoneGate_17
+      rect:
+        serializedVersion: 2
+        x: 1643
+        y: 3
+        width: 74
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35601ba63875d2130800000000000000
+      internalID: 3543584703752767059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossGate-Animated-StoneGate_18
+      rect:
+        serializedVersion: 2
+        x: 1739
+        y: 3
+        width: 74
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5bdef81d6e9c9750800000000000000
+      internalID: 6313094969074572126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossGate-Animated-StoneGate_19
+      rect:
+        serializedVersion: 2
+        x: 1835
+        y: 3
+        width: 74
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3704883eca0b92a50800000000000000
+      internalID: 6496918194056872051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossGate-Animated-StoneGate_20
+      rect:
+        serializedVersion: 2
+        x: 1931
+        y: 3
+        width: 74
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69ee9505006eaa330800000000000000
+      internalID: 3723040930997595798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossGate-Animated-StoneGate_21
+      rect:
+        serializedVersion: 2
+        x: 2027
+        y: 3
+        width: 74
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08a01eb6f01e017c0800000000000000
+      internalID: -4102531804183852416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossGate-Animated-StoneGate_22
+      rect:
+        serializedVersion: 2
+        x: 2123
+        y: 3
+        width: 74
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ee98f7b6f1f503d0800000000000000
+      internalID: -3240918314872430878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossGate-Animated-StoneGate_23
+      rect:
+        serializedVersion: 2
+        x: 2219
+        y: 3
+        width: 74
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2176bb1096a40c230800000000000000
+      internalID: 3657004712285923090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossGate-Animated-StoneGate_24
+      rect:
+        serializedVersion: 2
+        x: 2315
+        y: 3
+        width: 74
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96c46d98443ce9950800000000000000
+      internalID: 6457813614833585257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossGate-Animated-StoneGate_25
+      rect:
+        serializedVersion: 2
+        x: 2411
+        y: 3
+        width: 74
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fde1d0dcca6e43400800000000000000
+      internalID: 303120704789618399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossGate-Animated-StoneGate_26
+      rect:
+        serializedVersion: 2
+        x: 2513
+        y: 3
+        width: 62
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc517bc768bbed1b0800000000000000
+      internalID: -5629856297874156085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossGate-Animated-StoneGate_27
+      rect:
+        serializedVersion: 2
+        x: 2618
+        y: 3
+        width: 131
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e96621b2c8990940800000000000000
+      internalID: 5262905601522297313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      BossGate-Animated-StoneGate_0: -945985170644142330
+      BossGate-Animated-StoneGate_1: 4225977805837852610
+      BossGate-Animated-StoneGate_10: -1072323380710388548
+      BossGate-Animated-StoneGate_11: 6405484019459271225
+      BossGate-Animated-StoneGate_12: -5627361702110796548
+      BossGate-Animated-StoneGate_13: -4116339764612006569
+      BossGate-Animated-StoneGate_14: 3071362423709946164
+      BossGate-Animated-StoneGate_15: 6276473455708762617
+      BossGate-Animated-StoneGate_16: -7930852933838415184
+      BossGate-Animated-StoneGate_17: 3543584703752767059
+      BossGate-Animated-StoneGate_18: 6313094969074572126
+      BossGate-Animated-StoneGate_19: 6496918194056872051
+      BossGate-Animated-StoneGate_2: -3012884841346190551
+      BossGate-Animated-StoneGate_20: 3723040930997595798
+      BossGate-Animated-StoneGate_21: -4102531804183852416
+      BossGate-Animated-StoneGate_22: -3240918314872430878
+      BossGate-Animated-StoneGate_23: 3657004712285923090
+      BossGate-Animated-StoneGate_24: 6457813614833585257
+      BossGate-Animated-StoneGate_25: 303120704789618399
+      BossGate-Animated-StoneGate_26: -5629856297874156085
+      BossGate-Animated-StoneGate_27: 5262905601522297313
+      BossGate-Animated-StoneGate_3: -5952132846659610500
+      BossGate-Animated-StoneGate_4: -3308182234551495133
+      BossGate-Animated-StoneGate_5: -3944706335439351062
+      BossGate-Animated-StoneGate_6: 3945374612633779373
+      BossGate-Animated-StoneGate_7: 8618370837967189167
+      BossGate-Animated-StoneGate_8: 3816319384338742050
+      BossGate-Animated-StoneGate_9: 6104153456166677948
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

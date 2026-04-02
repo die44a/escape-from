@@ -1,0 +1,637 @@
+fileFormatVersion: 2
+guid: fd0ef0260963b404b884faabf2cea61c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 554546445438084207
+    second: Trap-BladeOnly_0
+  - first:
+      213: 5216282142322778244
+    second: Trap-BladeOnly_1
+  - first:
+      213: 2340563338470665405
+    second: Trap-BladeOnly_2
+  - first:
+      213: 5232186020723731298
+    second: Trap-BladeOnly_3
+  - first:
+      213: 7211205600791667043
+    second: Trap-BladeOnly_4
+  - first:
+      213: -2199341539032707068
+    second: Trap-BladeOnly_5
+  - first:
+      213: -3888887222295715872
+    second: Trap-BladeOnly_6
+  - first:
+      213: 2121628030724582992
+    second: Trap-BladeOnly_7
+  - first:
+      213: 8734073848212276722
+    second: Trap-BladeOnly_8
+  - first:
+      213: 5772483314559041907
+    second: Trap-BladeOnly_9
+  - first:
+      213: 686863086564668701
+    second: Trap-BladeOnly_10
+  - first:
+      213: -2704505180023054072
+    second: Trap-BladeOnly_11
+  - first:
+      213: -3356702218381234930
+    second: Trap-BladeOnly_12
+  - first:
+      213: -270050161637736643
+    second: Trap-BladeOnly_13
+  - first:
+      213: -7587608089252016231
+    second: Trap-BladeOnly_14
+  - first:
+      213: 6438763218741846756
+    second: Trap-BladeOnly_15
+  - first:
+      213: 3035868110106442592
+    second: Trap-BladeOnly_16
+  - first:
+      213: 8348408068823622633
+    second: Trap-BladeOnly_17
+  - first:
+      213: -5724028115617310598
+    second: Trap-BladeOnly_18
+  - first:
+      213: -5385619066894550290
+    second: Trap-BladeOnly_19
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 24
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Trap-BladeOnly_0
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 23
+        width: 22
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f64eac3dd0522b700800000000000000
+      internalID: 554546445438084207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trap-BladeOnly_1
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 12
+        width: 22
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 480ec5da8f4f36840800000000000000
+      internalID: 5216282142322778244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trap-BladeOnly_2
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 23
+        width: 22
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbca8db94f95b7020800000000000000
+      internalID: 2340563338470665405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trap-BladeOnly_3
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 22
+        width: 22
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26ba00ce6757c9840800000000000000
+      internalID: 5232186020723731298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trap-BladeOnly_4
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 22
+        width: 22
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 361ae7d8949531460800000000000000
+      internalID: 7211205600791667043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trap-BladeOnly_5
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 28
+        width: 18
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 400d13ad58e5a71e0800000000000000
+      internalID: -2199341539032707068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trap-BladeOnly_6
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 28
+        width: 7
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ef128feca5e70ac0800000000000000
+      internalID: -3888887222295715872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trap-BladeOnly_7
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 28
+        width: 6
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05ea9dcf379817d10800000000000000
+      internalID: 2121628030724582992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trap-BladeOnly_8
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 28
+        width: 7
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f5c8bcc3e9a53970800000000000000
+      internalID: 8734073848212276722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trap-BladeOnly_9
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 22
+        width: 22
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 371492c9dfafb1050800000000000000
+      internalID: 5772483314559041907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trap-BladeOnly_10
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 21
+        width: 22
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d15f30c865a388900800000000000000
+      internalID: 686863086564668701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trap-BladeOnly_11
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 21
+        width: 22
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 801a58b2edaa77ad0800000000000000
+      internalID: -2704505180023054072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trap-BladeOnly_12
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 0
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0dee90fd199a61d0800000000000000
+      internalID: -3356702218381234930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trap-BladeOnly_13
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 0
+        width: 8
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3fbb0c0fc6904cf0800000000000000
+      internalID: -270050161637736643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trap-BladeOnly_14
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 0
+        width: 6
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99fc049c4a663b690800000000000000
+      internalID: -7587608089252016231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trap-BladeOnly_15
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 0
+        width: 7
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e265fd88051b5950800000000000000
+      internalID: 6438763218741846756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trap-BladeOnly_16
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 0
+        width: 6
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06bb4df16f1912a20800000000000000
+      internalID: 3035868110106442592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trap-BladeOnly_17
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 19
+        width: 22
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e3ac3628e08bd370800000000000000
+      internalID: 8348408068823622633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trap-BladeOnly_18
+      rect:
+        serializedVersion: 2
+        x: 891
+        y: 19
+        width: 22
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a78184c81ca2090b0800000000000000
+      internalID: -5724028115617310598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trap-BladeOnly_19
+      rect:
+        serializedVersion: 2
+        x: 939
+        y: 21
+        width: 21
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eeafd2e2eff6245b0800000000000000
+      internalID: -5385619066894550290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Trap-BladeOnly_0: 554546445438084207
+      Trap-BladeOnly_1: 5216282142322778244
+      Trap-BladeOnly_10: 686863086564668701
+      Trap-BladeOnly_11: -2704505180023054072
+      Trap-BladeOnly_12: -3356702218381234930
+      Trap-BladeOnly_13: -270050161637736643
+      Trap-BladeOnly_14: -7587608089252016231
+      Trap-BladeOnly_15: 6438763218741846756
+      Trap-BladeOnly_16: 3035868110106442592
+      Trap-BladeOnly_17: 8348408068823622633
+      Trap-BladeOnly_18: -5724028115617310598
+      Trap-BladeOnly_19: -5385619066894550290
+      Trap-BladeOnly_2: 2340563338470665405
+      Trap-BladeOnly_3: 5232186020723731298
+      Trap-BladeOnly_4: 7211205600791667043
+      Trap-BladeOnly_5: -2199341539032707068
+      Trap-BladeOnly_6: -3888887222295715872
+      Trap-BladeOnly_7: 2121628030724582992
+      Trap-BladeOnly_8: 8734073848212276722
+      Trap-BladeOnly_9: 5772483314559041907
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

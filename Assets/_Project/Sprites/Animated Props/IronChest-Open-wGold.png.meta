@@ -1,0 +1,767 @@
+fileFormatVersion: 2
+guid: 4dc550fa9f6abf84a8f8a1ded55cc09d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1492613023998665653
+    second: IronChest-Open-wGold_0
+  - first:
+      213: 579846094322563323
+    second: IronChest-Open-wGold_1
+  - first:
+      213: 6082507517863426846
+    second: IronChest-Open-wGold_2
+  - first:
+      213: 110485490764841416
+    second: IronChest-Open-wGold_3
+  - first:
+      213: 2112866382874478280
+    second: IronChest-Open-wGold_4
+  - first:
+      213: 5812095560326680980
+    second: IronChest-Open-wGold_5
+  - first:
+      213: 3557885210445642281
+    second: IronChest-Open-wGold_6
+  - first:
+      213: -842463316156713212
+    second: IronChest-Open-wGold_7
+  - first:
+      213: 294503267934328026
+    second: IronChest-Open-wGold_8
+  - first:
+      213: 6585022930386649708
+    second: IronChest-Open-wGold_9
+  - first:
+      213: -4796597866151009872
+    second: IronChest-Open-wGold_10
+  - first:
+      213: -4157762629763184205
+    second: IronChest-Open-wGold_11
+  - first:
+      213: -5665856706544975833
+    second: IronChest-Open-wGold_12
+  - first:
+      213: 5313889738372525695
+    second: IronChest-Open-wGold_13
+  - first:
+      213: 6173087396323117350
+    second: IronChest-Open-wGold_14
+  - first:
+      213: 5543532080216040964
+    second: IronChest-Open-wGold_15
+  - first:
+      213: 7193157066978152833
+    second: IronChest-Open-wGold_16
+  - first:
+      213: 5611318875232846529
+    second: IronChest-Open-wGold_17
+  - first:
+      213: -8134887573256167646
+    second: IronChest-Open-wGold_18
+  - first:
+      213: 6229649817192001681
+    second: IronChest-Open-wGold_19
+  - first:
+      213: -5074797723100457424
+    second: IronChest-Open-wGold_20
+  - first:
+      213: 1177470197447861426
+    second: IronChest-Open-wGold_21
+  - first:
+      213: 1426905241848909114
+    second: IronChest-Open-wGold_22
+  - first:
+      213: 7203864794331531302
+    second: IronChest-Open-wGold_23
+  - first:
+      213: -1107931980446157348
+    second: IronChest-Open-wGold_24
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 24
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: IronChest-Open-wGold_0
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 5
+        width: 25
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4c1075ec5c294be0800000000000000
+      internalID: -1492613023998665653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IronChest-Open-wGold_1
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 5
+        width: 25
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf87e7c53f60c0800800000000000000
+      internalID: 579846094322563323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IronChest-Open-wGold_2
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 5
+        width: 33
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1b74e96c58696450800000000000000
+      internalID: 6082507517863426846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IronChest-Open-wGold_3
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 5
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c18fdde7f5888100800000000000000
+      internalID: 110485490764841416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IronChest-Open-wGold_4
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 5
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c60911e7c8625d10800000000000000
+      internalID: 2112866382874478280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IronChest-Open-wGold_5
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 5
+        width: 25
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49195e94e16b8a050800000000000000
+      internalID: 5812095560326680980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IronChest-Open-wGold_6
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 9
+        width: 25
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92a7a389fb5206130800000000000000
+      internalID: 3557885210445642281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IronChest-Open-wGold_7
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 6
+        width: 25
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4077e28d318fe44f0800000000000000
+      internalID: -842463316156713212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IronChest-Open-wGold_8
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 4
+        width: 25
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad4da6e6929461400800000000000000
+      internalID: 294503267934328026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IronChest-Open-wGold_9
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 7
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c628f7b5773b26b50800000000000000
+      internalID: 6585022930386649708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IronChest-Open-wGold_10
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 5
+        width: 25
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b12ca977af0f6db0800000000000000
+      internalID: -4796597866151009872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IronChest-Open-wGold_11
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 4
+        width: 25
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b94290cae8ac46c0800000000000000
+      internalID: -4157762629763184205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IronChest-Open-wGold_12
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 2
+        width: 25
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7204f1a2855de51b0800000000000000
+      internalID: -5665856706544975833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IronChest-Open-wGold_13
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 2
+        width: 25
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7ea947109abeb940800000000000000
+      internalID: 5313889738372525695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IronChest-Open-wGold_14
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 2
+        width: 25
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 629c741d7463ba550800000000000000
+      internalID: 6173087396323117350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IronChest-Open-wGold_15
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 2
+        width: 25
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 406624a5e059eec40800000000000000
+      internalID: 5543532080216040964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IronChest-Open-wGold_16
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 2
+        width: 25
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 181d2decd3a33d360800000000000000
+      internalID: 7193157066978152833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IronChest-Open-wGold_17
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 2
+        width: 25
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c2c2b779c86fdd40800000000000000
+      internalID: 5611318875232846529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IronChest-Open-wGold_18
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 2
+        width: 25
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22f93544ad21b1f80800000000000000
+      internalID: -8134887573256167646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IronChest-Open-wGold_19
+      rect:
+        serializedVersion: 2
+        x: 924
+        y: 2
+        width: 25
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1907ecca089247650800000000000000
+      internalID: 6229649817192001681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IronChest-Open-wGold_20
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 2
+        width: 25
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 036d2a7bb52b299b0800000000000000
+      internalID: -5074797723100457424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IronChest-Open-wGold_21
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 2
+        width: 25
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b42d74f7e6375010800000000000000
+      internalID: 1177470197447861426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IronChest-Open-wGold_22
+      rect:
+        serializedVersion: 2
+        x: 1068
+        y: 2
+        width: 25
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3d0c84e1c26dc310800000000000000
+      internalID: 1426905241848909114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IronChest-Open-wGold_23
+      rect:
+        serializedVersion: 2
+        x: 1116
+        y: 2
+        width: 25
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 628c21cdcd449f360800000000000000
+      internalID: 7203864794331531302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IronChest-Open-wGold_24
+      rect:
+        serializedVersion: 2
+        x: 1164
+        y: 2
+        width: 25
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd5363edbb5df90f0800000000000000
+      internalID: -1107931980446157348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      IronChest-Open-wGold_0: -1492613023998665653
+      IronChest-Open-wGold_1: 579846094322563323
+      IronChest-Open-wGold_10: -4796597866151009872
+      IronChest-Open-wGold_11: -4157762629763184205
+      IronChest-Open-wGold_12: -5665856706544975833
+      IronChest-Open-wGold_13: 5313889738372525695
+      IronChest-Open-wGold_14: 6173087396323117350
+      IronChest-Open-wGold_15: 5543532080216040964
+      IronChest-Open-wGold_16: 7193157066978152833
+      IronChest-Open-wGold_17: 5611318875232846529
+      IronChest-Open-wGold_18: -8134887573256167646
+      IronChest-Open-wGold_19: 6229649817192001681
+      IronChest-Open-wGold_2: 6082507517863426846
+      IronChest-Open-wGold_20: -5074797723100457424
+      IronChest-Open-wGold_21: 1177470197447861426
+      IronChest-Open-wGold_22: 1426905241848909114
+      IronChest-Open-wGold_23: 7203864794331531302
+      IronChest-Open-wGold_24: -1107931980446157348
+      IronChest-Open-wGold_3: 110485490764841416
+      IronChest-Open-wGold_4: 2112866382874478280
+      IronChest-Open-wGold_5: 5812095560326680980
+      IronChest-Open-wGold_6: 3557885210445642281
+      IronChest-Open-wGold_7: -842463316156713212
+      IronChest-Open-wGold_8: 294503267934328026
+      IronChest-Open-wGold_9: 6585022930386649708
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
