@@ -233,6 +233,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a8e631423c2a93b43b1bbf3e98fae6fd, type: 3}
+--- !u!4 &427896896 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1248526071332643950, guid: a8e631423c2a93b43b1bbf3e98fae6fd, type: 3}
+  m_PrefabInstance: {fileID: 427896895}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1138,7 +1143,7 @@ Transform:
   - {fileID: 666086954}
   - {fileID: 957928167}
   - {fileID: 1393944471}
-  - {fileID: 1990946594}
+  - {fileID: 427896896}
   m_Father: {fileID: 543440732}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!483693784 &1593876114
@@ -1827,7 +1832,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1933836242}
-  - component: {fileID: 1933836243}
+  - component: {fileID: 1933836245}
+  - component: {fileID: 1933836244}
   m_Layer: 0
   m_Name: '[System]'
   m_TagString: Untagged
@@ -1850,7 +1856,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1933836243
+--- !u!114 &1933836244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1933836241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94e1f99184d24812a204cca0e1881014, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::_Project.Core.Runtime.Core.Main.ListenerComposite
+--- !u!114 &1933836245
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1881,11 +1899,7 @@ MonoBehaviour:
   _parentNewObjectsUnderSceneContext: 0
   _contractNames: []
   _parentContractNames: []
---- !u!4 &1990946594 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5580139176013214845, guid: a8e631423c2a93b43b1bbf3e98fae6fd, type: 3}
-  m_PrefabInstance: {fileID: 427896895}
-  m_PrefabAsset: {fileID: 0}
+  _kernel: {fileID: 0}
 --- !u!1001 &2666080281102160151
 PrefabInstance:
   m_ObjectHideFlags: 0
