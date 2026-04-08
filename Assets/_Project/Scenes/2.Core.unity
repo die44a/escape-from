@@ -1833,9 +1833,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1933836242}
   - component: {fileID: 1933836245}
-  - component: {fileID: 1933836248}
   - component: {fileID: 1933836247}
   - component: {fileID: 1933836246}
+  - component: {fileID: 1933836248}
   m_Layer: 0
   m_Name: '[System]'
   m_TagString: Untagged
