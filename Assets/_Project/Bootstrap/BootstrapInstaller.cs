@@ -1,5 +1,4 @@
 using _Project.Services;
-using UnityEngine;
 using Zenject;
 
 namespace _Project.Bootstrap
@@ -9,6 +8,10 @@ namespace _Project.Bootstrap
         [Inject] private SceneLoaderService _sceneLoaderService;
         
         public override void InstallBindings()
+        {
+        }
+        
+        public void Initialize()
         {
             _sceneLoaderService.LoadCoreScene();
         }
