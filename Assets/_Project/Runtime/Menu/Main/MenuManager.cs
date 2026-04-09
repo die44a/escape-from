@@ -10,6 +10,9 @@ namespace _Project.Runtime.Menu.Main
     {
         [Inject] 
         private SceneLoaderService _sceneLoaderService;
+
+        [Inject]
+        private IInputService _inputService;
         
         public event Action OnGameStart;
         
@@ -37,6 +40,7 @@ namespace _Project.Runtime.Menu.Main
         void IInitializable.Initialize()
         {
             State = MenuState.MAIN;
+            _inputService.SwitchToUI();
             
             Debug.Log("MenuManager initialized");
         }

@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using _Project.Core.Runtime.Core.Main;
+using _Project.Services;
 using UnityEngine;
 using Zenject;
 
@@ -10,6 +11,9 @@ namespace _Project.Runtime.Core.Main
 {
     public sealed class GameManager : IInitializable, IDisposable
     {
+        [Inject]
+        private IInputService _inputService;
+
         public event Action OnPauseGame;
         public event Action OnResumeGame;
         
@@ -65,6 +69,7 @@ namespace _Project.Runtime.Core.Main
         void IInitializable.Initialize()
         {
             State = GameState.PLAY;
+            _inputService.SwitchToGameplay();
         }
 
         void IDisposable.Dispose()
