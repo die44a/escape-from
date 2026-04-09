@@ -1,5 +1,6 @@
 using System;
 using _Project.Runtime.Core.Main;
+using _Project.Services.Input;
 using UnityEngine.InputSystem;
 using Zenject;
 
@@ -10,9 +11,6 @@ namespace _Project.Services
         IInitializable, 
         IDisposable
     {
-        private const string GameplayMapName = "Gameplay";
-        private const string UiMapName = "UI";
-
         private readonly InputActionAsset _actionsAsset;
 
         public event Action<string> OnActionMapChanged;
@@ -41,12 +39,12 @@ namespace _Project.Services
 
         public void SwitchToGameplay()
         {
-            SwitchTo(GameplayMapName);
+            SwitchTo(InputMaps.Gameplay);
         }
 
         public void SwitchToUI()
         {
-            SwitchTo(UiMapName);
+            SwitchTo(InputMaps.UI);
         }
 
         // ReSharper disable Unity.PerformanceAnalysis
