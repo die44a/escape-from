@@ -1,0 +1,455 @@
+fileFormatVersion: 2
+guid: 5501761a9b866ac4888c993bc691a5f3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 9010025004647738884
+    second: GoldChest-Open-Empty_0
+  - first:
+      213: 5584730520073918200
+    second: GoldChest-Open-Empty_1
+  - first:
+      213: -6753976369221322342
+    second: GoldChest-Open-Empty_2
+  - first:
+      213: 8083743855364596000
+    second: GoldChest-Open-Empty_3
+  - first:
+      213: 3540078602780551772
+    second: GoldChest-Open-Empty_4
+  - first:
+      213: 6992239935258783461
+    second: GoldChest-Open-Empty_5
+  - first:
+      213: 6699780699341294470
+    second: GoldChest-Open-Empty_6
+  - first:
+      213: 4732428071379462061
+    second: GoldChest-Open-Empty_7
+  - first:
+      213: -2515685500443745759
+    second: GoldChest-Open-Empty_8
+  - first:
+      213: 1740629201587667809
+    second: GoldChest-Open-Empty_9
+  - first:
+      213: -3874808889532409424
+    second: GoldChest-Open-Empty_10
+  - first:
+      213: -5992479217856756607
+    second: GoldChest-Open-Empty_11
+  - first:
+      213: 604533036697218
+    second: GoldChest-Open-Empty_12
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 24
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: GoldChest-Open-Empty_0
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 7
+        width: 25
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40e6a6b210a0a0d70800000000000000
+      internalID: 9010025004647738884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoldChest-Open-Empty_1
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 7
+        width: 25
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f6d94f91d2f08d40800000000000000
+      internalID: 5584730520073918200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoldChest-Open-Empty_2
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 7
+        width: 33
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a993e2bb64e0542a0800000000000000
+      internalID: -6753976369221322342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoldChest-Open-Empty_3
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 7
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 021e04af43a3f2070800000000000000
+      internalID: 8083743855364596000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoldChest-Open-Empty_4
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 7
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5a22bbabb2e02130800000000000000
+      internalID: 3540078602780551772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoldChest-Open-Empty_5
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 7
+        width: 25
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ee6665bc2d690160800000000000000
+      internalID: 6992239935258783461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoldChest-Open-Empty_6
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 11
+        width: 25
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68b81419c076afc50800000000000000
+      internalID: 6699780699341294470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoldChest-Open-Empty_7
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 8
+        width: 25
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da7e8a7e146fca140800000000000000
+      internalID: 4732428071379462061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoldChest-Open-Empty_8
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 7
+        width: 25
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1222373bd5d761dd0800000000000000
+      internalID: -2515685500443745759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoldChest-Open-Empty_9
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 9
+        width: 25
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1630e4e5905f72810800000000000000
+      internalID: 1740629201587667809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoldChest-Open-Empty_10
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 7
+        width: 25
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b915e638d9e93ac0800000000000000
+      internalID: -3874808889532409424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoldChest-Open-Empty_11
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 8
+        width: 25
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 184ccbf96ef66dca0800000000000000
+      internalID: -5992479217856756607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoldChest-Open-Empty_12
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 7
+        width: 25
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28648e0d1d5220000800000000000000
+      internalID: 604533036697218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      GoldChest-Open-Empty_0: 9010025004647738884
+      GoldChest-Open-Empty_1: 5584730520073918200
+      GoldChest-Open-Empty_10: -3874808889532409424
+      GoldChest-Open-Empty_11: -5992479217856756607
+      GoldChest-Open-Empty_12: 604533036697218
+      GoldChest-Open-Empty_2: -6753976369221322342
+      GoldChest-Open-Empty_3: 8083743855364596000
+      GoldChest-Open-Empty_4: 3540078602780551772
+      GoldChest-Open-Empty_5: 6992239935258783461
+      GoldChest-Open-Empty_6: 6699780699341294470
+      GoldChest-Open-Empty_7: 4732428071379462061
+      GoldChest-Open-Empty_8: -2515685500443745759
+      GoldChest-Open-Empty_9: 1740629201587667809
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

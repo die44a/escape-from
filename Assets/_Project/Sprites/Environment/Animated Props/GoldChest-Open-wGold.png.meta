@@ -1,0 +1,767 @@
+fileFormatVersion: 2
+guid: a480e8b7d383e124ea54efd69ce5a8b4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8587985891902707116
+    second: GoldChest-Open-wGold_0
+  - first:
+      213: -1738956758856785864
+    second: GoldChest-Open-wGold_1
+  - first:
+      213: -7798586205326169579
+    second: GoldChest-Open-wGold_2
+  - first:
+      213: 7638420385281691105
+    second: GoldChest-Open-wGold_3
+  - first:
+      213: -8093722678691225584
+    second: GoldChest-Open-wGold_4
+  - first:
+      213: 7933511388011778190
+    second: GoldChest-Open-wGold_5
+  - first:
+      213: 8576947191292673920
+    second: GoldChest-Open-wGold_6
+  - first:
+      213: -6232196639033266334
+    second: GoldChest-Open-wGold_7
+  - first:
+      213: -3176600035144592503
+    second: GoldChest-Open-wGold_8
+  - first:
+      213: -7709169145400817871
+    second: GoldChest-Open-wGold_9
+  - first:
+      213: -3478161641270898507
+    second: GoldChest-Open-wGold_10
+  - first:
+      213: -6027737513026003054
+    second: GoldChest-Open-wGold_11
+  - first:
+      213: -2152404502421016728
+    second: GoldChest-Open-wGold_12
+  - first:
+      213: -1355700885292739445
+    second: GoldChest-Open-wGold_13
+  - first:
+      213: -412412454163990480
+    second: GoldChest-Open-wGold_14
+  - first:
+      213: -3936635295127432544
+    second: GoldChest-Open-wGold_15
+  - first:
+      213: 2561598450708884098
+    second: GoldChest-Open-wGold_16
+  - first:
+      213: -8143014549225176317
+    second: GoldChest-Open-wGold_17
+  - first:
+      213: -1172415644014166680
+    second: GoldChest-Open-wGold_18
+  - first:
+      213: 9192933210194553011
+    second: GoldChest-Open-wGold_19
+  - first:
+      213: 5660383760546978557
+    second: GoldChest-Open-wGold_20
+  - first:
+      213: 1716398537651064079
+    second: GoldChest-Open-wGold_21
+  - first:
+      213: -5274511373268820808
+    second: GoldChest-Open-wGold_22
+  - first:
+      213: -4282464660302122034
+    second: GoldChest-Open-wGold_23
+  - first:
+      213: -3997920259899387742
+    second: GoldChest-Open-wGold_24
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 24
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: GoldChest-Open-wGold_0
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 7
+        width: 25
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45aa219155851d880800000000000000
+      internalID: -8587985891902707116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoldChest-Open-wGold_1
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 7
+        width: 25
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 830a39c8a0cfdd7e0800000000000000
+      internalID: -1738956758856785864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoldChest-Open-wGold_2
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 7
+        width: 33
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51aa5493a2bd5c390800000000000000
+      internalID: -7798586205326169579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoldChest-Open-wGold_3
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 7
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ed41ddcede110a60800000000000000
+      internalID: 7638420385281691105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoldChest-Open-wGold_4
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 7
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 010261a2b125daf80800000000000000
+      internalID: -8093722678691225584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoldChest-Open-wGold_5
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 7
+        width: 25
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8055f7e29e791e60800000000000000
+      internalID: 7933511388011778190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoldChest-Open-wGold_6
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 11
+        width: 25
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08fb8422700770770800000000000000
+      internalID: 8576947191292673920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoldChest-Open-wGold_7
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 8
+        width: 25
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26fe9082d2ac289a0800000000000000
+      internalID: -6232196639033266334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoldChest-Open-wGold_8
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 6
+        width: 25
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98396bf29137ae3d0800000000000000
+      internalID: -3176600035144592503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoldChest-Open-wGold_9
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 9
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1378bf6d187830590800000000000000
+      internalID: -7709169145400817871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoldChest-Open-wGold_10
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 7
+        width: 25
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b098a45a661bbfc0800000000000000
+      internalID: -3478161641270898507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoldChest-Open-wGold_11
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 6
+        width: 25
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29fd9c01bac295ca0800000000000000
+      internalID: -6027737513026003054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoldChest-Open-wGold_12
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 4
+        width: 25
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86f6e3c428f1122e0800000000000000
+      internalID: -2152404502421016728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoldChest-Open-wGold_13
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 4
+        width: 25
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8491764a359f2de0800000000000000
+      internalID: -1355700885292739445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoldChest-Open-wGold_14
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 4
+        width: 25
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 038bb98de01d64af0800000000000000
+      internalID: -412412454163990480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoldChest-Open-wGold_15
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 4
+        width: 25
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a21aa76e034e59c0800000000000000
+      internalID: -3936635295127432544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoldChest-Open-wGold_16
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 4
+        width: 25
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28aa1bf0830ac8320800000000000000
+      internalID: 2561598450708884098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoldChest-Open-wGold_17
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 4
+        width: 25
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 303889839633efe80800000000000000
+      internalID: -8143014549225176317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoldChest-Open-wGold_18
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 4
+        width: 25
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86dbc69fe2ebabfe0800000000000000
+      internalID: -1172415644014166680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoldChest-Open-wGold_19
+      rect:
+        serializedVersion: 2
+        x: 924
+        y: 4
+        width: 25
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b8a9856c0cd39f70800000000000000
+      internalID: 9192933210194553011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoldChest-Open-wGold_20
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 4
+        width: 25
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfadacb4a09bd8e40800000000000000
+      internalID: 5660383760546978557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoldChest-Open-wGold_21
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 4
+        width: 25
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0d01b9406fd1d710800000000000000
+      internalID: 1716398537651064079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoldChest-Open-wGold_22
+      rect:
+        serializedVersion: 2
+        x: 1068
+        y: 4
+        width: 25
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bcdd800adb2dc6b0800000000000000
+      internalID: -5274511373268820808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoldChest-Open-wGold_23
+      rect:
+        serializedVersion: 2
+        x: 1116
+        y: 4
+        width: 25
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec33787b411a194c0800000000000000
+      internalID: -4282464660302122034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoldChest-Open-wGold_24
+      rect:
+        serializedVersion: 2
+        x: 1164
+        y: 4
+        width: 25
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a01c5c94b88488c0800000000000000
+      internalID: -3997920259899387742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      GoldChest-Open-wGold_0: -8587985891902707116
+      GoldChest-Open-wGold_1: -1738956758856785864
+      GoldChest-Open-wGold_10: -3478161641270898507
+      GoldChest-Open-wGold_11: -6027737513026003054
+      GoldChest-Open-wGold_12: -2152404502421016728
+      GoldChest-Open-wGold_13: -1355700885292739445
+      GoldChest-Open-wGold_14: -412412454163990480
+      GoldChest-Open-wGold_15: -3936635295127432544
+      GoldChest-Open-wGold_16: 2561598450708884098
+      GoldChest-Open-wGold_17: -8143014549225176317
+      GoldChest-Open-wGold_18: -1172415644014166680
+      GoldChest-Open-wGold_19: 9192933210194553011
+      GoldChest-Open-wGold_2: -7798586205326169579
+      GoldChest-Open-wGold_20: 5660383760546978557
+      GoldChest-Open-wGold_21: 1716398537651064079
+      GoldChest-Open-wGold_22: -5274511373268820808
+      GoldChest-Open-wGold_23: -4282464660302122034
+      GoldChest-Open-wGold_24: -3997920259899387742
+      GoldChest-Open-wGold_3: 7638420385281691105
+      GoldChest-Open-wGold_4: -8093722678691225584
+      GoldChest-Open-wGold_5: 7933511388011778190
+      GoldChest-Open-wGold_6: 8576947191292673920
+      GoldChest-Open-wGold_7: -6232196639033266334
+      GoldChest-Open-wGold_8: -3176600035144592503
+      GoldChest-Open-wGold_9: -7709169145400817871
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

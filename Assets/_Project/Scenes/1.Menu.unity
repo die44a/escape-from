@@ -367,6 +367,8 @@ GameObject:
   m_Component:
   - component: {fileID: 954326267}
   - component: {fileID: 954326268}
+  - component: {fileID: 954326269}
+  - component: {fileID: 954326270}
   m_Layer: 0
   m_Name: '[System]'
   m_TagString: Untagged
@@ -402,7 +404,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Zenject::Zenject.SceneContext
   _scriptableObjectInstallers: []
-  _monoInstallers: []
+  _monoInstallers:
+  - {fileID: 954326270}
   _installerPrefabs: []
   _autoRun: 1
   OnPreInstall:
@@ -420,6 +423,31 @@ MonoBehaviour:
   _parentNewObjectsUnderSceneContext: 0
   _contractNames: []
   _parentContractNames: []
+  _kernel: {fileID: 0}
+--- !u!114 &954326269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 954326266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d5e0dafd4f14b9692a3b505cc6b828d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::_Project.Runtime.Menu.Main.MenuListenerComposite
+--- !u!114 &954326270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 954326266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c4478772f6a42af88eb5e8223c5f140, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::_Project.Runtime.Menu.Installers.MenuCoreInstaller
 --- !u!1 &1346085222
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,0 +1,429 @@
+fileFormatVersion: 2
+guid: 6f7985fb7f5817d4981add82d40b6b4b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6859045806105548080
+    second: GoldCoinAnimated-Up-and-Down_0
+  - first:
+      213: -6141073504309614991
+    second: GoldCoinAnimated-Up-and-Down_1
+  - first:
+      213: 6077913928729169610
+    second: GoldCoinAnimated-Up-and-Down_2
+  - first:
+      213: 7698313727968586496
+    second: GoldCoinAnimated-Up-and-Down_3
+  - first:
+      213: -436904887490904690
+    second: GoldCoinAnimated-Up-and-Down_4
+  - first:
+      213: -2712673461666699544
+    second: GoldCoinAnimated-Up-and-Down_5
+  - first:
+      213: -6448910399663691033
+    second: GoldCoinAnimated-Up-and-Down_6
+  - first:
+      213: -7869105575348190333
+    second: GoldCoinAnimated-Up-and-Down_7
+  - first:
+      213: 6859049112236776795
+    second: GoldCoinAnimated-Up-and-Down_8
+  - first:
+      213: 2822669336007432513
+    second: GoldCoinAnimated-Up-and-Down_9
+  - first:
+      213: -8940918203636939383
+    second: GoldCoinAnimated-Up-and-Down_10
+  - first:
+      213: -7394311922503213045
+    second: GoldCoinAnimated-Up-and-Down_11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 24
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: GoldCoinAnimated-Up-and-Down_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 7
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0da22fc1e26cfc0a0800000000000000
+      internalID: -6859045806105548080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoldCoinAnimated-Up-and-Down_1
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 0
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 176ef044f2686caa0800000000000000
+      internalID: -6141073504309614991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoldCoinAnimated-Up-and-Down_2
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 8
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ace0d491486195450800000000000000
+      internalID: 6077913928729169610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoldCoinAnimated-Up-and-Down_3
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 0
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00ba4155c87e5da60800000000000000
+      internalID: 7698313727968586496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoldCoinAnimated-Up-and-Down_4
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 8
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8df874d15dcfe9f0800000000000000
+      internalID: -436904887490904690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoldCoinAnimated-Up-and-Down_5
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 0
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e62ab5ebd5aa5ad0800000000000000
+      internalID: -2712673461666699544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoldCoinAnimated-Up-and-Down_6
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 1
+        width: 29
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ea29b7c82ed086a0800000000000000
+      internalID: -6448910399663691033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoldCoinAnimated-Up-and-Down_7
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 1
+        width: 6
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3834359eb225bc290800000000000000
+      internalID: -7869105575348190333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoldCoinAnimated-Up-and-Down_8
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 8
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5dd4d7a3dc303f50800000000000000
+      internalID: 6859049112236776795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoldCoinAnimated-Up-and-Down_9
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 0
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1495c135ec22c2720800000000000000
+      internalID: 2822669336007432513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoldCoinAnimated-Up-and-Down_10
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 6
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 985856ac34a7be380800000000000000
+      internalID: -8940918203636939383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoldCoinAnimated-Up-and-Down_11
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 0
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b00a2c4bb70226990800000000000000
+      internalID: -7394311922503213045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      GoldCoinAnimated-Up-and-Down_0: -6859045806105548080
+      GoldCoinAnimated-Up-and-Down_1: -6141073504309614991
+      GoldCoinAnimated-Up-and-Down_10: -8940918203636939383
+      GoldCoinAnimated-Up-and-Down_11: -7394311922503213045
+      GoldCoinAnimated-Up-and-Down_2: 6077913928729169610
+      GoldCoinAnimated-Up-and-Down_3: 7698313727968586496
+      GoldCoinAnimated-Up-and-Down_4: -436904887490904690
+      GoldCoinAnimated-Up-and-Down_5: -2712673461666699544
+      GoldCoinAnimated-Up-and-Down_6: -6448910399663691033
+      GoldCoinAnimated-Up-and-Down_7: -7869105575348190333
+      GoldCoinAnimated-Up-and-Down_8: 6859049112236776795
+      GoldCoinAnimated-Up-and-Down_9: 2822669336007432513
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
