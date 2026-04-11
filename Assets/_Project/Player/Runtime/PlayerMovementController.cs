@@ -10,13 +10,13 @@ namespace _Project.Player.Runtime
     /// Движение по плоскости XZ: W/S — вперёд/назад по Z, A/D — влево/вправо по X; диагонали нормализуются.
     /// Ввод через ваш <c>IInputService</c>; карта <c>Gameplay</c>, действие <c>Move</c> (Vector2).
     /// </summary>
-    [RequireComponent(typeof(CharacterController2D))]
+    [RequireComponent(typeof(Rigidbody2D))]
     public class PlayerMovementController : MonoBehaviour
     {
         [SerializeField] private float moveSpeed = 6f;
         [SerializeField] private float gravityMultiplier = 1f;
 
-        private CharacterController _characterController;
+        private Rigidbody2D _rigidbody2D;
         private IInputService _input;
         private InputAction _moveAction;
         private Vector2 _move;
@@ -33,7 +33,7 @@ namespace _Project.Player.Runtime
         {
             TrySubscribeMove();
             
-            _characterController = GetComponent<CharacterController>();
+            _rigidbody2D = GetComponent<Rigidbody2D>();
         }
 
         private void TrySubscribeMove()
@@ -71,13 +71,11 @@ namespace _Project.Player.Runtime
 
         private void FixedUpdate()
         {
-            if (!_characterController)
+            if (!_rigidbody2D)
                 return;
-
-            var horizontal = new Vector3(_move.x, _move.y, 0f).normalized;
-
-            var delta = horizontal * (moveSpeed * Time.fixedDeltaTime);
-            _characterController.Move(delta);
-        }
+            
+            var direction = _move.normalized;
+            
+            _rigidbody2D.linearVelocity = direction * moveSpeed;        }
     }
 }
