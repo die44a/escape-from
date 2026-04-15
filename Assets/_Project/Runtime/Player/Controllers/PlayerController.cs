@@ -83,6 +83,9 @@ namespace _Project.Runtime.Player.Controllers
 
         private IEnumerator PerformDash()
         {
+            if (_moveInput.magnitude < 0.01f)
+                yield break;
+            
             SetState(PlayerState.Dashing);
             
             _movementController.Dash(_moveInput); 

@@ -23,9 +23,6 @@ namespace _Project.Runtime.Player.Controllers
 
         public void Dash(Vector2 direction)
         {
-            if (direction == Vector2.zero)
-                direction = new Vector2(transform.localScale.x, 0);
-
             _rb.linearVelocity = direction.normalized * dashForce;
         }
 
