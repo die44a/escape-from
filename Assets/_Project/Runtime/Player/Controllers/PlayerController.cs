@@ -23,12 +23,12 @@ namespace _Project.Runtime.Player.Controllers
         private InputAction _dashAction;
         private InputAction _interactAction;
 
-        void Awake()
+        private void Awake()
         {
             _movementController = GetComponent<PlayerMovementController>();
         }
 
-        void Start()
+        private void Start()
         {
             _moveAction = _inputService.GetAction(InputMaps.Gameplay, PlayerActions.Move);
             _dashAction = _inputService.GetAction(InputMaps.Gameplay, PlayerActions.Dash);
@@ -84,7 +84,7 @@ namespace _Project.Runtime.Player.Controllers
         {
             SetState(PlayerState.Dashing);
             
-            _movementController.Dash(); 
+            _movementController.Dash(_moveInput); 
 
             yield return new WaitForSeconds(0.2f); 
 
