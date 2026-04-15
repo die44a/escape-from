@@ -9,6 +9,7 @@ namespace _Project.Services.Input
     public static class PlayerActions
     {
         public const string Move = "Move";
-        public const string Jump = "Jump";
+        public const string Dash = "Dash";
+        public const string Interact = "Interact";
     }
 }
