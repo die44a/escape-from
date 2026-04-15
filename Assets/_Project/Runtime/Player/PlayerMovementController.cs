@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using Zenject;
 
-namespace _Project.Player.Runtime
+namespace _Project.Runtime.Player
 {
     /// <summary>
     /// Движение по плоскости XZ: W/S — вперёд/назад по Z, A/D — влево/вправо по X; диагонали нормализуются.
@@ -14,7 +14,6 @@ namespace _Project.Player.Runtime
     public class PlayerMovementController : MonoBehaviour
     {
         [SerializeField] private float moveSpeed = 6f;
-        [SerializeField] private float gravityMultiplier = 1f;
 
         private Rigidbody2D _rigidbody2D;
         private IInputService _input;
