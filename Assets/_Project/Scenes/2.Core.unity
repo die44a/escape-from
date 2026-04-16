@@ -227,7 +227,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 3.7083333
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -504,7 +504,7 @@ MonoBehaviour:
   Composition:
     ScreenPosition: {x: 0, y: 0}
     DeadZone:
-      Enabled: 1
+      Enabled: 0
       Size: {x: 0.15, y: 0.15}
     HardLimits:
       Enabled: 0
@@ -515,8 +515,8 @@ MonoBehaviour:
   Damping: {x: 1.3, y: 1.3, z: 1.3}
   Lookahead:
     Enabled: 1
-    Time: 0.2
-    Smoothing: 0
+    Time: 0.506
+    Smoothing: 5
     IgnoreY: 0
 --- !u!1 &1652299756
 GameObject:
@@ -774,6 +774,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2ba7aa4d4e14ebba48ac79d36a2f694, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::_Project.Runtime.Core.Installers.CameraInstaller
+  cameraPivot: {fileID: 1864374543}
 --- !u!1001 &2666080281102160151
 PrefabInstance:
   m_ObjectHideFlags: 0
