@@ -9,7 +9,7 @@ namespace _Project.Runtime.Core.Camera
         /// </summary>
         public void AttachTo(GameObject target)
         {
-            if (target == null) return;
+            if (!target) return;
 
             transform.SetParent(target.transform);
 
