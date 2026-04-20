@@ -150,6 +150,7 @@ GameObject:
   - component: {fileID: 3188741768045362770}
   - component: {fileID: 113721044653448212}
   - component: {fileID: 3394164031923465323}
+  - component: {fileID: 1844970707448791179}
   m_Layer: 0
   m_Name: MainMenuScreen
   m_TagString: Untagged
@@ -215,6 +216,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &1844970707448791179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1772924131494665491}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 887a9c086aa0cfd419ce8c9f23f65a4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::_Project.Runtime.Menu.UI.MainMenuScreen
+  startButton: {fileID: 1665256357802621936}
 --- !u!1 &1811747059221192661
 GameObject:
   m_ObjectHideFlags: 0
