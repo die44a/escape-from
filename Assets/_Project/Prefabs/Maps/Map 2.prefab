@@ -1056,7 +1056,7 @@ GameObject:
   - component: {fileID: 1068904222264274663}
   - component: {fileID: 2594857842466950712}
   - component: {fileID: 325253186573898605}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Traps
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1219,7 +1219,7 @@ GameObject:
   - component: {fileID: 4769055258532402720}
   - component: {fileID: 2274453381580436706}
   - component: {fileID: 8210008282281229891}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Doors
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1402,7 +1402,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4897798094067630873}
   - component: {fileID: 1085102118271410600}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Map 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7499,7 +7499,7 @@ GameObject:
   - component: {fileID: 2449146418862216491}
   - component: {fileID: 7194759469838279960}
   - component: {fileID: 382570391523049137}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Water
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8264,7 +8264,7 @@ GameObject:
   - component: {fileID: 4887324054793123385}
   - component: {fileID: 2937598335240503844}
   - component: {fileID: 7591422467428453935}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25094,6 +25094,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Door Default
       objectReference: {fileID: 0}
+    - target: {fileID: 683615066654245562, guid: 81fcfee5d00c8064d8cfb19f367c1b0f, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 7673456289008801265, guid: 81fcfee5d00c8064d8cfb19f367c1b0f, type: 3}
       propertyPath: m_SortingOrder
       value: 2500
@@ -26214,6 +26218,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Door Output
       objectReference: {fileID: 0}
+    - target: {fileID: 683615066654245562, guid: 81fcfee5d00c8064d8cfb19f367c1b0f, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 7673456289008801265, guid: 81fcfee5d00c8064d8cfb19f367c1b0f, type: 3}
       propertyPath: m_SortingOrder
       value: 2500
@@ -26323,6 +26331,10 @@ PrefabInstance:
     - target: {fileID: 8426123455008555181, guid: a8e631423c2a93b43b1bbf3e98fae6fd, type: 3}
       propertyPath: m_Name
       value: Door Default
+      objectReference: {fileID: 0}
+    - target: {fileID: 8426123455008555181, guid: a8e631423c2a93b43b1bbf3e98fae6fd, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -28826,6 +28838,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Door Input
       objectReference: {fileID: 0}
+    - target: {fileID: 683615066654245562, guid: 81fcfee5d00c8064d8cfb19f367c1b0f, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 7673456289008801265, guid: 81fcfee5d00c8064d8cfb19f367c1b0f, type: 3}
       propertyPath: m_SortingOrder
       value: 2500
@@ -29387,6 +29403,10 @@ PrefabInstance:
     - target: {fileID: 683615066654245562, guid: 81fcfee5d00c8064d8cfb19f367c1b0f, type: 3}
       propertyPath: m_Name
       value: Door Default
+      objectReference: {fileID: 0}
+    - target: {fileID: 683615066654245562, guid: 81fcfee5d00c8064d8cfb19f367c1b0f, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7673456289008801265, guid: 81fcfee5d00c8064d8cfb19f367c1b0f, type: 3}
       propertyPath: m_SortingOrder

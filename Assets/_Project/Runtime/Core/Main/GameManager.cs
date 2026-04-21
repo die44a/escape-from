@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
-using _Project.Core.Runtime.Core.Main;
+using _Project.Runtime.Core.Camera;
+using _Project.Runtime.Player.Controllers;
 using _Project.Services;
 using UnityEngine;
 using Zenject;
@@ -11,8 +12,9 @@ namespace _Project.Runtime.Core.Main
 {
     public sealed class GameManager : IInitializable, IDisposable
     {
-        [Inject]
-        private IInputService _inputService;
+        [Inject] private IInputService _inputService;
+        [Inject] private CameraPivotController _cameraPivot;
+        [Inject] private PlayerController _player;
 
         public event Action OnPauseGame;
         public event Action OnResumeGame;
@@ -68,9 +70,11 @@ namespace _Project.Runtime.Core.Main
 
         void IInitializable.Initialize()
         {
+            _cameraPivot.AttachTo(_player.gameObject);
+            
             State = GameState.PLAY;
             _inputService.SwitchToGameplay();
-        }
+        }   
 
         void IDisposable.Dispose()
         {
