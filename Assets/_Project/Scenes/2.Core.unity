@@ -119,17 +119,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!114 &11625451 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2805115840673266542, guid: 8b67daa6e3239234786037f0f65b3a00, type: 3}
-  m_PrefabInstance: {fileID: 2666080281102160151}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3676645a009008d4e850376efba3a5d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::_Project.Runtime.Core.UI.PauseScreen
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -238,7 +227,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 3.638889
+  orthographic size: 3.7083333
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -667,7 +656,6 @@ GameObject:
   - component: {fileID: 1933836248}
   - component: {fileID: 1933836249}
   - component: {fileID: 1933836250}
-  - component: {fileID: 1933836251}
   m_Layer: 0
   m_Name: '[System]'
   m_TagString: Untagged
@@ -707,7 +695,6 @@ MonoBehaviour:
   - {fileID: 1933836248}
   - {fileID: 1933836249}
   - {fileID: 1933836250}
-  - {fileID: 1933836251}
   _installerPrefabs: []
   _autoRun: 1
   OnPreInstall:
@@ -788,19 +775,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::_Project.Runtime.Core.Installers.CameraInstaller
   cameraPivot: {fileID: 1864374543}
---- !u!114 &1933836251
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1933836241}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58e5b293b796ef4499c7d11488ab10f1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::_Project.Runtime.Core.Installers.GameUIInstaller
-  pauseScreen: {fileID: 11625451}
 --- !u!1001 &2666080281102160151
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -809,25 +783,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3911871159465102055, guid: 8b67daa6e3239234786037f0f65b3a00, type: 3}
-      propertyPath: m_Camera
-      value: 
-      objectReference: {fileID: 519420031}
-    - target: {fileID: 3911871159465102055, guid: 8b67daa6e3239234786037f0f65b3a00, type: 3}
-      propertyPath: m_RenderMode
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3911871159465102055, guid: 8b67daa6e3239234786037f0f65b3a00, type: 3}
-      propertyPath: m_AdditionalShaderChannelsFlag
-      value: 25
-      objectReference: {fileID: 0}
     - target: {fileID: 6223120418398515357, guid: 8b67daa6e3239234786037f0f65b3a00, type: 3}
       propertyPath: m_Name
       value: '[UI]'
-      objectReference: {fileID: 0}
-    - target: {fileID: 6223120418398515357, guid: 8b67daa6e3239234786037f0f65b3a00, type: 3}
-      propertyPath: m_Layer
-      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6319984128716208092, guid: 8b67daa6e3239234786037f0f65b3a00, type: 3}
       propertyPath: m_LocalPosition.x

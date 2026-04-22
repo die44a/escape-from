@@ -10,8 +10,7 @@ using Zenject;
 
 namespace _Project.Runtime.Player.Controllers
 {
-    public class PlayerController : 
-        MonoBehaviour
+    public class PlayerController : MonoBehaviour, IGameFixedTickable
     {
         public PlayerState currentState;
         public event Action<PlayerState> OnStateChanged;
@@ -64,12 +63,13 @@ namespace _Project.Runtime.Player.Controllers
             }
         }
 
-        public void FixedUpdate()
+        public void FixedTick(float fixedDeltaTime)
         {
+            _moveInput = _moveAction.ReadValue<Vector2>();
+
             if (currentState is PlayerState.Dashing or PlayerState.Interacting)
                 return;
 
-            _moveInput = _moveAction.ReadValue<Vector2>();
             UpdateMoveState();
             _movementController.ApplyMovement(_moveInput);
         }
