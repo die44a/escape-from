@@ -1,5 +1,6 @@
 using _Project.Runtime.Core.Main;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using Zenject;
 
@@ -48,6 +49,9 @@ namespace _Project.Runtime.Core.UI
         private void Show()
         {
             gameObject.SetActive(true);
+            
+            EventSystem.current.SetSelectedGameObject(null);
+            EventSystem.current.SetSelectedGameObject(resumeButton.gameObject);
         }
 
         private void Hide()

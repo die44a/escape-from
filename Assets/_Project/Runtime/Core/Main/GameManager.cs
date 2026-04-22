@@ -41,6 +41,9 @@ namespace _Project.Runtime.Core.Main
                 if (listener is IGamePauseListener  startGameListener)
                     startGameListener.OnPauseGame();
             
+            _inputService.SwitchToUI();
+            Time.timeScale = 0f;
+            
             Debug.Log($"Game Paused: {State}");
         }
 
@@ -54,6 +57,9 @@ namespace _Project.Runtime.Core.Main
             foreach (var listener in _listeners)
                 if (listener is IGameResumeListener resumeGameListener)
                     resumeGameListener.OnResumeGame();
+            
+            _inputService.SwitchToGameplay();
+            Time.timeScale = 1f;
             
             Debug.Log($"Game Resumed: {State}");
         }
