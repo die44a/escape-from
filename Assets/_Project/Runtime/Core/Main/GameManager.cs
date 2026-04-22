@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using _Project.Runtime.Core.Camera;
 using _Project.Runtime.Player.Controllers;
 using _Project.Services;
+using _Project.Services.Input;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using Zenject;
 
 // ReSharper disable Unity.PerformanceCriticalCodeInvocation
@@ -15,12 +17,11 @@ namespace _Project.Runtime.Core.Main
         [Inject] private IInputService _inputService;
         [Inject] private CameraPivotController _cameraPivot;
         [Inject] private PlayerController _player;
-
-        public event Action OnPauseGame;
-        public event Action OnResumeGame;
         
         public GameState State { get; private set; }
         private readonly List<IGameListener> _listeners = new();
+
+        private InputAction _pauseAction;
         
         public void AddListener(IGameListener listener)
             => _listeners.Add(listener);
@@ -39,8 +40,6 @@ namespace _Project.Runtime.Core.Main
                 if (listener is IGamePauseListener  startGameListener)
                     startGameListener.OnPauseGame();
             
-            OnPauseGame?.Invoke();
-            
             Debug.Log($"Game Paused: {State}");
         }
 
@@ -55,12 +54,10 @@ namespace _Project.Runtime.Core.Main
                 if (listener is IGameResumeListener resumeGameListener)
                     resumeGameListener.OnResumeGame();
             
-            OnResumeGame?.Invoke();
-            
             Debug.Log($"Game Resumed: {State}");
         }
 
-        private void TogglePause()
+        private void TogglePause(InputAction.CallbackContext context)
         {
             if (State == GameState.PAUSED)
                 ResumeGame();
@@ -71,13 +68,16 @@ namespace _Project.Runtime.Core.Main
         void IInitializable.Initialize()
         {
             _cameraPivot.AttachTo(_player.gameObject);
-            
+            _pauseAction = _inputService.GetAction(InputMaps.Gameplay, PlayerActions.Pause);
+            _pauseAction.performed += TogglePause;
+
             State = GameState.PLAY;
             _inputService.SwitchToGameplay();
         }   
 
         void IDisposable.Dispose()
         {
+            _pauseAction.performed -= TogglePause;
         }
     }
 }
