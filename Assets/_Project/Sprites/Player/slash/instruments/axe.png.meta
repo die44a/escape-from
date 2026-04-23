@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 10a1cb180a8d1944d94d14888976e195
+guid: bf638faae007a1b49ab57f3eb616931e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7170875171343757855
-    second: Trap-Spikes-Floor_0
+      213: 6674386295937086461
+    second: axe_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 24
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Trap-Spikes-Floor_0
+      name: axe_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 96
-        height: 24
+        width: 8
+        height: 7
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f12fc94b9f0148360800000000000000
-      internalID: 7170875171343757855
+      spriteID: df3b01749fe20ac50800000000000000
+      internalID: 6674386295937086461
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Trap-Spikes-Floor_0: 7170875171343757855
+      axe_0: 6674386295937086461
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
