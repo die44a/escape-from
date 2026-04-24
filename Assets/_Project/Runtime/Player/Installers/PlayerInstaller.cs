@@ -22,9 +22,8 @@ namespace _Project.Runtime.Player.Installers
                 .FromComponentInHierarchy(playerPrefab)
                 .AsSingle();
             
-            Container.Bind<IHealthObservable>()
-                .To<HealthTimeController>()
-                .FromComponentInHierarchy()
+            Container.BindInterfacesAndSelfTo<HealthTimeController>()
+                .FromComponentInHierarchy(playerPrefab)
                 .AsSingle();
             
             Debug.Log("Player installed");

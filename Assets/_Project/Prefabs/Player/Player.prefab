@@ -16,7 +16,6 @@ GameObject:
   - component: {fileID: 8992285698937320613}
   - component: {fileID: -6113002115403245713}
   - component: {fileID: 285267417064515586}
-  - component: {fileID: 6353603981943061476}
   m_Layer: 6
   m_Name: Player
   m_TagString: Untagged
@@ -223,17 +222,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e62aaa90c2c9a294bae7f386f66bbe0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::_Project.Runtime.Player.Controllers.PlayerAnimationController
---- !u!114 &6353603981943061476
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2373793466803568562}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec9cde6b4b77e0d41b898733fc11732b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::_Project.Runtime.Player.Main.HealthTimeController
-  maxHealthTime: 60
-  currentHealthTime: 0

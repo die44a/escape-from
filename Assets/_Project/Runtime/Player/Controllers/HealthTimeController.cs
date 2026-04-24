@@ -1,13 +1,14 @@
 using System;
 using UnityEngine;
 
-namespace _Project.Runtime.Player.Main
+namespace _Project.Runtime.Player.Controllers
 {
     public class HealthTimeController : MonoBehaviour, IHealthObservable, IDamageable
     {
         [SerializeField] private float maxHealthTime = 60f; 
         
         private float _currentHealthTime;
+        private float _timeModifier;
     
         public event Action<float> OnHealthChanged; 
         public event Action OnDeath;
@@ -26,7 +27,7 @@ namespace _Project.Runtime.Player.Main
         {
             if (_isDead) return;
 
-            ReduceHealth(Time.deltaTime);
+            ReduceHealth(Time.deltaTime * _timeModifier);
         }
 
         public void ApplyDamage(float amount)
@@ -55,10 +56,13 @@ namespace _Project.Runtime.Player.Main
             Debug.Log("Игрок погиб (время истекло)");
             OnDeath?.Invoke();
         }
+        
+        public void SetTimeModifier(float multiplier)
+            => _timeModifier = Mathf.Max(multiplier, 0); 
 
         public void AddTime(float amount)
         {
-            if (_isDead) return;
+            if (_isDead || amount < 0) return;
             _currentHealthTime = Mathf.Min(_currentHealthTime + amount, maxHealthTime);
             OnHealthChanged?.Invoke(_currentHealthTime);
         }
