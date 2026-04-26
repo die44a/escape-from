@@ -24,7 +24,7 @@ namespace _Project.Runtime.Core.UI.HUD
             
             var timeString = $"{mins:00}:{secs:00}";
         
-            textDisplay.text = $"<color=#888888>---</color> {timeString} <color=#888888>---</color>";
+            textDisplay.text = $"{timeString}";
 
             if (currentTime < 20f)
             {

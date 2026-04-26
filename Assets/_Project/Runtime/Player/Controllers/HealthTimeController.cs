@@ -13,9 +13,9 @@ namespace _Project.Runtime.Player.Controllers
         [SerializeField] private float invulnerabilityDuration = 0.7f;
         
         private float _currentHealthTime;
-        private float _timeModifier;
-        private bool _isInvulnerable = false;
-        private bool _isDead = false;
+        private float _timeModifier = 1;
+        private bool _isInvulnerable;
+        private bool _isDead;
         
         public event Action<float> OnHealthChanged; 
         public event Action OnDeath;
