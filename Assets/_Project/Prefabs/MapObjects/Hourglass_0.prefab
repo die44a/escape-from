@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4410977306946339785}
   - component: {fileID: 1884457324123194211}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Hourglass_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -79,7 +79,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 4000
+  m_SortingOrder: 3600
   m_MaskInteraction: 0
   m_Sprite: {fileID: 6948327744988102790, guid: 9a0cae3b3eeaf8247a692e3712e103ec, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

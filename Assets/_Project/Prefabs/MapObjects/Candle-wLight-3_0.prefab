@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2964919619007829669}
   - component: {fileID: 42358736639659967}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Candle-wLight-3_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}

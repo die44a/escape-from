@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2832729209192578421}
   - component: {fileID: 1615897451918065394}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pottery-1_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}

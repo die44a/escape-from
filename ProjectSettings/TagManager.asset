@@ -11,10 +11,17 @@ TagManager:
   - 
   - Water
   - UI
+<<<<<<< Updated upstream
   - 
   - 
   - 
   - 
+=======
+  - Player
+  - Map
+  - Traps
+  - Props
+>>>>>>> Stashed changes
   - 
   - 
   - 

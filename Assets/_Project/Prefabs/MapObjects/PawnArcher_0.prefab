@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4859321852898465457}
   - component: {fileID: 486841359471266395}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: PawnArcher_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6221596533535254878}
   - component: {fileID: 3731328012851075402}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Skul-2l_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -79,7 +79,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 4000
+  m_SortingOrder: 3400
   m_MaskInteraction: 0
   m_Sprite: {fileID: 8747016888323071818, guid: d1dff09841afca94a95270581fd7cc60, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

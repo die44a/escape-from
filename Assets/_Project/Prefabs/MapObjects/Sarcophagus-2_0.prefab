@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6411672511497840523}
   - component: {fileID: 4269568125631227462}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Sarcophagus-2_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}

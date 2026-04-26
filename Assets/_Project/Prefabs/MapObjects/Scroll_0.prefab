@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8033674958605055375}
   - component: {fileID: 5224125948035691625}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Scroll_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -79,7 +79,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 4000
+  m_SortingOrder: 3400
   m_MaskInteraction: 0
   m_Sprite: {fileID: 897710771807637462, guid: 4c8bc73b412c6324c9cfcc7414699c99, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
