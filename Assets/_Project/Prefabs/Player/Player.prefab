@@ -145,7 +145,7 @@ Rigidbody2D:
     m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!70 &-6718136993913382119
 CapsuleCollider2D:
@@ -209,8 +209,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f2c9e4d8b1a6f3c5e0d9b2a7c4f1e8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::_Project.Player.Runtime.PlayerMovementController
-  moveSpeed: 6
-  dashForce: 20
+  moveSpeed: 4
+  knockbackDamping: 5
+  dashForce: 8
 --- !u!114 &285267417064515586
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -128,8 +128,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87f62d07c1354a41b2763e147b0508b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::_Project.Runtime.Core.Traps.SwingLogTrap
-  damageAmount: 20
-  knockbackForce: 200
+  damageAmount: 8
+  knockbackForce: 4
+  knockbackDuration: 0.2
   applyKnockback: 1
 --- !u!70 &1203197921057204929
 CapsuleCollider2D:
@@ -166,5 +167,5 @@ CapsuleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.45833334, y: 0.9583333}
+  m_Size: {x: 0.45833334, y: 1.09}
   m_Direction: 0
