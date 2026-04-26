@@ -4,10 +4,9 @@ using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using Zenject;
 
-namespace _Project.Runtime.Core.UI
+namespace _Project.Runtime.Core.UI.Pause
 {
     public class PauseScreen : MonoBehaviour, 
-        IInitializable, 
         IGamePauseListener,
         IGameResumeListener
     {
@@ -22,7 +21,7 @@ namespace _Project.Runtime.Core.UI
             _gameManager = gameManager;
         }
 
-        void IInitializable.Initialize()
+        private void Awake()
         {
             resumeButton.onClick.AddListener(OnResumeClicked);
             exitToMenuButton.onClick.AddListener(OnExitClicked);

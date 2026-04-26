@@ -379,6 +379,7 @@ GameObject:
   - component: {fileID: 8182247483915189773}
   - component: {fileID: 1925957250913000063}
   - component: {fileID: 8728504002460139610}
+  - component: {fileID: 9143336994384107002}
   m_Layer: 5
   m_Name: HUDScreen
   m_TagString: Untagged
@@ -444,6 +445,18 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &9143336994384107002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2414353733555463876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c5502d362c648fcacdb999e23d6ee33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::_Project.Runtime.Core.UI.HUD.HUDScreen
 --- !u!1 &2551594854538989992
 GameObject:
   m_ObjectHideFlags: 0
