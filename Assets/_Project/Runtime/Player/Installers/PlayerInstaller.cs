@@ -30,6 +30,10 @@ namespace _Project.Runtime.Player.Installers
                 .FromComponentInHierarchy()
                 .AsSingle();
             
+            Container.BindInterfacesTo<PlayerStats>()
+                .AsSingle()
+                .NonLazy();
+            
             Debug.Log("Player installed");
         }
     }
