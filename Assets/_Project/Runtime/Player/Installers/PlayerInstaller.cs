@@ -30,7 +30,7 @@ namespace _Project.Runtime.Player.Installers
                 .FromComponentInHierarchy()
                 .AsSingle();
             
-            Container.BindInterfacesTo<PlayerStats>()
+            Container.BindInterfacesAndSelfTo<PlayerStats>()
                 .AsSingle()
                 .NonLazy();
             

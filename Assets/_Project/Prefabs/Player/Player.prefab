@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: -6113002115403245713}
   - component: {fileID: 285267417064515586}
   - component: {fileID: -1867228688589405625}
+  - component: {fileID: 125251029383181965}
   m_Layer: 6
   m_Name: Player
   m_TagString: Untagged
@@ -212,6 +213,7 @@ MonoBehaviour:
   moveSpeed: 4
   knockbackDamping: 5
   dashForce: 8
+  dashCooldown: 1.5
 --- !u!114 &285267417064515586
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -240,3 +242,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::_Project.Runtime.Player.Controllers.HealthTimeController
   maxHealthTime: 60
   invulnerabilityDuration: 0.7
+--- !u!114 &125251029383181965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2373793466803568562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 614488d1954747945be2f3221f05fd25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::_Project.Runtime.Player.Controllers.PlayerWalletController
