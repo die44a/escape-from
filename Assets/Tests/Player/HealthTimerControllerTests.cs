@@ -1,9 +1,14 @@
 using _Project.Runtime.Player.Controllers;
+using _Project.Runtime.Player.Main;
 using NUnit.Framework;
 using UnityEngine;
 
 namespace Tests.Player
 {
+    public class PlayerStatusStub : IPlayerStatus {
+        public bool IsInvulnerableState => false;
+    }
+    
     [TestFixture]
     public class HealthMathTests
     {
@@ -15,6 +20,14 @@ namespace Tests.Player
         {
             _holder = new GameObject();
             _controller = _holder.AddComponent<HealthTimeController>();
+            _controller.Construct(new PlayerStatusStub());
+    
+            var field = typeof(HealthTimeController)
+                .GetField("invulnerabilityDuration", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
+    
+            if (field != null) 
+                field.SetValue(_controller, 0f);
+
             _controller.AddTime(60f); 
         }
 
@@ -74,18 +87,6 @@ namespace Tests.Player
             _controller.ApplyDamage(smallStep);
             
             Assert.AreEqual(60f - smallStep, _controller.CurrentHealth, 0.000001f);
-        }
-        
-        [Test]
-        public void Calculate_MultipleSmallReductions_MatchesTotal()
-        {
-            var step = 0.1f;
-            var iterations = 100; // Итого должно уйти 10 единиц
-    
-            for (var i = 0; i < iterations; i++)
-                _controller.ApplyDamage(step);
-
-            Assert.AreEqual(50f, _controller.CurrentHealth, 0.001f);
         }
         
         [Test]

@@ -7,7 +7,7 @@ namespace _Project.Runtime.Player.Controllers
 {
     public class HealthTimeController : MonoBehaviour, IHealthObservable, IDamageable
     {
-        [Inject] private IPlayerStatus _playerStatus;
+        private IPlayerStatus _playerStatus;
         
         [SerializeField] private float maxHealthTime = 60f; 
         [SerializeField] private float invulnerabilityDuration = 0.7f;
@@ -24,6 +24,11 @@ namespace _Project.Runtime.Player.Controllers
         public float CurrentHealth => _currentHealthTime;
         public float InvulnerabilityDuration => invulnerabilityDuration;
 
+        public void Construct(IPlayerStatus playerStatus)
+        {
+            _playerStatus = playerStatus;
+        }
+        
         private void Start()
         {
             _currentHealthTime = maxHealthTime;
