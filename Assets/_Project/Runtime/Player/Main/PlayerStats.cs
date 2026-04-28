@@ -4,31 +4,31 @@ namespace _Project.Runtime.Player.Main
 {
     public class PlayerStats
     {
-        private int _bronzeCoins;
-        private int _silverCoins;
-        private int _goldCoins;
-
+        public int BronzeCoins { get; private set; }
+        public int SilverCoins { get; private set; }
+        public int GoldCoins { get; private set; }
+        
         public event Action<int, int, int> OnCoinsChanged;
 
         public void AddBronze()
         {
-            _bronzeCoins++;
-            OnCoinsChanged?.Invoke(_bronzeCoins, _silverCoins, _goldCoins);
+            BronzeCoins++;
+            OnCoinsChanged?.Invoke(BronzeCoins, SilverCoins, GoldCoins);
         }
 
         public void AddSilver()
         {
-            _silverCoins++;
-            OnCoinsChanged?.Invoke(_bronzeCoins, _silverCoins, _goldCoins);
+            SilverCoins++;
+            OnCoinsChanged?.Invoke(BronzeCoins, SilverCoins, GoldCoins);
         }
 
         public void AddGold()
         {
-            _goldCoins++;
-            OnCoinsChanged?.Invoke(_bronzeCoins, _silverCoins, _goldCoins);
+            GoldCoins++;
+            OnCoinsChanged?.Invoke(BronzeCoins, SilverCoins, GoldCoins);
         }
 
         public int CalculateTotalScore()
-            => _bronzeCoins * 1 + _silverCoins * 5 + _goldCoins * 10;
+            => BronzeCoins * 1 + SilverCoins * 5 + GoldCoins * 10;
     }
 }
