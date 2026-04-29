@@ -126,7 +126,7 @@ TextureImporter:
         width: 11
         height: 11
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -148,7 +148,7 @@ TextureImporter:
         width: 11
         height: 11
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -165,12 +165,12 @@ TextureImporter:
       name: GoldCoinAnimated_2
       rect:
         serializedVersion: 2
-        x: 55
+        x: 54
         y: 7
-        width: 9
+        width: 11
         height: 11
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -187,12 +187,12 @@ TextureImporter:
       name: GoldCoinAnimated_3
       rect:
         serializedVersion: 2
-        x: 81
+        x: 79
         y: 7
-        width: 29
+        width: 11
         height: 11
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -209,12 +209,12 @@ TextureImporter:
       name: GoldCoinAnimated_4
       rect:
         serializedVersion: 2
-        x: 129
+        x: 127
         y: 7
-        width: 6
+        width: 11
         height: 11
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -231,12 +231,12 @@ TextureImporter:
       name: GoldCoinAnimated_5
       rect:
         serializedVersion: 2
-        x: 151
+        x: 150
         y: 7
-        width: 9
+        width: 11
         height: 11
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -258,7 +258,7 @@ TextureImporter:
         width: 11
         height: 11
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -271,11 +271,33 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: GoldCoinAnimated_7
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 7
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae1030f2a2d0e984da852508dd628387
+      internalID: 565352604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 0cedb93771d26b14380ed8a56268eb3b
     internalID: 0
     vertices: []
     indices: 
@@ -292,6 +314,7 @@ TextureImporter:
       GoldCoinAnimated_4: 557880870398828629
       GoldCoinAnimated_5: 6812579417897550382
       GoldCoinAnimated_6: 1237932777724819802
+      GoldCoinAnimated_7: 565352604
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

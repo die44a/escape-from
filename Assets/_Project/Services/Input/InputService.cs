@@ -56,7 +56,7 @@ namespace _Project.Services
             var map = Actions.FindActionMap(mapName, false);
             if (map == null)
             {
-                UnityEngine.Debug.LogError($"Input map '{mapName}' was not found");
+                 UnityEngine.Debug.LogError($"Input map '{mapName}' was not found");
                 return;
             }
 

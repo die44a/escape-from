@@ -13,7 +13,11 @@ GameObject:
   - component: {fileID: -1942489522877049416}
   - component: {fileID: 8860670839372929469}
   - component: {fileID: -6718136993913382119}
+  - component: {fileID: 8992285698937320613}
   - component: {fileID: -6113002115403245713}
+  - component: {fileID: 285267417064515586}
+  - component: {fileID: -1867228688589405625}
+  - component: {fileID: 125251029383181965}
   m_Layer: 6
   m_Name: Player
   m_TagString: Untagged
@@ -142,7 +146,7 @@ Rigidbody2D:
     m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!70 &-6718136993913382119
 CapsuleCollider2D:
@@ -178,9 +182,22 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0.77}
-  m_Size: {x: 0.7, y: 0.39}
-  m_Direction: 1
+  m_Offset: {x: 0, y: 0.94}
+  m_Size: {x: 0.51, y: 0.69}
+  m_Direction: 0
+--- !u!114 &8992285698937320613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2373793466803568562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d04f7cf6f8e176f45a266b041e495e5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::_Project.Runtime.Player.Controllers.PlayerController
+  currentState: 0
 --- !u!114 &-6113002115403245713
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -193,5 +210,47 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f2c9e4d8b1a6f3c5e0d9b2a7c4f1e8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::_Project.Player.Runtime.PlayerMovementController
-  moveSpeed: 6
-  gravityMultiplier: 1
+  moveSpeed: 4
+  knockbackDamping: 5
+  dashForce: 8
+  dashCooldown: 1.5
+--- !u!114 &285267417064515586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2373793466803568562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e62aaa90c2c9a294bae7f386f66bbe0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::_Project.Runtime.Player.Controllers.PlayerAnimationController
+  spriteRenderer: {fileID: 727867455613080140}
+  blinkInterval: 0.1
+--- !u!114 &-1867228688589405625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2373793466803568562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec9cde6b4b77e0d41b898733fc11732b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::_Project.Runtime.Player.Controllers.HealthTimeController
+  maxHealthTime: 60
+  invulnerabilityDuration: 0.7
+--- !u!114 &125251029383181965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2373793466803568562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 614488d1954747945be2f3221f05fd25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::_Project.Runtime.Player.Controllers.PlayerWalletController
