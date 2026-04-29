@@ -127,21 +127,24 @@ namespace _Project.Player.Runtime
                 {
                     Debug.Log($"Вижу дверь видимо");
                     foundInteractable = closest;
+                    _currentInteractable?.OnHoverExit(gameObject);
+                    _currentInteractable = foundInteractable;
+                    _currentInteractable?.OnHoverEnter(gameObject);
                     // closest.Interact(gameObject); // закрывает дверь
                 }
             }
 
-            if (foundInteractable != _currentInteractable)
-            {
-                _currentInteractable?.OnHoverExit(gameObject);
-                _currentInteractable = foundInteractable;
-                _currentInteractable?.OnHoverEnter(gameObject);
+            // if (foundInteractable != _currentInteractable)
+            // {
+            //     _currentInteractable?.OnHoverExit(gameObject);
+            //     _currentInteractable = foundInteractable;
+            //     _currentInteractable?.OnHoverEnter(gameObject);
                 
-                if (_currentInteractable != null)
-                    Debug.Log($"4. [PlayerInteractor] Вижу объект: {((MonoBehaviour)_currentInteractable).name}"); // Этот основной
-                    // просто вижу дверь
+            //     if (_currentInteractable != null)
+            //         Debug.Log($"4. [PlayerInteractor] Вижу объект: {((MonoBehaviour)_currentInteractable).name}"); // Этот основной
+            //         // просто вижу дверь
                 
-            }
+            // }
             if (foundInteractable == null && _currentInteractable != null)
             {
                 _currentInteractable.OnHoverExit(gameObject);
