@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: e3ba7983f0996a345bc2dc36fca66775
+guid: 37883cd40791155468426e73045017d5
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4856623365841396192
-    second: Barrel-6_0
+      213: -9139546488396919142
+    second: blackout_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Barrel-6_0
+      name: blackout_0
       rect:
         serializedVersion: 2
-        x: 13
-        y: 12
-        width: 22
-        height: 23
+        x: 0
+        y: 0
+        width: 24
+        height: 24
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0e1a6d04831366340800000000000000
-      internalID: 4856623365841396192
+      spriteID: a9ecee664eec92180800000000000000
+      internalID: -9139546488396919142
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 793e45e82e13ef9409764a0fc7d4c2e8
+    spriteID: 3e6a03e094b9d9e4eaeadd01f311a901
     internalID: 0
     vertices: []
     indices: 
@@ -133,9 +133,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Barrel-6_0: 4856623365841396192
+      blackout_0: -9139546488396919142
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
