@@ -43,7 +43,7 @@ namespace _Project.Runtime.Core.Levels
             _spawnService.Spawn(nextPoint);
             _healthTimeController.AddTime(60);
 
-            await Task.Delay(500);
+            await Task.Delay(1000);
             
             await _fader.FadeInAsync(1f);
         }
