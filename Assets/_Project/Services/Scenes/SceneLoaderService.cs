@@ -28,7 +28,7 @@ namespace _Project.Services.Scenes
 
         public async void LoadCoreScene()
         {
-            await _fader.FadeOutAsync(1);ё
+            await _fader.FadeOutAsync(1);
             _sceneLoader.LoadScene("2.Core");
             await Task.Delay(1000);
             await _fader.FadeInAsync(1);
