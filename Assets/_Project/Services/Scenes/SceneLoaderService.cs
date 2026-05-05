@@ -22,7 +22,7 @@ namespace _Project.Services.Scenes
         {
             await _fader.FadeOutAsync(1);
             _sceneLoader.LoadScene("1.Menu");
-            await Task.Delay(500);
+            await Task.Delay(1000);
             await _fader.FadeInAsync(1);
         }
 
@@ -30,7 +30,7 @@ namespace _Project.Services.Scenes
         {
             await _fader.FadeOutAsync(1);
             _sceneLoader.LoadScene("2.Core");
-            await Task.Delay(500);
+            await Task.Delay(1000);
             await _fader.FadeInAsync(1);
         }
     }
