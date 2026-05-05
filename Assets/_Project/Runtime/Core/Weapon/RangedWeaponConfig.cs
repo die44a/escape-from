@@ -2,8 +2,8 @@ using UnityEngine;
 
 namespace _Project.Runtime.Core.Weapon
 {
-    [CreateAssetMenu(fileName = "RangedWeaponData", menuName = "Project/Weapons/Ranged Data")]
-    public class RangedWeaponData : WeaponData
+    [CreateAssetMenu(fileName = "RangedWeaponConfig", menuName = "Configs/RangedWeaponConfig")]
+    public class RangedWeaponConfig : WeaponData
     {
         [Header("Ranged Specs")]
         public GameObject bulletPrefab;
