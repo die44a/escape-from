@@ -69,7 +69,7 @@ namespace _Project.Runtime.Enemy
         {
             if (_player == null) return false;
 
-            if (Physics2D.OverlapCircle(transform.position, detectionRadius, playerMask) == null)
+            if (Physics2D.OverlapCircle(_startPosition, detectionRadius, playerMask) == null)
                 return false;
 
             Vector2 directionToPlayer = (_player.transform.position - transform.position);
@@ -121,7 +121,8 @@ namespace _Project.Runtime.Enemy
         private void OnDrawGizmos()
         {
             Gizmos.color = Color.yellow;
-            Gizmos.DrawWireSphere(transform.position, detectionRadius);
+            var center = Application.isPlaying ? (Vector3)_startPosition : transform.position;
+            Gizmos.DrawWireSphere(center, detectionRadius);
 
             if (_player == null) return;
             var spotted = CanSeePlayer();
