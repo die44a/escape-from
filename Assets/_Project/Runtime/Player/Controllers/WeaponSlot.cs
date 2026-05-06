@@ -43,7 +43,15 @@ namespace _Project.Runtime.Player.Controllers
             
             if (lootBasePrefab && _currentConfig && _currentPrefab)
             {
-                var lootObj = _container.InstantiatePrefab(lootBasePrefab, transform.position, Quaternion.identity, null);
+                var randomZ = Random.Range(0f, 360f);
+                var randomRotation = Quaternion.Euler(0, 0, randomZ);
+                
+                var lootObj = _container.InstantiatePrefab(
+                    lootBasePrefab, 
+                    transform.position,
+                    randomRotation,
+                    null
+                );
 
                 if (lootObj.TryGetComponent<PickableWeapon>(out var pickable))
                     pickable.Setup(_currentPrefab, _currentConfig);
