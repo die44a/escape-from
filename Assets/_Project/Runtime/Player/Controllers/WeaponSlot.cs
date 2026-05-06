@@ -37,7 +37,7 @@ namespace _Project.Runtime.Player.Controllers
             _currentWeapon.InitWeapon(newConfig);
         }
 
-        private void DropWeapon()
+        public void DropWeapon()
         {
             if (!_currentWeapon) return;
             

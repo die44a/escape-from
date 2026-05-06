@@ -10,17 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3191acb1bb6e4e38a436c38ae475b0e8, type: 3}
-  m_Name: BasicSwordBronze
+  m_Name: BasicSpearSteel
   m_EditorClassIdentifier: Assembly-CSharp::_Project.Runtime.Core.Weapon.MeleeWeaponConfig
-  weaponSprite: {fileID: 7194347266644439649, guid: 5562adf8aa6d99b43ab261bbc0140227, type: 3}
-  animatorOverride: {fileID: 22100000, guid: 8ac97913ab91e6348889fea1b839020b, type: 2}
+  weaponSprite: {fileID: 0}
+  animatorOverride: {fileID: 0}
   type: 1
-  weaponName: BasicBronzeSword
+  weaponName: BasicSpearSteel
   attackRate: 0.2
   damage: 10
   knockbackForce: 4
   knockbackDuration: 0.3
   shape: 0
   boxSize: {x: 1.5, y: 0.5}
-  hitRadius: 0.7
+  hitRadius: 1.2
   hitEffectPrefab: {fileID: 0}

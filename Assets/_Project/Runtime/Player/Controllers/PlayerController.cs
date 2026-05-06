@@ -151,10 +151,14 @@ namespace _Project.Runtime.Player.Controllers
         {
             SetState(PlayerState.Dead);
             _movementController.StopPhysics();
+            _weaponSlot.DropWeapon();
         }
 
         private void OnAttack(InputAction.CallbackContext context)
         {
+            if (CurrentState is PlayerState.Dead or PlayerState.Dashing)
+                return;
+            
             _weaponSlot.TryAttack();
         }
         
