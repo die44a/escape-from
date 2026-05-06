@@ -6,7 +6,6 @@ namespace _Project.Runtime.Core.Weapon
     {
         [Header("Melee Specific")]
         [SerializeField] private MeleeWeaponConfig weaponConfig;
-        [SerializeField] private LayerMask enemyLayer;
 
         public override void TryAttack()
         {

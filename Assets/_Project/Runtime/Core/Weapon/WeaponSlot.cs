@@ -1,5 +1,4 @@
 using UnityEngine;
-using Zenject;
 
 namespace _Project.Runtime.Core.Weapon
 {
@@ -8,36 +7,31 @@ namespace _Project.Runtime.Core.Weapon
         [SerializeField] private GameObject lootBasePrefab; 
         
         private WeaponBase _currentWeapon;
-        private WeaponData _currentData;       
+        private WeaponConfig _currentConfig;       
         private GameObject _currentPrefab;    
         
-        private DiContainer _container;
-
-        [Inject]
-        public void Construct(DiContainer container) => _container = container;
-
-        public void SwapWeapon(GameObject newPrefab, WeaponData newData)
+        public void SwapWeapon(GameObject newPrefab, WeaponConfig newConfig)
         {
             if (_currentWeapon != null)
                 DropWeapon();
 
             _currentPrefab = newPrefab;
-            _currentData = newData;
+            _currentConfig = newConfig;
             
-            var obj = _container.InstantiatePrefab(newPrefab, transform.position, Quaternion.identity, transform);
+            var obj = Instantiate(newPrefab, transform.position, Quaternion.identity, transform);
     
             _currentWeapon = obj.GetComponent<WeaponBase>();
-            _currentWeapon.Initialize(newData);
+            _currentWeapon.InitWeapon(newConfig);
         }
 
         private void DropWeapon()
         {
-            if (lootBasePrefab == null || _currentData == null) return;
+            if (lootBasePrefab == null || _currentConfig == null) return;
 
-            var lootObj = _container.InstantiatePrefab(lootBasePrefab, transform.position, Quaternion.identity, null);
+            var lootObj = Instantiate(lootBasePrefab, transform.position, Quaternion.identity, null);
     
             if (lootObj.TryGetComponent<PickableWeapon>(out var pickable))
-                pickable.Setup(_currentPrefab, _currentData);
+                pickable.Setup(_currentPrefab, _currentConfig);
 
             Destroy(_currentWeapon.gameObject);
             _currentWeapon = null;

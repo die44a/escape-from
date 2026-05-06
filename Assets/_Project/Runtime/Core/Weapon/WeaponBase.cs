@@ -13,6 +13,7 @@ namespace _Project.Runtime.Core.Weapon
         [SerializeField] protected Transform visualChild;
         [SerializeField] private int baseSortingOrder = 3500;
         [SerializeField] private float verticalOffset = 1f; 
+        [SerializeField] protected LayerMask enemyLayer;
         
         protected PlayerController Player;
         protected Animator Animator;
@@ -32,12 +33,12 @@ namespace _Project.Runtime.Core.Weapon
             Animator = visualChild.GetComponent<Animator>();
         }
 
-        public virtual void Initialize(WeaponData data)
+        public virtual void InitWeapon(WeaponConfig config)
         {
-            SpriteRenderer.sprite = data.weaponSprite;
+            SpriteRenderer.sprite = config.weaponSprite;
     
-            if (data.animatorOverride != null)
-                Animator.runtimeAnimatorController = data.animatorOverride;
+            if (config.animatorOverride != null)
+                Animator.runtimeAnimatorController = config.animatorOverride;
         }
         
         protected virtual void LateUpdate()

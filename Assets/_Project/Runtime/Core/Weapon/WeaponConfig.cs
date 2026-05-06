@@ -2,10 +2,9 @@ using UnityEngine;
 
 namespace _Project.Runtime.Core.Weapon
 {
-    // Используем понятное имя для Enum
     public enum WeaponType { Ranged, Melee }
 
-    public abstract class WeaponData : ScriptableObject
+    public abstract class WeaponConfig : ScriptableObject
     {
         [Header("Visuals")]
         public Sprite weaponSprite;
