@@ -10,10 +10,15 @@ namespace _Project.Runtime.Enemy
         [SerializeField] private float patrolRadius = 3f;
         [SerializeField] private float patrolTargetClearance = 0.2f;
         [SerializeField] private int patrolTargetAttempts = 12;
+        
         [SerializeField] private LayerMask mapMask;
         [SerializeField] private LayerMask obstacleMask;
         [SerializeField] private LayerMask playerMask;
         [SerializeField] private Vector2 playerVisualOffset = new Vector2(0, 0.5f);
+        
+        [SerializeField] private float damageAmount = 2f;
+        [SerializeField] private float attackCooldown = 3f;
+        private float _lastAttackTime;
 
         private EnemyMovement _movement;
         private Vector2 _startPosition;
@@ -119,6 +124,17 @@ namespace _Project.Runtime.Enemy
             }
 
             _patrolTarget = _startPosition;
+        }
+        
+        private void OnCollisionStay2D(Collision2D collision)
+        {
+            // Проверяем, не пора ли снова ударить
+            if (Time.time - _lastAttackTime < attackCooldown) return;
+
+            // Пытаемся получить интерфейс урона у того, с кем столкнулись
+            if (!collision.gameObject.TryGetComponent<IDamageable>(out var damageable)) return;
+            damageable.ApplyDamage(damageAmount);
+            _lastAttackTime = Time.time;
         }
 
         private void OnDrawGizmos()
