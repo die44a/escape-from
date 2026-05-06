@@ -13,6 +13,7 @@ namespace _Project.Runtime.Core.Weapon
         [SerializeField] protected Transform visualChild;
         [SerializeField] private int baseSortingOrder = 3600;
         [SerializeField] private float verticalOffset = 1f; 
+        [SerializeField] protected LayerMask obstacleLayersMask;
         
         protected PlayerController Player;
         

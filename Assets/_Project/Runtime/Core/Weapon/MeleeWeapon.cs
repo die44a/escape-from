@@ -21,20 +21,21 @@ namespace _Project.Runtime.Core.Weapon
 
             _weaponConfig = config as MeleeWeaponConfig;
 
-            if (_weaponConfig == null)
+            if (!_weaponConfig)
                 Debug.LogError($"На объект {gameObject.name} пришел неверный тип конфига!");
         }
 
         public override void OnAnimationAction()
         {
+            if (!_weaponConfig) return;
+            
             Collider2D[] hitEnemies;
             Vector2 hitPos = visualChild.position;
             
+            var currentAngle = visualChild.rotation.eulerAngles.z + 45f;
+            
             if (_weaponConfig.shape == AttackShape.Box)
-            {
-                var angle = visualChild.eulerAngles.z;
-                hitEnemies = Physics2D.OverlapBoxAll(hitPos, _weaponConfig.boxSize, angle, ~0);
-            }
+                hitEnemies = Physics2D.OverlapBoxAll(hitPos, _weaponConfig.boxSize, currentAngle, ~0);
             else
                 hitEnemies = Physics2D.OverlapCircleAll(hitPos, _weaponConfig.hitRadius, ~0);
             
@@ -42,6 +43,11 @@ namespace _Project.Runtime.Core.Weapon
             {
                 if (hit.gameObject == Player.gameObject)
                     continue;
+                
+                var wallHit = Physics2D.Linecast(transform.position, hit.transform.position, obstacleLayersMask);
+                
+                if (wallHit.collider)
+                    continue; 
                 
                 if (hit.TryGetComponent(out IDamageable damageable))
                     damageable.ApplyDamage(_weaponConfig.damage);
@@ -57,22 +63,25 @@ namespace _Project.Runtime.Core.Weapon
 
         private void OnDrawGizmosSelected()
         {
-            if (!visualChild) return;
-            
+            if (!visualChild || _weaponConfig == null) return;
+    
             Gizmos.color = Color.red;
             var oldMatrix = Gizmos.matrix;
-            Gizmos.matrix = Matrix4x4.TRS(visualChild.position, visualChild.rotation, Vector3.one);
-            var shape = _weaponConfig != null ? _weaponConfig.shape : AttackShape.Circle;
-            if (shape == AttackShape.Box)
+            
+            var offset = Quaternion.Euler(0, 0, 45f);
+            Gizmos.matrix = Matrix4x4.TRS(visualChild.position, visualChild.rotation * offset, Vector3.one);
+
+            if (_weaponConfig.shape == AttackShape.Box)
             {
-                var size = _weaponConfig != null ? _weaponConfig.boxSize : new Vector2(1.2f, 0.6f);
-                Gizmos.DrawWireCube(Vector3.zero, size);
+                var finalSize = Vector2.Scale(_weaponConfig.boxSize, visualChild.lossyScale);
+                Gizmos.DrawWireCube(Vector3.zero, finalSize);
             }
             else
             {
-                var radius = _weaponConfig != null ? _weaponConfig.hitRadius : 1.2f;
-                Gizmos.DrawWireSphere(Vector3.zero, radius);
+                var finalRadius = _weaponConfig.hitRadius * Mathf.Max(visualChild.lossyScale.x, visualChild.lossyScale.y);
+                Gizmos.DrawWireSphere(Vector3.zero, finalRadius);
             }
+
             Gizmos.matrix = oldMatrix;
         }
     }

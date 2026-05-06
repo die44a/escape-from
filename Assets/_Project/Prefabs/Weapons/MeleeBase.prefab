@@ -177,3 +177,6 @@ MonoBehaviour:
   visualChild: {fileID: 3116145858609405818}
   baseSortingOrder: 3600
   verticalOffset: 1
+  obstacleLayersMask:
+    serializedVersion: 2
+    m_Bits: 0
