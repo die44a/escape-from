@@ -1,3 +1,4 @@
+using _Project.Runtime.Core.General;
 using _Project.Runtime.Player.Controllers;
 using UnityEngine;
 using Zenject;
@@ -10,16 +11,18 @@ namespace _Project.Runtime.Enemy
         [SerializeField] private float patrolRadius = 3f;
         [SerializeField] private float patrolTargetClearance = 0.2f;
         [SerializeField] private int patrolTargetAttempts = 12;
-        
         [SerializeField] private LayerMask mapMask;
         [SerializeField] private LayerMask obstacleMask;
         [SerializeField] private LayerMask playerMask;
         [SerializeField] private Vector2 playerVisualOffset = new Vector2(0, 0.5f);
-        
+        [SerializeField] private float stopDistanceToPlayer = 0.65f;
         [SerializeField] private float damageAmount = 2f;
         [SerializeField] private float attackCooldown = 3f;
+        [SerializeField] private float knockbackForce = 6f;
+        [SerializeField] private float knockbackDuration = 0.2f;
+        [SerializeField] private float attackRange = 0.75f;
+        
         private float _lastAttackTime;
-
         private EnemyMovement _movement;
         private Vector2 _startPosition;
         private Vector2 _patrolTarget;
@@ -59,7 +62,16 @@ namespace _Project.Runtime.Enemy
 
             if (_player != null && CanSeePlayer())
             {
-                _movement.MoveTowards(TargetPlayerPosition);
+                var toPlayer = TargetPlayerPosition - (Vector2)transform.position;
+                if (toPlayer.sqrMagnitude <= stopDistanceToPlayer * stopDistanceToPlayer)
+                {
+                    _movement.Stop();
+                    TryAttack();
+                }
+                else
+                {
+                    _movement.MoveTowards(TargetPlayerPosition);
+                }
             }
             
             else if (Vector2.Distance(transform.position, _startPosition) > 1f)
@@ -126,15 +138,28 @@ namespace _Project.Runtime.Enemy
             _patrolTarget = _startPosition;
         }
         
-        private void OnCollisionStay2D(Collision2D collision)
+        private void TryAttack()
         {
-            // Проверяем, не пора ли снова ударить
             if (Time.time - _lastAttackTime < attackCooldown) return;
 
-            // Пытаемся получить интерфейс урона у того, с кем столкнулись
-            if (!collision.gameObject.TryGetComponent<IDamageable>(out var damageable)) return;
+            var hit = Physics2D.OverlapCircle(TargetPlayerPosition, attackRange, playerMask);
+            if (hit == null) return;
+
+            if (!hit.gameObject.TryGetComponent<IDamageable>(out var damageable)) return;
             damageable.ApplyDamage(damageAmount);
+            
             _lastAttackTime = Time.time;
+
+            if (!hit.gameObject.TryGetComponent<MovementController>(out var movement)) return;
+            
+            Vector2 knockbackDirection = (hit.transform.position - transform.position).normalized;
+            movement.ApplyKnockback(knockbackDirection * knockbackForce, knockbackDuration);
+        }
+
+        private void OnCollisionEnter2D(Collision2D collision)
+        {
+            if (((1 << collision.gameObject.layer) & playerMask.value) == 0) return;
+            TryAttack();
         }
 
         private void OnDrawGizmos()

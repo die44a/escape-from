@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 134913640854709953}
   - component: {fileID: 5606491424565459252}
   - component: {fileID: 9088958947288858858}
-  - component: {fileID: 478893405123964624}
   - component: {fileID: 4826734729170713357}
+  - component: {fileID: 8086327993587530796}
   m_Layer: 15
   m_Name: Jopa
   m_TagString: Untagged
@@ -121,7 +121,7 @@ Rigidbody2D:
     m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!114 &5606491424565459252
 MonoBehaviour:
@@ -163,9 +163,34 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1024
   playerVisualOffset: {x: 0, y: 0.5}
+  damageAmount: 2
+  attackCooldown: 3
   playerOverride: {fileID: 0}
---- !u!61 &478893405123964624
-BoxCollider2D:
+--- !u!114 &4826734729170713357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1231601260395927733}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 561e3803440a48148241b92d3fc3269c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::_Project.Runtime.Enemy.EnemyDamageController
+  maxHealth: 100
+  invulnerabilityDuration: 0.2
+  onHealthChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  onHit:
+    m_PersistentCalls:
+      m_Calls: []
+  onDeath:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!58 &8086327993587530796
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -199,37 +224,4 @@ BoxCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.5, y: 0.5416667}
-    newSize: {x: 0.5, y: 0.5416667}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 0.5, y: 0.5416667}
-  m_EdgeRadius: 0
---- !u!114 &4826734729170713357
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1231601260395927733}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 561e3803440a48148241b92d3fc3269c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::_Project.Runtime.Enemy.EnemyDamageController
-  maxHealth: 100
-  invulnerabilityDuration: 0.2
-  onHealthChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  onHit:
-    m_PersistentCalls:
-      m_Calls: []
-  onDeath:
-    m_PersistentCalls:
-      m_Calls: []
+  m_Radius: 0.27083334
