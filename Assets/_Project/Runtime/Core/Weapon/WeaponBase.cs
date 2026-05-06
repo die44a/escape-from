@@ -12,7 +12,7 @@ namespace _Project.Runtime.Core.Weapon
         [SerializeField] protected float smoothSpeed = 12f;
         [SerializeField] protected Transform visualChild;
         [SerializeField] private int baseSortingOrder = 3500;
-        [SerializeField] private float verticalOffset = 0.5f; 
+        [SerializeField] private float verticalOffset = 1f; 
         
         protected PlayerController Player;
         protected Animator Animator;
@@ -32,6 +32,14 @@ namespace _Project.Runtime.Core.Weapon
             Animator = visualChild.GetComponent<Animator>();
         }
 
+        public virtual void Initialize(WeaponData data)
+        {
+            SpriteRenderer.sprite = data.weaponSprite;
+    
+            if (data.animatorOverride != null)
+                Animator.runtimeAnimatorController = data.animatorOverride;
+        }
+        
         protected virtual void LateUpdate()
         {
             if (Player.CurrentState == PlayerState.Dead)

@@ -12,10 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3191acb1bb6e4e38a436c38ae475b0e8, type: 3}
   m_Name: BasicSwordBronze
   m_EditorClassIdentifier: Assembly-CSharp::_Project.Runtime.Core.Weapon.MeleeWeaponConfig
-  type: 0
-  weaponName: 
-  weaponSprite: {fileID: 0}
+  weaponSprite: {fileID: 7194347266644439649, guid: 5562adf8aa6d99b43ab261bbc0140227, type: 3}
+  animatorOverride: {fileID: 0}
+  type: 1
+  weaponName: BasicBronzeSword
   attackRate: 0.2
   damage: 10
   hitRadius: 1.2
+  attackRate: 0.5
+  damage: 10
   hitEffectPrefab: {fileID: 0}
