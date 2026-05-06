@@ -19,6 +19,7 @@ GameObject:
   - component: {fileID: -1867228688589405625}
   - component: {fileID: 125251029383181965}
   - component: {fileID: 9058021629673717336}
+  - component: {fileID: 6262076782872876764}
   m_Layer: 6
   m_Name: Player
   m_TagString: Untagged
@@ -271,3 +272,16 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 16384
   originOffset: {x: 0, y: 0.5}
+--- !u!114 &6262076782872876764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2373793466803568562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d438f0123ecf4bfda72255ba937c3536, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::_Project.Runtime.Core.Weapon.WeaponSlot
+  lootBasePrefab: {fileID: 6990624169062482097, guid: 10830dec895eb7b4a840d4eee69bdc22, type: 3}

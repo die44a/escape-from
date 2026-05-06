@@ -2,10 +2,9 @@ using UnityEngine;
 
 namespace _Project.Runtime.Core.Weapon
 {
-    // Используем понятное имя для Enum
     public enum WeaponType { Ranged, Melee }
 
-    public abstract class WeaponData : ScriptableObject
+    public abstract class WeaponConfig : ScriptableObject
     {
         [Header("Visuals")]
         public Sprite weaponSprite;
@@ -16,5 +15,7 @@ namespace _Project.Runtime.Core.Weapon
         public string weaponName;
         public float attackRate = 0.2f;
         public float damage = 10f;
+        public float knockbackForce = 4f;
+        public float knockbackDuration = 0.3f;
     }
 }

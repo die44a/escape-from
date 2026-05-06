@@ -11,10 +11,16 @@ namespace _Project.Runtime.Core.Weapon
         [SerializeField] protected float orbitDistance = 0.7f;
         [SerializeField] protected float smoothSpeed = 12f;
         [SerializeField] protected Transform visualChild;
-        [SerializeField] private int baseSortingOrder = 3500;
+        [SerializeField] private int baseSortingOrder = 3600;
         [SerializeField] private float verticalOffset = 1f; 
+        [SerializeField] protected LayerMask obstacleLayersMask;
+        
+        [Header("Hand Placement")]
+        [SerializeField] private Vector2 rightHandOffset = new(-0.15f, -0.3f);
+        [SerializeField] private bool hideWhenBehindBack = true;
         
         protected PlayerController Player;
+        
         protected Animator Animator;
         protected SpriteRenderer SpriteRenderer;
         
@@ -24,7 +30,7 @@ namespace _Project.Runtime.Core.Weapon
         protected static readonly int AttackTrigger = Animator.StringToHash("attack");
 
         [Inject]
-        public void Construct(PlayerController player) => Player = player;
+        public void Construct(PlayerController player) => this.Player = player;
 
         protected virtual void Awake()
         {
@@ -32,12 +38,12 @@ namespace _Project.Runtime.Core.Weapon
             Animator = visualChild.GetComponent<Animator>();
         }
 
-        public virtual void Initialize(WeaponData data)
+        public virtual void InitWeapon(WeaponConfig config)
         {
-            SpriteRenderer.sprite = data.weaponSprite;
+            SpriteRenderer.sprite = config.weaponSprite;
     
-            if (data.animatorOverride != null)
-                Animator.runtimeAnimatorController = data.animatorOverride;
+            if (config.animatorOverride != null)
+                Animator.runtimeAnimatorController = config.animatorOverride;
         }
         
         protected virtual void LateUpdate()
@@ -55,16 +61,17 @@ namespace _Project.Runtime.Core.Weapon
             var dir = Player.LastDirection.normalized;
             if (dir.sqrMagnitude < 0.01f) dir = Vector2.right;
 
-            var playerCenter = Player.transform.position + new Vector3(0, verticalOffset, 0);
-            
-            var targetPos = playerCenter + (Vector3)(dir * orbitDistance);
+            var facingSign = dir.x < -0.01f ? -1f : 1f;
+            var handOffset = new Vector3(rightHandOffset.x * facingSign, rightHandOffset.y + verticalOffset, 0f);
+            var playerCenter = Player.transform.position;
+            var targetPos = playerCenter + handOffset + (Vector3)(dir * orbitDistance);
             transform.position = Vector3.SmoothDamp(transform.position, targetPos, ref _currentVelocity, 1f / smoothSpeed);
-
+            
             var angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
-            transform.rotation = Quaternion.Euler(0, 0, angle);
+            transform.rotation = Quaternion.Euler(0, 0, angle - 90f);
 
-            SpriteRenderer.flipY = dir.x < 0;
-            SpriteRenderer.sortingOrder = baseSortingOrder + (dir.y > 0 ? -1 : 1);
+            var isBehind = dir.y > 0.1f;
+            SpriteRenderer.sortingOrder = baseSortingOrder + (isBehind ? -1 : 1);
         }
 
         public abstract void TryAttack();

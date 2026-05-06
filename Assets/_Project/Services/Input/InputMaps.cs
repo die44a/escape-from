@@ -12,5 +12,6 @@ namespace _Project.Services.Input
         public const string Dash = "Dash";
         public const string Interact = "Interact";
         public const string Pause = "Pause";
+        public const string Attack = "Attack";
     }
 }

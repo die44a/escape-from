@@ -1,6 +1,6 @@
 using System;
 using _Project.Runtime.Interfaces;
-using _Project.Runtime.Player.Main;
+using _Project.Runtime.Player.Controllers;
 using UnityEngine;
 
 namespace _Project.Runtime.Core.Weapon
@@ -8,22 +8,25 @@ namespace _Project.Runtime.Core.Weapon
     public class PickableWeapon : MonoBehaviour, IInteractable
     {
         [Header("Weapon Setup")]
-        [SerializeField] private WeaponData weaponData; 
+        [SerializeField] private WeaponConfig weaponConfig; 
         [SerializeField] private GameObject weaponPrefab; 
 
         [Header("Visuals")]
         [SerializeField] private SpriteRenderer spriteRenderer;
         
-        public void Setup(GameObject prefab, WeaponData data)
+        public void Setup(GameObject prefab, WeaponConfig config)
         {
             weaponPrefab = prefab;
-            weaponData = data;
-            if (spriteRenderer != null) spriteRenderer.sprite = data.weaponSprite;
+            weaponConfig = config;
+            if (spriteRenderer) spriteRenderer.sprite = config.weaponSprite;
         }
 
         private void Start()
         {
-            if (weaponData != null) spriteRenderer.sprite = weaponData.weaponSprite;
+            if (weaponConfig) 
+                spriteRenderer.sprite = weaponConfig.weaponSprite;
+            else
+                Debug.LogWarning($"Sprite Renderer not set at {name}");
         }
 
         public SpriteRenderer Renderer => spriteRenderer;
@@ -33,13 +36,13 @@ namespace _Project.Runtime.Core.Weapon
         {
             if (initiator.TryGetComponent<WeaponSlot>(out var slot))
             {
-                slot.SwapWeapon(weaponPrefab, weaponData);
+                slot.SwapWeapon(weaponPrefab, weaponConfig);
             
                 onComplete?.Invoke();
                 Destroy(gameObject);
             }
         }
 
-        public string GetInteractionLabel() => $"Поднять {weaponData?.weaponName}";
+        public string GetInteractionLabel() => $"Поднять {weaponConfig?.weaponName}";
     }
 }
