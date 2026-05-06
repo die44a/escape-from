@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &6191355971119356498
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1423550496949997645, guid: 3980dd850d37afa48991da6a08a8d0e5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423550496949997645, guid: 3980dd850d37afa48991da6a08a8d0e5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423550496949997645, guid: 3980dd850d37afa48991da6a08a8d0e5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423550496949997645, guid: 3980dd850d37afa48991da6a08a8d0e5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423550496949997645, guid: 3980dd850d37afa48991da6a08a8d0e5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423550496949997645, guid: 3980dd850d37afa48991da6a08a8d0e5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423550496949997645, guid: 3980dd850d37afa48991da6a08a8d0e5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423550496949997645, guid: 3980dd850d37afa48991da6a08a8d0e5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423550496949997645, guid: 3980dd850d37afa48991da6a08a8d0e5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423550496949997645, guid: 3980dd850d37afa48991da6a08a8d0e5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4656196027579421050, guid: 3980dd850d37afa48991da6a08a8d0e5, type: 3}
+      propertyPath: m_Name
+      value: BasicBronzeSword
+      objectReference: {fileID: 0}
+    - target: {fileID: 7091818361950786709, guid: 3980dd850d37afa48991da6a08a8d0e5, type: 3}
+      propertyPath: weaponConfig
+      value: 
+      objectReference: {fileID: 11400000, guid: ca1ca812b6b85b44ebea54f9f6e88878, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3980dd850d37afa48991da6a08a8d0e5, type: 3}
