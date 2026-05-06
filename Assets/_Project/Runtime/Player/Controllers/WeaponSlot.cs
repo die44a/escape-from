@@ -1,24 +1,28 @@
+using _Project.Runtime.Core.Weapon;
+using _Project.Services;
+using _Project.Services.Input;
 using UnityEngine;
 using Zenject;
 
-namespace _Project.Runtime.Core.Weapon
+namespace _Project.Runtime.Player.Controllers
 {
     public class WeaponSlot : MonoBehaviour
     {
-        [SerializeField] private GameObject lootBasePrefab; 
-        
+        [SerializeField] private GameObject lootBasePrefab;
+
         private WeaponBase _currentWeapon;
-        private WeaponConfig _currentConfig;       
+        private WeaponConfig _currentConfig;
         private GameObject _currentPrefab;
-        
+
         private DiContainer _container;
-        
+
         [Inject]
-        public void Construct(DiContainer container)
+        public void Construct(
+            DiContainer container)
         {
             _container = container;
         }
-        
+
         public void SwapWeapon(GameObject newPrefab, WeaponConfig newConfig)
         {
             if (_currentWeapon)
@@ -53,7 +57,10 @@ namespace _Project.Runtime.Core.Weapon
             _currentConfig = null;
             _currentPrefab = null;
         }
-        
-        public void TryAttack() => _currentWeapon?.TryAttack();
+
+        public void TryAttack()
+        {
+            _currentWeapon?.TryAttack();
+        }
     }
 }

@@ -18,6 +18,7 @@ namespace _Project.Runtime.Player.Controllers
         private IHealthObservable _healthObservable;
         private PlayerMovementController _movementController;
         private PlayerInteractorController _interactorController;
+        private WeaponSlot _weaponSlot;
         
         public PlayerState CurrentState { get; private set; }
         public Vector2 MoveInput => _moveInput;
@@ -31,18 +32,21 @@ namespace _Project.Runtime.Player.Controllers
         private InputAction _moveAction;
         private InputAction _dashAction;
         private InputAction _interactAction;
+        private InputAction _attackAction;
 
         [Inject]
         private void Construct(
             PlayerMovementController movementController,
             IInputService inputService,
             IHealthObservable healthObservable,
-            PlayerInteractorController interactorController)
+            PlayerInteractorController interactorController,
+            WeaponSlot weaponSlot)
         {
             _movementController = movementController;
             _inputService = inputService;
             _healthObservable = healthObservable;
             _interactorController = interactorController;
+            _weaponSlot = weaponSlot;
         }
 
         private void Start()
@@ -50,10 +54,12 @@ namespace _Project.Runtime.Player.Controllers
             _moveAction = _inputService.GetAction(InputMaps.Gameplay, PlayerActions.Move);
             _dashAction = _inputService.GetAction(InputMaps.Gameplay, PlayerActions.Dash);
             _interactAction = _inputService.GetAction(InputMaps.Gameplay, PlayerActions.Interact);
-
+            _attackAction = _inputService.GetAction(InputMaps.Gameplay, PlayerActions.Attack);
+            
             _dashAction.performed += OnDashPerformed;
             _interactAction.performed += OnInteractPerformed;
             _healthObservable.OnDeath += OnDeath;
+            _attackAction.performed += OnAttack;
         }
 
         private void OnDestroy()
@@ -61,6 +67,7 @@ namespace _Project.Runtime.Player.Controllers
             _dashAction.performed -= OnDashPerformed;
             _interactAction.performed -= OnInteractPerformed;
             _healthObservable.OnDeath -= OnDeath;
+            _attackAction.performed -= OnAttack;
         }
 
         private void OnDashPerformed(InputAction.CallbackContext context)
@@ -144,6 +151,11 @@ namespace _Project.Runtime.Player.Controllers
         {
             SetState(PlayerState.Dead);
             _movementController.StopPhysics();
+        }
+
+        private void OnAttack(InputAction.CallbackContext context)
+        {
+            _weaponSlot.TryAttack();
         }
         
         public void ResetPlayer(Vector3 spawnPosition)

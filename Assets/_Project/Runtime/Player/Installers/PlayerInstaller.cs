@@ -39,6 +39,11 @@ namespace _Project.Runtime.Player.Installers
             Container.BindInterfacesAndSelfTo<PlayerStats>()
                 .AsSingle()
                 .NonLazy();
+            
+            Container.BindInterfacesAndSelfTo<WeaponSlot>()
+                .FromComponentInHierarchy()
+                .AsSingle()
+                .NonLazy();
 
             Container.BindInterfacesAndSelfTo<PlayerSpawnService>()
                 .AsSingle();

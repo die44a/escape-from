@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3116145858609405818}
   - component: {fileID: 6335625755564729703}
   - component: {fileID: 5503092110084983391}
+  - component: {fileID: 5435229647406503752}
   m_Layer: 0
   m_Name: View
   m_TagString: Untagged
@@ -87,7 +88,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.6666667, y: 0.6666667}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0
@@ -114,6 +115,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &5435229647406503752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1003016873770300435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c419f1e6043345b2838f4a72b93ecc75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::_Project.Runtime.Core.Weapon.AnimationEventProxy
 --- !u!1 &4656196027579421050
 GameObject:
   m_ObjectHideFlags: 0
@@ -162,9 +175,5 @@ MonoBehaviour:
   orbitDistance: 0.5
   smoothSpeed: 12
   visualChild: {fileID: 3116145858609405818}
-  baseSortingOrder: 3500
-  verticalOffset: 0.5
-  enemyLayer:
-    serializedVersion: 2
-    m_Bits: 32768
-  weaponConfig: {fileID: 0}
+  baseSortingOrder: 3600
+  verticalOffset: 1

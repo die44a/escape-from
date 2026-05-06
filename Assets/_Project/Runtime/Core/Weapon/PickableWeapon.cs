@@ -1,5 +1,6 @@
 using System;
 using _Project.Runtime.Interfaces;
+using _Project.Runtime.Player.Controllers;
 using UnityEngine;
 
 namespace _Project.Runtime.Core.Weapon
