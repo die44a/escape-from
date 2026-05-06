@@ -48,14 +48,54 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3116145858609405818, guid: 3980dd850d37afa48991da6a08a8d0e5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.92387956
+      objectReference: {fileID: 0}
+    - target: {fileID: 3116145858609405818, guid: 3980dd850d37afa48991da6a08a8d0e5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.38268343
+      objectReference: {fileID: 0}
+    - target: {fileID: 3116145858609405818, guid: 3980dd850d37afa48991da6a08a8d0e5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 45
+      objectReference: {fileID: 0}
     - target: {fileID: 4656196027579421050, guid: 3980dd850d37afa48991da6a08a8d0e5, type: 3}
       propertyPath: m_Name
-      value: BasicBronzeSword
+      value: BasicSwordBronze
+      objectReference: {fileID: 0}
+    - target: {fileID: 5503092110084983391, guid: 3980dd850d37afa48991da6a08a8d0e5, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 22100000, guid: 8ac97913ab91e6348889fea1b839020b, type: 2}
+    - target: {fileID: 6335625755564729703, guid: 3980dd850d37afa48991da6a08a8d0e5, type: 3}
+      propertyPath: m_Size.x
+      value: 0.6666667
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335625755564729703, guid: 3980dd850d37afa48991da6a08a8d0e5, type: 3}
+      propertyPath: m_Size.y
+      value: 0.6666667
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335625755564729703, guid: 3980dd850d37afa48991da6a08a8d0e5, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 7194347266644439649, guid: 5562adf8aa6d99b43ab261bbc0140227, type: 3}
+    - target: {fileID: 6335625755564729703, guid: 3980dd850d37afa48991da6a08a8d0e5, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7091818361950786709, guid: 3980dd850d37afa48991da6a08a8d0e5, type: 3}
       propertyPath: weaponConfig
       value: 
       objectReference: {fileID: 11400000, guid: ca1ca812b6b85b44ebea54f9f6e88878, type: 2}
+    - target: {fileID: 7091818361950786709, guid: 3980dd850d37afa48991da6a08a8d0e5, type: 3}
+      propertyPath: verticalOffset
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7091818361950786709, guid: 3980dd850d37afa48991da6a08a8d0e5, type: 3}
+      propertyPath: baseSortingOrder
+      value: 3600
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

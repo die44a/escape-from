@@ -15,7 +15,7 @@ namespace _Project.Runtime.Core.Weapon
         [SerializeField] private float verticalOffset = 1f; 
         [SerializeField] protected LayerMask enemyLayer;
         
-        protected PlayerController player;
+        protected PlayerController Player;
         
         protected Animator Animator;
         protected SpriteRenderer SpriteRenderer;
@@ -26,7 +26,7 @@ namespace _Project.Runtime.Core.Weapon
         protected static readonly int AttackTrigger = Animator.StringToHash("attack");
 
         [Inject]
-        public void Construct(PlayerController player) => this.player = player;
+        public void Construct(PlayerController player) => this.Player = player;
 
         protected virtual void Awake()
         {
@@ -44,7 +44,7 @@ namespace _Project.Runtime.Core.Weapon
         
         protected virtual void LateUpdate()
         {
-            if (player.CurrentState == PlayerState.Dead)
+            if (Player.CurrentState == PlayerState.Dead)
             {
                 SpriteRenderer.enabled = false;
                 return;
@@ -54,18 +54,16 @@ namespace _Project.Runtime.Core.Weapon
 
         private void UpdatePositionAndRotation()
         {
-            var dir = player.LastDirection.normalized;
+            var dir = Player.LastDirection.normalized;
             if (dir.sqrMagnitude < 0.01f) dir = Vector2.right;
 
-            var playerCenter = player.transform.position + new Vector3(0, verticalOffset, 0);
-            
+            var playerCenter = Player.transform.position + new Vector3(0, verticalOffset, 0);
             var targetPos = playerCenter + (Vector3)(dir * orbitDistance);
             transform.position = Vector3.SmoothDamp(transform.position, targetPos, ref _currentVelocity, 1f / smoothSpeed);
-
+            
             var angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
-            transform.rotation = Quaternion.Euler(0, 0, angle);
+            transform.rotation = Quaternion.Euler(0, 0, angle - 90f);
 
-            SpriteRenderer.flipY = dir.x < 0;
             SpriteRenderer.sortingOrder = baseSortingOrder + (dir.y > 0 ? -1 : 1);
         }
 
