@@ -1,3 +1,4 @@
+using _Project.Runtime.Core.General;
 using UnityEngine;
 
 namespace _Project.Runtime.Core.Weapon
@@ -36,6 +37,13 @@ namespace _Project.Runtime.Core.Weapon
                 
                 if (hit.TryGetComponent(out IDamageable damageable))
                     damageable.ApplyDamage(_weaponConfig.damage);
+                
+                if (hit.TryGetComponent(out MovementController moveCtrl))
+                {
+                    Vector2 knockbackDir = (hit.transform.position - Player.transform.position).normalized;
+
+                    moveCtrl.ApplyKnockback(knockbackDir * _weaponConfig.knockbackForce, _weaponConfig.knockbackDuration);
+                }
             }
         }
 

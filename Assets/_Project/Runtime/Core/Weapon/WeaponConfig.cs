@@ -15,5 +15,7 @@ namespace _Project.Runtime.Core.Weapon
         public string weaponName;
         public float attackRate = 0.2f;
         public float damage = 10f;
+        public float knockbackForce = 4f;
+        public float knockbackDuration = 0.3f;
     }
 }
