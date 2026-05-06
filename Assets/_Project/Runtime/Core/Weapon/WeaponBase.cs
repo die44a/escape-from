@@ -11,11 +11,12 @@ namespace _Project.Runtime.Core.Weapon
         [SerializeField] protected float orbitDistance = 0.7f;
         [SerializeField] protected float smoothSpeed = 12f;
         [SerializeField] protected Transform visualChild;
-        [SerializeField] private int baseSortingOrder = 3500;
+        [SerializeField] private int baseSortingOrder = 3600;
         [SerializeField] private float verticalOffset = 1f; 
         [SerializeField] protected LayerMask enemyLayer;
         
-        protected PlayerController Player;
+        protected PlayerController player;
+        
         protected Animator Animator;
         protected SpriteRenderer SpriteRenderer;
         
@@ -25,7 +26,7 @@ namespace _Project.Runtime.Core.Weapon
         protected static readonly int AttackTrigger = Animator.StringToHash("attack");
 
         [Inject]
-        public void Construct(PlayerController player) => Player = player;
+        public void Construct(PlayerController player) => this.player = player;
 
         protected virtual void Awake()
         {
@@ -43,7 +44,7 @@ namespace _Project.Runtime.Core.Weapon
         
         protected virtual void LateUpdate()
         {
-            if (Player.CurrentState == PlayerState.Dead)
+            if (player.CurrentState == PlayerState.Dead)
             {
                 SpriteRenderer.enabled = false;
                 return;
@@ -53,10 +54,10 @@ namespace _Project.Runtime.Core.Weapon
 
         private void UpdatePositionAndRotation()
         {
-            var dir = Player.LastDirection.normalized;
+            var dir = player.LastDirection.normalized;
             if (dir.sqrMagnitude < 0.01f) dir = Vector2.right;
 
-            var playerCenter = Player.transform.position + new Vector3(0, verticalOffset, 0);
+            var playerCenter = player.transform.position + new Vector3(0, verticalOffset, 0);
             
             var targetPos = playerCenter + (Vector3)(dir * orbitDistance);
             transform.position = Vector3.SmoothDamp(transform.position, targetPos, ref _currentVelocity, 1f / smoothSpeed);

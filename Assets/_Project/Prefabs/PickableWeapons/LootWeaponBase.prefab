@@ -169,7 +169,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.3, y: 0.3}
   m_EdgeRadius: 0
 --- !u!114 &8337139374149130969
 MonoBehaviour:
@@ -183,6 +183,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9bad5afee55f440086ca95d64916d931, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::_Project.Runtime.Core.Weapon.PickableWeapon
-  weaponData: {fileID: 0}
+  weaponConfig: {fileID: 0}
   weaponPrefab: {fileID: 0}
   spriteRenderer: {fileID: 625994544467646697}

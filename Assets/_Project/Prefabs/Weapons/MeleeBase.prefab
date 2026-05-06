@@ -159,12 +159,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec22b97cf4a34560afe659e3d3a1e72b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::_Project.Runtime.Core.Weapon.MeleeWeapon
-  orbitDistance: 0.7
+  orbitDistance: 0.5
   smoothSpeed: 12
   visualChild: {fileID: 3116145858609405818}
   baseSortingOrder: 3500
   verticalOffset: 0.5
-  weaponConfig: {fileID: 0}
   enemyLayer:
     serializedVersion: 2
     m_Bits: 32768
+  weaponConfig: {fileID: 0}
