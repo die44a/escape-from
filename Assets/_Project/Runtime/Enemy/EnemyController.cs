@@ -6,13 +6,14 @@ namespace _Project.Runtime.Enemy
 {
     public class EnemyController : MonoBehaviour
     {
-        [SerializeField] private float detectionRadius = 5f;
+        [SerializeField] private float detectionRadius = 2f;
         [SerializeField] private float patrolRadius = 3f;
         [SerializeField] private float patrolTargetClearance = 0.2f;
         [SerializeField] private int patrolTargetAttempts = 12;
         [SerializeField] private LayerMask mapMask;
         [SerializeField] private LayerMask obstacleMask;
         [SerializeField] private LayerMask playerMask;
+        [SerializeField] private Vector2 playerVisualOffset = new Vector2(0, 0.5f);
 
         private EnemyMovement _movement;
         private Vector2 _startPosition;
@@ -20,6 +21,8 @@ namespace _Project.Runtime.Enemy
         
         [Inject(Optional = true)] private PlayerController _player;
         [SerializeField] private PlayerController playerOverride;
+        
+        private Vector2 TargetPlayerPosition => (Vector2)_player.transform.position + playerVisualOffset;
 
         private void Awake()
         {
@@ -51,7 +54,7 @@ namespace _Project.Runtime.Enemy
 
             if (_player != null && CanSeePlayer())
             {
-                _movement.MoveTowards(_player.transform.position);
+                _movement.MoveTowards(TargetPlayerPosition);
             }
             
             else if (Vector2.Distance(transform.position, _startPosition) > 1f)
@@ -71,8 +74,8 @@ namespace _Project.Runtime.Enemy
 
             if (Physics2D.OverlapCircle(_startPosition, detectionRadius, playerMask) == null)
                 return false;
-
-            Vector2 directionToPlayer = (_player.transform.position - transform.position);
+            
+            var directionToPlayer = (TargetPlayerPosition - (Vector2)transform.position);
             var distance = directionToPlayer.magnitude;
 
             if (distance > detectionRadius) return false;
@@ -97,7 +100,7 @@ namespace _Project.Runtime.Enemy
         {
             _movement.MoveTowards(_patrolTarget);
 
-            if (Vector2.Distance(transform.position, _patrolTarget) < 0.7f)
+            if (Vector2.Distance(transform.position, _patrolTarget) < 0.2f)
             {
                 SetNewPatrolTarget();
             }
