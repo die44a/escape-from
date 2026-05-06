@@ -48,6 +48,13 @@ namespace _Project.Runtime.Core.General
         }
 
         public void Stop() => Rb.linearVelocity = Vector2.zero;
+
+        public void StopPhysics()
+        {
+            Rb.linearVelocity = Vector2.zero;
+            Rb.angularVelocity = 0f;
+            Rb.simulated = false;
+        }
         
         public bool GetKnockbackStatus() => IsKnockedBack;
     }

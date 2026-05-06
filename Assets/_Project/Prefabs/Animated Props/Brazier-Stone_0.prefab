@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8257903167631745269}
   - component: {fileID: 5860642716124169380}
   - component: {fileID: 8039595314120614040}
+  - component: {fileID: 8160794740353690507}
   m_Layer: 0
   m_Name: Brazier-Stone_0
   m_TagString: Untagged
@@ -114,3 +115,15 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &8160794740353690507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4288904943091282121}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ed74102317945f4babc432ad0e29057, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RandomAnimationOffset

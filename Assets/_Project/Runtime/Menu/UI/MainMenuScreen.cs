@@ -1,5 +1,7 @@
+using System;
 using _Project.Runtime.Menu.Main;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using Zenject;
 
@@ -16,6 +18,12 @@ namespace _Project.Runtime.Menu.UI
         {
             _menuManager = menuManager;
             gameObject.SetActive(true);
+        }
+
+        private void OnEnable()
+        {
+            EventSystem.current.SetSelectedGameObject(null);
+            EventSystem.current.SetSelectedGameObject(startButton.gameObject);
         }
 
         private void Awake()

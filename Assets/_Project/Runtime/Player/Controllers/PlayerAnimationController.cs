@@ -8,23 +8,29 @@ namespace _Project.Runtime.Player.Controllers
 {
     public class PlayerAnimationController : MonoBehaviour, IGameLateTickable
     {
-        [Inject] IHealthObservable _healthObservable;
-        
         [SerializeField] private SpriteRenderer spriteRenderer;
-        
         [SerializeField] private float blinkInterval = 0.1f;
+        
+        private IHealthObservable _healthObservable;
+        private IPlayerStatus _playerController;
+        private Animator _animator;
         
         private static readonly int WalkKey = Animator.StringToHash("walk");
         private static readonly int DeadKey = Animator.StringToHash("dead");
         private static readonly int DirectionKey = Animator.StringToHash("direction");
-
-        private Animator _animator;
-        private PlayerController _playerController;
-
+        
+        [Inject]
+        private void Construct(
+            IPlayerStatus playerController,
+            IHealthObservable healthObservable)
+        {
+            _playerController = playerController;
+            _healthObservable = healthObservable;
+        }
+        
         private void Awake()
         {
             _animator = GetComponent<Animator>();
-            _playerController = GetComponentInParent<PlayerController>();
         }
 
         private void OnEnable()
@@ -69,9 +75,7 @@ namespace _Project.Runtime.Player.Controllers
 
         public void LateTick(float deltaTime)
         {
-            if (!_playerController) return;
-            
-            UpdateDirection(_playerController.MoveInput);
+            UpdateDirection(_playerController.LastDirection);
         }
 
         private void HandleStateChanged(PlayerState newState)
@@ -90,13 +94,9 @@ namespace _Project.Runtime.Player.Controllers
 
             var dir = 0;
             if (Mathf.Abs(moveInput.x) > Mathf.Abs(moveInput.y))
-            {
                 dir = moveInput.x > 0 ? 3 : 2;
-            }
             else
-            {
                 dir = moveInput.y > 0 ? 1 : 0;
-            }
 
             _animator.SetInteger(DirectionKey, dir);
         }

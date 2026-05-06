@@ -1,4 +1,5 @@
 using _Project.Services;
+using _Project.Services.Scenes;
 using Zenject;
 
 namespace _Project.Bootstrap

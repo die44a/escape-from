@@ -75,3 +75,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::_Project.Global.GlobalInstaller
   inputActions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+  fader: {fileID: 7180816247988034547, guid: 0447932b708ec7f46aef7bead7672faa, type: 3}

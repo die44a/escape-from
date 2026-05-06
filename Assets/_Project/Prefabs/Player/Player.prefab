@@ -17,6 +17,8 @@ GameObject:
   - component: {fileID: -6113002115403245713}
   - component: {fileID: 285267417064515586}
   - component: {fileID: -1867228688589405625}
+  - component: {fileID: 125251029383181965}
+  - component: {fileID: 9058021629673717336}
   m_Layer: 6
   m_Name: Player
   m_TagString: Untagged
@@ -86,7 +88,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 4
+  m_SortingOrder: 3500
   m_MaskInteraction: 0
   m_Sprite: {fileID: 8650177600460720533, guid: bd962ac63c64ecd4a9bf9522727f0844, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -134,7 +136,7 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDamping: 0
-  m_AngularDamping: 0.05
+  m_AngularDamping: 0
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -181,8 +183,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0.94}
-  m_Size: {x: 0.51, y: 0.69}
+  m_Offset: {x: 0, y: 0.73}
+  m_Size: {x: 0.51, y: 0.1}
   m_Direction: 0
 --- !u!114 &8992285698937320613
 MonoBehaviour:
@@ -196,7 +198,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d04f7cf6f8e176f45a266b041e495e5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::_Project.Runtime.Player.Controllers.PlayerController
-  currentState: 0
 --- !u!114 &-6113002115403245713
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -212,6 +213,7 @@ MonoBehaviour:
   moveSpeed: 4
   knockbackDamping: 5
   dashForce: 8
+  dashCooldown: 1.5
 --- !u!114 &285267417064515586
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -240,3 +242,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::_Project.Runtime.Player.Controllers.HealthTimeController
   maxHealthTime: 60
   invulnerabilityDuration: 0.7
+--- !u!114 &125251029383181965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2373793466803568562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 614488d1954747945be2f3221f05fd25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::_Project.Runtime.Player.Controllers.PlayerWalletController
+--- !u!114 &9058021629673717336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2373793466803568562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcb9154176fc4350b17ff05dac661724, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::_Project.Runtime.Player.Controllers.PlayerInteractorController
+  interactDistance: 1.5
+  interactableLayer:
+    serializedVersion: 2
+    m_Bits: 16384
+  originOffset: {x: 0, y: 0.5}
