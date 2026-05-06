@@ -22,5 +22,5 @@ MonoBehaviour:
   knockbackDuration: 0.3
   shape: 0
   boxSize: {x: 1.5, y: 0.5}
-  hitRadius: 0.7
+  hitRadius: 0.5
   hitEffectPrefab: {fileID: 0}

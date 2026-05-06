@@ -15,6 +15,10 @@ namespace _Project.Runtime.Core.Weapon
         [SerializeField] private float verticalOffset = 1f; 
         [SerializeField] protected LayerMask obstacleLayersMask;
         
+        [Header("Hand Placement")]
+        [SerializeField] private Vector2 rightHandOffset = new(-0.15f, -0.3f);
+        [SerializeField] private bool hideWhenBehindBack = true;
+        
         protected PlayerController Player;
         
         protected Animator Animator;
@@ -57,14 +61,17 @@ namespace _Project.Runtime.Core.Weapon
             var dir = Player.LastDirection.normalized;
             if (dir.sqrMagnitude < 0.01f) dir = Vector2.right;
 
-            var playerCenter = Player.transform.position + new Vector3(0, verticalOffset, 0);
-            var targetPos = playerCenter + (Vector3)(dir * orbitDistance);
+            var facingSign = dir.x < -0.01f ? -1f : 1f;
+            var handOffset = new Vector3(rightHandOffset.x * facingSign, rightHandOffset.y + verticalOffset, 0f);
+            var playerCenter = Player.transform.position;
+            var targetPos = playerCenter + handOffset + (Vector3)(dir * orbitDistance);
             transform.position = Vector3.SmoothDamp(transform.position, targetPos, ref _currentVelocity, 1f / smoothSpeed);
             
             var angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
             transform.rotation = Quaternion.Euler(0, 0, angle - 90f);
 
-            SpriteRenderer.sortingOrder = baseSortingOrder + (dir.y > 0 ? -1 : 1);
+            var isBehind = dir.y > 0.1f;
+            SpriteRenderer.sortingOrder = baseSortingOrder + (isBehind ? -1 : 1);
         }
 
         public abstract void TryAttack();
