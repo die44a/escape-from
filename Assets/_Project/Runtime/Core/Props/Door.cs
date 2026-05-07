@@ -7,14 +7,14 @@ namespace _Project.Runtime.Core.Props
 {
     public class Door : MonoBehaviour, IInteractable
     {
+        public SpriteRenderer Renderer { get; private set; }
+        private Animator _animator; 
         [SerializeField] private Collider2D interactableCollider;
         
+        
         private static readonly int IsOpen = Animator.StringToHash("isOpen");
-        
-        public SpriteRenderer Renderer { get; private set; }
-        
-        private Animator _animator; 
         private bool _isOpen;
+        
         
         private void Awake()
         {
