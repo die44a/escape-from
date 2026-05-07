@@ -118,12 +118,12 @@ TextureImporter:
       name: Chest-Animated-4_0
       rect:
         serializedVersion: 2
-        x: 12
-        y: 8
-        width: 25
-        height: 21
+        x: 13
+        y: 9
+        width: 23
+        height: 19
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -140,12 +140,12 @@ TextureImporter:
       name: Chest-Animated-4_1
       rect:
         serializedVersion: 2
-        x: 60
-        y: 8
-        width: 25
-        height: 21
+        x: 61
+        y: 9
+        width: 23
+        height: 19
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -162,12 +162,12 @@ TextureImporter:
       name: Chest-Animated-4_2
       rect:
         serializedVersion: 2
-        x: 108
-        y: 8
-        width: 25
-        height: 21
+        x: 109
+        y: 9
+        width: 23
+        height: 19
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -184,12 +184,12 @@ TextureImporter:
       name: Chest-Animated-4_3
       rect:
         serializedVersion: 2
-        x: 156
-        y: 8
-        width: 25
-        height: 21
+        x: 157
+        y: 9
+        width: 23
+        height: 19
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -206,12 +206,12 @@ TextureImporter:
       name: Chest-Animated-4_4
       rect:
         serializedVersion: 2
-        x: 204
-        y: 8
-        width: 25
-        height: 21
+        x: 205
+        y: 9
+        width: 23
+        height: 19
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -228,12 +228,12 @@ TextureImporter:
       name: Chest-Animated-4_5
       rect:
         serializedVersion: 2
-        x: 252
-        y: 8
-        width: 25
-        height: 21
+        x: 253
+        y: 9
+        width: 23
+        height: 19
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -250,7 +250,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 05fb9a35690ee7746bf6c43821f85b16
     internalID: 0
     vertices: []
     indices: 
@@ -258,7 +258,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       Chest-Animated-4_0: 2581665451476475520
       Chest-Animated-4_1: 346910871773970875
