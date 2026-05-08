@@ -5,43 +5,40 @@ using Zenject;
 
 namespace _Project.Runtime.Enemy
 {
-    // Мы помечаем класс как abstract, чтобы нельзя было случайно повесить 
-    // "пустого" контроллера на моба. Нужно обязательно выбрать Melee или Ranged.
+
     [RequireComponent(typeof(EnemyMovement))]
     public abstract class EnemyController : MonoBehaviour
     {
-        [Header("Base Detection")]
         [SerializeField] protected float detectionRadius = 5f;
+        [Tooltip("Враг не выйдет за этот радиус от точки спавна и агрится только если игрок внутри него.")]
+        [SerializeField] protected float leashRadius = 5f;
         [SerializeField] protected LayerMask playerMask;
         [SerializeField] protected LayerMask obstacleMask;
         [SerializeField] protected LayerMask mapMask;
         [SerializeField] protected Vector2 playerVisualOffset = new Vector2(0, 0.5f);
 
-        [Header("Base Movement")]
         [SerializeField] protected float stopDistanceToPlayer = 0.7f;
         [SerializeField] protected float patrolRadius = 3f;
         [SerializeField] protected float patrolTargetClearance = 0.2f;
         [SerializeField] protected int patrolTargetAttempts = 12;
 
-        [Header("Base Combat")]
         [SerializeField] protected float attackCooldown = 1.5f;
         [SerializeField] protected float attackRange = 0.8f;
         
-        protected float _lastAttackTime;
-        protected EnemyMovement _movement;
-        protected Vector2 _startPosition;
-        protected Vector2 _patrolTarget;
+        protected float LastAttackTime;
+        private EnemyMovement _movement;
+        private Vector2 _startPosition;
+        private Vector2 _patrolTarget;
         
-        [Inject(Optional = true)] protected PlayerController _player;
+        [Inject(Optional = true)] protected PlayerController Player;
         
-        protected Vector2 TargetPlayerPosition => (Vector2)_player.transform.position + playerVisualOffset;
+        protected Vector2 TargetPlayerPosition => (Vector2)Player.transform.position + playerVisualOffset;
 
         protected virtual void Awake()
         {
             _movement = GetComponent<EnemyMovement>();
             if (_movement == null)
             {
-                Debug.LogError($"{nameof(EnemyController)} требует компонент {nameof(EnemyMovement)} на объекте '{name}'.", this);
                 enabled = false;
                 return;
             }
@@ -53,18 +50,18 @@ namespace _Project.Runtime.Enemy
         {
             if (_movement.GetKnockbackStatus()) return;
 
-            if (_player && CanSeePlayer())
+            if (Player && CanSeePlayer())
             {
-                float sqrDist = ((Vector2)transform.position - TargetPlayerPosition).sqrMagnitude;
+                var sqrDist = ((Vector2)transform.position - TargetPlayerPosition).sqrMagnitude;
                 
                 if (sqrDist <= stopDistanceToPlayer * stopDistanceToPlayer)
                 {
                     _movement.Stop();
-                    TryAttack(); // Этот метод будет переопределен в Orc или Archer
+                    TryAttack();
                 }
                 else
                 {
-                    _movement.MoveTowards(TargetPlayerPosition);
+                    _movement.MoveTowards(GetLeashClampedTarget(TargetPlayerPosition));
                 }
             }
             else if (Vector2.Distance(transform.position, _startPosition) > 1f)
@@ -79,19 +76,32 @@ namespace _Project.Runtime.Enemy
 
         protected virtual bool CanSeePlayer()
         {
-            if (!_player) return false;
+            if (!Player) return false;
 
-            float distance = Vector2.Distance(transform.position, TargetPlayerPosition);
+            var spawnDistance = Vector2.Distance(_startPosition, TargetPlayerPosition);
+            if (leashRadius > 0f && spawnDistance > leashRadius) return false;
+
+            var distance = Vector2.Distance(transform.position, TargetPlayerPosition);
             if (distance > detectionRadius) return false;
 
-            Vector2 direction = (TargetPlayerPosition - (Vector2)transform.position).normalized;
+            var direction = (TargetPlayerPosition - (Vector2)transform.position).normalized;
             LayerMask combinedObstacles = obstacleMask | mapMask;
             
             var hit = Physics2D.Raycast(transform.position, direction, distance, combinedObstacles);
-            return hit.collider == null;
+            return !hit.collider;
         }
 
-        // Ключевой абстрактный метод — каждый тип врага реализует его сам
+        private Vector2 GetLeashClampedTarget(Vector2 desiredTarget)
+        {
+            if (leashRadius <= 0f) return desiredTarget;
+
+            var fromSpawn = desiredTarget - _startPosition;
+            var dist = fromSpawn.magnitude;
+            if (dist <= leashRadius) return desiredTarget;
+
+            return _startPosition + fromSpawn / dist * leashRadius;
+        }
+
         protected abstract void TryAttack();
 
         protected virtual void Patrol()
@@ -119,16 +129,14 @@ namespace _Project.Runtime.Enemy
 
         protected virtual void OnDrawGizmos()
         {
-            // Агро-радиус
             Gizmos.color = Color.yellow;
-            Vector3 center = Application.isPlaying ? (Vector3)_startPosition : transform.position;
-            Gizmos.DrawWireSphere(center, detectionRadius);
+            var center = Application.isPlaying ? (Vector3)_startPosition : transform.position;
+            Gizmos.DrawWireSphere(center, leashRadius > 0f ? leashRadius : detectionRadius);
 
-            // Зона атаки
             Gizmos.color = Color.red;
             Gizmos.DrawWireSphere(transform.position, attackRange);
 
-            if (_player != null && CanSeePlayer())
+            if (Player != null && CanSeePlayer())
             {
                 Gizmos.DrawLine(transform.position, TargetPlayerPosition);
             }

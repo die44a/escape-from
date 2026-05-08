@@ -242,6 +242,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::_Project.Runtime.Enemy.MeleeEnemy
   detectionRadius: 5
+  leashRadius: 5
   playerMask:
     serializedVersion: 2
     m_Bits: 1024
@@ -258,5 +259,5 @@ MonoBehaviour:
   patrolTargetAttempts: 12
   attackCooldown: 1.5
   attackRange: 0.8
-  damageAmount: 10
+  damageAmount: 3
   knockbackForce: 5
