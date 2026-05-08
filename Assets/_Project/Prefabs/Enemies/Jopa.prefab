@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1231601260395927733
+--- !u!1 &817245064141768373
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,43 +8,38 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 3394266388368922137}
-  - component: {fileID: 4776977963543827433}
-  - component: {fileID: 134913640854709953}
-  - component: {fileID: 5606491424565459252}
-  - component: {fileID: 9088958947288858858}
-  - component: {fileID: 4826734729170713357}
-  - component: {fileID: 8086327993587530796}
+  - component: {fileID: 4819430548665971023}
+  - component: {fileID: 7370283438338198784}
   m_Layer: 15
-  m_Name: Jopa
+  m_Name: ' View'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &3394266388368922137
+--- !u!4 &4819430548665971023
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1231601260395927733}
+  m_GameObject: {fileID: 817245064141768373}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.2487164, y: -6.9337096, z: 0}
+  m_LocalPosition: {x: 0.24, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 3394266388368922137}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &4776977963543827433
+--- !u!212 &7370283438338198784
 SpriteRenderer:
   serializedVersion: 2
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1231601260395927733}
+  m_GameObject: {fileID: 817245064141768373}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -86,16 +81,53 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 3500
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -4419165627146632904, guid: 02dd06a3a23c78444b996ba1fd9c46ae, type: 3}
+  m_Sprite: {fileID: 3799508404887519019, guid: 60ba7132fc0c04b60909502ee209f03f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.5, y: 0.5416667}
+  m_Size: {x: 1.5, y: 1.0625}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!1 &1231601260395927733
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3394266388368922137}
+  - component: {fileID: 134913640854709953}
+  - component: {fileID: 5606491424565459252}
+  - component: {fileID: 4826734729170713357}
+  - component: {fileID: 8086327993587530796}
+  - component: {fileID: 5754063309287907276}
+  m_Layer: 15
+  m_Name: Jopa
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3394266388368922137
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1231601260395927733}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -7.214, y: -6.861, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4819430548665971023}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &134913640854709953
 Rigidbody2D:
   serializedVersion: 5
@@ -137,35 +169,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::_Project.Runtime.Enemy.EnemyMovement
   moveSpeed: 2
   knockbackDamping: 5
---- !u!114 &9088958947288858858
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1231601260395927733}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f721e301a4347e48e09c371a8c262d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::_Project.Runtime.Enemy.EnemyAI
-  detectionRadius: 5
-  patrolRadius: 3
-  patrolTargetClearance: 0.2
-  patrolTargetAttempts: 12
-  mapMask:
-    serializedVersion: 2
-    m_Bits: 2048
-  obstacleMask:
-    serializedVersion: 2
-    m_Bits: 8192
-  playerMask:
-    serializedVersion: 2
-    m_Bits: 1024
-  playerVisualOffset: {x: 0, y: 0.5}
-  damageAmount: 2
-  attackCooldown: 3
-  playerOverride: {fileID: 0}
+  useNoFrictionMaterial: 1
 --- !u!114 &4826734729170713357
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -223,5 +227,36 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.05, y: -0.16}
   m_Radius: 0.27083334
+--- !u!114 &5754063309287907276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1231601260395927733}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b1f5f74ea8f4052b42fed57933b90c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::_Project.Runtime.Enemy.MeleeEnemy
+  detectionRadius: 5
+  playerMask:
+    serializedVersion: 2
+    m_Bits: 1024
+  obstacleMask:
+    serializedVersion: 2
+    m_Bits: 0
+  mapMask:
+    serializedVersion: 2
+    m_Bits: 2048
+  playerVisualOffset: {x: 0, y: 0.5}
+  stopDistanceToPlayer: 0.7
+  patrolRadius: 3
+  patrolTargetClearance: 0.2
+  patrolTargetAttempts: 12
+  attackCooldown: 1.5
+  attackRange: 0.8
+  damageAmount: 10
+  knockbackForce: 5

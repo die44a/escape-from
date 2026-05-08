@@ -5,173 +5,133 @@ using Zenject;
 
 namespace _Project.Runtime.Enemy
 {
-    public class EnemyController : MonoBehaviour
+    // Мы помечаем класс как abstract, чтобы нельзя было случайно повесить 
+    // "пустого" контроллера на моба. Нужно обязательно выбрать Melee или Ranged.
+    [RequireComponent(typeof(EnemyMovement))]
+    public abstract class EnemyController : MonoBehaviour
     {
-        [SerializeField] private float detectionRadius = 2f;
-        [SerializeField] private float patrolRadius = 3f;
-        [SerializeField] private float patrolTargetClearance = 0.2f;
-        [SerializeField] private int patrolTargetAttempts = 12;
-        [SerializeField] private LayerMask mapMask;
-        [SerializeField] private LayerMask obstacleMask;
-        [SerializeField] private LayerMask playerMask;
-        [SerializeField] private Vector2 playerVisualOffset = new Vector2(0, 0.5f);
-        [SerializeField] private float stopDistanceToPlayer = 0.65f;
-        [SerializeField] private float damageAmount = 2f;
-        [SerializeField] private float attackCooldown = 3f;
-        [SerializeField] private float knockbackForce = 6f;
-        [SerializeField] private float knockbackDuration = 0.2f;
-        [SerializeField] private float attackRange = 0.75f;
-        
-        private float _lastAttackTime;
-        private EnemyMovement _movement;
-        private Vector2 _startPosition;
-        private Vector2 _patrolTarget;
-        
-        [Inject(Optional = true)] private PlayerController _player;
-        [SerializeField] private PlayerController playerOverride;
-        
-        private Vector2 TargetPlayerPosition => (Vector2)_player.transform.position + playerVisualOffset;
+        [Header("Base Detection")]
+        [SerializeField] protected float detectionRadius = 5f;
+        [SerializeField] protected LayerMask playerMask;
+        [SerializeField] protected LayerMask obstacleMask;
+        [SerializeField] protected LayerMask mapMask;
+        [SerializeField] protected Vector2 playerVisualOffset = new Vector2(0, 0.5f);
 
-        private void Awake()
+        [Header("Base Movement")]
+        [SerializeField] protected float stopDistanceToPlayer = 0.7f;
+        [SerializeField] protected float patrolRadius = 3f;
+        [SerializeField] protected float patrolTargetClearance = 0.2f;
+        [SerializeField] protected int patrolTargetAttempts = 12;
+
+        [Header("Base Combat")]
+        [SerializeField] protected float attackCooldown = 1.5f;
+        [SerializeField] protected float attackRange = 0.8f;
+        
+        protected float _lastAttackTime;
+        protected EnemyMovement _movement;
+        protected Vector2 _startPosition;
+        protected Vector2 _patrolTarget;
+        
+        [Inject(Optional = true)] protected PlayerController _player;
+        
+        protected Vector2 TargetPlayerPosition => (Vector2)_player.transform.position + playerVisualOffset;
+
+        protected virtual void Awake()
         {
             _movement = GetComponent<EnemyMovement>();
+            if (_movement == null)
+            {
+                Debug.LogError($"{nameof(EnemyController)} требует компонент {nameof(EnemyMovement)} на объекте '{name}'.", this);
+                enabled = false;
+                return;
+            }
             _startPosition = transform.position;
             SetNewPatrolTarget();
         }
 
-        private void Start()
-        {
-            if (playerOverride != null)
-            {
-                _player = playerOverride;
-                return;
-            }
-
-            if (_player != null) return;
-
-#if UNITY_2023_1_OR_NEWER
-            _player = FindFirstObjectByType<PlayerController>();
-#else
-            _player = FindObjectOfType<PlayerController>();
-#endif
-        }
-
-        private void FixedUpdate()
+        protected virtual void FixedUpdate()
         {
             if (_movement.GetKnockbackStatus()) return;
 
-            if (_player != null && CanSeePlayer())
+            if (_player && CanSeePlayer())
             {
-                var toPlayer = TargetPlayerPosition - (Vector2)transform.position;
-                if (toPlayer.sqrMagnitude <= stopDistanceToPlayer * stopDistanceToPlayer)
+                float sqrDist = ((Vector2)transform.position - TargetPlayerPosition).sqrMagnitude;
+                
+                if (sqrDist <= stopDistanceToPlayer * stopDistanceToPlayer)
                 {
                     _movement.Stop();
-                    TryAttack();
+                    TryAttack(); // Этот метод будет переопределен в Orc или Archer
                 }
                 else
                 {
                     _movement.MoveTowards(TargetPlayerPosition);
                 }
             }
-            
             else if (Vector2.Distance(transform.position, _startPosition) > 1f)
             {
                 _movement.MoveTowards(_startPosition);
             }
-            
             else
             {
                 Patrol();
             }
         }
 
-        private bool CanSeePlayer()
+        protected virtual bool CanSeePlayer()
         {
-            if (_player == null) return false;
+            if (!_player) return false;
 
-            if (Physics2D.OverlapCircle(_startPosition, detectionRadius, playerMask) == null)
-                return false;
-            
-            var directionToPlayer = (TargetPlayerPosition - (Vector2)transform.position);
-            var distance = directionToPlayer.magnitude;
-
+            float distance = Vector2.Distance(transform.position, TargetPlayerPosition);
             if (distance > detectionRadius) return false;
 
-            if (obstacleMask.value != 0)
-            {
-                var obstacleHit = Physics2D.Raycast(
-                    transform.position,
-                    directionToPlayer.normalized,
-                    distance,
-                    obstacleMask
-                );
-
-                return obstacleHit.collider == null;
-            }
-
-            var hit = Physics2D.Raycast(transform.position, directionToPlayer.normalized, distance, mapMask | playerMask);
-            return hit.collider != null && hit.collider.gameObject == _player.gameObject;
+            Vector2 direction = (TargetPlayerPosition - (Vector2)transform.position).normalized;
+            LayerMask combinedObstacles = obstacleMask | mapMask;
+            
+            var hit = Physics2D.Raycast(transform.position, direction, distance, combinedObstacles);
+            return hit.collider == null;
         }
 
-        private void Patrol()
+        // Ключевой абстрактный метод — каждый тип врага реализует его сам
+        protected abstract void TryAttack();
+
+        protected virtual void Patrol()
         {
             _movement.MoveTowards(_patrolTarget);
-
             if (Vector2.Distance(transform.position, _patrolTarget) < 0.2f)
             {
                 SetNewPatrolTarget();
             }
         }
 
-        private void SetNewPatrolTarget()
+        protected virtual void SetNewPatrolTarget()
         {
             for (var i = 0; i < Mathf.Max(1, patrolTargetAttempts); i++)
             {
                 var candidate = _startPosition + Random.insideUnitCircle * patrolRadius;
                 var mask = obstacleMask.value != 0 ? obstacleMask : mapMask;
-                var blocked = Physics2D.OverlapCircle(candidate, patrolTargetClearance, mask) != null;
-                if (blocked) continue;
+                if (Physics2D.OverlapCircle(candidate, patrolTargetClearance, mask)) continue;
+                
                 _patrolTarget = candidate;
                 return;
             }
-
             _patrolTarget = _startPosition;
         }
-        
-        private void TryAttack()
+
+        protected virtual void OnDrawGizmos()
         {
-            if (Time.time - _lastAttackTime < attackCooldown) return;
-
-            var hit = Physics2D.OverlapCircle(TargetPlayerPosition, attackRange, playerMask);
-            if (hit == null) return;
-
-            if (!hit.gameObject.TryGetComponent<IDamageable>(out var damageable)) return;
-            damageable.ApplyDamage(damageAmount);
-            
-            _lastAttackTime = Time.time;
-
-            if (!hit.gameObject.TryGetComponent<MovementController>(out var movement)) return;
-            
-            Vector2 knockbackDirection = (hit.transform.position - transform.position).normalized;
-            movement.ApplyKnockback(knockbackDirection * knockbackForce, knockbackDuration);
-        }
-
-        private void OnCollisionEnter2D(Collision2D collision)
-        {
-            if (((1 << collision.gameObject.layer) & playerMask.value) == 0) return;
-            TryAttack();
-        }
-
-        private void OnDrawGizmos()
-        {
+            // Агро-радиус
             Gizmos.color = Color.yellow;
-            var center = Application.isPlaying ? (Vector3)_startPosition : transform.position;
+            Vector3 center = Application.isPlaying ? (Vector3)_startPosition : transform.position;
             Gizmos.DrawWireSphere(center, detectionRadius);
 
-            if (_player == null) return;
-            var spotted = CanSeePlayer();
-            Gizmos.color = spotted ? Color.red : Color.green;
-            Gizmos.DrawLine(transform.position, _player.transform.position);
+            // Зона атаки
+            Gizmos.color = Color.red;
+            Gizmos.DrawWireSphere(transform.position, attackRange);
+
+            if (_player != null && CanSeePlayer())
+            {
+                Gizmos.DrawLine(transform.position, TargetPlayerPosition);
+            }
         }
     }
 }

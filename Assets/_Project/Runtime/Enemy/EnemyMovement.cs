@@ -16,7 +16,7 @@ namespace _Project.Runtime.Enemy
             if (useNoFrictionMaterial)
                 ApplyNoFrictionToColliders();
 
-            if (Rb != null)
+            if (Rb)
                 Rb.collisionDetectionMode = CollisionDetectionMode2D.Continuous;
         }
 
