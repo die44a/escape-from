@@ -22,7 +22,7 @@ namespace _Project.Runtime.Player.Controllers
         
         public PlayerState CurrentState { get; private set; }
         public Vector2 MoveInput => _moveInput;
-        public Vector2 LastDirection { get; private set; }
+        public Vector2 LastDirection => _movementController.LastDirection;
         public bool IsInvulnerableState => CurrentState == PlayerState.Dashing;
         
         public event Action<PlayerState> OnStateChanged;
@@ -94,17 +94,17 @@ namespace _Project.Runtime.Player.Controllers
             }
         }
 
-        public void FixedUpdate()
+        private void Update()
+        {
+            _moveInput = _moveAction.ReadValue<Vector2>();
+        }
+
+        private void FixedUpdate()
         {
             if (CurrentState is PlayerState.Dashing 
                 or PlayerState.Interacting 
                 or PlayerState.Dead)
                 return;
-
-            _moveInput = _moveAction.ReadValue<Vector2>();
-            
-            if (_moveInput.magnitude > 0.01f)
-                LastDirection = _moveInput;
             
             UpdateMoveState();
             _movementController.ApplyMovement(_moveInput);

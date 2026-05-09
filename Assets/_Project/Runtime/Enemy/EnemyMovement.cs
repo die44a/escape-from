@@ -12,7 +12,7 @@ namespace _Project.Runtime.Enemy
         protected override void Awake()
         {
             base.Awake();
-
+            
             if (useNoFrictionMaterial)
                 ApplyNoFrictionToColliders();
 
