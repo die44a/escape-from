@@ -6,7 +6,6 @@ namespace _Project.Runtime.Enemy
     public class EnemyDamageController : MonoBehaviour, IDamageable
     {
         [SerializeField] private float maxHealth = 100f;
-        [SerializeField] private float invulnerabilityDuration = 0.2f;
 
         public event Action<float, float> OnHealthChanged;
         public Action OnHit;

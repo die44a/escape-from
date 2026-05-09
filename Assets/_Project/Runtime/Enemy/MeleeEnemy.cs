@@ -10,7 +10,9 @@ namespace _Project.Runtime.Enemy
         [SerializeField] protected float knockbackDuration = 0.3f;
         [SerializeField] protected float attackRange = 0.7f;
         [SerializeField] protected float offsetDistance = 0.5f;
-        private Vector2 AttackOffset => _movement.LastDirection * offsetDistance;
+        private Vector2 AttackOffset => _movement != null 
+            ? _movement.LastDirection * offsetDistance 
+            : Vector2.zero;
         
         protected override void TryAttack()
         {

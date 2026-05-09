@@ -5,7 +5,7 @@ namespace _Project.Runtime.Enemy
     public class Orc : MeleeEnemy
     {
         [SerializeField] private float enrageHealthThreshold = 0.3f;
-        [SerializeField] private float speedMultiplierInEnrage = 1.5f;
+        // [SerializeField] private float speedMultiplierInEnrage = 1.5f;
 
         private EnemyDamageController _health;
         private bool _isEnraged;
