@@ -11,20 +11,31 @@ namespace _Project.Runtime.Enemy
     [RequireComponent(typeof(EnemyMovement))]
     public abstract class EnemyController : MonoBehaviour
     {
+        [Header("Basic settings")]
         [SerializeField] protected float detectionRadius = 5f;
         [Tooltip("Враг не выйдет за этот радиус от точки спавна и агрится только если игрок внутри него.")]
         [SerializeField] protected float leashRadius = 5f;
         [SerializeField] protected LayerMask playerMask;
         [SerializeField] protected LayerMask obstacleMask;
         [SerializeField] protected LayerMask mapMask;
-
-        [SerializeField] protected float stopDistanceToPlayer = 0.7f;
-        [SerializeField] protected float patrolRadius = 3f;
-        [SerializeField] protected float patrolTargetClearance = 0.2f;
-        [SerializeField] protected int patrolTargetAttempts = 12;
         
+        [Header("Attack settings")]
+        [SerializeField] protected float stopDistanceToPlayer = 0.7f;
         [SerializeField] protected float attackCooldown = 1.5f;
         
+        [Header("Patrol settings")]
+        [SerializeField] protected float patrolTargetClearance = 0.2f;
+        [SerializeField] protected int patrolTargetAttempts = 12;
+        [SerializeField] protected float patrolRadius = 3f;
+        [SerializeField] protected float minWaitTime = 1f;
+        [SerializeField] protected float maxWaitTime = 3f;
+        [SerializeField] protected float stuckThreshold = 0.1f;
+        [SerializeField] protected float stuckCheckInterval = 1.0f; 
+
+        private Vector2 _lastPosition;
+        private float _stuckTimer;
+        private float _waitTimer;
+        private bool _isWaiting;
         protected float LastAttackTime;
         protected bool IsAttacking;
         protected EnemyMovement _movement;
@@ -61,21 +72,24 @@ namespace _Project.Runtime.Enemy
             
             if (Player && CanSeePlayer())
             {
+                _isWaiting = false;
+                
                 var sqrDist = ((Vector2)transform.position - TargetPlayerPosition).sqrMagnitude;
                 
                 if (sqrDist <= stopDistanceToPlayer * stopDistanceToPlayer)
                 {
                     _movement.Stop();
                     TryAttack();
-                    OnAttack?.Invoke();
+                    OnAttack?.Invoke(); // Invoke only with TryAttack
                 }
                 else
                 {
                     _movement.MoveTowards(GetLeashClampedTarget(TargetPlayerPosition));
                 }
             }
-            else if (Vector2.Distance(transform.position, _startPosition) > 1f)
+            else if (Vector2.Distance(transform.position, _startPosition) > patrolRadius)
             {
+                _isWaiting = false;
                 _movement.MoveTowards(_startPosition);
             }
             else
@@ -116,21 +130,58 @@ namespace _Project.Runtime.Enemy
         
         protected virtual void Patrol()
         {
-            _movement.MoveTowards(_patrolTarget);
+            if (_isWaiting)
+            {
+                _waitTimer -= Time.fixedDeltaTime;
+                if (_waitTimer <= 0)
+                {
+                    _isWaiting = false;
+                    SetNewPatrolTarget();
+                }
+                return;
+            }
+
             if (Vector2.Distance(transform.position, _patrolTarget) < 0.2f)
             {
-                SetNewPatrolTarget();
+                StartWaiting();
+                return;
+            }
+            
+            CheckIfStuck();
+            _movement.MoveTowards(_patrolTarget);
+        }
+
+        private void CheckIfStuck()
+        {
+            _stuckTimer += Time.fixedDeltaTime;
+
+            if (_stuckTimer >= stuckCheckInterval)
+            {
+                if (Vector2.Distance(transform.position, _lastPosition) < stuckThreshold)
+                    SetNewPatrolTarget();
+        
+                _lastPosition = transform.position;
+                _stuckTimer = 0;
             }
         }
 
+        private void StartWaiting()
+        {
+            _movement.Stop();
+            _isWaiting = true;
+            _waitTimer = Random.Range(minWaitTime, maxWaitTime);
+            _stuckTimer = 0; 
+        }
+        
         protected virtual void SetNewPatrolTarget()
         {
             for (var i = 0; i < Mathf.Max(1, patrolTargetAttempts); i++)
             {
                 var candidate = _startPosition + Random.insideUnitCircle * patrolRadius;
+        
                 var mask = obstacleMask.value != 0 ? obstacleMask : mapMask;
                 if (Physics2D.OverlapCircle(candidate, patrolTargetClearance, mask)) continue;
-                
+        
                 _patrolTarget = candidate;
                 return;
             }
