@@ -136,12 +136,12 @@ TextureImporter:
       name: Lever-Vertical-Stick_0
       rect:
         serializedVersion: 2
-        x: 21
-        y: 28
-        width: 6
-        height: 9
+        x: 22
+        y: 29
+        width: 4
+        height: 7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -158,12 +158,12 @@ TextureImporter:
       name: Lever-Vertical-Stick_1
       rect:
         serializedVersion: 2
-        x: 69
-        y: 27
-        width: 6
-        height: 12
+        x: 70
+        y: 28
+        width: 4
+        height: 10
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -180,12 +180,12 @@ TextureImporter:
       name: Lever-Vertical-Stick_2
       rect:
         serializedVersion: 2
-        x: 117
-        y: 27
-        width: 6
-        height: 13
+        x: 118
+        y: 28
+        width: 4
+        height: 11
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -202,12 +202,12 @@ TextureImporter:
       name: Lever-Vertical-Stick_3
       rect:
         serializedVersion: 2
-        x: 165
-        y: 26
-        width: 6
-        height: 12
+        x: 166
+        y: 27
+        width: 4
+        height: 10
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -224,12 +224,12 @@ TextureImporter:
       name: Lever-Vertical-Stick_4
       rect:
         serializedVersion: 2
-        x: 213
-        y: 25
-        width: 6
-        height: 11
+        x: 214
+        y: 26
+        width: 4
+        height: 9
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -246,12 +246,12 @@ TextureImporter:
       name: Lever-Vertical-Stick_5
       rect:
         serializedVersion: 2
-        x: 261
-        y: 24
-        width: 6
-        height: 9
+        x: 262
+        y: 25
+        width: 4
+        height: 7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -268,12 +268,12 @@ TextureImporter:
       name: Lever-Vertical-Stick_6
       rect:
         serializedVersion: 2
-        x: 309
-        y: 23
-        width: 6
-        height: 7
+        x: 310
+        y: 24
+        width: 4
+        height: 5
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -290,12 +290,12 @@ TextureImporter:
       name: Lever-Vertical-Stick_7
       rect:
         serializedVersion: 2
-        x: 357
-        y: 20
-        width: 6
-        height: 7
+        x: 358
+        y: 21
+        width: 4
+        height: 5
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -312,12 +312,12 @@ TextureImporter:
       name: Lever-Vertical-Stick_8
       rect:
         serializedVersion: 2
-        x: 405
-        y: 17
-        width: 6
-        height: 9
+        x: 406
+        y: 18
+        width: 4
+        height: 7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -334,12 +334,12 @@ TextureImporter:
       name: Lever-Vertical-Stick_9
       rect:
         serializedVersion: 2
-        x: 453
-        y: 14
-        width: 6
-        height: 11
+        x: 454
+        y: 15
+        width: 4
+        height: 9
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -356,12 +356,12 @@ TextureImporter:
       name: Lever-Vertical-Stick_10
       rect:
         serializedVersion: 2
-        x: 501
-        y: 12
-        width: 6
-        height: 12
+        x: 502
+        y: 13
+        width: 4
+        height: 10
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -378,12 +378,12 @@ TextureImporter:
       name: Lever-Vertical-Stick_11
       rect:
         serializedVersion: 2
-        x: 549
-        y: 10
-        width: 6
-        height: 13
+        x: 550
+        y: 11
+        width: 4
+        height: 11
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -400,7 +400,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 417ecddcf42a3ee4e9b28b4dcf1c8256
     internalID: 0
     vertices: []
     indices: 
@@ -408,7 +408,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":48.0,"y":48.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       Lever-Vertical-Stick_0: -8046512741364398295
       Lever-Vertical-Stick_1: 8672321882090838535
