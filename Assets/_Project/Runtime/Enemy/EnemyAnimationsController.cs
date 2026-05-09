@@ -3,12 +3,12 @@ using UnityEngine;
 
 namespace _Project.Runtime.Enemy
 {
-    [RequireComponent(typeof(EnemyMovement))]
     public class EnemyAnimationsController : MonoBehaviour
     {
         [Header("References")]
         [SerializeField] private SpriteRenderer spriteRenderer;
         [SerializeField] private Animator animator;
+        [SerializeField] private EnemyController controller;
         [SerializeField] private EnemyMovement movement;
         [SerializeField] private EnemyDamageController damageController;
         
@@ -22,7 +22,7 @@ namespace _Project.Runtime.Enemy
         private static readonly int AttackKey = Animator.StringToHash("attack");
 
         private Coroutine _hitEffectCoroutine;
-        private readonly Color _hitColor = new Color(1f, 0.4f, 0.4f, 1f); 
+        private readonly Color _hitColor = new (1f, 0.4f, 0.4f, 1f); 
         private readonly Color _normalColor = Color.white;
         private bool _isDead;
         
@@ -34,12 +34,14 @@ namespace _Project.Runtime.Enemy
             
             damageController.OnHit += HandleHit;
             damageController.OnDeath += HandleDeath;
+            controller.OnAttack += TriggerAttack;
         }
 
         private void OnDisable()
         {
             damageController.OnHit -= HandleHit;
             damageController.OnDeath -= HandleDeath;
+            controller.OnAttack -= TriggerAttack;
         }
 
         private void LateUpdate()

@@ -7,21 +7,46 @@ namespace _Project.Runtime.Enemy
     {
         [SerializeField] protected float damageAmount = 5f;
         [SerializeField] protected float knockbackForce = 5f;
-
+        [SerializeField] protected float knockbackDuration = 0.3f;
+        [SerializeField] protected float attackRange = 0.7f;
+        [SerializeField] protected float offsetDistance = 0.5f;
+        private Vector2 AttackOffset => _movement.LastDirection * offsetDistance;
+        
         protected override void TryAttack()
         {
             if (Time.time - LastAttackTime < attackCooldown) return;
-
-            var hit = Physics2D.OverlapCircle(transform.position, attackRange, playerMask);
-
+            if (!Physics2D.OverlapCircle(transform.position, attackRange, playerMask))
+                return;
+            LastAttackTime = Time.time;
+            IsAttacking = true;
+        }
+        
+        public void OnHitFrame()
+        {
+            var hit = Physics2D.OverlapCircle(transform.position + (Vector3)AttackOffset, attackRange, playerMask);
             if (!hit) return;
             if (!hit.TryGetComponent<IDamageable>(out var damageable)) return;
             damageable.ApplyDamage(damageAmount);
-            LastAttackTime = Time.time;
+            if (hit.TryGetComponent<MovementController>(out var pMovement))
+            {
+                var dir = (hit.transform.position - transform.position).normalized;
+                pMovement.ApplyKnockback(dir * knockbackForce, knockbackDuration);
+            }
+        }
+        
+        protected virtual void OnDrawGizmos()
+        {
+            Gizmos.color = Color.yellow;
+            var center = Application.isPlaying ? (Vector3)_startPosition : transform.position;
+            Gizmos.DrawWireSphere(center, leashRadius > 0f ? leashRadius : detectionRadius);
 
-            if (!hit.TryGetComponent<MovementController>(out var pMovement)) return;
-            Vector2 dir = (hit.transform.position - transform.position).normalized;
-            pMovement.ApplyKnockback(dir * knockbackForce, 0.2f);
+            Gizmos.color = Color.red;
+            Gizmos.DrawWireSphere(transform.position + (Vector3)AttackOffset, attackRange);
+
+            if (Player != null && CanSeePlayer())
+            {
+                Gizmos.DrawLine(transform.position, TargetPlayerPosition);
+            }
         }
     }
 }

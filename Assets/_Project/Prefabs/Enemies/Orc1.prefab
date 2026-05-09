@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4819430548665971023}
   - component: {fileID: 7370283438338198784}
   - component: {fileID: 8033035566796867287}
+  - component: {fileID: 2752651481539219919}
   m_Layer: 15
   m_Name: ' View'
   m_TagString: Untagged
@@ -114,6 +115,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &2752651481539219919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 817245064141768373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f80e8594d71c17942854f4194ef35f8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::_Project.Runtime.Enemy.AnimationEventProxy
 --- !u!1 &1231601260395927733
 GameObject:
   m_ObjectHideFlags: 0
@@ -315,15 +328,16 @@ MonoBehaviour:
   mapMask:
     serializedVersion: 2
     m_Bits: 2048
-  playerVisualOffset: {x: 0, y: 0.5}
   stopDistanceToPlayer: 0.7
   patrolRadius: 3
   patrolTargetClearance: 0.2
   patrolTargetAttempts: 12
   attackCooldown: 1.5
-  attackRange: 0.8
   damageAmount: 3
   knockbackForce: 5
+  knockbackDuration: 0.3
+  attackRange: 0.76
+  offsetDistance: 0.5
 --- !u!114 &8105141067269303722
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -338,6 +352,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::_Project.Runtime.Enemy.EnemyAnimationsController
   spriteRenderer: {fileID: 7370283438338198784}
   animator: {fileID: 8033035566796867287}
+  controller: {fileID: 5754063309287907276}
   movement: {fileID: 5606491424565459252}
   damageController: {fileID: 4826734729170713357}
   flashDuration: 0.15

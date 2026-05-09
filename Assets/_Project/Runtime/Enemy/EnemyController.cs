@@ -1,7 +1,9 @@
+using System;
 using _Project.Runtime.Core.General;
 using _Project.Runtime.Player.Controllers;
 using UnityEngine;
 using Zenject;
+using Random = UnityEngine.Random;
 
 namespace _Project.Runtime.Enemy
 {
@@ -15,24 +17,25 @@ namespace _Project.Runtime.Enemy
         [SerializeField] protected LayerMask playerMask;
         [SerializeField] protected LayerMask obstacleMask;
         [SerializeField] protected LayerMask mapMask;
-        [SerializeField] protected Vector2 playerVisualOffset = new Vector2(0, 0.5f);
 
         [SerializeField] protected float stopDistanceToPlayer = 0.7f;
         [SerializeField] protected float patrolRadius = 3f;
         [SerializeField] protected float patrolTargetClearance = 0.2f;
         [SerializeField] protected int patrolTargetAttempts = 12;
-
+        
         [SerializeField] protected float attackCooldown = 1.5f;
-        [SerializeField] protected float attackRange = 0.8f;
         
         protected float LastAttackTime;
-        private EnemyMovement _movement;
-        private Vector2 _startPosition;
+        protected bool IsAttacking;
+        protected EnemyMovement _movement;
+        protected Vector2 _startPosition;
         private Vector2 _patrolTarget;
+
+        public event Action OnAttack;
         
         [Inject(Optional = true)] protected PlayerController Player;
         
-        protected Vector2 TargetPlayerPosition => (Vector2)Player.transform.position + playerVisualOffset;
+        protected Vector2 TargetPlayerPosition => (Vector2)Player.transform.position;
 
         protected virtual void Awake()
         {
@@ -50,6 +53,12 @@ namespace _Project.Runtime.Enemy
         {
             if (_movement.GetKnockbackStatus()) return;
 
+            if (IsAttacking)
+            {
+                _movement.Stop();
+                return;
+            }
+            
             if (Player && CanSeePlayer())
             {
                 var sqrDist = ((Vector2)transform.position - TargetPlayerPosition).sqrMagnitude;
@@ -58,6 +67,7 @@ namespace _Project.Runtime.Enemy
                 {
                     _movement.Stop();
                     TryAttack();
+                    OnAttack?.Invoke();
                 }
                 else
                 {
@@ -103,7 +113,7 @@ namespace _Project.Runtime.Enemy
         }
 
         protected abstract void TryAttack();
-
+        
         protected virtual void Patrol()
         {
             _movement.MoveTowards(_patrolTarget);
@@ -126,20 +136,10 @@ namespace _Project.Runtime.Enemy
             }
             _patrolTarget = _startPosition;
         }
-
-        protected virtual void OnDrawGizmos()
+        
+        public void OnAttackEnd()
         {
-            Gizmos.color = Color.yellow;
-            var center = Application.isPlaying ? (Vector3)_startPosition : transform.position;
-            Gizmos.DrawWireSphere(center, leashRadius > 0f ? leashRadius : detectionRadius);
-
-            Gizmos.color = Color.red;
-            Gizmos.DrawWireSphere(transform.position, attackRange);
-
-            if (Player != null && CanSeePlayer())
-            {
-                Gizmos.DrawLine(transform.position, TargetPlayerPosition);
-            }
+            IsAttacking = false;
         }
     }
 }
