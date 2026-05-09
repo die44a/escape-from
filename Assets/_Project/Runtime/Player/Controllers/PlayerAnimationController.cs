@@ -30,7 +30,7 @@ namespace _Project.Runtime.Player.Controllers
         
         private void Awake()
         {
-            _animator = GetComponent<Animator>();
+            _animator = GetComponentInChildren<Animator>();
         }
 
         private void OnEnable()

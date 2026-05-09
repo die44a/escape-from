@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3244493587270019019}
   - component: {fileID: 6711488558814476968}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Player Spawn Point
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -56,7 +56,7 @@ GameObject:
   - component: {fileID: 1068904222264274663}
   - component: {fileID: 2594857842466950712}
   - component: {fileID: 325253186573898605}
-  m_Layer: 7
+  m_Layer: 11
   m_Name: Traps
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -245,7 +245,7 @@ GameObject:
   - component: {fileID: 4769055258532402720}
   - component: {fileID: 2274453381580436706}
   - component: {fileID: 8210008282281229891}
-  m_Layer: 7
+  m_Layer: 14
   m_Name: Doors
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -416,7 +416,7 @@ GameObject:
   - component: {fileID: 3816366997655108046}
   - component: {fileID: 3296100243005102111}
   - component: {fileID: 2862164517356413318}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: NonBloking Walls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1565,7 +1565,7 @@ GameObject:
   - component: {fileID: 1019693006036744373}
   - component: {fileID: 866989448208155366}
   - component: {fileID: 8097662736920271354}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Useless Floor Cosmetic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2439,7 +2439,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4897798094067630873}
   - component: {fileID: 1085102118271410600}
-  m_Layer: 7
+  m_Layer: 11
   m_Name: Map 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2500,7 +2500,7 @@ GameObject:
   - component: {fileID: 3713779178965280760}
   - component: {fileID: 8621126868160458221}
   - component: {fileID: 7468811936088822195}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Props
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2745,7 +2745,7 @@ GameObject:
   - component: {fileID: 1087142219779068539}
   - component: {fileID: 6990041221787538392}
   - component: {fileID: 3652169161879837858}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Animated Props
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2886,7 +2886,7 @@ GameObject:
   - component: {fileID: 357007605912119441}
   - component: {fileID: 1166862659303603988}
   - component: {fileID: 2585953852880803353}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Bloking Walls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5442,7 +5442,7 @@ GameObject:
   - component: {fileID: 8304947588103993269}
   - component: {fileID: 4405679762694507284}
   - component: {fileID: 8570897792569800316}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Invisible Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5771,7 +5771,7 @@ GameObject:
   - component: {fileID: 4702183363002622337}
   - component: {fileID: 381601510068155181}
   - component: {fileID: 14291967015618890}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Player Exit Point
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5862,7 +5862,7 @@ GameObject:
   - component: {fileID: 6760491254142331382}
   - component: {fileID: 808016995574771832}
   - component: {fileID: 9185473509537934231}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Useless Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22802,7 +22802,7 @@ GameObject:
   - component: {fileID: 2449146418862216491}
   - component: {fileID: 7194759469838279960}
   - component: {fileID: 382570391523049137}
-  m_Layer: 7
+  m_Layer: 11
   m_Name: Water
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23189,7 +23189,7 @@ GameObject:
   - component: {fileID: 3850575169242678122}
   - component: {fileID: 9202570212622275952}
   - component: {fileID: 1108861490802114814}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Useless Walls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27706,7 +27706,7 @@ GameObject:
   - component: {fileID: 942682513406075966}
   - component: {fileID: 9153407814141317960}
   - component: {fileID: 4062011454594424621}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Floor Cosmetic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28029,7 +28029,7 @@ GameObject:
   - component: {fileID: 4887324054793123385}
   - component: {fileID: 2937598335240503844}
   - component: {fileID: 7591422467428453935}
-  m_Layer: 7
+  m_Layer: 11
   m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32306,7 +32306,7 @@ GameObject:
   - component: {fileID: 674608412062289003}
   - component: {fileID: 3168501661985574613}
   - component: {fileID: 4449274556608050957}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Blackout
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -49238,6 +49238,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fountain-2_0
       objectReference: {fileID: 0}
+    - target: {fileID: 699323180996046505, guid: bbe5ca10fb9c1874aab04c5e46f65177, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 4894054478083502044, guid: bbe5ca10fb9c1874aab04c5e46f65177, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.5
@@ -49304,6 +49308,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Skul-2l_0 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 4313603740950210172, guid: 20aa52c2a13b5a24b9e7dac0ea7d007b, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 6221596533535254878, guid: 20aa52c2a13b5a24b9e7dac0ea7d007b, type: 3}
       propertyPath: m_LocalPosition.x
       value: -17.857218
@@ -49365,6 +49373,10 @@ PrefabInstance:
     - target: {fileID: 3931045694512370992, guid: 51a943ed39165944abe7009974d442b8, type: 3}
       propertyPath: m_Name
       value: Skull-1_0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3931045694512370992, guid: 51a943ed39165944abe7009974d442b8, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 5775140404866684491, guid: 51a943ed39165944abe7009974d442b8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -49436,6 +49448,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Skul-2l_0 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 4313603740950210172, guid: 20aa52c2a13b5a24b9e7dac0ea7d007b, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 6221596533535254878, guid: 20aa52c2a13b5a24b9e7dac0ea7d007b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.15416002
@@ -49497,6 +49513,10 @@ PrefabInstance:
     - target: {fileID: 634381334339299278, guid: 957ac4951cfa31e44a6e4a4ed984b5d5, type: 3}
       propertyPath: m_Name
       value: Candle-5_0 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 634381334339299278, guid: 957ac4951cfa31e44a6e4a4ed984b5d5, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 1827322614535603786, guid: 957ac4951cfa31e44a6e4a4ed984b5d5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -49560,6 +49580,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Candle-3_0
       objectReference: {fileID: 0}
+    - target: {fileID: 2733834075322920911, guid: 7d3363ee0e2c5f84b80ce4280b575b60, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 4486778887514916739, guid: 7d3363ee0e2c5f84b80ce4280b575b60, type: 3}
       propertyPath: m_LocalPosition.x
       value: -18.18
@@ -49621,6 +49645,10 @@ PrefabInstance:
     - target: {fileID: 4300057043156720164, guid: cf2c43cd3335e3b499ddd4ebb0114f71, type: 3}
       propertyPath: m_Name
       value: Trap-Spikes-Floor_0 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4300057043156720164, guid: cf2c43cd3335e3b499ddd4ebb0114f71, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4334064234827605808, guid: cf2c43cd3335e3b499ddd4ebb0114f71, type: 3}
       propertyPath: m_LocalPosition.x
@@ -49724,6 +49752,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hourglass_0 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8215883350482662327, guid: 4acf3d4ff6876334dac331a9c2a2d72c, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -49745,6 +49777,10 @@ PrefabInstance:
     - target: {fileID: 4300057043156720164, guid: cf2c43cd3335e3b499ddd4ebb0114f71, type: 3}
       propertyPath: m_Name
       value: Trap-Spikes-Floor_0 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4300057043156720164, guid: cf2c43cd3335e3b499ddd4ebb0114f71, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4334064234827605808, guid: cf2c43cd3335e3b499ddd4ebb0114f71, type: 3}
       propertyPath: m_LocalPosition.x
@@ -49807,6 +49843,10 @@ PrefabInstance:
     - target: {fileID: 4288904943091282121, guid: e028fb7b803ab144bb389145574d2c34, type: 3}
       propertyPath: m_Name
       value: Brazier-Stone_0 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4288904943091282121, guid: e028fb7b803ab144bb389145574d2c34, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 8257903167631745269, guid: e028fb7b803ab144bb389145574d2c34, type: 3}
       propertyPath: m_LocalPosition.x
@@ -49910,6 +49950,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WritingStand-2_0
       objectReference: {fileID: 0}
+    - target: {fileID: 6950083844333042184, guid: 57f14c520ff67da47adecd980a78d41a, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -49931,6 +49975,10 @@ PrefabInstance:
     - target: {fileID: 1799687739160165712, guid: ee2f689c0ceb914489c413fa6b8359d9, type: 3}
       propertyPath: m_Name
       value: Web-1_0 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1799687739160165712, guid: ee2f689c0ceb914489c413fa6b8359d9, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 8403393888624167679, guid: ee2f689c0ceb914489c413fa6b8359d9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -50034,6 +50082,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trap-SpikedLog_0 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 7787222203969022703, guid: b1ec59c0ed8528d42bf6ea481e68f34b, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -50095,6 +50147,10 @@ PrefabInstance:
     - target: {fileID: 8966588480146712240, guid: aafc65d360f950248b9b631dbd2bbbe9, type: 3}
       propertyPath: m_Name
       value: Table-5_0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8966588480146712240, guid: aafc65d360f950248b9b631dbd2bbbe9, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -50158,6 +50214,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barrel-5_0 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 7357862159340682085, guid: 8f0d9774af653e64f87a951256538ab3, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -50179,6 +50239,10 @@ PrefabInstance:
     - target: {fileID: 2733834075322920911, guid: 7d3363ee0e2c5f84b80ce4280b575b60, type: 3}
       propertyPath: m_Name
       value: Candle-3_0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2733834075322920911, guid: 7d3363ee0e2c5f84b80ce4280b575b60, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4486778887514916739, guid: 7d3363ee0e2c5f84b80ce4280b575b60, type: 3}
       propertyPath: m_LocalPosition.x
@@ -50241,6 +50305,10 @@ PrefabInstance:
     - target: {fileID: 4300057043156720164, guid: cf2c43cd3335e3b499ddd4ebb0114f71, type: 3}
       propertyPath: m_Name
       value: Trap-Spikes-Floor_0 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4300057043156720164, guid: cf2c43cd3335e3b499ddd4ebb0114f71, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4334064234827605808, guid: cf2c43cd3335e3b499ddd4ebb0114f71, type: 3}
       propertyPath: m_LocalPosition.x
@@ -50348,6 +50416,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PawnWarrior_0
       objectReference: {fileID: 0}
+    - target: {fileID: 7970056983287192675, guid: 11306eafdf8c8334b9164fe853820e50, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -50369,6 +50441,10 @@ PrefabInstance:
     - target: {fileID: 3931045694512370992, guid: 51a943ed39165944abe7009974d442b8, type: 3}
       propertyPath: m_Name
       value: Skull-1_0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3931045694512370992, guid: 51a943ed39165944abe7009974d442b8, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 5775140404866684491, guid: 51a943ed39165944abe7009974d442b8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -50435,6 +50511,10 @@ PrefabInstance:
     - target: {fileID: 5649928502516924962, guid: 169996f521d2a8842a7952635f2ea5f5, type: 3}
       propertyPath: m_Name
       value: Scroll_0 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5649928502516924962, guid: 169996f521d2a8842a7952635f2ea5f5, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 8033674958605055375, guid: 169996f521d2a8842a7952635f2ea5f5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -50538,6 +50618,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trap-SpikedLog_0
       objectReference: {fileID: 0}
+    - target: {fileID: 7787222203969022703, guid: b1ec59c0ed8528d42bf6ea481e68f34b, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -50559,6 +50643,10 @@ PrefabInstance:
     - target: {fileID: 1332884732730303394, guid: ae1873baae080ba4dae5c269ccd06189, type: 3}
       propertyPath: m_Name
       value: Chest-Animated-4_0 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1332884732730303394, guid: ae1873baae080ba4dae5c269ccd06189, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 6549998813609911641, guid: ae1873baae080ba4dae5c269ccd06189, type: 3}
       propertyPath: m_LocalPosition.x
@@ -50662,6 +50750,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hourglass_0 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8215883350482662327, guid: 4acf3d4ff6876334dac331a9c2a2d72c, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -50683,6 +50775,10 @@ PrefabInstance:
     - target: {fileID: 4300057043156720164, guid: cf2c43cd3335e3b499ddd4ebb0114f71, type: 3}
       propertyPath: m_Name
       value: Trap-Spikes-Floor_0 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4300057043156720164, guid: cf2c43cd3335e3b499ddd4ebb0114f71, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4334064234827605808, guid: cf2c43cd3335e3b499ddd4ebb0114f71, type: 3}
       propertyPath: m_LocalPosition.x
@@ -50750,6 +50846,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Skul-2l_0 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 4313603740950210172, guid: 20aa52c2a13b5a24b9e7dac0ea7d007b, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 6221596533535254878, guid: 20aa52c2a13b5a24b9e7dac0ea7d007b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.5242383
@@ -50811,6 +50911,10 @@ PrefabInstance:
     - target: {fileID: 2588327179587077936, guid: 4abd5d044218ada4fbba3ea840329dba, type: 3}
       propertyPath: m_Name
       value: BalanceScale_0 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2588327179587077936, guid: 4abd5d044218ada4fbba3ea840329dba, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4389945006622280714, guid: 4abd5d044218ada4fbba3ea840329dba, type: 3}
       propertyPath: m_LocalPosition.x
@@ -50918,6 +51022,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WritingStand-1_0 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 8152393693769448714, guid: 350c0ec87a2ced841aa92def33403bfc, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -50939,6 +51047,10 @@ PrefabInstance:
     - target: {fileID: 4288904943091282121, guid: e028fb7b803ab144bb389145574d2c34, type: 3}
       propertyPath: m_Name
       value: Brazier-Stone_0 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4288904943091282121, guid: e028fb7b803ab144bb389145574d2c34, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 8257903167631745269, guid: e028fb7b803ab144bb389145574d2c34, type: 3}
       propertyPath: m_LocalPosition.x
@@ -51002,6 +51114,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trap-Spikes-Floor_0 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 4300057043156720164, guid: cf2c43cd3335e3b499ddd4ebb0114f71, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 4334064234827605808, guid: cf2c43cd3335e3b499ddd4ebb0114f71, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4
@@ -51063,6 +51179,10 @@ PrefabInstance:
     - target: {fileID: 634381334339299278, guid: 957ac4951cfa31e44a6e4a4ed984b5d5, type: 3}
       propertyPath: m_Name
       value: Candle-5_0
+      objectReference: {fileID: 0}
+    - target: {fileID: 634381334339299278, guid: 957ac4951cfa31e44a6e4a4ed984b5d5, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 1827322614535603786, guid: 957ac4951cfa31e44a6e4a4ed984b5d5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -51130,6 +51250,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Scroll_0
       objectReference: {fileID: 0}
+    - target: {fileID: 5649928502516924962, guid: 169996f521d2a8842a7952635f2ea5f5, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 8033674958605055375, guid: 169996f521d2a8842a7952635f2ea5f5, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.4388423
@@ -51192,6 +51316,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Web-1_0 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1799687739160165712, guid: ee2f689c0ceb914489c413fa6b8359d9, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 8403393888624167679, guid: ee2f689c0ceb914489c413fa6b8359d9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 8.470375
@@ -51253,6 +51381,10 @@ PrefabInstance:
     - target: {fileID: 634381334339299278, guid: 957ac4951cfa31e44a6e4a4ed984b5d5, type: 3}
       propertyPath: m_Name
       value: Candle-5_0
+      objectReference: {fileID: 0}
+    - target: {fileID: 634381334339299278, guid: 957ac4951cfa31e44a6e4a4ed984b5d5, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 1827322614535603786, guid: 957ac4951cfa31e44a6e4a4ed984b5d5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -51356,6 +51488,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StonePile-8_0
       objectReference: {fileID: 0}
+    - target: {fileID: 8810933361324065637, guid: 2f0d13a0ca7a7c44e8e3a471e4b1e70b, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -51418,6 +51554,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trap-SpikedLog_0 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7787222203969022703, guid: b1ec59c0ed8528d42bf6ea481e68f34b, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -51439,6 +51579,10 @@ PrefabInstance:
     - target: {fileID: 2733834075322920911, guid: 7d3363ee0e2c5f84b80ce4280b575b60, type: 3}
       propertyPath: m_Name
       value: Candle-3_0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2733834075322920911, guid: 7d3363ee0e2c5f84b80ce4280b575b60, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4486778887514916739, guid: 7d3363ee0e2c5f84b80ce4280b575b60, type: 3}
       propertyPath: m_LocalPosition.x
@@ -51506,6 +51650,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Candle-5_0 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 634381334339299278, guid: 957ac4951cfa31e44a6e4a4ed984b5d5, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 1827322614535603786, guid: 957ac4951cfa31e44a6e4a4ed984b5d5, type: 3}
       propertyPath: m_LocalPosition.x
       value: -20.246853
@@ -51572,6 +51720,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chest-Animated-4_0
       objectReference: {fileID: 0}
+    - target: {fileID: 1332884732730303394, guid: ae1873baae080ba4dae5c269ccd06189, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 6549998813609911641, guid: ae1873baae080ba4dae5c269ccd06189, type: 3}
       propertyPath: m_LocalPosition.x
       value: 7.364498
@@ -51633,6 +51785,10 @@ PrefabInstance:
     - target: {fileID: 4044547970717866990, guid: 6a268f5522ca1c34090717c81f986515, type: 3}
       propertyPath: m_Name
       value: Sarcophagus-2_0 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044547970717866990, guid: 6a268f5522ca1c34090717c81f986515, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4269568125631227462, guid: 6a268f5522ca1c34090717c81f986515, type: 3}
       propertyPath: m_SortingOrder
@@ -51699,6 +51855,10 @@ PrefabInstance:
     - target: {fileID: 1799687739160165712, guid: ee2f689c0ceb914489c413fa6b8359d9, type: 3}
       propertyPath: m_Name
       value: Web-1_0 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1799687739160165712, guid: ee2f689c0ceb914489c413fa6b8359d9, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 8403393888624167679, guid: ee2f689c0ceb914489c413fa6b8359d9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -51802,6 +51962,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crate-3_0 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8400904041815820707, guid: c6418dded67ba2a49824d21319eb170e, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -51823,6 +51987,10 @@ PrefabInstance:
     - target: {fileID: 4300057043156720164, guid: cf2c43cd3335e3b499ddd4ebb0114f71, type: 3}
       propertyPath: m_Name
       value: Trap-Spikes-Floor_0 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4300057043156720164, guid: cf2c43cd3335e3b499ddd4ebb0114f71, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4334064234827605808, guid: cf2c43cd3335e3b499ddd4ebb0114f71, type: 3}
       propertyPath: m_LocalPosition.x
@@ -51926,6 +52094,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Flag-2_0
       objectReference: {fileID: 0}
+    - target: {fileID: 7715791864569226610, guid: ed3abc6b46d8a1145b0e56b3232c6ae9, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -51947,6 +52119,10 @@ PrefabInstance:
     - target: {fileID: 4288904943091282121, guid: e028fb7b803ab144bb389145574d2c34, type: 3}
       propertyPath: m_Name
       value: Brazier-Stone_0 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4288904943091282121, guid: e028fb7b803ab144bb389145574d2c34, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 8257903167631745269, guid: e028fb7b803ab144bb389145574d2c34, type: 3}
       propertyPath: m_LocalPosition.x
@@ -52009,6 +52185,10 @@ PrefabInstance:
     - target: {fileID: 683615066654245562, guid: 81fcfee5d00c8064d8cfb19f367c1b0f, type: 3}
       propertyPath: m_Name
       value: Door Default
+      objectReference: {fileID: 0}
+    - target: {fileID: 683615066654245562, guid: 81fcfee5d00c8064d8cfb19f367c1b0f, type: 3}
+      propertyPath: m_Layer
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 7673456289008801265, guid: 81fcfee5d00c8064d8cfb19f367c1b0f, type: 3}
       propertyPath: m_SortingOrder
@@ -52076,6 +52256,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Skul-2l_0
       objectReference: {fileID: 0}
+    - target: {fileID: 4313603740950210172, guid: 20aa52c2a13b5a24b9e7dac0ea7d007b, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 6221596533535254878, guid: 20aa52c2a13b5a24b9e7dac0ea7d007b, type: 3}
       propertyPath: m_LocalPosition.x
       value: -13.22525
@@ -52137,6 +52321,10 @@ PrefabInstance:
     - target: {fileID: 1332884732730303394, guid: ae1873baae080ba4dae5c269ccd06189, type: 3}
       propertyPath: m_Name
       value: Chest-Animated-4_0 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1332884732730303394, guid: ae1873baae080ba4dae5c269ccd06189, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 6549998813609911641, guid: ae1873baae080ba4dae5c269ccd06189, type: 3}
       propertyPath: m_LocalPosition.x
@@ -52200,6 +52388,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Scroll_0
       objectReference: {fileID: 0}
+    - target: {fileID: 5649928502516924962, guid: 169996f521d2a8842a7952635f2ea5f5, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 8033674958605055375, guid: 169996f521d2a8842a7952635f2ea5f5, type: 3}
       propertyPath: m_LocalPosition.x
       value: -13.506044
@@ -52261,6 +52453,10 @@ PrefabInstance:
     - target: {fileID: 4300057043156720164, guid: cf2c43cd3335e3b499ddd4ebb0114f71, type: 3}
       propertyPath: m_Name
       value: Trap-Spikes-Floor_0 (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4300057043156720164, guid: cf2c43cd3335e3b499ddd4ebb0114f71, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4334064234827605808, guid: cf2c43cd3335e3b499ddd4ebb0114f71, type: 3}
       propertyPath: m_LocalPosition.x
@@ -52364,6 +52560,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hourglass_0 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 8215883350482662327, guid: 4acf3d4ff6876334dac331a9c2a2d72c, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -52385,6 +52585,10 @@ PrefabInstance:
     - target: {fileID: 3931045694512370992, guid: 51a943ed39165944abe7009974d442b8, type: 3}
       propertyPath: m_Name
       value: Skull-1_0 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3931045694512370992, guid: 51a943ed39165944abe7009974d442b8, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 5775140404866684491, guid: 51a943ed39165944abe7009974d442b8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -52492,6 +52696,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barrel-5_0 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 7357862159340682085, guid: 8f0d9774af653e64f87a951256538ab3, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -52516,7 +52724,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 683615066654245562, guid: 81fcfee5d00c8064d8cfb19f367c1b0f, type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 7673456289008801265, guid: 81fcfee5d00c8064d8cfb19f367c1b0f, type: 3}
       propertyPath: m_SortingOrder
@@ -52584,6 +52792,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chest-Animated-4_0 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 1332884732730303394, guid: ae1873baae080ba4dae5c269ccd06189, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 6549998813609911641, guid: ae1873baae080ba4dae5c269ccd06189, type: 3}
       propertyPath: m_LocalPosition.x
       value: 8.64
@@ -52648,7 +52860,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 683615066654245562, guid: 81fcfee5d00c8064d8cfb19f367c1b0f, type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 7673456289008801265, guid: 81fcfee5d00c8064d8cfb19f367c1b0f, type: 3}
       propertyPath: m_SortingOrder
@@ -52716,6 +52928,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chest-Animated-4_0 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 1332884732730303394, guid: ae1873baae080ba4dae5c269ccd06189, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 6549998813609911641, guid: ae1873baae080ba4dae5c269ccd06189, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.5102189
@@ -52777,6 +52993,10 @@ PrefabInstance:
     - target: {fileID: 4300057043156720164, guid: cf2c43cd3335e3b499ddd4ebb0114f71, type: 3}
       propertyPath: m_Name
       value: Trap-Spikes-Floor_0 (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4300057043156720164, guid: cf2c43cd3335e3b499ddd4ebb0114f71, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4334064234827605808, guid: cf2c43cd3335e3b499ddd4ebb0114f71, type: 3}
       propertyPath: m_LocalPosition.x
@@ -52880,6 +53100,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Flag-2_0 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7715791864569226610, guid: ed3abc6b46d8a1145b0e56b3232c6ae9, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -52942,6 +53166,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Flag-2_0 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 7715791864569226610, guid: ed3abc6b46d8a1145b0e56b3232c6ae9, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -52963,6 +53191,10 @@ PrefabInstance:
     - target: {fileID: 4300057043156720164, guid: cf2c43cd3335e3b499ddd4ebb0114f71, type: 3}
       propertyPath: m_Name
       value: Trap-Spikes-Floor_0 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4300057043156720164, guid: cf2c43cd3335e3b499ddd4ebb0114f71, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4334064234827605808, guid: cf2c43cd3335e3b499ddd4ebb0114f71, type: 3}
       propertyPath: m_LocalPosition.x
@@ -53025,6 +53257,10 @@ PrefabInstance:
     - target: {fileID: 2588327179587077936, guid: 4abd5d044218ada4fbba3ea840329dba, type: 3}
       propertyPath: m_Name
       value: BalanceScale_0 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2588327179587077936, guid: 4abd5d044218ada4fbba3ea840329dba, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4389945006622280714, guid: 4abd5d044218ada4fbba3ea840329dba, type: 3}
       propertyPath: m_LocalPosition.x
@@ -53128,6 +53364,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Flag-2_0
       objectReference: {fileID: 0}
+    - target: {fileID: 7715791864569226610, guid: ed3abc6b46d8a1145b0e56b3232c6ae9, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -53190,6 +53430,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BookShelf-1_0 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4579038849618694646, guid: d9cf0a8c99fb64244806472f5281df13, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -53211,6 +53455,10 @@ PrefabInstance:
     - target: {fileID: 3931045694512370992, guid: 51a943ed39165944abe7009974d442b8, type: 3}
       propertyPath: m_Name
       value: Skull-1_0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3931045694512370992, guid: 51a943ed39165944abe7009974d442b8, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 5775140404866684491, guid: 51a943ed39165944abe7009974d442b8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -53273,6 +53521,10 @@ PrefabInstance:
     - target: {fileID: 4288904943091282121, guid: e028fb7b803ab144bb389145574d2c34, type: 3}
       propertyPath: m_Name
       value: Brazier-Stone_0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4288904943091282121, guid: e028fb7b803ab144bb389145574d2c34, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 8257903167631745269, guid: e028fb7b803ab144bb389145574d2c34, type: 3}
       propertyPath: m_LocalPosition.x
@@ -53376,6 +53628,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hourglass_0
       objectReference: {fileID: 0}
+    - target: {fileID: 8215883350482662327, guid: 4acf3d4ff6876334dac331a9c2a2d72c, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -53442,6 +53698,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Altar-5_0
       objectReference: {fileID: 0}
+    - target: {fileID: 8851571367848717364, guid: 5a66d0fb0a3b0844aafc446a2b211605, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -53463,6 +53723,10 @@ PrefabInstance:
     - target: {fileID: 4288904943091282121, guid: e028fb7b803ab144bb389145574d2c34, type: 3}
       propertyPath: m_Name
       value: Brazier-Stone_0 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4288904943091282121, guid: e028fb7b803ab144bb389145574d2c34, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 5860642716124169380, guid: e028fb7b803ab144bb389145574d2c34, type: 3}
       propertyPath: m_SortingOrder
@@ -53530,6 +53794,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brazier-Stone_0 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 4288904943091282121, guid: e028fb7b803ab144bb389145574d2c34, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 5860642716124169380, guid: e028fb7b803ab144bb389145574d2c34, type: 3}
       propertyPath: m_SortingOrder
       value: 600
@@ -53595,6 +53863,10 @@ PrefabInstance:
     - target: {fileID: 3931045694512370992, guid: 51a943ed39165944abe7009974d442b8, type: 3}
       propertyPath: m_Name
       value: Skull-1_0 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3931045694512370992, guid: 51a943ed39165944abe7009974d442b8, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 5775140404866684491, guid: 51a943ed39165944abe7009974d442b8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -53662,6 +53934,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Skul-2l_0 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 4313603740950210172, guid: 20aa52c2a13b5a24b9e7dac0ea7d007b, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 6221596533535254878, guid: 20aa52c2a13b5a24b9e7dac0ea7d007b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.565423
@@ -53724,6 +54000,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trap-Spikes-Floor_0 (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 4300057043156720164, guid: cf2c43cd3335e3b499ddd4ebb0114f71, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 4334064234827605808, guid: cf2c43cd3335e3b499ddd4ebb0114f71, type: 3}
       propertyPath: m_LocalPosition.x
       value: 5
@@ -53785,6 +54065,10 @@ PrefabInstance:
     - target: {fileID: 3931045694512370992, guid: 51a943ed39165944abe7009974d442b8, type: 3}
       propertyPath: m_Name
       value: Skull-1_0 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3931045694512370992, guid: 51a943ed39165944abe7009974d442b8, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 5775140404866684491, guid: 51a943ed39165944abe7009974d442b8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -53852,6 +54136,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Candle-3_0
       objectReference: {fileID: 0}
+    - target: {fileID: 2733834075322920911, guid: 7d3363ee0e2c5f84b80ce4280b575b60, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 4486778887514916739, guid: 7d3363ee0e2c5f84b80ce4280b575b60, type: 3}
       propertyPath: m_LocalPosition.x
       value: -21.291204
@@ -53918,6 +54206,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brazier-Stone_0 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 4288904943091282121, guid: e028fb7b803ab144bb389145574d2c34, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 8257903167631745269, guid: e028fb7b803ab144bb389145574d2c34, type: 3}
       propertyPath: m_LocalPosition.x
       value: 7.335673
@@ -53979,6 +54271,10 @@ PrefabInstance:
     - target: {fileID: 4300057043156720164, guid: cf2c43cd3335e3b499ddd4ebb0114f71, type: 3}
       propertyPath: m_Name
       value: Trap-Spikes-Floor_0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4300057043156720164, guid: cf2c43cd3335e3b499ddd4ebb0114f71, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4334064234827605808, guid: cf2c43cd3335e3b499ddd4ebb0114f71, type: 3}
       propertyPath: m_LocalPosition.x
@@ -54042,6 +54338,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bedside-Table-1_0
       objectReference: {fileID: 0}
+    - target: {fileID: 199943374915505318, guid: c45b5fdc867d92a4fbbd8111efa784ec, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 2482880739309640357, guid: c45b5fdc867d92a4fbbd8111efa784ec, type: 3}
       propertyPath: m_LocalPosition.x
       value: -13.503838
@@ -54104,6 +54404,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trap-Spikes-Floor_0
       objectReference: {fileID: 0}
+    - target: {fileID: 4300057043156720164, guid: cf2c43cd3335e3b499ddd4ebb0114f71, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 4334064234827605808, guid: cf2c43cd3335e3b499ddd4ebb0114f71, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4
@@ -54165,6 +54469,10 @@ PrefabInstance:
     - target: {fileID: 5649928502516924962, guid: 169996f521d2a8842a7952635f2ea5f5, type: 3}
       propertyPath: m_Name
       value: Scroll_0 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5649928502516924962, guid: 169996f521d2a8842a7952635f2ea5f5, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 8033674958605055375, guid: 169996f521d2a8842a7952635f2ea5f5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -54268,6 +54576,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barrel-5_0
       objectReference: {fileID: 0}
+    - target: {fileID: 7357862159340682085, guid: 8f0d9774af653e64f87a951256538ab3, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -54292,7 +54604,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 683615066654245562, guid: 81fcfee5d00c8064d8cfb19f367c1b0f, type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 7673456289008801265, guid: 81fcfee5d00c8064d8cfb19f367c1b0f, type: 3}
       propertyPath: m_SortingOrder
@@ -54400,6 +54712,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crate-3_0
       objectReference: {fileID: 0}
+    - target: {fileID: 8400904041815820707, guid: c6418dded67ba2a49824d21319eb170e, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -54421,6 +54737,10 @@ PrefabInstance:
     - target: {fileID: 4300057043156720164, guid: cf2c43cd3335e3b499ddd4ebb0114f71, type: 3}
       propertyPath: m_Name
       value: Trap-Spikes-Floor_0 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4300057043156720164, guid: cf2c43cd3335e3b499ddd4ebb0114f71, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4334064234827605808, guid: cf2c43cd3335e3b499ddd4ebb0114f71, type: 3}
       propertyPath: m_LocalPosition.x
@@ -54524,6 +54844,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barrel-5_0 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 7357862159340682085, guid: 8f0d9774af653e64f87a951256538ab3, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -54545,6 +54869,10 @@ PrefabInstance:
     - target: {fileID: 1156189134735890757, guid: 59875658fd958444eb9e1852ce421f44, type: 3}
       propertyPath: m_Name
       value: Barrel-6_0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1156189134735890757, guid: 59875658fd958444eb9e1852ce421f44, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4883050833661104281, guid: 59875658fd958444eb9e1852ce421f44, type: 3}
       propertyPath: m_LocalPosition.x
@@ -54648,6 +54976,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WritingStand-2_0 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6950083844333042184, guid: 57f14c520ff67da47adecd980a78d41a, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -54669,6 +55001,10 @@ PrefabInstance:
     - target: {fileID: 4288904943091282121, guid: e028fb7b803ab144bb389145574d2c34, type: 3}
       propertyPath: m_Name
       value: Brazier-Stone_0 (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4288904943091282121, guid: e028fb7b803ab144bb389145574d2c34, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 5860642716124169380, guid: e028fb7b803ab144bb389145574d2c34, type: 3}
       propertyPath: m_SortingOrder
@@ -54776,6 +55112,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hourglass_0
       objectReference: {fileID: 0}
+    - target: {fileID: 8215883350482662327, guid: 4acf3d4ff6876334dac331a9c2a2d72c, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -54797,6 +55137,10 @@ PrefabInstance:
     - target: {fileID: 1799687739160165712, guid: ee2f689c0ceb914489c413fa6b8359d9, type: 3}
       propertyPath: m_Name
       value: Web-1_0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1799687739160165712, guid: ee2f689c0ceb914489c413fa6b8359d9, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 8403393888624167679, guid: ee2f689c0ceb914489c413fa6b8359d9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -54864,6 +55208,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Skul-2l_0 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 4313603740950210172, guid: 20aa52c2a13b5a24b9e7dac0ea7d007b, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 6221596533535254878, guid: 20aa52c2a13b5a24b9e7dac0ea7d007b, type: 3}
       propertyPath: m_LocalPosition.x
       value: -17.199024
@@ -54926,6 +55274,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BalanceScale_0
       objectReference: {fileID: 0}
+    - target: {fileID: 2588327179587077936, guid: 4abd5d044218ada4fbba3ea840329dba, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 4389945006622280714, guid: 4abd5d044218ada4fbba3ea840329dba, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.453693
@@ -54987,6 +55339,10 @@ PrefabInstance:
     - target: {fileID: 4313603740950210172, guid: 20aa52c2a13b5a24b9e7dac0ea7d007b, type: 3}
       propertyPath: m_Name
       value: Skul-2l_0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4313603740950210172, guid: 20aa52c2a13b5a24b9e7dac0ea7d007b, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 6221596533535254878, guid: 20aa52c2a13b5a24b9e7dac0ea7d007b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -55090,6 +55446,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BookShelf-1_0
       objectReference: {fileID: 0}
+    - target: {fileID: 4579038849618694646, guid: d9cf0a8c99fb64244806472f5281df13, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -55111,6 +55471,10 @@ PrefabInstance:
     - target: {fileID: 4313603740950210172, guid: 20aa52c2a13b5a24b9e7dac0ea7d007b, type: 3}
       propertyPath: m_Name
       value: Skul-2l_0 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4313603740950210172, guid: 20aa52c2a13b5a24b9e7dac0ea7d007b, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 6221596533535254878, guid: 20aa52c2a13b5a24b9e7dac0ea7d007b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -55174,6 +55538,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trap-Spikes-Floor_0 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4300057043156720164, guid: cf2c43cd3335e3b499ddd4ebb0114f71, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 4334064234827605808, guid: cf2c43cd3335e3b499ddd4ebb0114f71, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3
@@ -55236,6 +55604,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StonePile-5_0
       objectReference: {fileID: 0}
+    - target: {fileID: 3580936986887816014, guid: 3ce2862c36d2ecf44a0a99f35c62fa16, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 4517785396155113586, guid: 3ce2862c36d2ecf44a0a99f35c62fa16, type: 3}
       propertyPath: m_LocalPosition.x
       value: -12.510306
@@ -55297,6 +55669,10 @@ PrefabInstance:
     - target: {fileID: 3931045694512370992, guid: 51a943ed39165944abe7009974d442b8, type: 3}
       propertyPath: m_Name
       value: Skull-1_0 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3931045694512370992, guid: 51a943ed39165944abe7009974d442b8, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 5775140404866684491, guid: 51a943ed39165944abe7009974d442b8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -55364,6 +55740,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Skull-1_0 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3931045694512370992, guid: 51a943ed39165944abe7009974d442b8, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 5775140404866684491, guid: 51a943ed39165944abe7009974d442b8, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.166492
@@ -55425,6 +55805,10 @@ PrefabInstance:
     - target: {fileID: 683615066654245562, guid: 81fcfee5d00c8064d8cfb19f367c1b0f, type: 3}
       propertyPath: m_Name
       value: Door Default
+      objectReference: {fileID: 0}
+    - target: {fileID: 683615066654245562, guid: 81fcfee5d00c8064d8cfb19f367c1b0f, type: 3}
+      propertyPath: m_Layer
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 7673456289008801265, guid: 81fcfee5d00c8064d8cfb19f367c1b0f, type: 3}
       propertyPath: m_SortingOrder
@@ -55492,6 +55876,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trap-Spikes-Floor_0 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 4300057043156720164, guid: cf2c43cd3335e3b499ddd4ebb0114f71, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 4334064234827605808, guid: cf2c43cd3335e3b499ddd4ebb0114f71, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2
@@ -55554,6 +55942,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trap-Spikes-Floor_0 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 4300057043156720164, guid: cf2c43cd3335e3b499ddd4ebb0114f71, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 4334064234827605808, guid: cf2c43cd3335e3b499ddd4ebb0114f71, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2
@@ -55615,6 +56007,10 @@ PrefabInstance:
     - target: {fileID: 4044547970717866990, guid: 6a268f5522ca1c34090717c81f986515, type: 3}
       propertyPath: m_Name
       value: Sarcophagus-2_0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044547970717866990, guid: 6a268f5522ca1c34090717c81f986515, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 6411672511497840523, guid: 6a268f5522ca1c34090717c81f986515, type: 3}
       propertyPath: m_LocalPosition.x
@@ -55718,6 +56114,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barrel-5_0 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7357862159340682085, guid: 8f0d9774af653e64f87a951256538ab3, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -55739,6 +56139,10 @@ PrefabInstance:
     - target: {fileID: 3931045694512370992, guid: 51a943ed39165944abe7009974d442b8, type: 3}
       propertyPath: m_Name
       value: Skull-1_0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3931045694512370992, guid: 51a943ed39165944abe7009974d442b8, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 5775140404866684491, guid: 51a943ed39165944abe7009974d442b8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -55806,6 +56210,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Candle-3_0 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 2733834075322920911, guid: 7d3363ee0e2c5f84b80ce4280b575b60, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 4486778887514916739, guid: 7d3363ee0e2c5f84b80ce4280b575b60, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6.0898795
@@ -55868,6 +56276,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trap-Spikes-Floor_0 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 4300057043156720164, guid: cf2c43cd3335e3b499ddd4ebb0114f71, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 4334064234827605808, guid: cf2c43cd3335e3b499ddd4ebb0114f71, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1
@@ -55929,6 +56341,10 @@ PrefabInstance:
     - target: {fileID: 4288904943091282121, guid: e028fb7b803ab144bb389145574d2c34, type: 3}
       propertyPath: m_Name
       value: Brazier-Stone_0 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4288904943091282121, guid: e028fb7b803ab144bb389145574d2c34, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 8257903167631745269, guid: e028fb7b803ab144bb389145574d2c34, type: 3}
       propertyPath: m_LocalPosition.x
@@ -55996,6 +56412,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Skul-2l_0 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 4313603740950210172, guid: 20aa52c2a13b5a24b9e7dac0ea7d007b, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 6221596533535254878, guid: 20aa52c2a13b5a24b9e7dac0ea7d007b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.79
@@ -56057,6 +56477,10 @@ PrefabInstance:
     - target: {fileID: 4313603740950210172, guid: 20aa52c2a13b5a24b9e7dac0ea7d007b, type: 3}
       propertyPath: m_Name
       value: Skul-2l_0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4313603740950210172, guid: 20aa52c2a13b5a24b9e7dac0ea7d007b, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 6221596533535254878, guid: 20aa52c2a13b5a24b9e7dac0ea7d007b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -56120,6 +56544,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Web-1_0 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 1799687739160165712, guid: ee2f689c0ceb914489c413fa6b8359d9, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 8403393888624167679, guid: ee2f689c0ceb914489c413fa6b8359d9, type: 3}
       propertyPath: m_LocalPosition.x
       value: -16.958118
@@ -56181,6 +56609,10 @@ PrefabInstance:
     - target: {fileID: 4300057043156720164, guid: cf2c43cd3335e3b499ddd4ebb0114f71, type: 3}
       propertyPath: m_Name
       value: Trap-Spikes-Floor_0 (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4300057043156720164, guid: cf2c43cd3335e3b499ddd4ebb0114f71, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4334064234827605808, guid: cf2c43cd3335e3b499ddd4ebb0114f71, type: 3}
       propertyPath: m_LocalPosition.x
@@ -56288,6 +56720,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Altar-5_0
       objectReference: {fileID: 0}
+    - target: {fileID: 8851571367848717364, guid: 5a66d0fb0a3b0844aafc446a2b211605, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -56350,6 +56786,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crate-4_0
       objectReference: {fileID: 0}
+    - target: {fileID: 7117793196299770264, guid: db7cbe6c64e7b9c4fb021f038a8f9fcb, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -56371,6 +56811,10 @@ PrefabInstance:
     - target: {fileID: 4300057043156720164, guid: cf2c43cd3335e3b499ddd4ebb0114f71, type: 3}
       propertyPath: m_Name
       value: Trap-Spikes-Floor_0 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4300057043156720164, guid: cf2c43cd3335e3b499ddd4ebb0114f71, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4334064234827605808, guid: cf2c43cd3335e3b499ddd4ebb0114f71, type: 3}
       propertyPath: m_LocalPosition.x
@@ -56438,6 +56882,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Skul-2l_0 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 4313603740950210172, guid: 20aa52c2a13b5a24b9e7dac0ea7d007b, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 6221596533535254878, guid: 20aa52c2a13b5a24b9e7dac0ea7d007b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.223931
@@ -56504,6 +56952,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Skul-2l_0 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 4313603740950210172, guid: 20aa52c2a13b5a24b9e7dac0ea7d007b, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 6221596533535254878, guid: 20aa52c2a13b5a24b9e7dac0ea7d007b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.8628211
@@ -56565,6 +57017,10 @@ PrefabInstance:
     - target: {fileID: 4313603740950210172, guid: 20aa52c2a13b5a24b9e7dac0ea7d007b, type: 3}
       propertyPath: m_Name
       value: Skul-2l_0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4313603740950210172, guid: 20aa52c2a13b5a24b9e7dac0ea7d007b, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 6221596533535254878, guid: 20aa52c2a13b5a24b9e7dac0ea7d007b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -56668,6 +57124,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WritingStand-2_0 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6950083844333042184, guid: 57f14c520ff67da47adecd980a78d41a, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -56689,6 +57149,10 @@ PrefabInstance:
     - target: {fileID: 1332884732730303394, guid: ae1873baae080ba4dae5c269ccd06189, type: 3}
       propertyPath: m_Name
       value: Chest-Animated-4_0 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1332884732730303394, guid: ae1873baae080ba4dae5c269ccd06189, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 6549998813609911641, guid: ae1873baae080ba4dae5c269ccd06189, type: 3}
       propertyPath: m_LocalPosition.x
@@ -56752,6 +57216,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Skull-1_0 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3931045694512370992, guid: 51a943ed39165944abe7009974d442b8, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 5775140404866684491, guid: 51a943ed39165944abe7009974d442b8, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.314048
@@ -56813,6 +57281,10 @@ PrefabInstance:
     - target: {fileID: 4044547970717866990, guid: 6a268f5522ca1c34090717c81f986515, type: 3}
       propertyPath: m_Name
       value: Sarcophagus-2_0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044547970717866990, guid: 6a268f5522ca1c34090717c81f986515, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4269568125631227462, guid: 6a268f5522ca1c34090717c81f986515, type: 3}
       propertyPath: m_SortingOrder
@@ -56920,6 +57392,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Flag-2_0 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7715791864569226610, guid: ed3abc6b46d8a1145b0e56b3232c6ae9, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -56941,6 +57417,10 @@ PrefabInstance:
     - target: {fileID: 4300057043156720164, guid: cf2c43cd3335e3b499ddd4ebb0114f71, type: 3}
       propertyPath: m_Name
       value: Trap-Spikes-Floor_0 (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4300057043156720164, guid: cf2c43cd3335e3b499ddd4ebb0114f71, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4334064234827605808, guid: cf2c43cd3335e3b499ddd4ebb0114f71, type: 3}
       propertyPath: m_LocalPosition.x
@@ -57004,6 +57484,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Web-1_0 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1799687739160165712, guid: ee2f689c0ceb914489c413fa6b8359d9, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 8403393888624167679, guid: ee2f689c0ceb914489c413fa6b8359d9, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.5649824
@@ -57065,6 +57549,10 @@ PrefabInstance:
     - target: {fileID: 2783695361202013457, guid: 1a89bbf461e11d740bc81c9dfe1c5123, type: 3}
       propertyPath: m_Name
       value: Pottery-1_0 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2783695361202013457, guid: 1a89bbf461e11d740bc81c9dfe1c5123, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 2832729209192578421, guid: 1a89bbf461e11d740bc81c9dfe1c5123, type: 3}
       propertyPath: m_LocalPosition.x
@@ -57132,6 +57620,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Skul-2l_0 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 4313603740950210172, guid: 20aa52c2a13b5a24b9e7dac0ea7d007b, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 6221596533535254878, guid: 20aa52c2a13b5a24b9e7dac0ea7d007b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.6861384
@@ -57194,6 +57686,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pottery-1_0
       objectReference: {fileID: 0}
+    - target: {fileID: 2783695361202013457, guid: 1a89bbf461e11d740bc81c9dfe1c5123, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 2832729209192578421, guid: 1a89bbf461e11d740bc81c9dfe1c5123, type: 3}
       propertyPath: m_LocalPosition.x
       value: 8.422825
@@ -57255,6 +57751,10 @@ PrefabInstance:
     - target: {fileID: 5649928502516924962, guid: 169996f521d2a8842a7952635f2ea5f5, type: 3}
       propertyPath: m_Name
       value: Scroll_0 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5649928502516924962, guid: 169996f521d2a8842a7952635f2ea5f5, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 8033674958605055375, guid: 169996f521d2a8842a7952635f2ea5f5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -57358,6 +57858,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Table-5_0 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8966588480146712240, guid: aafc65d360f950248b9b631dbd2bbbe9, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -57379,6 +57883,10 @@ PrefabInstance:
     - target: {fileID: 683615066654245562, guid: 81fcfee5d00c8064d8cfb19f367c1b0f, type: 3}
       propertyPath: m_Name
       value: Door Locked
+      objectReference: {fileID: 0}
+    - target: {fileID: 683615066654245562, guid: 81fcfee5d00c8064d8cfb19f367c1b0f, type: 3}
+      propertyPath: m_Layer
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 7673456289008801265, guid: 81fcfee5d00c8064d8cfb19f367c1b0f, type: 3}
       propertyPath: m_SortingOrder
@@ -57446,6 +57954,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Skull-1_0 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 3931045694512370992, guid: 51a943ed39165944abe7009974d442b8, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 5775140404866684491, guid: 51a943ed39165944abe7009974d442b8, type: 3}
       propertyPath: m_LocalPosition.x
       value: -16.17
@@ -57507,6 +58019,10 @@ PrefabInstance:
     - target: {fileID: 1799687739160165712, guid: ee2f689c0ceb914489c413fa6b8359d9, type: 3}
       propertyPath: m_Name
       value: Web-1_0 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1799687739160165712, guid: ee2f689c0ceb914489c413fa6b8359d9, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 8403393888624167679, guid: ee2f689c0ceb914489c413fa6b8359d9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -57570,6 +58086,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Skul-2l_0 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4313603740950210172, guid: 20aa52c2a13b5a24b9e7dac0ea7d007b, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 6221596533535254878, guid: 20aa52c2a13b5a24b9e7dac0ea7d007b, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.3318157
@@ -57631,6 +58151,10 @@ PrefabInstance:
     - target: {fileID: 5649928502516924962, guid: 169996f521d2a8842a7952635f2ea5f5, type: 3}
       propertyPath: m_Name
       value: Scroll_0 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5649928502516924962, guid: 169996f521d2a8842a7952635f2ea5f5, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 8033674958605055375, guid: 169996f521d2a8842a7952635f2ea5f5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -57694,6 +58218,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trap-Spikes-Floor_0 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 4300057043156720164, guid: cf2c43cd3335e3b499ddd4ebb0114f71, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 4334064234827605808, guid: cf2c43cd3335e3b499ddd4ebb0114f71, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2
@@ -57755,6 +58283,10 @@ PrefabInstance:
     - target: {fileID: 3931045694512370992, guid: 51a943ed39165944abe7009974d442b8, type: 3}
       propertyPath: m_Name
       value: Skull-1_0 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3931045694512370992, guid: 51a943ed39165944abe7009974d442b8, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 5775140404866684491, guid: 51a943ed39165944abe7009974d442b8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -57822,6 +58354,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BalanceScale_0
       objectReference: {fileID: 0}
+    - target: {fileID: 2588327179587077936, guid: 4abd5d044218ada4fbba3ea840329dba, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 4389945006622280714, guid: 4abd5d044218ada4fbba3ea840329dba, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.0340512
@@ -57883,6 +58419,10 @@ PrefabInstance:
     - target: {fileID: 4300057043156720164, guid: cf2c43cd3335e3b499ddd4ebb0114f71, type: 3}
       propertyPath: m_Name
       value: Trap-Spikes-Floor_0 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4300057043156720164, guid: cf2c43cd3335e3b499ddd4ebb0114f71, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4334064234827605808, guid: cf2c43cd3335e3b499ddd4ebb0114f71, type: 3}
       propertyPath: m_LocalPosition.x
@@ -57986,6 +58526,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Flag-2_0
       objectReference: {fileID: 0}
+    - target: {fileID: 7715791864569226610, guid: ed3abc6b46d8a1145b0e56b3232c6ae9, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -58007,6 +58551,10 @@ PrefabInstance:
     - target: {fileID: 1332884732730303394, guid: ae1873baae080ba4dae5c269ccd06189, type: 3}
       propertyPath: m_Name
       value: Chest-Animated-4_0 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1332884732730303394, guid: ae1873baae080ba4dae5c269ccd06189, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 6549998813609911641, guid: ae1873baae080ba4dae5c269ccd06189, type: 3}
       propertyPath: m_LocalPosition.x
@@ -58070,6 +58618,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Candle-3_0 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2733834075322920911, guid: 7d3363ee0e2c5f84b80ce4280b575b60, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 4486778887514916739, guid: 7d3363ee0e2c5f84b80ce4280b575b60, type: 3}
       propertyPath: m_LocalPosition.x
       value: -13.596458
@@ -58131,6 +58683,10 @@ PrefabInstance:
     - target: {fileID: 3931045694512370992, guid: 51a943ed39165944abe7009974d442b8, type: 3}
       propertyPath: m_Name
       value: Skull-1_0 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3931045694512370992, guid: 51a943ed39165944abe7009974d442b8, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 5775140404866684491, guid: 51a943ed39165944abe7009974d442b8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -58197,6 +58753,10 @@ PrefabInstance:
     - target: {fileID: 683615066654245562, guid: 81fcfee5d00c8064d8cfb19f367c1b0f, type: 3}
       propertyPath: m_Name
       value: Door Locked
+      objectReference: {fileID: 0}
+    - target: {fileID: 683615066654245562, guid: 81fcfee5d00c8064d8cfb19f367c1b0f, type: 3}
+      propertyPath: m_Layer
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 7673456289008801265, guid: 81fcfee5d00c8064d8cfb19f367c1b0f, type: 3}
       propertyPath: m_SortingOrder
@@ -58304,6 +58864,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Flag-2_0 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 7715791864569226610, guid: ed3abc6b46d8a1145b0e56b3232c6ae9, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -58366,6 +58930,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hourglass_0
       objectReference: {fileID: 0}
+    - target: {fileID: 8215883350482662327, guid: 4acf3d4ff6876334dac331a9c2a2d72c, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -58387,6 +58955,10 @@ PrefabInstance:
     - target: {fileID: 1156189134735890757, guid: 59875658fd958444eb9e1852ce421f44, type: 3}
       propertyPath: m_Name
       value: Barrel-6_0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1156189134735890757, guid: 59875658fd958444eb9e1852ce421f44, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4883050833661104281, guid: 59875658fd958444eb9e1852ce421f44, type: 3}
       propertyPath: m_LocalPosition.x
@@ -58490,6 +59062,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BookShelf-1_0 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 4579038849618694646, guid: d9cf0a8c99fb64244806472f5281df13, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -58514,7 +59090,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 683615066654245562, guid: 81fcfee5d00c8064d8cfb19f367c1b0f, type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 7673456289008801265, guid: 81fcfee5d00c8064d8cfb19f367c1b0f, type: 3}
       propertyPath: m_SortingOrder
@@ -58586,6 +59162,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pottery-1_0
       objectReference: {fileID: 0}
+    - target: {fileID: 2783695361202013457, guid: 1a89bbf461e11d740bc81c9dfe1c5123, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 2832729209192578421, guid: 1a89bbf461e11d740bc81c9dfe1c5123, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.7030752
@@ -58647,6 +59227,10 @@ PrefabInstance:
     - target: {fileID: 4313603740950210172, guid: 20aa52c2a13b5a24b9e7dac0ea7d007b, type: 3}
       propertyPath: m_Name
       value: Skul-2l_0 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4313603740950210172, guid: 20aa52c2a13b5a24b9e7dac0ea7d007b, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 6221596533535254878, guid: 20aa52c2a13b5a24b9e7dac0ea7d007b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -58750,6 +59334,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crate-3_0
       objectReference: {fileID: 0}
+    - target: {fileID: 8400904041815820707, guid: c6418dded67ba2a49824d21319eb170e, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -58771,6 +59359,10 @@ PrefabInstance:
     - target: {fileID: 1332884732730303394, guid: ae1873baae080ba4dae5c269ccd06189, type: 3}
       propertyPath: m_Name
       value: Chest-Animated-4_0 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1332884732730303394, guid: ae1873baae080ba4dae5c269ccd06189, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 6549998813609911641, guid: ae1873baae080ba4dae5c269ccd06189, type: 3}
       propertyPath: m_LocalPosition.x
@@ -58874,6 +59466,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bench-4_0
       objectReference: {fileID: 0}
+    - target: {fileID: 8873332568470585603, guid: 9c65d34f44fab104fba75dea6abfe0a7, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -58935,6 +59531,10 @@ PrefabInstance:
     - target: {fileID: 7357862159340682085, guid: 8f0d9774af653e64f87a951256538ab3, type: 3}
       propertyPath: m_Name
       value: Barrel-5_0 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7357862159340682085, guid: 8f0d9774af653e64f87a951256538ab3, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -58998,6 +59598,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Flag-2_0
       objectReference: {fileID: 0}
+    - target: {fileID: 7715791864569226610, guid: ed3abc6b46d8a1145b0e56b3232c6ae9, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -59019,6 +59623,10 @@ PrefabInstance:
     - target: {fileID: 4288904943091282121, guid: e028fb7b803ab144bb389145574d2c34, type: 3}
       propertyPath: m_Name
       value: Brazier-Stone_0 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4288904943091282121, guid: e028fb7b803ab144bb389145574d2c34, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 8257903167631745269, guid: e028fb7b803ab144bb389145574d2c34, type: 3}
       propertyPath: m_LocalPosition.x
@@ -59081,6 +59689,10 @@ PrefabInstance:
     - target: {fileID: 4288904943091282121, guid: e028fb7b803ab144bb389145574d2c34, type: 3}
       propertyPath: m_Name
       value: Brazier-Stone_0 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4288904943091282121, guid: e028fb7b803ab144bb389145574d2c34, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 8257903167631745269, guid: e028fb7b803ab144bb389145574d2c34, type: 3}
       propertyPath: m_LocalPosition.x
@@ -59188,6 +59800,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PawnArcher_0
       objectReference: {fileID: 0}
+    - target: {fileID: 6321959329347458920, guid: 51b6e8a3db9d52d4cabe71fe1b6eb0a8, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -59250,6 +59866,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Table-5_0
       objectReference: {fileID: 0}
+    - target: {fileID: 8966588480146712240, guid: aafc65d360f950248b9b631dbd2bbbe9, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -59271,6 +59891,10 @@ PrefabInstance:
     - target: {fileID: 2733834075322920911, guid: 7d3363ee0e2c5f84b80ce4280b575b60, type: 3}
       propertyPath: m_Name
       value: Candle-3_0 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2733834075322920911, guid: 7d3363ee0e2c5f84b80ce4280b575b60, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4486778887514916739, guid: 7d3363ee0e2c5f84b80ce4280b575b60, type: 3}
       propertyPath: m_LocalPosition.x
@@ -59338,6 +59962,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Candle-3_0
       objectReference: {fileID: 0}
+    - target: {fileID: 2733834075322920911, guid: 7d3363ee0e2c5f84b80ce4280b575b60, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 4486778887514916739, guid: 7d3363ee0e2c5f84b80ce4280b575b60, type: 3}
       propertyPath: m_LocalPosition.x
       value: -8.84014
@@ -59404,6 +60032,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trap-Spikes-Floor_0
       objectReference: {fileID: 0}
+    - target: {fileID: 4300057043156720164, guid: cf2c43cd3335e3b499ddd4ebb0114f71, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 4334064234827605808, guid: cf2c43cd3335e3b499ddd4ebb0114f71, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4
@@ -59465,6 +60097,10 @@ PrefabInstance:
     - target: {fileID: 2733834075322920911, guid: 7d3363ee0e2c5f84b80ce4280b575b60, type: 3}
       propertyPath: m_Name
       value: Candle-3_0 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2733834075322920911, guid: 7d3363ee0e2c5f84b80ce4280b575b60, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4486778887514916739, guid: 7d3363ee0e2c5f84b80ce4280b575b60, type: 3}
       propertyPath: m_LocalPosition.x
