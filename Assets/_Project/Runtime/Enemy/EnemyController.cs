@@ -39,6 +39,7 @@ namespace _Project.Runtime.Enemy
         protected float LastAttackTime;
         protected bool IsAttacking;
         protected EnemyMovement _movement;
+        protected EnemyDamageController _damageController;
         protected Vector2 _startPosition;
         private Vector2 _patrolTarget;
 
@@ -56,13 +57,17 @@ namespace _Project.Runtime.Enemy
                 enabled = false;
                 return;
             }
+            _damageController = GetComponent<EnemyDamageController>();
             _startPosition = transform.position;
             SetNewPatrolTarget();
+
+            _damageController.OnDeath += HandleDeath;
         }
 
         protected virtual void FixedUpdate()
         {
-            if (_movement.GetKnockbackStatus()) return;
+            if (_damageController.IsDead || _movement.GetKnockbackStatus()) 
+                return;
 
             if (IsAttacking)
             {
@@ -149,6 +154,11 @@ namespace _Project.Runtime.Enemy
             
             CheckIfStuck();
             _movement.MoveTowards(_patrolTarget);
+        }
+
+        private void HandleDeath()
+        {
+            _movement.Stop();
         }
 
         private void CheckIfStuck()

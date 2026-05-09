@@ -138,7 +138,7 @@ GameObject:
   - component: {fileID: 3394266388368922137}
   - component: {fileID: 134913640854709953}
   - component: {fileID: 7836063821099774806}
-  - component: {fileID: 8086327993587530796}
+  - component: {fileID: 1330759430224474608}
   - component: {fileID: 5606491424565459252}
   - component: {fileID: 4826734729170713357}
   - component: {fileID: 5754063309287907276}
@@ -239,8 +239,8 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1.22}
   m_EdgeRadius: 0
---- !u!58 &8086327993587530796
-CircleCollider2D:
+--- !u!70 &1330759430224474608
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -273,8 +273,9 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: -0.16}
-  m_Radius: 0.34
+  m_Offset: {x: 0, y: 0.22}
+  m_Size: {x: 0.44, y: 1.04}
+  m_Direction: 0
 --- !u!114 &5606491424565459252
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -290,7 +291,6 @@ MonoBehaviour:
   moveSpeed: 2
   knockbackDamping: 5
   useNoFrictionMaterial: 1
-  moveDetectionThreshold: 0.01
 --- !u!114 &4826734729170713357
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -304,7 +304,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::_Project.Runtime.Enemy.EnemyDamageController
   maxHealth: 100
-  invulnerabilityDuration: 0.2
 --- !u!114 &5754063309287907276
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -329,10 +328,14 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 2048
   stopDistanceToPlayer: 0.7
-  patrolRadius: 3
+  attackCooldown: 1.5
   patrolTargetClearance: 0.2
   patrolTargetAttempts: 12
-  attackCooldown: 1.5
+  patrolRadius: 3
+  minWaitTime: 1
+  maxWaitTime: 3
+  stuckThreshold: 0.1
+  stuckCheckInterval: 1
   damageAmount: 3
   knockbackForce: 5
   knockbackDuration: 0.3
