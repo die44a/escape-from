@@ -11,7 +11,6 @@ namespace _Project.Runtime.Core.Props
         private Animator _animator;
         [SerializeField] private Collider2D interactableCollider;
 
-        [SerializeField] private GameObject goldPrefab;
         [SerializeField] private float dropDistance = 1f;
 
         [SerializeField] private Color highlightColor = Color.yellow;
@@ -28,55 +27,45 @@ namespace _Project.Runtime.Core.Props
 
         public void Interact(GameObject initiator, Action onComplete)
         {
-            onComplete?.Invoke();
-            if (!IsInteractable) return;
-            if (goldPrefab == null)
-            {
-                Debug.LogError("Gold Prefab is not assigned!");
-                return;
-            }
-            var direction = (transform.position - initiator.transform.position).normalized;
+            if (_isBusy) return;
+            StartCoroutine(InteractRoutine(initiator, onComplete));
+        }
 
-            // 2. точка спавна рядом с бочкой
+        private IEnumerator InteractRoutine(GameObject initiator, Action onComplete)
+        {
+            _isBusy = true;
+
+            var direction = (transform.position - initiator.transform.position).normalized;
             var spawnPosition = transform.position + direction * dropDistance;
 
-            // 3. симметричная точка (за игроком относительно бочки)
-            var targetPosition = transform.position * 2f - initiator.transform.position;
+            foreach (var prefab in dropPrefabs)
+            {
+                if (prefab == null) continue;
+                var randomOffset = (Vector2)UnityEngine.Random.insideUnitCircle * maxDropDistance;
+                var targetPosition = (Vector2)transform.position + randomOffset;
+                var item = Instantiate(prefab, spawnPosition, Quaternion.identity);
+                yield return StartCoroutine(MoveCoin(item.transform, spawnPosition, targetPosition));
+            }
 
-            // 4. создаём монету
-            var coin = Instantiate(goldPrefab, spawnPosition, Quaternion.identity);
-
-            // 5. запускаем движение
-            StartCoroutine(MoveCoin(coin.transform, targetPosition));
-
-            ToggleHighlight();
-            // var direction = (transform.position - initiator.transform.position).normalized;
-            //
-            // var spawnPosition = transform.position + direction * dropDistance;
-            //
-            // Instantiate(goldPrefab, spawnPosition, Quaternion.identity);
-            ToggleHighlight();
+            _isBusy = false;
+            onComplete?.Invoke();
+            IsInteractable = !IsInteractable;
         }
-        private IEnumerator MoveCoin(Transform coin, Vector3 target)
+
+        private IEnumerator MoveCoin(Transform coin, Vector3 start, Vector3 target)
         {
-            float t = 0f;
-            float duration = 0.35f;
+            var t = 0f;
+            const float duration = 0.35f;
 
-            Vector3 start = coin.position;
-
-            Vector3 mid = (start + target) / 2 + Vector3.up * 0.5f;
+            var mid = (start + target) / 2f + Vector3.up * UnityEngine.Random.Range(0.3f, 0.8f);
 
             while (t < 1f)
             {
                 t += Time.deltaTime / duration;
-
-                float smoothT = t * t * (3f - 2f * t); // SmoothStep
-
-                Vector3 a = Vector3.Lerp(start, mid, smoothT);
-                Vector3 b = Vector3.Lerp(mid, target, smoothT);
-
+                var smoothT = t * t * (3f - 2f * t);
+                var a = Vector3.Lerp(start, mid, smoothT);
+                var b = Vector3.Lerp(mid, target, smoothT);
                 coin.position = Vector3.Lerp(a, b, smoothT);
-
                 yield return null;
             }
 
@@ -90,8 +79,10 @@ namespace _Project.Runtime.Core.Props
             // IsInteractable = !IsInteractable;
         }
 
+        [SerializeField] private float maxDropDistance = 1f;
+        [SerializeField] private GameObject[] dropPrefabs;
+        private bool _isBusy;
         public bool IsInteractable { get; private set; } = true;
-
         public string GetInteractionLabel() => "Inspect Barrel";
     }
 }

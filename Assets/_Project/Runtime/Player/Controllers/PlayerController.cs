@@ -79,10 +79,12 @@ namespace _Project.Runtime.Player.Controllers
             if (CurrentState is PlayerState.Dead or PlayerState.Dashing)
                 return;
 
-            if (_interactorController.CanInteract()) 
+            if (_interactorController.CanInteract())
             {
+                _moveInput = Vector2.zero;
+                _movementController.Stop();
                 SetState(PlayerState.Interacting);
-                
+
                 _interactorController.PerformInteraction();
             }
         }
