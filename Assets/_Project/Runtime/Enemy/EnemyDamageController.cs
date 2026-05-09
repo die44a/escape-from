@@ -1,6 +1,5 @@
+using System;
 using UnityEngine;
-using UnityEngine.Events;
-
 
 namespace _Project.Runtime.Enemy
 {
@@ -9,9 +8,9 @@ namespace _Project.Runtime.Enemy
         [SerializeField] private float maxHealth = 100f;
         [SerializeField] private float invulnerabilityDuration = 0.2f;
 
-        public UnityEvent<float, float> onHealthChanged;
-        public UnityEvent onHit;
-        public UnityEvent onDeath;
+        public event Action<float, float> OnHealthChanged;
+        public Action OnHit;
+        public Action OnDeath;
 
         private float _currentHealth;
         private bool _isDead;
@@ -27,8 +26,8 @@ namespace _Project.Runtime.Enemy
             
             _currentHealth = Mathf.Max(_currentHealth - amount, 0);
             
-            onHealthChanged?.Invoke(_currentHealth, maxHealth);
-            onHit?.Invoke(); 
+            OnHealthChanged?.Invoke(_currentHealth, maxHealth);
+            OnHit?.Invoke(); 
 
             if (_currentHealth <= 0)
             {
@@ -41,11 +40,8 @@ namespace _Project.Runtime.Enemy
             if (_isDead) return;
             _isDead = true;
             
-            onDeath?.Invoke();
+            OnDeath?.Invoke();
             if (TryGetComponent<Collider2D>(out var col)) col.enabled = false;
-            
-            // Здесь можно запустить анимацию смерти или просто удалить объект
-            // Destroy(gameObject, 1f); 
         }
         
 

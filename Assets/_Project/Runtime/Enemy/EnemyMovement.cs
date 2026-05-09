@@ -6,13 +6,14 @@ namespace _Project.Runtime.Enemy
     public class EnemyMovement : MovementController 
     {
         [SerializeField] private bool useNoFrictionMaterial = true;
+        [SerializeField] private float moveDetectionThreshold = 0.01f;
 
         private static PhysicsMaterial2D _sharedNoFrictionMaterial;
 
         protected override void Awake()
         {
             base.Awake();
-
+            
             if (useNoFrictionMaterial)
                 ApplyNoFrictionToColliders();
 

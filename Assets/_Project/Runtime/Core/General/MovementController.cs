@@ -8,10 +8,15 @@ namespace _Project.Runtime.Core.General
     {
         [SerializeField] protected float moveSpeed = 6f;
         [SerializeField] protected float knockbackDamping = 5f;
-
+        
         protected Rigidbody2D Rb;
         protected bool IsKnockedBack;
         private float _originalDamping;
+        private Coroutine _knockbackCoroutine;
+        
+        public Vector2 LastDirection { get; protected set; } = Vector2.down;
+        public Vector2 CurrentVelocity => Rb ? Rb.linearVelocity : Vector2.zero;
+        public bool IsMoving => CurrentVelocity.sqrMagnitude > 0.01;
 
         protected virtual void Awake()
         {
@@ -23,14 +28,23 @@ namespace _Project.Runtime.Core.General
         {
             if (IsKnockedBack) return;
 
-            Vector2 velocity = direction.sqrMagnitude > 1f ? direction.normalized : direction;
+            var velocity = direction.sqrMagnitude > 1f ? direction.normalized : direction;
             Rb.linearVelocity = velocity * moveSpeed;
+            UpdateDirection(direction);
+        }
+
+        private void UpdateDirection(Vector2 direction)
+        {
+            if (direction.sqrMagnitude > 0.01)
+                LastDirection = direction.normalized;
+            else if (CurrentVelocity.sqrMagnitude > 0.01)
+                LastDirection = CurrentVelocity.normalized;
         }
 
         public virtual void ApplyKnockback(Vector2 force, float duration)
         {
-            StopAllCoroutines();
-            StartCoroutine(KnockbackRoutine(force, duration));
+            if (_knockbackCoroutine != null) StopCoroutine(_knockbackCoroutine);
+            _knockbackCoroutine = StartCoroutine(KnockbackRoutine(force, duration));
         }
 
         private IEnumerator KnockbackRoutine(Vector2 force, float duration)
