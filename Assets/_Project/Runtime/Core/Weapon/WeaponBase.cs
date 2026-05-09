@@ -11,13 +11,11 @@ namespace _Project.Runtime.Core.Weapon
         [SerializeField] protected float orbitDistance = 0.7f;
         [SerializeField] protected float smoothSpeed = 12f;
         [SerializeField] protected Transform visualChild;
-        [SerializeField] private int baseSortingOrder = 3600;
-        [SerializeField] private float verticalOffset = 1f; 
+        [SerializeField] private int baseSortingOrder = 3500;
         [SerializeField] protected LayerMask obstacleLayersMask;
         
         [Header("Hand Placement")]
-        [SerializeField] private Vector2 rightHandOffset = new(-0.15f, -0.3f);
-        [SerializeField] private bool hideWhenBehindBack = true;
+        [SerializeField] private Vector2 rightHandOffset = new(-0.18f, -0.03f);
         
         protected PlayerController Player;
         
@@ -62,7 +60,7 @@ namespace _Project.Runtime.Core.Weapon
             if (dir.sqrMagnitude < 0.01f) dir = Vector2.right;
 
             var facingSign = dir.x < -0.01f ? -1f : 1f;
-            var handOffset = new Vector3(rightHandOffset.x * facingSign, rightHandOffset.y + verticalOffset, 0f);
+            var handOffset = new Vector3(rightHandOffset.x * facingSign, rightHandOffset.y, 0f);
             var playerCenter = Player.transform.position;
             var targetPos = playerCenter + handOffset + (Vector3)(dir * orbitDistance);
             transform.position = Vector3.SmoothDamp(transform.position, targetPos, ref _currentVelocity, 1f / smoothSpeed);
