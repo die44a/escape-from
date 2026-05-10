@@ -28,7 +28,7 @@ namespace _Project.Runtime.Core.Traps
             if (TargetsInRange.Count <= 0)
                 return;
             
-            foreach (var target in TargetsInRange)
+            foreach (var target in TargetsInRange.ToArray())
                 target.ApplyDamage(damageAmount);
         }
     }
