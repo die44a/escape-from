@@ -12,7 +12,8 @@ GameObject:
   - component: {fileID: 6569698106476285492}
   - component: {fileID: 8577954824274386582}
   - component: {fileID: 1932937994755783064}
-  m_Layer: 9
+  - component: {fileID: 8611381241127145255}
+  m_Layer: 14
   m_Name: Barrel-4_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -168,3 +169,17 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: -0.15}
   m_Size: {x: 0.7, y: 0.58}
   m_Direction: 1
+--- !u!114 &8611381241127145255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1800869916800386903}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 426803d9a81949e6a0f339d562e07eb6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::_Project.Runtime.Core.Props.Barrel
+  interactableCollider: {fileID: 0}
+  highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}

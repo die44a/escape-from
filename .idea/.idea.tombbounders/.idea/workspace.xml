@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="032a9168-2021-43ab-bb5c-2a52ede3ee3d" name="Changes" comment=".">
+      <change afterPath="$PROJECT_DIR$/Assets/_Project/Runtime/Core/Props/Barrel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Project/Runtime/Core/Props/Barrel.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/ReflectionBaking/Zenject-ReflectionBaking.csproj.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/Signals/Zenject-Signals.csproj.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Zenject/Source/Zenject.csproj.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Prefabs/MapObjects/Barrel-4_0.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Prefabs/MapObjects/Barrel-4_0.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Prefabs/Maps/Map 0.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Prefabs/Maps/Map 0.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Prefabs/Player/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Prefabs/Player/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Prefabs/UI/Props/GoldCoin.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Prefabs/UI/Props/GoldCoin.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Runtime/Core/Props/Door.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Runtime/Core/Props/Door.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scenes/2.Core.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scenes/2.Core.unity" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CopilotPersistence">
+    <persistenceIdMap>
+      <entry key="_D:/!KroLL/work/VUZ/URFU/(ПП)-Проектный_практикум/project_3/tombbounders" value="3DA0sI6QpYe3zdHRTqtk3UJgLab" />
+    </persistenceIdMap>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="KroLLip &lt;testaccaunt123.123@gmail.com&gt;" />
+      </list>
+    </option>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="feature/interaction" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;KroLLip&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/die44a/tombbounders.git&quot;,
+    &quot;accountId&quot;: &quot;69128c91-8ce6-48c7-a664-d58670332309&quot;
+  }
+}</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1b6535aa091d41cf8b3ca222ed9ceef0212600/11/2af1edb7/WaitForSeconds.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Project/Prefabs/Player/Player.prefab" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Project/Resources/Animations/MapObjects/Brazier-Stone.anim" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Project/Resources/Animations/MapObjects/Brazier-Stone_0.controller" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Project/Runtime/Player/Controllers/PlayerController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://D:/!KroLL/work/VUZ/URFU/(ПП)-Проектный_практикум/project_3/tombbounders/Assets/_Project/Scenes/2.Core.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Project/Scenes/2.Core.unity" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://D:/!KroLL/work/VUZ/URFU/(ПП)-Проектный_практикум/project_3/tombbounders/Assets/_Project/Scenes/2.Core.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/!KroLL/work/VUZ/URFU/(ПП)-Проектный_практикум/project_3/tombbounders/Assets/_Project/Scenes/2.Core.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/!KroLL/work/VUZ/URFU/(ПП)-Проектный_практикум/project_3/tombbounders/Assets/_Project/Scenes/2.Core.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/!KroLL/work/VUZ/URFU/(ПП)-Проектный_практикум/project_3/tombbounders/Assets/_Project/Scenes/2.Core.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/!KroLL/work/VUZ/URFU/(ПП)-Проектный_практикум/project_3/tombbounders/Assets/_Project/Scenes/2.Core.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/!KroLL/work/VUZ/URFU/(ПП)-Проектный_практикум/project_3/tombbounders/Assets/_Project/Sprites/Environment/Props/Barrel-6.png.meta" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/!KroLL/work/VUZ/URFU/(ПП)-Проектный_практикум/project_3/tombbounders/Assets/_Project/Sprites/Environment/Props/Barrel-6.png.meta" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/!KroLL/work/VUZ/URFU/(ПП)-Проектный_практикум/project_3/tombbounders/Assets/_Project/Sprites/Environment/Props/Barrel-6.png.meta" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/!KroLL/work/VUZ/URFU/(ПП)-Проектный_практикум/project_3/tombbounders/Assets/_Project/Sprites/Environment/Props/Barrel-6.png.meta" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Project/Sprites/Environment/Props/Barrel-6.png.meta" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="false" />
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="3DA0sI6QpYe3zdHRTqtk3UJgLab" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/!KroLL/work/VUZ/URFU/(ПП)-Проектный_практикум/project_3/tombbounders&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;CodeLensConfigurable&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="D:\programs\Unity\Hub\Editor\6000.3.11f1\Editor\Unity.exe" />
+      <option name="PROGRAM_PARAMETERS" value="-projectPath D:\!KroLL\work\VUZ\URFU\(ПП)-Проектный_практикум\project_3\tombbounders -debugCodeOptimization" />
+      <option name="WORKING_DIRECTORY" value="D:\!KroLL\work\VUZ\URFU\(ПП)-Проектный_практикум\project_3\tombbounders" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="ENV_FILE_PATHS" value="" />
+      <option name="REDIRECT_INPUT_PATH" value="" />
+      <option name="PTY_MODE" value="Auto" />
+      <option name="MIXED_MODE_DEBUG" value="0" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="D:\programs\Unity\Hub\Editor\6000.3.11f1\Editor\Unity.exe" />
+      <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath D:\!KroLL\work\VUZ\URFU\(ПП)-Проектный_практикум\project_3\tombbounders -testResults Logs/results.xml -logFile Logs/Editor.log -testPlatform EditMode -debugCodeOptimization" />
+      <option name="WORKING_DIRECTORY" value="D:\!KroLL\work\VUZ\URFU\(ПП)-Проектный_практикум\project_3\tombbounders" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="ENV_FILE_PATHS" value="" />
+      <option name="REDIRECT_INPUT_PATH" value="" />
+      <option name="PTY_MODE" value="Auto" />
+      <option name="MIXED_MODE_DEBUG" value="0" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="projectPathOnTarget" />
+      <option name="runtimes">
+        <list />
+      </option>
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <option name="useMixedMode" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="projectPathOnTarget" />
+      <option name="runtimes">
+        <list />
+      </option>
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <option name="useMixedMode" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Device" type="UnityDevicePlayer" factoryName="UnityAttachToDevicePlayer">
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="032a9168-2021-43ab-bb5c-2a52ede3ee3d" name="Changes" comment="" />
+      <created>1777709772114</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1777709772114</updated>
+      <workItem from="1777709773451" duration="1675000" />
+      <workItem from="1777727580102" duration="13205000" />
+      <workItem from="1777795288774" duration="1744000" />
+      <workItem from="1777880649700" duration="541000" />
+      <workItem from="1778056325238" duration="632000" />
+      <workItem from="1778057003824" duration="733000" />
+    </task>
+    <task id="LOCAL-00001" summary="Тестовый коммит. надо удалить">
+      <option name="closed" value="true" />
+      <created>1777749796599</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1777749796599</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Перенеси вызов взаимодействия из PlayerInteractor.cs с дверьми через PlayerController.cs">
+      <option name="closed" value="true" />
+      <created>1777795319363</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1777795319363</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="false" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityProjectDiscoverer">
+    <option name="hasUnityReference" value="true" />
+    <option name="unityProject" value="true" />
+    <option name="unityProjectFolder" value="true" />
+  </component>
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="Both" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="feature/interaction" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="SHELVE_DETAILS_PREVIEW_SHOWN" value="true" />
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="Сделай проверку. Попытка исправь баги." />
+    <MESSAGE value="Сделай проверку. Попытка исправь баги." />
+    <MESSAGE value="Перенеси вызов взаимодействия из PlayerInteractor.cs с дверьми через PlayerController.cs" />
+    <MESSAGE value="." />
+    <option name="LAST_COMMIT_MESSAGE" value="." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.OperationCanceledException" breakIfHandledByOtherCode="false" displayValue="System.OperationCanceledException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.Threading.Tasks.TaskCanceledException" breakIfHandledByOtherCode="false" displayValue="System.Threading.Tasks.TaskCanceledException" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" breakIfHandledByOtherCode="false" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="3" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+  <component name="github-copilot-workspace">
+    <instructionFileLocations>
+      <option value=".github/instructions" />
+    </instructionFileLocations>
+    <promptFileLocations>
+      <option value=".github/prompts" />
+    </promptFileLocations>
+  </component>
+</project>

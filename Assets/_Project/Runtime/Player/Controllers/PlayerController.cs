@@ -10,7 +10,7 @@ using Zenject;
 
 namespace _Project.Runtime.Player.Controllers
 {
-    public class PlayerController : 
+    public class PlayerController :
         MonoBehaviour,
         IPlayerStatus
     {
@@ -24,11 +24,11 @@ namespace _Project.Runtime.Player.Controllers
         public Vector2 MoveInput => _moveInput;
         public Vector2 LastDirection => _movementController.LastDirection;
         public bool IsInvulnerableState => CurrentState == PlayerState.Dashing;
-        
+
         public event Action<PlayerState> OnStateChanged;
 
         private Vector2 _moveInput;
-        
+
         private InputAction _moveAction;
         private InputAction _dashAction;
         private InputAction _interactAction;
@@ -72,12 +72,12 @@ namespace _Project.Runtime.Player.Controllers
 
         private void OnDashPerformed(InputAction.CallbackContext context)
         {
-            if (CurrentState is PlayerState.Dashing 
-                or PlayerState.Interacting
-                or PlayerState.Dead
+            if (CurrentState is PlayerState.Dashing
+                    or PlayerState.Interacting
+                    or PlayerState.Dead
                 || !_movementController.IsDashReady)
                 return;
-            
+
             StartCoroutine(PerformDash());
         }
 
@@ -86,12 +86,12 @@ namespace _Project.Runtime.Player.Controllers
             if (CurrentState is PlayerState.Dead or PlayerState.Dashing)
                 return;
 
-            if (_interactorController.CanInteract()) 
-            {
-                SetState(PlayerState.Interacting);
-                
-                _interactorController.PerformInteraction();
-            }
+            if (!_interactorController.CanInteract()) return;
+
+            _moveInput = Vector2.zero;
+            _movementController.Stop();
+            SetState(PlayerState.Interacting);
+            _interactorController.PerformInteraction();
         }
 
         private void Update()
@@ -101,8 +101,8 @@ namespace _Project.Runtime.Player.Controllers
 
         private void FixedUpdate()
         {
-            if (CurrentState is PlayerState.Dashing 
-                or PlayerState.Interacting 
+            if (CurrentState is PlayerState.Dashing
+                or PlayerState.Interacting
                 or PlayerState.Dead)
                 return;
             
@@ -113,12 +113,12 @@ namespace _Project.Runtime.Player.Controllers
         private void UpdateMoveState()
         {
             if (CurrentState == PlayerState.Dead)
-                return; 
-            
-            var targetState = _moveInput.sqrMagnitude > 0.01f 
-                ? PlayerState.Walking 
+                return;
+
+            var targetState = _moveInput.sqrMagnitude > 0.01f
+                ? PlayerState.Walking
                 : PlayerState.Idle;
-                
+
             SetState(targetState);
         }
 
@@ -126,13 +126,13 @@ namespace _Project.Runtime.Player.Controllers
         {
             if (_moveInput.magnitude < 0.01f)
                 yield break;
-            
-            SetState(PlayerState.Dashing);
-            
-            _movementController.Dash(_moveInput); 
 
-            yield return new WaitForSeconds(0.2f); 
-            
+            SetState(PlayerState.Dashing);
+
+            _movementController.Dash(_moveInput);
+
+            yield return new WaitForSeconds(0.2f);
+
             UpdateMoveState();
         }
 
@@ -142,7 +142,7 @@ namespace _Project.Runtime.Player.Controllers
 
             if (CurrentState == PlayerState.Dead && newState != PlayerState.Dead)
                 return;
-            
+
             CurrentState = newState;
             OnStateChanged?.Invoke(CurrentState);
         }
@@ -161,7 +161,7 @@ namespace _Project.Runtime.Player.Controllers
             
             _weaponSlot.TryAttack();
         }
-        
+
         public void ResetPlayer(Vector3 spawnPosition)
         {
             StopAllCoroutines();
@@ -176,7 +176,7 @@ namespace _Project.Runtime.Player.Controllers
 
             OnStateChanged?.Invoke(CurrentState);
         }
-        
+
         public void EndInteraction()
         {
             if (CurrentState == PlayerState.Interacting)
