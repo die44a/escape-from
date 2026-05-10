@@ -8925,16 +8925,6 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
-  - first: {x: 7, y: -19, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 9
-      m_TileSpriteIndex: 9
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
   - first: {x: 8, y: -19, z: 0}
     second:
       serializedVersion: 2
@@ -8965,7 +8955,7 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 9eae0cd2f27a6134eb119ab2aff3082f, type: 2}
   - m_RefCount: 2
     m_Data: {fileID: 11400000, guid: 93d43372c3482fb419bcb4aa446224ef, type: 2}
-  - m_RefCount: 4
+  - m_RefCount: 3
     m_Data: {fileID: 11400000, guid: 7f920e1326b8ac24f9be979fb4b3cfdf, type: 2}
   - m_RefCount: 4
     m_Data: {fileID: 11400000, guid: 02111c97daf3db84c9d8f12ebebe38ab, type: 2}
@@ -8988,12 +8978,12 @@ Tilemap:
     m_Data: {fileID: 682837713, guid: 59fb39db720b23345912a5205a594d96, type: 3}
   - m_RefCount: 2
     m_Data: {fileID: 938521717, guid: 59fb39db720b23345912a5205a594d96, type: 3}
-  - m_RefCount: 4
+  - m_RefCount: 3
     m_Data: {fileID: -1376512791, guid: 59fb39db720b23345912a5205a594d96, type: 3}
   - m_RefCount: 4
     m_Data: {fileID: -1462329785, guid: 59fb39db720b23345912a5205a594d96, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 42
+  - m_RefCount: 41
     m_Data:
       e00: 1
       e01: 0
@@ -9012,7 +9002,7 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 42
+  - m_RefCount: 41
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
@@ -9202,8 +9192,12 @@ CompositeCollider2D:
     m_ColliderPaths:
     - - X: 90000000
         Y: -180000000
-      - X: 70000000
+      - X: 80000000
         Y: -180000000
+      - X: 80000000
+        Y: -190000000
+      - X: 70000000
+        Y: -190000000
       - X: 70000000
         Y: -210000000
       - X: 50000000
@@ -9232,7 +9226,9 @@ CompositeCollider2D:
     m_Paths:
     - - {x: 8.99997, y: -27}
       - {x: 8.99997, y: -18}
-      - {x: 7, y: -18.000029}
+      - {x: 8, y: -18.000029}
+      - {x: 7.9999704, y: -19}
+      - {x: 7, y: -19.000029}
       - {x: 6.9999704, y: -21}
       - {x: 5, y: -21.000029}
       - {x: 5.000029, y: -25}
@@ -46379,6 +46375,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 6234335459717800390}
     m_Modifications:
+    - target: {fileID: -2942100104396787157, guid: c45b5fdc867d92a4fbbd8111efa784ec, type: 3}
+      propertyPath: m_Size.x
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: -2942100104396787157, guid: c45b5fdc867d92a4fbbd8111efa784ec, type: 3}
+      propertyPath: m_Size.y
+      value: 0.8
+      objectReference: {fileID: 0}
     - target: {fileID: 199943374915505318, guid: c45b5fdc867d92a4fbbd8111efa784ec, type: 3}
       propertyPath: m_Name
       value: Bedside-Table-1_0 (3)
