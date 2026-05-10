@@ -6,7 +6,7 @@ namespace _Project.Runtime.Interfaces
     public interface IInteractable
     {
         SpriteRenderer Renderer { get; }
-        Color HighlightColor => new Color(1.5f, 1.5f, 1.5f, 1f); // HDR White
+        Color HighlightColor => new (2f, 2f, 2f, 1f);
         Color NormalColor => Color.white;
         
         void Interact(GameObject initiator, Action onComplete = null);        
@@ -15,6 +15,7 @@ namespace _Project.Runtime.Interfaces
         
         void OnHoverEnter() 
         {
+            if (!IsInteractable) return;
             if (Renderer) Renderer.color = HighlightColor;
         }
         

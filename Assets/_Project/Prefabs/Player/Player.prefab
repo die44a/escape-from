@@ -129,10 +129,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f2c9e4d8b1a6f3c5e0d9b2a7c4f1e8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::_Project.Player.Runtime.PlayerMovementController
-  moveSpeed: 10
+  moveSpeed: 4
   knockbackDamping: 5
   dashForce: 8
-  dashCooldown: 0
+  dashCooldown: 1
 --- !u!114 &285267417064515586
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -159,7 +159,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec9cde6b4b77e0d41b898733fc11732b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::_Project.Runtime.Player.Controllers.HealthTimeController
-  maxHealthTime: 1e+12
+  maxHealthTime: 200
   invulnerabilityDuration: 0.7
 --- !u!114 &125251029383181965
 MonoBehaviour:

@@ -12,8 +12,9 @@ GameObject:
   - component: {fileID: 6681613168097443968}
   - component: {fileID: 8872759950860425786}
   - component: {fileID: 7166644430900749330}
-  - component: {fileID: -4012584292893340057}
-  m_Layer: 0
+  - component: {fileID: 6379156648623313607}
+  - component: {fileID: -7457156627066370699}
+  m_Layer: 14
   m_Name: Chest-Animated-4_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -154,8 +155,8 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!70 &-4012584292893340057
-CapsuleCollider2D:
+--- !u!61 &6379156648623313607
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -189,5 +190,30 @@ CapsuleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.75, y: 0.7}
-  m_Direction: 0
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.9583333, y: 0.7916667}
+    newSize: {x: 0.9583333, y: 0.7916667}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 0.9583333, y: 0.7916667}
+  m_EdgeRadius: 0
+--- !u!114 &-7457156627066370699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1332884732730303394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 426803d9a81949e6a0f339d562e07eb6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::_Project.Runtime.Core.Props.Chest
+  interactableCollider: {fileID: 6379156648623313607}
+  dropDistance: 1
+  maxDropDistance: 1
+  dropPrefabs: []

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8393860247315368104}
   - component: {fileID: 7143547331361368544}
   - component: {fileID: 3625346195450108865}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -151,7 +151,7 @@ GameObject:
   - component: {fileID: 113721044653448212}
   - component: {fileID: 3394164031923465323}
   - component: {fileID: 1844970707448791179}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: MainMenuScreen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -241,7 +241,7 @@ GameObject:
   - component: {fileID: 3677971815860401186}
   - component: {fileID: 8509640650617833906}
   - component: {fileID: 1665256357802621936}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: StartButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -359,7 +359,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6005803890272348484}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Menu UI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -394,7 +394,7 @@ GameObject:
   - component: {fileID: 2503851451377196669}
   - component: {fileID: 7368719798897901533}
   - component: {fileID: 8604434766768681907}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}

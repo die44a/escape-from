@@ -5,25 +5,26 @@ using UnityEngine;
 
 namespace _Project.Runtime.Core.Props
 {
-    public class Barrel : MonoBehaviour, IInteractable
+    public class Chest : MonoBehaviour, IInteractable
     {
-        public SpriteRenderer Renderer { get; private set; }
-        private Animator _animator;
         [SerializeField] private Collider2D interactableCollider;
-
         [SerializeField] private float dropDistance = 1f;
         [SerializeField] private float maxDropDistance = 1f;
-        
         [SerializeField] private GameObject[] dropPrefabs;
-        private bool _isBusy;
         
+        public SpriteRenderer Renderer { get; private set; }
         public bool IsInteractable { get; private set; } = true;
-        public string GetInteractionLabel() => "Inspect Barrel";
+        public string GetInteractionLabel() => "Inspect Chest";
+        
+        private bool _isBusy;
+        private static readonly int Open = Animator.StringToHash("open");
+        private Animator _animator;
+        private Action _pendingOnComplete;
 
         private void Awake()
         {
             Renderer = GetComponent<SpriteRenderer>();
-            // _animator = GetComponent<Animator>();
+            _animator = GetComponent<Animator>();
             interactableCollider.isTrigger = false;
         }
 
@@ -35,7 +36,9 @@ namespace _Project.Runtime.Core.Props
 
         private IEnumerator InteractRoutine(GameObject initiator, Action onComplete)
         {
+            _pendingOnComplete = onComplete;
             _isBusy = true;
+            _animator.SetTrigger(Open);
 
             var direction = (transform.position - initiator.transform.position).normalized;
             var spawnPosition = transform.position + direction * dropDistance;
@@ -50,7 +53,6 @@ namespace _Project.Runtime.Core.Props
             }
 
             _isBusy = false;
-            onComplete?.Invoke();
             IsInteractable = !IsInteractable;
         }
 
@@ -72,6 +74,12 @@ namespace _Project.Runtime.Core.Props
             }
 
             coin.position = target;
+        }
+        
+        public void OnOpenAnimationComplete()
+        {
+            _pendingOnComplete?.Invoke();
+            _pendingOnComplete = null;
         }
     }
 }
