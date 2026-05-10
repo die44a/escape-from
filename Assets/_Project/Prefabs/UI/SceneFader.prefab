@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8052631319078998667}
   - component: {fileID: 8672136497972418035}
   - component: {fileID: 3995915089376889242}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -126,7 +126,7 @@ GameObject:
   - component: {fileID: 3100371708436260486}
   - component: {fileID: 1713674546596184364}
   - component: {fileID: 3223406751686616027}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: FadeOverlay
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -200,7 +200,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6986194855190891131}
   - component: {fileID: 7180816247988034547}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: SceneFader
   m_TagString: Untagged
   m_Icon: {fileID: 0}
