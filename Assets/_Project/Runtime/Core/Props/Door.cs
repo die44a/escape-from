@@ -12,9 +12,16 @@ namespace _Project.Runtime.Core.Props
         private Animator _animator;
         [SerializeField] private Collider2D interactableCollider;
 
-
         private static readonly int IsOpen = Animator.StringToHash("isOpen");
         private bool _isOpen;
+
+        private bool _isAnimating;
+        
+        [SerializeField] private Lever[] requiredLevers;
+        [SerializeField] private bool isLeverDoor;
+        
+        public bool IsInteractable => !isLeverDoor;
+        public string GetInteractionLabel() => "Open Door";
 
 
         private void Awake()
@@ -27,8 +34,11 @@ namespace _Project.Runtime.Core.Props
         public async void Interact(GameObject initiator, Action onComplete)
         {
             if (_isAnimating) return;
+            
             onComplete?.Invoke();
+            
             if (isLeverDoor) return;
+            
             if (!_isOpen || !IsBlocked())
                 await SetDoorStateAsync(!_isOpen);
         }
@@ -93,8 +103,7 @@ namespace _Project.Runtime.Core.Props
 
         private bool AreAllLeversActive()
         {
-            if (requiredLevers == null || requiredLevers.Length == 0)
-                return false;
+            if (requiredLevers == null || requiredLevers.Length == 0) return false;
 
             foreach (var lever in requiredLevers)
                 if (lever == null || !lever.inActivate)
@@ -103,24 +112,17 @@ namespace _Project.Runtime.Core.Props
             return true;
         }
 
-        private bool _isAnimating;
-        [SerializeField] private Lever[] requiredLevers;
-        [SerializeField] private bool isLeverDoor;
-        public bool IsInteractable => !isLeverDoor;
-        public string GetInteractionLabel() => "Open Door";
 
         public void OnHoverEnter()
         {
-            var HighlightColor = new Color(1.5f, 1.5f, 1.5f, 1f); // HDR White
-            var NormalColor = Color.white;
-            if (!isLeverDoor) Renderer.color = HighlightColor;
+            var highlightColor = new Color(1.5f, 1.5f, 1.5f, 1f); // HDR White
+            if (!isLeverDoor) Renderer.color = highlightColor;
         }
 
         public void OnHoverExit()
         {
-            var HighlightColor = new Color(1.5f, 1.5f, 1.5f, 1f); // HDR White
-            var NormalColor = Color.white;
-            if (Renderer) Renderer.color = NormalColor;
+            var normalColor = Color.white;
+            if (Renderer) Renderer.color = normalColor;
         }
     }
 }

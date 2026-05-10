@@ -12,16 +12,18 @@ namespace _Project.Runtime.Core.Props
         [SerializeField] private Collider2D interactableCollider;
 
         [SerializeField] private float dropDistance = 1f;
-
-        [SerializeField] private Color highlightColor = Color.yellow;
-        private Color _defaultColor;
-        private bool _isHighlighted;
+        [SerializeField] private float maxDropDistance = 1f;
+        
+        [SerializeField] private GameObject[] dropPrefabs;
+        private bool _isBusy;
+        
+        public bool IsInteractable { get; private set; } = true;
+        public string GetInteractionLabel() => "Inspect Barrel";
 
         private void Awake()
         {
             Renderer = GetComponent<SpriteRenderer>();
             // _animator = GetComponent<Animator>();
-            _defaultColor = Renderer.color;
             interactableCollider.isTrigger = false;
         }
 
@@ -40,11 +42,11 @@ namespace _Project.Runtime.Core.Props
 
             foreach (var prefab in dropPrefabs)
             {
-                if (prefab == null) continue;
+                if (!prefab) continue;
                 var randomOffset = (Vector2)UnityEngine.Random.insideUnitCircle * maxDropDistance;
                 var targetPosition = (Vector2)transform.position + randomOffset;
                 var item = Instantiate(prefab, spawnPosition, Quaternion.identity);
-                yield return StartCoroutine(MoveCoin(item.transform, spawnPosition, targetPosition));
+                yield return StartCoroutine(MoveItem(item.transform, spawnPosition, targetPosition));
             }
 
             _isBusy = false;
@@ -52,7 +54,7 @@ namespace _Project.Runtime.Core.Props
             IsInteractable = !IsInteractable;
         }
 
-        private IEnumerator MoveCoin(Transform coin, Vector3 start, Vector3 target)
+        private IEnumerator MoveItem(Transform coin, Vector3 start, Vector3 target)
         {
             var t = 0f;
             const float duration = 0.35f;
@@ -71,18 +73,5 @@ namespace _Project.Runtime.Core.Props
 
             coin.position = target;
         }
-
-        private void ToggleHighlight()
-        {
-            _isHighlighted = !_isHighlighted;
-            Renderer.color = _isHighlighted ? highlightColor : _defaultColor;
-            // IsInteractable = !IsInteractable;
-        }
-
-        [SerializeField] private float maxDropDistance = 1f;
-        [SerializeField] private GameObject[] dropPrefabs;
-        private bool _isBusy;
-        public bool IsInteractable { get; private set; } = true;
-        public string GetInteractionLabel() => "Inspect Barrel";
     }
 }

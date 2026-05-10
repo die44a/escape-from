@@ -10,30 +10,25 @@ namespace _Project.Runtime.Core.Props
         public SpriteRenderer Renderer { get; private set; }
 
         [SerializeField] private Door targetDoor;
+        [FormerlySerializedAs("InActivate")] public bool inActivate;
+
+        public bool IsInteractable => targetDoor != null;
+        public string GetInteractionLabel() => "Use Lever";
+
 
         private void Awake()
         {
             Renderer = GetComponent<SpriteRenderer>();
         }
 
-        public bool IsInteractable => targetDoor != null;
-
-        public string GetInteractionLabel() => "Use Lever";
-
         public void Interact(GameObject initiator, Action onComplete)
         {
             onComplete?.Invoke();
-
             if (targetDoor == null)
-            {
-                Debug.Log("Target Door is null");
                 return;
-            }
 
             inActivate = !inActivate;
             targetDoor.InteractFromLever(initiator, null);
         }
-
-        [FormerlySerializedAs("InActivate")] public bool inActivate;
     }
 }
