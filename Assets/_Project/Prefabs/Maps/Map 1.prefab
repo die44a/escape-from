@@ -53631,6 +53631,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4769055258532402720}
     m_Modifications:
+    - target: {fileID: -705379146814001862, guid: 81fcfee5d00c8064d8cfb19f367c1b0f, type: 3}
+      propertyPath: isLeverDoor
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 683615066654245562, guid: 81fcfee5d00c8064d8cfb19f367c1b0f, type: 3}
       propertyPath: m_Name
       value: Door Input
