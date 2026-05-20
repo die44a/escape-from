@@ -9,9 +9,13 @@ namespace _Project.Runtime.Core.Traps
         [SerializeField] protected float damageAmount = 10f;
 
         protected readonly List<IDamageable> TargetsInRange = new ();
+        protected readonly string EnemyTag = "Enemy";
 
         protected virtual void OnTriggerEnter2D(Collider2D other)
         {
+            if (other.CompareTag(EnemyTag))
+                return;
+            
             if (other.TryGetComponent<IDamageable>(out var damageable))
                 if (!TargetsInRange.Contains(damageable))
                     TargetsInRange.Add(damageable);

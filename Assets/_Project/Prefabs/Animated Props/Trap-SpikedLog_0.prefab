@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8292563621121359960}
   - component: {fileID: 5508023377386929248}
   - component: {fileID: -4023394558281225052}
-  m_Layer: 8
+  m_Layer: 12
   m_Name: Trap-SpikedLog_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
