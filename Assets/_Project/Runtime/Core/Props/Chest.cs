@@ -19,7 +19,6 @@ namespace _Project.Runtime.Core.Props
         private bool _isBusy;
         private static readonly int Open = Animator.StringToHash("open");
         private Animator _animator;
-        private Action _pendingOnComplete;
 
         private void Awake()
         {
@@ -36,7 +35,6 @@ namespace _Project.Runtime.Core.Props
 
         private IEnumerator InteractRoutine(GameObject initiator, Action onComplete)
         {
-            _pendingOnComplete = onComplete;
             _isBusy = true;
             _animator.SetTrigger(Open);
 
@@ -54,6 +52,7 @@ namespace _Project.Runtime.Core.Props
 
             _isBusy = false;
             IsInteractable = !IsInteractable;
+            onComplete.Invoke();
         }
 
         private IEnumerator MoveItem(Transform coin, Vector3 start, Vector3 target)
@@ -74,12 +73,6 @@ namespace _Project.Runtime.Core.Props
             }
 
             coin.position = target;
-        }
-        
-        public void OnOpenAnimationComplete()
-        {
-            _pendingOnComplete?.Invoke();
-            _pendingOnComplete = null;
         }
     }
 }
