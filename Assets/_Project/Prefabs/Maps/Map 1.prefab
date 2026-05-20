@@ -49473,6 +49473,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lever-Animated_0 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 713420294082939163, guid: 73221923226753e418b4e7745b379081, type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
     - target: {fileID: 7313015495208318624, guid: 73221923226753e418b4e7745b379081, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.2093796
@@ -52832,6 +52836,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lever-Animated_0
       objectReference: {fileID: 0}
+    - target: {fileID: 713420294082939163, guid: 73221923226753e418b4e7745b379081, type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
     - target: {fileID: 7313015495208318624, guid: 73221923226753e418b4e7745b379081, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6.0054317
@@ -53627,7 +53635,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1332884732730303394, guid: ae1873baae080ba4dae5c269ccd06189, type: 3}
       propertyPath: m_Layer
-      value: 11
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 6549998813609911641, guid: ae1873baae080ba4dae5c269ccd06189, type: 3}
       propertyPath: m_LocalPosition.x
@@ -57348,6 +57356,10 @@ PrefabInstance:
     - target: {fileID: 4044547970717866990, guid: 6a268f5522ca1c34090717c81f986515, type: 3}
       propertyPath: m_Layer
       value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 4269568125631227462, guid: 6a268f5522ca1c34090717c81f986515, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1000
       objectReference: {fileID: 0}
     - target: {fileID: 6411672511497840523, guid: 6a268f5522ca1c34090717c81f986515, type: 3}
       propertyPath: m_LocalPosition.x
