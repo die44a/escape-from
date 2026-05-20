@@ -55,7 +55,7 @@ namespace _Project.Runtime.Core.Props
             onComplete.Invoke();
         }
 
-        private IEnumerator MoveItem(Transform coin, Vector3 start, Vector3 target)
+        private IEnumerator MoveItem(Transform item, Vector3 start, Vector3 target)
         {
             var t = 0f;
             const float duration = 0.35f;
@@ -64,15 +64,18 @@ namespace _Project.Runtime.Core.Props
 
             while (t < 1f)
             {
+                if (!item)
+                    break;
+                
                 t += Time.deltaTime / duration;
                 var smoothT = t * t * (3f - 2f * t);
                 var a = Vector3.Lerp(start, mid, smoothT);
                 var b = Vector3.Lerp(mid, target, smoothT);
-                coin.position = Vector3.Lerp(a, b, smoothT);
+                item.position = Vector3.Lerp(a, b, smoothT);
                 yield return null;
             }
 
-            coin.position = target;
+            if (item) item.position = target;
         }
     }
 }
