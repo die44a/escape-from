@@ -59,12 +59,19 @@ namespace _Project.Runtime.Core.Props
                 if (!prefab) continue;
 
                 var item = Instantiate(prefab, chestPosition, Quaternion.identity);
+                SetLootPickupEnabled(item, false);
 
                 if (spawnHoldDuration > 0f)
                     yield return new WaitForSeconds(spawnHoldDuration);
 
+                if (!item)
+                    continue;
+
                 var targetPosition = ResolveLandingPosition(chestPosition, playerPosition);
                 yield return MoveItemToPlayer(item.transform, chestPosition, targetPosition);
+
+                if (item)
+                    SetLootPickupEnabled(item, true);
             }
 
             _isBusy = false;
@@ -137,6 +144,15 @@ namespace _Project.Runtime.Core.Props
                 return false;
 
             return Physics2D.CircleCast(from, collisionCheckRadius, delta / distance, distance, obstacleLayers);
+        }
+
+        private static void SetLootPickupEnabled(GameObject loot, bool enabled)
+        {
+            if (!loot)
+                return;
+
+            if (loot.TryGetComponent<Coin>(out var coin))
+                coin.SetPickupEnabled(enabled);
         }
     }
 }

@@ -173,6 +173,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 614488d1954747945be2f3221f05fd25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::_Project.Runtime.Player.Controllers.PlayerWalletController
+  magnetRadius: 1
+  magnetSpeed: 1
+  collectDistance: 0.2
+  coinLayers:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!114 &9058021629673717336
 MonoBehaviour:
   m_ObjectHideFlags: 0
