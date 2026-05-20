@@ -7,8 +7,17 @@ namespace _Project.Runtime.Core.Props
     public class Coin : MonoBehaviour
     {
         [SerializeField] public CoinType type;
-    
-        public void Collect() 
-            => Destroy(gameObject);
+
+        public bool PickupEnabled { get; private set; } = true;
+
+        public void SetPickupEnabled(bool enabled) => PickupEnabled = enabled;
+
+        public void Collect()
+        {
+            if (!PickupEnabled)
+                return;
+
+            Destroy(gameObject);
+        }
     }
 }
