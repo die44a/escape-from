@@ -42,6 +42,7 @@ namespace _Project.Runtime.Enemy
         protected EnemyDamageController _damageController;
         protected Vector2 _startPosition;
         private Vector2 _patrolTarget;
+        private SpriteRenderer _renderer;
 
         public event Action OnAttack;
         
@@ -58,10 +59,31 @@ namespace _Project.Runtime.Enemy
                 return;
             }
             _damageController = GetComponent<EnemyDamageController>();
+            _renderer = GetComponentInChildren<SpriteRenderer>();   
             _startPosition = transform.position;
             SetNewPatrolTarget();
 
             _damageController.OnDeath += HandleDeath;
+        }
+        
+        protected virtual void LateUpdate()
+        {
+            if (!_renderer || !Player) return;
+
+            var enemyY = transform.position.y;
+            var playerY = Player.transform.position.y;
+
+            const float epsilon = 0.05f;
+
+            if (Mathf.Abs(enemyY - playerY) < epsilon)
+                return;
+
+            const int baseOrder = 3500;
+
+            if (enemyY < playerY)
+                _renderer.sortingOrder = baseOrder + 1;
+            else
+                _renderer.sortingOrder = baseOrder - 1;
         }
 
         protected virtual void FixedUpdate()
