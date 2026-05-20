@@ -6,7 +6,7 @@ namespace _Project.Runtime.Interfaces
     public interface IInteractable
     {
         SpriteRenderer Renderer { get; }
-        Color HighlightColor => new (2f, 2f, 2f, 1f);
+        Color HighlightColor => new (3f, 3f, 3f, 1f);
         Color NormalColor => Color.white;
         
         void Interact(GameObject initiator, Action onComplete = null);        
