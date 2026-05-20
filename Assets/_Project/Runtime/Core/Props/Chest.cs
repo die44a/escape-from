@@ -8,14 +8,24 @@ namespace _Project.Runtime.Core.Props
     public class Chest : MonoBehaviour, IInteractable
     {
         [SerializeField] private Collider2D interactableCollider;
-        [SerializeField] private float dropDistance = 1f;
-        [SerializeField] private float maxDropDistance = 1f;
         [SerializeField] private GameObject[] dropPrefabs;
-        
+
+        [Header("Loot flight")]
+        [SerializeField] private float spawnHoldDuration = 0.12f;
+        [SerializeField] private float flyDuration = 0.35f;
+        [SerializeField] private float playerLandingSpread = 0.25f;
+        [SerializeField] private float arcHeightMin = 0.3f;
+        [SerializeField] private float arcHeightMax = 0.8f;
+
+        [Header("Wall collision")]
+        [SerializeField] private LayerMask obstacleLayers;
+        [SerializeField] private float collisionCheckRadius = 0.25f;
+        [SerializeField] private float wallPadding = 0.05f;
+
         public SpriteRenderer Renderer { get; private set; }
         public bool IsInteractable { get; private set; } = true;
         public string GetInteractionLabel() => "Inspect Chest";
-        
+
         private bool _isBusy;
         private static readonly int Open = Animator.StringToHash("open");
         private Animator _animator;
@@ -25,6 +35,9 @@ namespace _Project.Runtime.Core.Props
             Renderer = GetComponent<SpriteRenderer>();
             _animator = GetComponent<Animator>();
             interactableCollider.isTrigger = false;
+
+            if (obstacleLayers.value == 0)
+                obstacleLayers = LayerMask.GetMask("Map");
         }
 
         public void Interact(GameObject initiator, Action onComplete)
@@ -38,16 +51,20 @@ namespace _Project.Runtime.Core.Props
             _isBusy = true;
             _animator.SetTrigger(Open);
 
-            var direction = (transform.position - initiator.transform.position).normalized;
-            var spawnPosition = transform.position + direction * dropDistance;
+            var chestPosition = (Vector2)transform.position;
+            var playerPosition = (Vector2)initiator.transform.position;
 
             foreach (var prefab in dropPrefabs)
             {
                 if (!prefab) continue;
-                var randomOffset = (Vector2)UnityEngine.Random.insideUnitCircle * maxDropDistance;
-                var targetPosition = (Vector2)transform.position + randomOffset;
-                var item = Instantiate(prefab, spawnPosition, Quaternion.identity);
-                yield return StartCoroutine(MoveItem(item.transform, spawnPosition, targetPosition));
+
+                var item = Instantiate(prefab, chestPosition, Quaternion.identity);
+
+                if (spawnHoldDuration > 0f)
+                    yield return new WaitForSeconds(spawnHoldDuration);
+
+                var targetPosition = ResolveLandingPosition(chestPosition, playerPosition);
+                yield return MoveItemToPlayer(item.transform, chestPosition, targetPosition);
             }
 
             _isBusy = false;
@@ -55,27 +72,71 @@ namespace _Project.Runtime.Core.Props
             onComplete.Invoke();
         }
 
-        private IEnumerator MoveItem(Transform item, Vector3 start, Vector3 target)
+        private Vector2 ResolveLandingPosition(Vector2 from, Vector2 playerPosition)
+        {
+            var target = playerPosition
+                         + UnityEngine.Random.insideUnitCircle * playerLandingSpread;
+
+            return TryResolvePath(from, target, out var resolved) ? resolved : playerPosition;
+        }
+
+        private IEnumerator MoveItemToPlayer(Transform item, Vector2 start, Vector2 target)
         {
             var t = 0f;
-            const float duration = 0.35f;
-
-            var mid = (start + target) / 2f + Vector3.up * UnityEngine.Random.Range(0.3f, 0.8f);
+            var mid = (Vector3)(start + target) / 2f
+                      + Vector3.up * UnityEngine.Random.Range(arcHeightMin, arcHeightMax);
+            var previous = (Vector3)start;
 
             while (t < 1f)
             {
                 if (!item)
-                    break;
-                
-                t += Time.deltaTime / duration;
+                    yield break;
+
+                t += Time.deltaTime / flyDuration;
                 var smoothT = t * t * (3f - 2f * t);
                 var a = Vector3.Lerp(start, mid, smoothT);
                 var b = Vector3.Lerp(mid, target, smoothT);
-                item.position = Vector3.Lerp(a, b, smoothT);
+                var next = Vector3.Lerp(a, b, smoothT);
+
+                if (IsSegmentBlocked(previous, next))
+                    break;
+
+                item.position = next;
+                previous = next;
                 yield return null;
             }
 
-            if (item) item.position = target;
+            if (item)
+                item.position = previous;
+        }
+
+        private bool TryResolvePath(Vector2 from, Vector2 to, out Vector2 resolved)
+        {
+            resolved = to;
+            var delta = to - from;
+            var distance = delta.magnitude;
+
+            if (distance < 0.01f)
+                return true;
+
+            var direction = delta / distance;
+            var hit = Physics2D.CircleCast(from, collisionCheckRadius, direction, distance, obstacleLayers);
+
+            if (!hit)
+                return true;
+
+            resolved = hit.point - direction * (collisionCheckRadius + wallPadding);
+            return true;
+        }
+
+        private bool IsSegmentBlocked(Vector2 from, Vector2 to)
+        {
+            var delta = to - from;
+            var distance = delta.magnitude;
+            if (distance < 0.001f)
+                return false;
+
+            return Physics2D.CircleCast(from, collisionCheckRadius, delta / distance, distance, obstacleLayers);
         }
     }
 }
