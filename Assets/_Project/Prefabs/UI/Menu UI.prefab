@@ -2481,6 +2481,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::_Project.Runtime.Menu.UI.UISelector
   selector: {fileID: 8433739588215792203}
+  positionRoot: {fileID: 8003060196184933609}
   smoothSpeed: 15
   padding: 20
 --- !u!1 &8417750857058583449

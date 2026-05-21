@@ -119,17 +119,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!114 &47395271 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 274639016814000460, guid: 9b4e5adea038968449356573c1aa01e5, type: 3}
-  m_PrefabInstance: {fileID: 1872823597}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 887a9c086aa0cfd419ce8c9f23f65a4e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::_Project.Runtime.Menu.UI.MainMenuScreen
 --- !u!1 &340331598
 GameObject:
   m_ObjectHideFlags: 0
@@ -371,7 +360,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 983fbc0ee73c4624586939610308a50b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::_Project.Runtime.Menu.Installers.MenuUIInstaller
-  mainMenuScreen: {fileID: 47395271}
+  mainMenuScreen: {fileID: 2064339135}
 --- !u!1 &1346085222
 GameObject:
   m_ObjectHideFlags: 0
@@ -451,7 +440,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1872823597
+--- !u!1001 &2064339134
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -463,21 +452,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Menu UI
       objectReference: {fileID: 0}
-    - target: {fileID: 838709103787905463, guid: 9b4e5adea038968449356573c1aa01e5, type: 3}
-      propertyPath: m_fontColor.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 838709103787905463, guid: 9b4e5adea038968449356573c1aa01e5, type: 3}
-      propertyPath: m_fontColor.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 838709103787905463, guid: 9b4e5adea038968449356573c1aa01e5, type: 3}
-      propertyPath: m_fontColor.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 838709103787905463, guid: 9b4e5adea038968449356573c1aa01e5, type: 3}
-      propertyPath: m_fontColor32.rgba
-      value: 4294967295
+    - target: {fileID: 2074186917509917899, guid: 9b4e5adea038968449356573c1aa01e5, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 33.1
       objectReference: {fileID: 0}
     - target: {fileID: 2239749445942341592, guid: 9b4e5adea038968449356573c1aa01e5, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.size
@@ -3673,11 +3650,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6038250387278830839, guid: 9b4e5adea038968449356573c1aa01e5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 338.5955
+      value: 43.99257
       objectReference: {fileID: 0}
     - target: {fileID: 6038250387278830839, guid: 9b4e5adea038968449356573c1aa01e5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 41.8298
+      value: 229.09003
       objectReference: {fileID: 0}
     - target: {fileID: 6038250387278830839, guid: 9b4e5adea038968449356573c1aa01e5, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3711,16 +3688,31 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8433739588215792203, guid: 9b4e5adea038968449356573c1aa01e5, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 10.6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9b4e5adea038968449356573c1aa01e5, type: 3}
+--- !u!114 &2064339135 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 274639016814000460, guid: 9b4e5adea038968449356573c1aa01e5, type: 3}
+  m_PrefabInstance: {fileID: 2064339134}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 887a9c086aa0cfd419ce8c9f23f65a4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::_Project.Runtime.Menu.UI.MainMenuScreen
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 954326267}
-  - {fileID: 1872823597}
+  - {fileID: 2064339134}
   - {fileID: 340331601}
   - {fileID: 1346085225}

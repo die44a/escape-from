@@ -4,7 +4,7 @@ using UnityEngine.EventSystems;
 
 namespace _Project.Runtime.Menu.UI
 {
-    public class ButtonTextHover : MonoBehaviour, ISelectHandler, IDeselectHandler
+    public class ButtonTextHover : MonoBehaviour, ISelectHandler, IDeselectHandler, IPointerEnterHandler
     {
         [SerializeField] private TMP_Text buttonText;
 
@@ -19,11 +19,26 @@ namespace _Project.Runtime.Menu.UI
 
         public void OnSelect(BaseEventData eventData)
         {
+            SetSelectedColor();
+        }
+
+        public void OnDeselect(BaseEventData eventData)
+        {
+            SetNormalColor();
+        }
+
+        public void OnPointerEnter(PointerEventData eventData)
+        {
+            EventSystem.current.SetSelectedGameObject(gameObject);
+        }
+
+        private void SetSelectedColor()
+        {
             if (buttonText != null)
                 buttonText.color = selectedColor;
         }
 
-        public void OnDeselect(BaseEventData eventData)
+        private void SetNormalColor()
         {
             if (buttonText != null)
                 buttonText.color = normalColor;
