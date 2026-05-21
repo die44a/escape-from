@@ -11,36 +11,46 @@ namespace _Project.Runtime.Menu.UI
         public Color normalColor = Color.white;
         public Color selectedColor = Color.grey;
 
-        private void Start()
+        private void OnEnable()
         {
-            if (buttonText != null)
-                normalColor = buttonText.color;
+            RefreshVisual();
         }
 
-        public void OnSelect(BaseEventData eventData)
-        {
-            SetSelectedColor();
-        }
-
-        public void OnDeselect(BaseEventData eventData)
+        private void OnDisable()
         {
             SetNormalColor();
         }
+
+        public void OnSelect(BaseEventData eventData) => SetSelectedColor();
+
+        public void OnDeselect(BaseEventData eventData) => SetNormalColor();
 
         public void OnPointerEnter(PointerEventData eventData)
         {
             EventSystem.current.SetSelectedGameObject(gameObject);
         }
 
+        public void RefreshVisual()
+        {
+            if (!buttonText)
+                return;
+
+            if (EventSystem.current != null &&
+                EventSystem.current.currentSelectedGameObject == gameObject)
+                SetSelectedColor();
+            else
+                SetNormalColor();
+        }
+
         private void SetSelectedColor()
         {
-            if (buttonText != null)
+            if (buttonText)
                 buttonText.color = selectedColor;
         }
 
         private void SetNormalColor()
         {
-            if (buttonText != null)
+            if (buttonText)
                 buttonText.color = normalColor;
         }
     }

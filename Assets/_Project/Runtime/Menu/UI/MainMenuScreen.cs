@@ -1,6 +1,5 @@
 using _Project.Runtime.Menu.Main;
 using UnityEngine;
-using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using Zenject;
 
@@ -18,30 +17,6 @@ namespace _Project.Runtime.Menu.UI
         public void Construct(MenuManager menuManager)
         {
             _menuManager = menuManager;
-        }
-
-        private void OnEnable()
-        {
-            StartCoroutine(SetDefaultSelection());
-        }
-
-        private System.Collections.IEnumerator SetDefaultSelection()
-        {
-            yield return null;
-
-            EventSystem.current.SetSelectedGameObject(null);
-            EventSystem.current.SetSelectedGameObject(startButton.gameObject);
-        }
-
-        private void Update()
-        {
-            if (!gameObject.activeInHierarchy)
-                return;
-
-            var current = EventSystem.current.currentSelectedGameObject;
-
-            if (!current)
-                EventSystem.current.SetSelectedGameObject(startButton.gameObject);
         }
 
         private void Awake()
