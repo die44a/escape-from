@@ -38,6 +38,16 @@ namespace _Project.Runtime.Menu.Main
             Debug.Log("Game Started");
         }
 
+        public void OpenSettings()
+        {
+            
+        }
+
+        public void ExitGame()
+        {
+            Application.Quit();
+        }
+
         void IInitializable.Initialize()
         {
             State = MenuState.MAIN;

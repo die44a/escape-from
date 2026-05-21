@@ -4,26 +4,26 @@ using UnityEngine.EventSystems;
 
 namespace _Project.Runtime.Menu.UI
 {
-    public class ButtonTextHover : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
+    public class ButtonTextHover : MonoBehaviour, ISelectHandler, IDeselectHandler
     {
         [SerializeField] private TMP_Text buttonText;
 
         public Color normalColor = Color.white;
-        public Color hoverColor = Color.grey;
+        public Color selectedColor = Color.grey;
 
-        void Start()
+        private void Start()
         {
             if (buttonText != null)
                 normalColor = buttonText.color;
         }
 
-        public void OnPointerEnter(PointerEventData eventData)
+        public void OnSelect(BaseEventData eventData)
         {
             if (buttonText != null)
-                buttonText.color = hoverColor;
+                buttonText.color = selectedColor;
         }
 
-        public void OnPointerExit(PointerEventData eventData)
+        public void OnDeselect(BaseEventData eventData)
         {
             if (buttonText != null)
                 buttonText.color = normalColor;

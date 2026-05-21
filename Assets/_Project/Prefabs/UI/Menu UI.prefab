@@ -41,6 +41,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2074186917509917899}
+  - component: {fileID: 274639016814000460}
   m_Layer: 5
   m_Name: MainMenuScreen
   m_TagString: Untagged
@@ -70,6 +71,21 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &274639016814000460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 605873570203451056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 887a9c086aa0cfd419ce8c9f23f65a4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::_Project.Runtime.Menu.UI.MainMenuScreen
+  startButton: {fileID: 1556900626503901143}
+  settingsButton: {fileID: 4870452305699458698}
+  exitButton: {fileID: 2063908065844975300}
 --- !u!1 &1909917684682974053
 GameObject:
   m_ObjectHideFlags: 0
