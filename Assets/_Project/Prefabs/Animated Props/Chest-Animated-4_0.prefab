@@ -214,6 +214,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::_Project.Runtime.Core.Props.Chest
   interactableCollider: {fileID: 6379156648623313607}
-  dropDistance: 1
-  maxDropDistance: 1
   dropPrefabs: []
+  spawnHoldDuration: 0.12
+  flyDuration: 0.35
+  playerLandingSpread: 0.25
+  arcHeightMin: 0.3
+  arcHeightMax: 0.8
+  obstacleLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  collisionCheckRadius: 0.25
+  wallPadding: 0.05
