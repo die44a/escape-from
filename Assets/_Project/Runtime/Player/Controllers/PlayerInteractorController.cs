@@ -1,3 +1,4 @@
+using _Project.Runtime.Core.UI.HUD;
 using _Project.Runtime.Interfaces;
 using UnityEngine;
 using Zenject;
@@ -11,13 +12,15 @@ namespace _Project.Runtime.Player.Controllers
         [SerializeField] private Vector2 originOffset = new (0, 0.5f);
 
         private PlayerController _playerController;
+        private UIHint _uiHint;
         
         private IInteractable _currentHoveredInteractable;
 
         [Inject]
-        public void Construct(PlayerController playerController)
+        public void Construct(PlayerController playerController, UIHint uiHint)
         {
             _playerController = playerController;
+            _uiHint = uiHint;
         }
 
         private void FixedUpdate()
@@ -53,7 +56,16 @@ namespace _Project.Runtime.Player.Controllers
                 _currentHoveredInteractable?.OnHoverExit();
                 _currentHoveredInteractable = closestInteractable;
                 _currentHoveredInteractable?.OnHoverEnter();
+                UpdateUIHint();
             }
+        }
+        
+        private void UpdateUIHint()
+        {
+            if (_currentHoveredInteractable != null)
+                _uiHint.Show($"[E] {_currentHoveredInteractable.GetInteractionLabel()}");
+            else
+                _uiHint.Hide();
         }
 
         public void PerformInteraction() 

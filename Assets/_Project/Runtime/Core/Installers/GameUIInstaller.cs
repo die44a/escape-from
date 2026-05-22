@@ -11,12 +11,18 @@ namespace _Project.Runtime.Core.Installers
     {
         [SerializeField] private PauseScreen pauseScreen;
         [SerializeField] private HUDScreen hudScreen;
+        [SerializeField] private UIHint uiHint;
         
         public override void InstallBindings()
         {
-            Container.BindInterfacesTo<PauseScreen>().FromInstance(pauseScreen);
+            Container.BindInterfacesTo<PauseScreen>()
+                .FromInstance(pauseScreen);
 
-            Container.BindInterfacesAndSelfTo<HUDScreen>().FromInstance(hudScreen);
+            Container.BindInterfacesAndSelfTo<HUDScreen>()
+                .FromInstance(hudScreen);
+            
+            Container.BindInterfacesAndSelfTo<UIHint>()
+                .FromInstance(uiHint);
             
             Debug.Log("Game UI installed");
         }
