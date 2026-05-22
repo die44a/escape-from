@@ -43,7 +43,7 @@ namespace _Project.Runtime.Player.Controllers
                 {
                     var distance = Vector2.Distance(origin, col.transform.position);
 
-                    if (distance < minDistance)
+                    if (interactable.IsInteractable && distance < minDistance)
                     {
                         minDistance = distance;
                         closestInteractable = interactable;
@@ -76,6 +76,8 @@ namespace _Project.Runtime.Player.Controllers
             _currentHoveredInteractable.Interact(gameObject, () => {
                 _playerController.EndInteraction(); 
             });
+            
+            UpdateUIHint();
         }
 
         private void OnDrawGizmosSelected()

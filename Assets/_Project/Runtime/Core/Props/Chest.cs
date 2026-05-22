@@ -24,7 +24,7 @@ namespace _Project.Runtime.Core.Props
 
         public SpriteRenderer Renderer { get; private set; }
         public bool IsInteractable { get; private set; } = true;
-        public string GetInteractionLabel() => "Inspect Chest";
+        public string GetInteractionLabel() => "Открыть сундук";
 
         private bool _isBusy;
         private static readonly int Open = Animator.StringToHash("open");

@@ -15,7 +15,7 @@ MonoBehaviour:
   weaponSprite: {fileID: -6463675294164364376, guid: 5562adf8aa6d99b43ab261bbc0140227, type: 3}
   animatorOverride: {fileID: 22100000, guid: 6b4be507747de1147b92858f55680597, type: 2}
   type: 1
-  weaponName: BasicSpearSteel
+  weaponName: "\u0416\u0435\u043B\u0435\u0437\u043D\u043E\u0435 \u043A\u043E\u043F\u044C\u0451"
   attackRate: 1.4
   damage: 7
   knockbackForce: 4

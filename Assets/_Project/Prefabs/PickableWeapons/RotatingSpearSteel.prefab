@@ -68,6 +68,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RotatingSpearSteel
       objectReference: {fileID: 0}
+    - target: {fileID: 6990624169062482097, guid: 10830dec895eb7b4a840d4eee69bdc22, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8337139374149130969, guid: 10830dec895eb7b4a840d4eee69bdc22, type: 3}
       propertyPath: weaponConfig
       value: 
