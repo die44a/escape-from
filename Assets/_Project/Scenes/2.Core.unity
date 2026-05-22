@@ -119,7 +119,29 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1001 &105291868
+--- !u!114 &56718049 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 362389972158879758, guid: 8b67daa6e3239234786037f0f65b3a00, type: 3}
+  m_PrefabInstance: {fileID: 451820743}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5840e75794c64182826791e837cb7f4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::_Project.Runtime.Core.UI.HUD.UIHint
+--- !u!114 &56718050 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9143336994384107002, guid: 8b67daa6e3239234786037f0f65b3a00, type: 3}
+  m_PrefabInstance: {fileID: 451820743}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c5502d362c648fcacdb999e23d6ee33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::_Project.Runtime.Core.UI.HUD.HUDScreen
+--- !u!1001 &451820743
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -127,21 +149,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4087135674570008108, guid: 8b67daa6e3239234786037f0f65b3a00, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 6223120418398515357, guid: 8b67daa6e3239234786037f0f65b3a00, type: 3}
       propertyPath: m_Name
       value: Core UI
       objectReference: {fileID: 0}
     - target: {fileID: 6319984128716208092, guid: 8b67daa6e3239234786037f0f65b3a00, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 473.47498
+      value: -11.23482
       objectReference: {fileID: 0}
     - target: {fileID: 6319984128716208092, guid: 8b67daa6e3239234786037f0f65b3a00, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 367.26733
+      value: 40.1795
       objectReference: {fileID: 0}
     - target: {fileID: 6319984128716208092, guid: 8b67daa6e3239234786037f0f65b3a00, type: 3}
       propertyPath: m_LocalPosition.z
@@ -180,28 +198,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8b67daa6e3239234786037f0f65b3a00, type: 3}
---- !u!114 &105291869 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 9143336994384107002, guid: 8b67daa6e3239234786037f0f65b3a00, type: 3}
-  m_PrefabInstance: {fileID: 105291868}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c5502d362c648fcacdb999e23d6ee33, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::_Project.Runtime.Core.UI.HUD.HUDScreen
---- !u!114 &105291870 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2805115840673266542, guid: 8b67daa6e3239234786037f0f65b3a00, type: 3}
-  m_PrefabInstance: {fileID: 105291868}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3676645a009008d4e850376efba3a5d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::_Project.Runtime.Core.UI.PauseScreen
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -310,7 +306,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 4.3177085
+  orthographic size: 4.9791665
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -601,17 +597,6 @@ MonoBehaviour:
     Time: 0.506
     Smoothing: 5
     IgnoreY: 0
---- !u!114 &853296594 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 362389972158879758, guid: 8b67daa6e3239234786037f0f65b3a00, type: 3}
-  m_PrefabInstance: {fileID: 105291868}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5840e75794c64182826791e837cb7f4c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::_Project.Runtime.Core.UI.HUD.UIHint
 --- !u!1 &1652299756
 GameObject:
   m_ObjectHideFlags: 0
@@ -691,6 +676,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1848142650 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2805115840673266542, guid: 8b67daa6e3239234786037f0f65b3a00, type: 3}
+  m_PrefabInstance: {fileID: 451820743}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3676645a009008d4e850376efba3a5d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::_Project.Runtime.Core.UI.PauseScreen
 --- !u!1 &1864374541
 GameObject:
   m_ObjectHideFlags: 0
@@ -886,9 +882,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58e5b293b796ef4499c7d11488ab10f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::_Project.Runtime.Core.Installers.GameUIInstaller
-  pauseScreen: {fileID: 105291870}
-  hudScreen: {fileID: 105291869}
-  uiHint: {fileID: 853296594}
+  pauseScreen: {fileID: 1848142650}
+  hudScreen: {fileID: 56718050}
+  uiHint: {fileID: 56718049}
 --- !u!114 &1933836252
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -911,7 +907,7 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1933836242}
-  - {fileID: 105291868}
+  - {fileID: 451820743}
   - {fileID: 519420032}
   - {fileID: 619394802}
   - {fileID: 1652299759}
