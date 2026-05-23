@@ -24,6 +24,15 @@ namespace _Project.Runtime.Core.Levels
             LoadLevel(_currentLevelIndex);
         }
 
+        public Transform GetCurrentExitPoint()
+        {
+            if (!_currentLevelInstance)
+                return null;
+
+            var exitPoint = _currentLevelInstance.GetComponentInChildren<ExitPoint>();
+            return exitPoint ? exitPoint.transform : null;
+        }
+        
         // ReSharper disable Unity.PerformanceAnalysis
         public void LoadNextLevel()
         {
