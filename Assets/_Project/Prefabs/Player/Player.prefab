@@ -19,6 +19,7 @@ GameObject:
   - component: {fileID: 9058021629673717336}
   - component: {fileID: 6262076782872876764}
   - component: {fileID: 1853158515205209005}
+  - component: {fileID: 9212815542000635663}
   m_Layer: 10
   m_Name: Player
   m_TagString: Untagged
@@ -228,6 +229,23 @@ MonoBehaviour:
   maxWidth: 1
   shakeStrength: 0.2
   shakeDuration: 0.15
+--- !u!114 &9212815542000635663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2373793466803568562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd3179fa151b4f4d9f15c2a07cbdd2d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::_Project.Runtime.Core.UI.HUD.PlayerInteractBarView
+  maskTransform: {fileID: 6574773599105863901}
+  fillRenderer: {fileID: 722254556960587984}
+  root: {fileID: 3326506829767514659}
+  maxWidth: 1
+  fadeSpeed: 6
 --- !u!1 &3326506829767514659
 GameObject:
   m_ObjectHideFlags: 0
