@@ -8,9 +8,11 @@ namespace _Project.Runtime.Core.UI.HUD
     {
         [SerializeField] private TextMeshProUGUI textDisplay;
         [SerializeField] private float smoothSpeed = 15f;
+        [SerializeField] private float hitFlashDuration = 0.2f;
         
         [Inject] private IHealthObservable _healthModel;
 
+        private float _hitTimer;
         private float _targetTime;
         private float _displayedTime;
 
@@ -22,10 +24,16 @@ namespace _Project.Runtime.Core.UI.HUD
         }
 
         private void OnEnable()
-            => _healthModel.OnHealthChanged += SetTargetTime;
+        {
+            _healthModel.OnHealthChanged += SetTargetTime;
+            _healthModel.OnHit += PlayHitFlash;
+        }
 
         private void OnDisable()
-            => _healthModel.OnHealthChanged -= SetTargetTime;
+        {
+            _healthModel.OnHealthChanged -= SetTargetTime;
+            _healthModel.OnHit -= PlayHitFlash;
+        }
 
         private void SetTargetTime(float currentTime) 
             => _targetTime = currentTime;
@@ -33,10 +41,14 @@ namespace _Project.Runtime.Core.UI.HUD
         private void Update()
         {
             _displayedTime = Mathf.MoveTowards(_displayedTime, _targetTime, smoothSpeed * Time.deltaTime);
-            
+
+            if (_hitTimer > 0f)
+                _hitTimer -= Time.deltaTime;
+
             UpdateText(_displayedTime);
             UpdateVisuals(_displayedTime);
         }
+        
 
         private void UpdateText(float timeToDisplay)
         {
@@ -47,13 +59,38 @@ namespace _Project.Runtime.Core.UI.HUD
 
         private void UpdateVisuals(float currentTime)
         {
-            if (currentTime < 20f)
+            if (_hitTimer > 0f)
             {
-                var alpha = Mathf.PingPong(Time.time * 2, 1);
-                textDisplay.color = new Color(1, 0, 0, alpha);
+                var pulse = Mathf.Lerp(0.7f, 1f, Mathf.PingPong(Time.time * 10f, 1f));
+                textDisplay.color = new Color(1f, 0f, 0f, pulse);
+                return;
             }
-            else
-                textDisplay.color = Color.white;
+
+            if (currentTime <= 15f)
+            {
+                var pulse = Mathf.Lerp(0.6f, 1f, Mathf.PingPong(Time.time * 4f, 1f));
+                textDisplay.color = new Color(1f, 0.2f, 0.2f, pulse);
+                return;
+            }
+
+            if (currentTime <= 30f)
+            {
+                textDisplay.color = new Color(1f, 0.3f, 0.3f, 1f);
+                return;
+            }
+
+            if (currentTime <= 60f)
+            {
+                textDisplay.color = new Color(1f, 0.6f, 0.6f, 1f);
+                return;
+            }
+
+            textDisplay.color = Color.white;
+        }
+        
+        private void PlayHitFlash()
+        {
+            _hitTimer = hitFlashDuration;
         }
     }
 }
