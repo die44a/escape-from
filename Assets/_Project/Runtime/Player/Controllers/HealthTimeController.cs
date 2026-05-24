@@ -16,6 +16,7 @@ namespace _Project.Runtime.Player.Controllers
         private float _timeModifier = 1;
         private bool _isInvulnerable;
         private bool _isDead;
+        private bool _isInSafeZone;
         
         public event Action<float> OnHealthChanged; 
         public event Action OnDeath;
@@ -39,7 +40,20 @@ namespace _Project.Runtime.Player.Controllers
         {
             if (_isDead) return;
 
+            if (_isInSafeZone)
+                return;
+
             ReduceHealth(Time.deltaTime * _timeModifier);
+        }
+        
+        public void EnterSafeZone()
+        {
+            _isInSafeZone = true;   
+        }
+
+        public void ExitSafeZone()
+        {
+            _isInSafeZone = false;
         }
 
         public void ApplyDamage(float amount)
