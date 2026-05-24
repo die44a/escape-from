@@ -1,3 +1,4 @@
+using _Project.Runtime.Core.Levels;
 using _Project.Runtime.Core.UI;
 using _Project.Runtime.Core.UI.HUD;
 using _Project.Runtime.Core.UI.Pause;
@@ -12,6 +13,7 @@ namespace _Project.Runtime.Core.Installers
         [SerializeField] private PauseScreen pauseScreen;
         [SerializeField] private HUDScreen hudScreen;
         [SerializeField] private UIHint uiHint;
+        [SerializeField] private PanelCutscene panelCutscene;
         
         public override void InstallBindings()
         {
@@ -23,6 +25,10 @@ namespace _Project.Runtime.Core.Installers
             
             Container.BindInterfacesAndSelfTo<UIHint>()
                 .FromInstance(uiHint);
+            
+            Container.Bind<PanelCutscene>()
+                .FromInstance(panelCutscene)
+                .AsSingle();
             
             Debug.Log("Game UI installed");
         }
