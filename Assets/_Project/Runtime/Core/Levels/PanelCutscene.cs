@@ -41,11 +41,12 @@ namespace _Project.Runtime.Core.Levels
 
                 ShowOnly(_index);
 
+                await Task.Yield(); 
+
                 await _fader.FadeInAsync(1f);
 
                 await WaitForInput(action);
 
-                panels[_index].SetActive(false);
                 _index++;
             }
 

@@ -1,5 +1,6 @@
 using System.Threading.Tasks;
 using _Project.Global;
+using _Project.Runtime.Core.Main;
 using _Project.Runtime.Player.Controllers;
 using _Project.Runtime.Player.Services;
 using _Project.Services;
@@ -16,6 +17,7 @@ namespace _Project.Runtime.Core.Levels
         private readonly HealthTimeController _healthTimeController;
         private readonly PanelCutscene _cutscene;
         private readonly IInputService _inputService;
+        private readonly GameManager _gameManager;
 
         private Transform _currentExit;
 
@@ -28,7 +30,8 @@ namespace _Project.Runtime.Core.Levels
             SceneFader fader,
             HealthTimeController healthTimeController,
             PanelCutscene cutscene,
-            IInputService inputService)
+            IInputService inputService,
+            GameManager gameManager)
         {
             _levelController = levelController;
             _spawnService = spawnService;
@@ -36,16 +39,36 @@ namespace _Project.Runtime.Core.Levels
             _healthTimeController = healthTimeController;
             _cutscene = cutscene;
             _inputService = inputService;
+            _gameManager = gameManager;
         }
 
         void IInitializable.Initialize()
         {
+            _healthTimeController.OnDeath += HandleDeath;
             RunFlow();
+        }
+        
+        private void OnDestroy()
+        {
+            if (_healthTimeController)
+                _healthTimeController.OnDeath -= HandleDeath;
         }
 
         private async void RunFlow()
         {
             await PlayIntro();
+        }
+        
+        private async void HandleDeath()
+        {
+            if (_gameFinished)
+                return;
+
+            _gameFinished = true;
+            
+            await Task.Delay(500);
+
+            _gameManager.ExitToMenu();
         }
 
         private async Task PlayIntro()
