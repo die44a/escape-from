@@ -1,11 +1,11 @@
-using _Project.Runtime.Player.Controllers;
 using UnityEngine;
+using _Project.Runtime.Player.Controllers;
 
-namespace _Project.Runtime.Core.Levels
+namespace _Project.Runtime.Core.Props
 {
-    public class SafeStatue : MonoBehaviour
+    public class SafeZone : MonoBehaviour
     {
-        private void OnTriggerEnter(Collider other)
+        private void OnTriggerEnter2D(Collider2D other)
         {
             if (other.TryGetComponent<HealthTimeController>(out var health))
             {
@@ -13,7 +13,7 @@ namespace _Project.Runtime.Core.Levels
             }
         }
 
-        private void OnTriggerExit(Collider other)
+        private void OnTriggerExit2D(Collider2D other)
         {
             if (other.TryGetComponent<HealthTimeController>(out var health))
             {
