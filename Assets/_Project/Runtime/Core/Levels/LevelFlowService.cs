@@ -57,11 +57,15 @@ namespace _Project.Runtime.Core.Levels
 
             await _fader.FadeOutAsync(1f);
 
+            _healthTimeController.EnterSafeZone();
+
             _inputService.SwitchToUI();
 
             await _cutscene.PlayAsync();
 
             _inputService.SwitchToGameplay();
+
+            _healthTimeController.ExitSafeZone();
 
             _levelController.LoadFirstLevel();
 
@@ -72,7 +76,7 @@ namespace _Project.Runtime.Core.Levels
             _spawnService.Spawn(startPoint);
 
             _currentExit = _levelController.GetCurrentExitPoint();
-            
+
             await _fader.FadeInAsync(1f);
         }
 
