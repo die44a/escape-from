@@ -72,9 +72,7 @@ namespace _Project.Runtime.Core.Levels
             _spawnService.Spawn(startPoint);
 
             _currentExit = _levelController.GetCurrentExitPoint();
-
-            _healthTimeController.AddTime(60);
-
+            
             await _fader.FadeInAsync(1f);
         }
 

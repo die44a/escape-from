@@ -1,4 +1,5 @@
 using System.Threading.Tasks;
+using _Project.Global;
 using _Project.Services;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -8,9 +9,11 @@ namespace _Project.Runtime.Core.Levels
 {
     public class PanelCutscene : MonoBehaviour
     {
+        [SerializeField] private GameObject panelRoot;
         [SerializeField] private GameObject[] panels;
 
         [Inject] private IInputService _input;
+        [Inject] private SceneFader _fader;
 
         private int _index;
         private bool _isPlaying;
@@ -34,7 +37,11 @@ namespace _Project.Runtime.Core.Levels
 
             while (_index < panels.Length)
             {
-                panels[_index].SetActive(true);
+                await _fader.FadeOutAsync(1f);
+
+                ShowOnly(_index);
+
+                await _fader.FadeInAsync(1f);
 
                 await WaitForInput(action);
 
@@ -47,6 +54,13 @@ namespace _Project.Runtime.Core.Levels
 
             gameObject.SetActive(false);
             _isPlaying = false;
+            panelRoot.SetActive(false);
+        }
+        
+        private void ShowOnly(int index)
+        {
+            HideAll();
+            panels[index].SetActive(true);
         }
 
         private async Task WaitForInput(InputAction action)
