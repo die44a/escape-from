@@ -66,15 +66,69 @@ namespace _Project.Runtime.Player.Controllers
                 case CoinType.Bronze:
                     _stats.AddBronze();
                     break;
+
                 case CoinType.Silver:
                     _stats.AddSilver();
                     break;
+
                 case CoinType.Gold:
                     _stats.AddGold();
                     break;
             }
         }
-        
+
+        private void SpendCoin(CoinType type, int amount)
+        {
+            switch (type)
+            {
+                case CoinType.Bronze:
+                    _stats.SpendBronze(amount);
+                    break;
+
+                case CoinType.Silver:
+                    _stats.SpendSilver(amount);
+                    break;
+
+                case CoinType.Gold:
+                    _stats.SpendGold(amount);
+                    break;
+            }
+        }
+
+        public bool CanSpend(CoinType type, int amount)
+        {
+            return type switch
+            {
+                CoinType.Bronze => _stats.BronzeCoins >= amount,
+                CoinType.Silver => _stats.SilverCoins >= amount,
+                CoinType.Gold => _stats.GoldCoins >= amount,
+                _ => false
+            };
+        }
+
+        public bool TrySpend(CoinType type, int amount)
+        {
+            if (!CanSpend(type, amount))
+                return false;
+
+            SpendCoin(type, amount);
+            return true;
+        }
+
+        public bool TrySpendBundle(int bronze, int silver, int gold)
+        {
+            if (_stats.BronzeCoins < bronze ||
+                _stats.SilverCoins < silver ||
+                _stats.GoldCoins < gold)
+                return false;
+
+            if (bronze > 0) _stats.SpendBronze(bronze);
+            if (silver > 0) _stats.SpendSilver(silver);
+            if (gold > 0) _stats.SpendGold(gold);
+
+            return true;
+        }
+
         private void OnTriggerEnter2D(Collider2D other)
         {
             if (!other.TryGetComponent<Coin>(out var coin) || !coin.PickupEnabled)

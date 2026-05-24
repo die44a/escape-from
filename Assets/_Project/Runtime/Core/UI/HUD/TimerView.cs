@@ -59,6 +59,18 @@ namespace _Project.Runtime.Core.UI.HUD
 
         private void UpdateVisuals(float currentTime)
         {
+            if (_healthModel.IsInSafeZone)
+            {
+                var pulse = Mathf.Pow(Mathf.PingPong(Time.time * 4f, 1f), 1.5f);
+
+                textDisplay.color = Color.Lerp(
+                    new Color(0.25f, 0.65f, 0.85f),
+                    Color.white,
+                    1f - pulse);
+
+                return;
+            }
+            
             if (_hitTimer > 0f)
             {
                 var pulse = Mathf.Lerp(0.7f, 1f, Mathf.PingPong(Time.time * 10f, 1f));
