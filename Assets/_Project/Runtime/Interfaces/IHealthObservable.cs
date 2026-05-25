@@ -7,4 +7,5 @@ public interface IHealthObservable
     event Action OnHit;
     float CurrentHealth { get; }
     float InvulnerabilityDuration { get; }
+    bool IsInSafeZone { get; }
 }

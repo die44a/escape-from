@@ -10,7 +10,7 @@ namespace _Project.Runtime.Core.Props
         [SerializeField] private Door targetDoor;
         [FormerlySerializedAs("InActivate")] public bool inActivate;
         public bool IsInteractable => true;
-        public string GetInteractionLabel() => "Нажать на рычаг";
+        public string GetInteractionLabel() => inActivate? "Деактивировать рычаг" : "Активировать рычаг";
         public SpriteRenderer Renderer { get; private set; }
 
         private Animator _animator;

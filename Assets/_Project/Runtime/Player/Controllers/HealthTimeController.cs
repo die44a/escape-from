@@ -16,13 +16,15 @@ namespace _Project.Runtime.Player.Controllers
         private float _timeModifier = 1;
         private bool _isInvulnerable;
         private bool _isDead;
-        
+
         public event Action<float> OnHealthChanged; 
         public event Action OnDeath;
         public event Action OnHit; 
 
         public float CurrentHealth => _currentHealthTime;
         public float InvulnerabilityDuration => invulnerabilityDuration;
+
+        public bool IsInSafeZone { get; private set; }
 
         public void Construct(IPlayerStatus playerStatus)
         {
@@ -39,7 +41,20 @@ namespace _Project.Runtime.Player.Controllers
         {
             if (_isDead) return;
 
+            if (IsInSafeZone)
+                return;
+
             ReduceHealth(Time.deltaTime * _timeModifier);
+        }
+        
+        public void EnterSafeZone()
+        {
+            IsInSafeZone = true;   
+        }
+
+        public void ExitSafeZone()
+        {
+            IsInSafeZone = false;
         }
 
         public void ApplyDamage(float amount)
@@ -88,7 +103,7 @@ namespace _Project.Runtime.Player.Controllers
         public void AddTime(float amount)
         {
             if (_isDead || amount < 0) return;
-            _currentHealthTime = Mathf.Min(_currentHealthTime + amount, maxHealthTime);
+            _currentHealthTime += amount;
             OnHealthChanged?.Invoke(_currentHealthTime);
         }
     }

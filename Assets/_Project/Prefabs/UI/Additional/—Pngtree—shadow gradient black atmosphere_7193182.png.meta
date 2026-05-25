@@ -1,0 +1,923 @@
+fileFormatVersion: 2
+guid: 4ac1d812dc53da04f9e5a90300a386e5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2120199912969429835
+    second: "\u2014Pngtree\u2014shadow gradient black atmosphere_7193182_0"
+  - first:
+      213: -2041057085003273742
+    second: "\u2014Pngtree\u2014shadow gradient black atmosphere_7193182_1"
+  - first:
+      213: 2982490066120360980
+    second: "\u2014Pngtree\u2014shadow gradient black atmosphere_7193182_2"
+  - first:
+      213: -7667612604169141674
+    second: "\u2014Pngtree\u2014shadow gradient black atmosphere_7193182_3"
+  - first:
+      213: 7171257917099062461
+    second: "\u2014Pngtree\u2014shadow gradient black atmosphere_7193182_4"
+  - first:
+      213: 1537180020613996783
+    second: "\u2014Pngtree\u2014shadow gradient black atmosphere_7193182_5"
+  - first:
+      213: 3662640547397255513
+    second: "\u2014Pngtree\u2014shadow gradient black atmosphere_7193182_6"
+  - first:
+      213: -8699485612990388679
+    second: "\u2014Pngtree\u2014shadow gradient black atmosphere_7193182_7"
+  - first:
+      213: 8494118129746436478
+    second: "\u2014Pngtree\u2014shadow gradient black atmosphere_7193182_8"
+  - first:
+      213: -4011302732257094294
+    second: "\u2014Pngtree\u2014shadow gradient black atmosphere_7193182_9"
+  - first:
+      213: 7514837620818049451
+    second: "\u2014Pngtree\u2014shadow gradient black atmosphere_7193182_10"
+  - first:
+      213: 5791977349438670620
+    second: "\u2014Pngtree\u2014shadow gradient black atmosphere_7193182_11"
+  - first:
+      213: 5145490121687261328
+    second: "\u2014Pngtree\u2014shadow gradient black atmosphere_7193182_12"
+  - first:
+      213: -6397589656431014818
+    second: "\u2014Pngtree\u2014shadow gradient black atmosphere_7193182_13"
+  - first:
+      213: -4348798077368740572
+    second: "\u2014Pngtree\u2014shadow gradient black atmosphere_7193182_14"
+  - first:
+      213: 5731988701435561783
+    second: "\u2014Pngtree\u2014shadow gradient black atmosphere_7193182_15"
+  - first:
+      213: 2806157434046352544
+    second: "\u2014Pngtree\u2014shadow gradient black atmosphere_7193182_16"
+  - first:
+      213: -4817947522599756171
+    second: "\u2014Pngtree\u2014shadow gradient black atmosphere_7193182_17"
+  - first:
+      213: -8388311052894042305
+    second: "\u2014Pngtree\u2014shadow gradient black atmosphere_7193182_18"
+  - first:
+      213: 7441738851278921769
+    second: "\u2014Pngtree\u2014shadow gradient black atmosphere_7193182_19"
+  - first:
+      213: 985990439855446489
+    second: "\u2014Pngtree\u2014shadow gradient black atmosphere_7193182_20"
+  - first:
+      213: 6565699256759752060
+    second: "\u2014Pngtree\u2014shadow gradient black atmosphere_7193182_21"
+  - first:
+      213: 2007685056566675944
+    second: "\u2014Pngtree\u2014shadow gradient black atmosphere_7193182_22"
+  - first:
+      213: 1500755104545634996
+    second: "\u2014Pngtree\u2014shadow gradient black atmosphere_7193182_23"
+  - first:
+      213: 1696255518981064781
+    second: "\u2014Pngtree\u2014shadow gradient black atmosphere_7193182_24"
+  - first:
+      213: 5801120907364748710
+    second: "\u2014Pngtree\u2014shadow gradient black atmosphere_7193182_25"
+  - first:
+      213: 1349905977559263760
+    second: "\u2014Pngtree\u2014shadow gradient black atmosphere_7193182_26"
+  - first:
+      213: -5272307319624821746
+    second: "\u2014Pngtree\u2014shadow gradient black atmosphere_7193182_27"
+  - first:
+      213: 2960076292003527795
+    second: "\u2014Pngtree\u2014shadow gradient black atmosphere_7193182_28"
+  - first:
+      213: 2566300114605981667
+    second: "\u2014Pngtree\u2014shadow gradient black atmosphere_7193182_29"
+  - first:
+      213: 1316814289824735053
+    second: "\u2014Pngtree\u2014shadow gradient black atmosphere_7193182_30"
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014shadow gradient black atmosphere_7193182_0"
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 0
+        width: 4907
+        height: 3543
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b436b5966967c6d10800000000000000
+      internalID: 2120199912969429835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014shadow gradient black atmosphere_7193182_1"
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 3496
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f9e51a2565bca3e0800000000000000
+      internalID: -2041057085003273742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014shadow gradient black atmosphere_7193182_2"
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 3462
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4144c39c9eee36920800000000000000
+      internalID: 2982490066120360980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014shadow gradient black atmosphere_7193182_3"
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 3281
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 652c03516fa279590800000000000000
+      internalID: -7667612604169141674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014shadow gradient black atmosphere_7193182_4"
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 3256
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db4b565a41d658360800000000000000
+      internalID: 7171257917099062461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014shadow gradient black atmosphere_7193182_5"
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 3222
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe0668c9519255510800000000000000
+      internalID: 1537180020613996783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014shadow gradient black atmosphere_7193182_6"
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 3175
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9514e8f1c2054d230800000000000000
+      internalID: 3662640547397255513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014shadow gradient black atmosphere_7193182_7"
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 3084
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93626154de7354780800000000000000
+      internalID: -8699485612990388679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014shadow gradient black atmosphere_7193182_8"
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 2781
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e71edbb6f6b21e570800000000000000
+      internalID: 8494118129746436478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014shadow gradient black atmosphere_7193182_9"
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 2678
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a651345fa6df458c0800000000000000
+      internalID: -4011302732257094294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014shadow gradient black atmosphere_7193182_10"
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 2654
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba9f99530011a4860800000000000000
+      internalID: 7514837620818049451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014shadow gradient black atmosphere_7193182_11"
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 2560
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c17866c46bc316050800000000000000
+      internalID: 5791977349438670620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014shadow gradient black atmosphere_7193182_12"
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 2489
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0906372f004786740800000000000000
+      internalID: 5145490121687261328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014shadow gradient black atmosphere_7193182_13"
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 2045
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5c47b57a123737a0800000000000000
+      internalID: -6397589656431014818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014shadow gradient black atmosphere_7193182_14"
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 1764
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 425d8868037f5a3c0800000000000000
+      internalID: -4348798077368740572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014shadow gradient black atmosphere_7193182_15"
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 1683
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7378e95ca5d1c8f40800000000000000
+      internalID: 5731988701435561783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014shadow gradient black atmosphere_7193182_16"
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 1232
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ac8720915971f620800000000000000
+      internalID: 2806157434046352544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014shadow gradient black atmosphere_7193182_17"
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 1198
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57ed7f83146332db0800000000000000
+      internalID: -4817947522599756171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014shadow gradient black atmosphere_7193182_18"
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 1067
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3784c26a8bb69b80800000000000000
+      internalID: -8388311052894042305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014shadow gradient black atmosphere_7193182_19"
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 926
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92024b5ae0e564760800000000000000
+      internalID: 7441738851278921769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014shadow gradient black atmosphere_7193182_20"
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 869
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d9d38fb411fead00800000000000000
+      internalID: 985990439855446489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014shadow gradient black atmosphere_7193182_21"
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 819
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c75163dffac0e1b50800000000000000
+      internalID: 6565699256759752060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014shadow gradient black atmosphere_7193182_22"
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 676
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e94489fbeabcdb10800000000000000
+      internalID: 2007685056566675944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014shadow gradient black atmosphere_7193182_23"
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 638
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bafb45f0d0c3d410800000000000000
+      internalID: 1500755104545634996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014shadow gradient black atmosphere_7193182_24"
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 588
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d488929486f4a8710800000000000000
+      internalID: 1696255518981064781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014shadow gradient black atmosphere_7193182_25"
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 517
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ad4196cab8b18050800000000000000
+      internalID: 5801120907364748710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014shadow gradient black atmosphere_7193182_26"
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 507
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01aa890a554dbb210800000000000000
+      internalID: 1349905977559263760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014shadow gradient black atmosphere_7193182_27"
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 373
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e04121b3d6005d6b0800000000000000
+      internalID: -5272307319624821746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014shadow gradient black atmosphere_7193182_28"
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 160
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37cfce454bd441920800000000000000
+      internalID: 2960076292003527795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014shadow gradient black atmosphere_7193182_29"
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 118
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ef322e7b545d9320800000000000000
+      internalID: 2566300114605981667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014shadow gradient black atmosphere_7193182_30"
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 32
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4f592cae93464210800000000000000
+      internalID: 1316814289824735053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      "\u2014Pngtree\u2014shadow gradient black atmosphere_7193182_0": 2120199912969429835
+      "\u2014Pngtree\u2014shadow gradient black atmosphere_7193182_1": -2041057085003273742
+      "\u2014Pngtree\u2014shadow gradient black atmosphere_7193182_10": 7514837620818049451
+      "\u2014Pngtree\u2014shadow gradient black atmosphere_7193182_11": 5791977349438670620
+      "\u2014Pngtree\u2014shadow gradient black atmosphere_7193182_12": 5145490121687261328
+      "\u2014Pngtree\u2014shadow gradient black atmosphere_7193182_13": -6397589656431014818
+      "\u2014Pngtree\u2014shadow gradient black atmosphere_7193182_14": -4348798077368740572
+      "\u2014Pngtree\u2014shadow gradient black atmosphere_7193182_15": 5731988701435561783
+      "\u2014Pngtree\u2014shadow gradient black atmosphere_7193182_16": 2806157434046352544
+      "\u2014Pngtree\u2014shadow gradient black atmosphere_7193182_17": -4817947522599756171
+      "\u2014Pngtree\u2014shadow gradient black atmosphere_7193182_18": -8388311052894042305
+      "\u2014Pngtree\u2014shadow gradient black atmosphere_7193182_19": 7441738851278921769
+      "\u2014Pngtree\u2014shadow gradient black atmosphere_7193182_2": 2982490066120360980
+      "\u2014Pngtree\u2014shadow gradient black atmosphere_7193182_20": 985990439855446489
+      "\u2014Pngtree\u2014shadow gradient black atmosphere_7193182_21": 6565699256759752060
+      "\u2014Pngtree\u2014shadow gradient black atmosphere_7193182_22": 2007685056566675944
+      "\u2014Pngtree\u2014shadow gradient black atmosphere_7193182_23": 1500755104545634996
+      "\u2014Pngtree\u2014shadow gradient black atmosphere_7193182_24": 1696255518981064781
+      "\u2014Pngtree\u2014shadow gradient black atmosphere_7193182_25": 5801120907364748710
+      "\u2014Pngtree\u2014shadow gradient black atmosphere_7193182_26": 1349905977559263760
+      "\u2014Pngtree\u2014shadow gradient black atmosphere_7193182_27": -5272307319624821746
+      "\u2014Pngtree\u2014shadow gradient black atmosphere_7193182_28": 2960076292003527795
+      "\u2014Pngtree\u2014shadow gradient black atmosphere_7193182_29": 2566300114605981667
+      "\u2014Pngtree\u2014shadow gradient black atmosphere_7193182_3": -7667612604169141674
+      "\u2014Pngtree\u2014shadow gradient black atmosphere_7193182_30": 1316814289824735053
+      "\u2014Pngtree\u2014shadow gradient black atmosphere_7193182_4": 7171257917099062461
+      "\u2014Pngtree\u2014shadow gradient black atmosphere_7193182_5": 1537180020613996783
+      "\u2014Pngtree\u2014shadow gradient black atmosphere_7193182_6": 3662640547397255513
+      "\u2014Pngtree\u2014shadow gradient black atmosphere_7193182_7": -8699485612990388679
+      "\u2014Pngtree\u2014shadow gradient black atmosphere_7193182_8": 8494118129746436478
+      "\u2014Pngtree\u2014shadow gradient black atmosphere_7193182_9": -4011302732257094294
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

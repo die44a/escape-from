@@ -16,6 +16,7 @@ namespace _Project.Runtime.Menu.Main
         private IInputService _inputService;
         
         public event Action OnGameStart;
+        public event Action OnStateChanged;
         
         public MenuState State { get; private set; }
         private readonly List<IMenuListener> _listeners = new();
@@ -36,6 +37,23 @@ namespace _Project.Runtime.Menu.Main
             _sceneLoaderService.LoadCoreScene();
             
             Debug.Log("Game Started");
+        }
+
+        public void OpenSettings()
+        {
+            State = MenuState.SETTINGS;
+            OnStateChanged?.Invoke();
+        }
+
+        public void CloseSettings()
+        {
+            State = MenuState.MAIN;
+            OnStateChanged?.Invoke();
+        }
+
+        public void ExitGame()
+        {
+            Application.Quit();
         }
 
         void IInitializable.Initialize()
