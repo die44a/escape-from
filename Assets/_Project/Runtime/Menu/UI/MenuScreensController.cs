@@ -31,8 +31,6 @@ namespace _Project.Runtime.Menu.UI
         private void OnEnable()
         {
             _menuManager.OnStateChanged += ApplyState;
-            _cancelAction = _inputService.GetAction(InputMaps.UI, UiActions.Cancel);
-            _cancelAction.performed += OnCancelPerformed;
             ApplyState();
             
             StartCoroutine(ForceInitialSelection());
