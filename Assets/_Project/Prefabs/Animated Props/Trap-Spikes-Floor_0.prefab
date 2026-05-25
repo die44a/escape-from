@@ -130,6 +130,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::_Project.Runtime.Core.Traps.SpikeTrap
   damageAmount: 10
+  knockbackForce: 4
+  knockbackDuration: 0.15
+  applyKnockback: 1
 --- !u!61 &1428098998156590177
 BoxCollider2D:
   m_ObjectHideFlags: 0
