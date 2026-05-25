@@ -227,7 +227,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 3.4791667
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -518,118 +518,6 @@ MonoBehaviour:
     Time: 0.506
     Smoothing: 5
     IgnoreY: 0
---- !u!1001 &1019912713
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 6223120418398515357, guid: 8b67daa6e3239234786037f0f65b3a00, type: 3}
-      propertyPath: m_Name
-      value: Core UI
-      objectReference: {fileID: 0}
-    - target: {fileID: 6319984128716208092, guid: 8b67daa6e3239234786037f0f65b3a00, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 437.74677
-      objectReference: {fileID: 0}
-    - target: {fileID: 6319984128716208092, guid: 8b67daa6e3239234786037f0f65b3a00, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 296.2979
-      objectReference: {fileID: 0}
-    - target: {fileID: 6319984128716208092, guid: 8b67daa6e3239234786037f0f65b3a00, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6319984128716208092, guid: 8b67daa6e3239234786037f0f65b3a00, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6319984128716208092, guid: 8b67daa6e3239234786037f0f65b3a00, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6319984128716208092, guid: 8b67daa6e3239234786037f0f65b3a00, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6319984128716208092, guid: 8b67daa6e3239234786037f0f65b3a00, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6319984128716208092, guid: 8b67daa6e3239234786037f0f65b3a00, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6319984128716208092, guid: 8b67daa6e3239234786037f0f65b3a00, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6319984128716208092, guid: 8b67daa6e3239234786037f0f65b3a00, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 8b67daa6e3239234786037f0f65b3a00, type: 3}
---- !u!114 &1019912714 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5778689858542347122, guid: 8b67daa6e3239234786037f0f65b3a00, type: 3}
-  m_PrefabInstance: {fileID: 1019912713}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 59f84ab2de3a4241bd7635509fd531e2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::_Project.Runtime.Core.Levels.PanelCutscene
---- !u!114 &1019912715 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5679148345753426011, guid: 8b67daa6e3239234786037f0f65b3a00, type: 3}
-  m_PrefabInstance: {fileID: 1019912713}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd9df8900df647e2860c32dfe2329c8b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::_Project.Runtime.Core.UI.HUD.FinalScreen
---- !u!114 &1019912716 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 362389972158879758, guid: 8b67daa6e3239234786037f0f65b3a00, type: 3}
-  m_PrefabInstance: {fileID: 1019912713}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5840e75794c64182826791e837cb7f4c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::_Project.Runtime.Core.UI.HUD.UIHint
---- !u!114 &1019912717 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 9143336994384107002, guid: 8b67daa6e3239234786037f0f65b3a00, type: 3}
-  m_PrefabInstance: {fileID: 1019912713}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c5502d362c648fcacdb999e23d6ee33, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::_Project.Runtime.Core.UI.HUD.HUDScreen
---- !u!114 &1019912718 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2805115840673266542, guid: 8b67daa6e3239234786037f0f65b3a00, type: 3}
-  m_PrefabInstance: {fileID: 1019912713}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3676645a009008d4e850376efba3a5d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::_Project.Runtime.Core.UI.PauseScreen
 --- !u!1 &1652299756
 GameObject:
   m_ObjectHideFlags: 0
@@ -709,6 +597,118 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1675525547
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6223120418398515357, guid: 8b67daa6e3239234786037f0f65b3a00, type: 3}
+      propertyPath: m_Name
+      value: Core UI
+      objectReference: {fileID: 0}
+    - target: {fileID: 6319984128716208092, guid: 8b67daa6e3239234786037f0f65b3a00, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 453.33295
+      objectReference: {fileID: 0}
+    - target: {fileID: 6319984128716208092, guid: 8b67daa6e3239234786037f0f65b3a00, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 151.80196
+      objectReference: {fileID: 0}
+    - target: {fileID: 6319984128716208092, guid: 8b67daa6e3239234786037f0f65b3a00, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6319984128716208092, guid: 8b67daa6e3239234786037f0f65b3a00, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6319984128716208092, guid: 8b67daa6e3239234786037f0f65b3a00, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6319984128716208092, guid: 8b67daa6e3239234786037f0f65b3a00, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6319984128716208092, guid: 8b67daa6e3239234786037f0f65b3a00, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6319984128716208092, guid: 8b67daa6e3239234786037f0f65b3a00, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6319984128716208092, guid: 8b67daa6e3239234786037f0f65b3a00, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6319984128716208092, guid: 8b67daa6e3239234786037f0f65b3a00, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8b67daa6e3239234786037f0f65b3a00, type: 3}
+--- !u!114 &1675525548 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5778689858542347122, guid: 8b67daa6e3239234786037f0f65b3a00, type: 3}
+  m_PrefabInstance: {fileID: 1675525547}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59f84ab2de3a4241bd7635509fd531e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::_Project.Runtime.Core.Levels.PanelCutscene
+--- !u!114 &1675525549 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5679148345753426011, guid: 8b67daa6e3239234786037f0f65b3a00, type: 3}
+  m_PrefabInstance: {fileID: 1675525547}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd9df8900df647e2860c32dfe2329c8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::_Project.Runtime.Core.UI.HUD.FinalScreen
+--- !u!114 &1675525550 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 362389972158879758, guid: 8b67daa6e3239234786037f0f65b3a00, type: 3}
+  m_PrefabInstance: {fileID: 1675525547}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5840e75794c64182826791e837cb7f4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::_Project.Runtime.Core.UI.HUD.UIHint
+--- !u!114 &1675525551 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9143336994384107002, guid: 8b67daa6e3239234786037f0f65b3a00, type: 3}
+  m_PrefabInstance: {fileID: 1675525547}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c5502d362c648fcacdb999e23d6ee33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::_Project.Runtime.Core.UI.HUD.HUDScreen
+--- !u!114 &1675525552 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2805115840673266542, guid: 8b67daa6e3239234786037f0f65b3a00, type: 3}
+  m_PrefabInstance: {fileID: 1675525547}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3676645a009008d4e850376efba3a5d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::_Project.Runtime.Core.UI.PauseScreen
 --- !u!1 &1864374541
 GameObject:
   m_ObjectHideFlags: 0
@@ -904,11 +904,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58e5b293b796ef4499c7d11488ab10f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::_Project.Runtime.Core.Installers.GameUIInstaller
-  pauseScreen: {fileID: 1019912718}
-  hudScreen: {fileID: 1019912717}
-  uiHint: {fileID: 1019912716}
-  panelCutscene: {fileID: 1019912714}
-  finalScreen: {fileID: 1019912715}
+  pauseScreen: {fileID: 1675525552}
+  hudScreen: {fileID: 1675525551}
+  uiHint: {fileID: 1675525550}
+  panelCutscene: {fileID: 1675525548}
+  finalScreen: {fileID: 1675525549}
 --- !u!114 &1933836252
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -931,7 +931,7 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1933836242}
-  - {fileID: 1019912713}
+  - {fileID: 1675525547}
   - {fileID: 519420032}
   - {fileID: 619394802}
   - {fileID: 1652299759}
