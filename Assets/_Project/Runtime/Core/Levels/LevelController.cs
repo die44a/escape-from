@@ -11,6 +11,9 @@ namespace _Project.Runtime.Core.Levels
         
         private GameObject _currentLevelInstance;
         private int _currentLevelIndex = 0;
+        
+        public bool HasNextLevel =>
+            _currentLevelIndex + 1 < _levelPrefabs.Count;
 
         public LevelController(DiContainer container, List<GameObject> levelPrefabs)
         {
@@ -26,7 +29,7 @@ namespace _Project.Runtime.Core.Levels
 
         public Transform GetCurrentExitPoint()
         {
-            if (!_currentLevelInstance)
+            if (!_currentLevelInstance || _currentLevelIndex >= _levelPrefabs.Count)
                 return null;
 
             var exitPoint = _currentLevelInstance.GetComponentInChildren<ExitPoint>();
@@ -37,11 +40,21 @@ namespace _Project.Runtime.Core.Levels
         public void LoadNextLevel()
         {
             _currentLevelIndex++;
-            
+
             if (_currentLevelIndex < _levelPrefabs.Count)
+            {
                 LoadLevel(_currentLevelIndex);
+            }
             else
+            {
                 Debug.Log("Все уровни пройдены");
+
+                if (_currentLevelInstance)
+                {
+                    Object.Destroy(_currentLevelInstance);
+                    _currentLevelInstance = null;
+                }
+            }
         }
 
         // ReSharper disable Unity.PerformanceAnalysis

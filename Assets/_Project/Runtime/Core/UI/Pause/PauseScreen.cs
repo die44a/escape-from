@@ -54,6 +54,9 @@ namespace _Project.Runtime.Core.UI.Pause
 
         private void OnResumeClicked()
         {
+            if (_gameManager.IsInputLocked)
+                return;
+
             _gameManager.ResumeGame();
         }
         
@@ -95,7 +98,15 @@ namespace _Project.Runtime.Core.UI.Pause
             gameObject.SetActive(false);
         }
 
-        void IGamePauseListener.OnPauseGame() => Show();
+        void IGamePauseListener.OnPauseGame()
+        {
+            if (_gameManager.IsInputLocked)
+                return;
+
+            Show();
+        }
+        
+        
         void IGameResumeListener.OnResumeGame() => Hide();
     }
 }

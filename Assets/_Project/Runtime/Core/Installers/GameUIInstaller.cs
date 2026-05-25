@@ -14,6 +14,7 @@ namespace _Project.Runtime.Core.Installers
         [SerializeField] private HUDScreen hudScreen;
         [SerializeField] private UIHint uiHint;
         [SerializeField] private PanelCutscene panelCutscene;
+        [SerializeField] private FinalScreen finalScreen;
         
         public override void InstallBindings()
         {
@@ -28,6 +29,10 @@ namespace _Project.Runtime.Core.Installers
             
             Container.Bind<PanelCutscene>()
                 .FromInstance(panelCutscene)
+                .AsSingle();
+            
+            Container.Bind<FinalScreen>()
+                .FromInstance(finalScreen)
                 .AsSingle();
             
             Debug.Log("Game UI installed");

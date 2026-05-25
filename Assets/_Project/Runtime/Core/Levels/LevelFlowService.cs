@@ -1,6 +1,7 @@
 using System.Threading.Tasks;
 using _Project.Global;
 using _Project.Runtime.Core.Main;
+using _Project.Runtime.Core.UI.HUD;
 using _Project.Runtime.Player.Controllers;
 using _Project.Runtime.Player.Services;
 using _Project.Services;
@@ -16,6 +17,7 @@ namespace _Project.Runtime.Core.Levels
         private readonly SceneFader _fader;
         private readonly HealthTimeController _healthTimeController;
         private readonly PanelCutscene _cutscene;
+        private readonly FinalScreen _finalScreen;
         private readonly IInputService _inputService;
         private readonly GameManager _gameManager;
 
@@ -30,6 +32,7 @@ namespace _Project.Runtime.Core.Levels
             SceneFader fader,
             HealthTimeController healthTimeController,
             PanelCutscene cutscene,
+            FinalScreen finalScreen,
             IInputService inputService,
             GameManager gameManager)
         {
@@ -38,6 +41,7 @@ namespace _Project.Runtime.Core.Levels
             _fader = fader;
             _healthTimeController = healthTimeController;
             _cutscene = cutscene;
+            _finalScreen = finalScreen;
             _inputService = inputService;
             _gameManager = gameManager;
         }
@@ -47,25 +51,24 @@ namespace _Project.Runtime.Core.Levels
             _healthTimeController.OnDeath += HandleDeath;
             RunFlow();
         }
-        
-        private void OnDestroy()
-        {
-            if (_healthTimeController)
-                _healthTimeController.OnDeath -= HandleDeath;
-        }
 
         private async void RunFlow()
         {
             await PlayIntro();
         }
-        
+
         private async void HandleDeath()
         {
             if (_gameFinished)
                 return;
 
             _gameFinished = true;
-            
+
+            _gameManager.LockInput();
+            _healthTimeController.EnterSafeZone();
+
+            await _fader.FadeOutAsync(1f);
+
             await Task.Delay(500);
 
             _gameManager.ExitToMenu();
@@ -88,8 +91,6 @@ namespace _Project.Runtime.Core.Levels
 
             _inputService.SwitchToGameplay();
 
-            _healthTimeController.ExitSafeZone();
-
             _levelController.LoadFirstLevel();
 
             var startPoint = _levelController.GetCurrentSpawnPoint();
@@ -100,6 +101,8 @@ namespace _Project.Runtime.Core.Levels
 
             _currentExit = _levelController.GetCurrentExitPoint();
 
+            _healthTimeController.ExitSafeZone();
+
             await _fader.FadeInAsync(1f);
         }
 
@@ -107,6 +110,13 @@ namespace _Project.Runtime.Core.Levels
         {
             if (_gameFinished)
                 return;
+
+            // Последний уровень пройден
+            if (!_levelController.HasNextLevel)
+            {
+                await FinishGame();
+                return;
+            }
 
             await _fader.FadeOutAsync(1f);
 
@@ -122,27 +132,29 @@ namespace _Project.Runtime.Core.Levels
 
             _healthTimeController.AddTime(60);
 
-            await Task.Delay(500);
+            await Task.Delay(300);
 
             await _fader.FadeInAsync(1f);
-
-            if (_levelController.GetCurrentExitPoint() == null)
-            {
-                await FinishGame();
-            }
         }
 
         private async Task FinishGame()
         {
+            if (_gameFinished)
+                return;
+
             _gameFinished = true;
+
+            _gameManager.LockInput();
+
+            _healthTimeController.EnterSafeZone();
 
             await _fader.FadeOutAsync(1f);
 
-            await Task.Delay(1000);
+            _inputService.SwitchToUI();
 
-            Debug.Log("Демка пройдена");
+            _finalScreen.Show();
 
-            await Task.Delay(2000);
+            await _fader.FadeInAsync(1f);
         }
 
         Transform IExitPointProvider.GetCurrentExit()
