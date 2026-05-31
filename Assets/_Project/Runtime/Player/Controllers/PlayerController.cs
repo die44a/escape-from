@@ -1,6 +1,5 @@
 using System;
 using System.Collections;
-using _Project.Runtime.Core.Main;
 using _Project.Runtime.Player.Main;
 using _Project.Services;
 using _Project.Services.Input;
@@ -130,7 +129,7 @@ namespace _Project.Runtime.Player.Controllers
             if (CurrentState == PlayerState.Dead)
                 return;
 
-            var targetState = _moveInput.sqrMagnitude > 0.1f
+            var targetState = _moveInput.sqrMagnitude > 0.01f
                 ? PlayerState.Walking
                 : PlayerState.Idle;
 
