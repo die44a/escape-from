@@ -39,6 +39,7 @@ namespace _Project.Runtime.Player.Controllers
         private Coroutine _footstepCoroutine;
         [SerializeField] private float _footstepInterval = 0.4f;
         [SerializeField] private float _footstepStartThreshold = 0.01f;
+        private bool _isFootstepRunning;
 
         [Inject]
         private void Construct(
@@ -213,17 +214,17 @@ namespace _Project.Runtime.Player.Controllers
 
         private void StartFootsteps()
         {
-            if (_footstepCoroutine != null)
+            if (_isFootstepRunning)
                 return;
 
-            if (CurrentState != PlayerState.Walking)
-                return;
-
+            _isFootstepRunning = true;
             _footstepCoroutine = StartCoroutine(FootstepLoop());
         }
 
         private void StopFootsteps()
         {
+            _isFootstepRunning = false;
+
             if (_footstepCoroutine != null)
             {
                 StopCoroutine(_footstepCoroutine);
@@ -233,27 +234,24 @@ namespace _Project.Runtime.Player.Controllers
 
         private IEnumerator FootstepLoop()
         {
-            float timer = 0f;
+            _audioService.PlayFootstep();
 
-            while (CurrentState == PlayerState.Walking)
+            yield return new WaitForSeconds(_footstepInterval);
+
+            while (_isFootstepRunning)
             {
                 if (_moveInput.sqrMagnitude > 0.01f && CurrentState != PlayerState.Dead)
                 {
-                    timer += Time.deltaTime;
-
-                    if (timer >= _footstepInterval)
-                    {
-                        _audioService.PlayFootstep();
-                        timer = 0f;
-                    }
+                    _audioService.PlayFootstep();
+                    yield return new WaitForSeconds(_footstepInterval);
                 }
                 else
                 {
-                    timer = 0f;
+                    yield return null;
                 }
-
-                yield return null;
             }
+
+            _footstepCoroutine = null;
         }
     }
 }

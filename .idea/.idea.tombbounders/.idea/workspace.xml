@@ -7,10 +7,6 @@
     <list default="true" id="032a9168-2021-43ab-bb5c-2a52ede3ee3d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.tombbounders/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.tombbounders/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Project/Runtime/Player/Controllers/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Runtime/Player/Controllers/PlayerController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Services/Audio/AudioService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Services/Audio/AudioService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Services/Audio/Database/SoundEntry.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Services/Audio/Database/SoundEntry.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Services/Audio/IAudioService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Services/Audio/IAudioService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Services/Audio/Runtime/SfxPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Services/Audio/Runtime/SfxPlayer.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +52,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/_Project/Scenes/2.Core.unity" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Project/Services/Audio.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Project/Services/Audio/AudioInstaller.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://D:/!KroLL/work/VUZ/URFU/(ПП)-Проектный_практикум/project_3/tombbounders/Assets/_Project/Services/Audio/AudioService.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Project/Services/Audio/AudioService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Project/Services/Audio/Configs/AudioSettings.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Project/Services/Audio/Database/AudioDatabase.asset" root0="FORCE_HIGHLIGHTING" />
@@ -170,7 +167,7 @@
       <workItem from="1777880649700" duration="541000" />
       <workItem from="1778056325238" duration="632000" />
       <workItem from="1778057003824" duration="733000" />
-      <workItem from="1780212079428" duration="11408000" />
+      <workItem from="1780212079428" duration="12074000" />
     </task>
     <task id="LOCAL-00001" summary="Тестовый коммит. надо удалить">
       <option name="closed" value="true" />
@@ -196,7 +193,15 @@
       <option name="project" value="LOCAL" />
       <updated>1780221951398</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Сделай звуки на шаги">
+      <option name="closed" value="true" />
+      <created>1780224865622</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1780224865622</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -244,7 +249,8 @@
     <MESSAGE value="Перенеси вызов взаимодействия из PlayerInteractor.cs с дверьми через PlayerController.cs" />
     <MESSAGE value="." />
     <MESSAGE value="Добавь проработанную иерархию звуков и тестовую реализацию." />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавь проработанную иерархию звуков и тестовую реализацию." />
+    <MESSAGE value="Сделай звуки на шаги" />
+    <option name="LAST_COMMIT_MESSAGE" value="Сделай звуки на шаги" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
