@@ -1,5 +1,7 @@
 using System;
 using UnityEngine;
+using _Project.Services.Audio;
+using Zenject;
 
 namespace _Project.Runtime.Enemy
 {
@@ -13,6 +15,8 @@ namespace _Project.Runtime.Enemy
 
         private float _currentHealth;
         private bool _isDead;
+        
+        [Inject] private IAudioService _audioService;
 
         private void Awake()
         {
@@ -28,6 +32,8 @@ namespace _Project.Runtime.Enemy
             OnHealthChanged?.Invoke(_currentHealth, maxHealth);
             OnHit?.Invoke(); 
 
+            _audioService?.PlaySound(SoundId.HitMelee);
+
             if (_currentHealth <= 0)
             {
                 Die();
@@ -38,11 +44,15 @@ namespace _Project.Runtime.Enemy
         {
             if (_isDead) return;
             _isDead = true;
+
+            _audioService?.PlaySound(SoundId.DeathMelee);
             
             OnDeath?.Invoke();
-            if (TryGetComponent<Collider2D>(out var col)) col.enabled = false;
+            
+            if (TryGetComponent<Collider2D>(out var col)) 
+                col.enabled = false;
         }
-        
+
 
         public bool IsDead => _isDead;
         public float HealthPercentage => _currentHealth / maxHealth;

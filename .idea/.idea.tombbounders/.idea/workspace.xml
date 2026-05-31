@@ -6,11 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="032a9168-2021-43ab-bb5c-2a52ede3ee3d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.tombbounders/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.tombbounders/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Runtime/Core/Main/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Runtime/Core/Main/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Runtime/Core/Props/Door.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Runtime/Core/Props/Door.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Runtime/Core/Props/lever.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Runtime/Core/Props/lever.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Runtime/Player/Controllers/HealthTimeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Runtime/Player/Controllers/HealthTimeController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Services/Audio/AudioService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Services/Audio/AudioService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Runtime/Enemy/EnemyDamageController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Runtime/Enemy/EnemyDamageController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Project/Services/Audio/SoundId.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Services/Audio/SoundId.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -54,6 +50,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/_Project/Resources/Animations/MapObjects/Brazier-Stone.anim" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Project/Resources/Animations/MapObjects/Brazier-Stone_0.controller" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock://D:/!KroLL/work/VUZ/URFU/(ПП)-Проектный_практикум/project_3/tombbounders/Assets/_Project/Runtime/Core/Props/Chest.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/!KroLL/work/VUZ/URFU/(ПП)-Проектный_практикум/project_3/tombbounders/Assets/_Project/Runtime/Core/Props/Door.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://D:/!KroLL/work/VUZ/URFU/(ПП)-Проектный_практикум/project_3/tombbounders/Assets/_Project/Runtime/Player/Controllers/PlayerController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://D:/!KroLL/work/VUZ/URFU/(ПП)-Проектный_практикум/project_3/tombbounders/Assets/_Project/Runtime/Player/Controllers/PlayerController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://D:/!KroLL/work/VUZ/URFU/(ПП)-Проектный_практикум/project_3/tombbounders/Assets/_Project/Runtime/Player/Controllers/PlayerController.cs" root0="SKIP_HIGHLIGHTING" />
@@ -65,6 +62,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/_Project/Scenes/2.Core.unity" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Project/Services/Audio.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Project/Services/Audio/AudioInstaller.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://D:/!KroLL/work/VUZ/URFU/(ПП)-Проектный_практикум/project_3/tombbounders/Assets/_Project/Services/Audio/AudioService.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://D:/!KroLL/work/VUZ/URFU/(ПП)-Проектный_практикум/project_3/tombbounders/Assets/_Project/Services/Audio/AudioService.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Project/Services/Audio/AudioService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock://D:/!KroLL/work/VUZ/URFU/(ПП)-Проектный_практикум/project_3/tombbounders/Assets/_Project/Services/Audio/AudioService.cs" root0="SKIP_HIGHLIGHTING" />
@@ -183,7 +181,7 @@
       <workItem from="1777880649700" duration="541000" />
       <workItem from="1778056325238" duration="632000" />
       <workItem from="1778057003824" duration="733000" />
-      <workItem from="1780212079428" duration="22055000" />
+      <workItem from="1780212079428" duration="23186000" />
     </task>
     <task id="LOCAL-00001" summary="Тестовый коммит. надо удалить">
       <option name="closed" value="true" />
@@ -265,7 +263,15 @@
       <option name="project" value="LOCAL" />
       <updated>1780238356474</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Добавь звук на дверь, поправь баг рычага (задержка взаимодействия пока идет анимация), урон игрока, смерть игрока, фоновая музыка.">
+      <option name="closed" value="true" />
+      <created>1780253775116</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1780253775116</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -320,7 +326,8 @@
     <MESSAGE value="Добавь звуки на Dash" />
     <MESSAGE value="Добавь звук на подбор монет как с земли, так и из сундука." />
     <MESSAGE value="Добавь звук открытия сундука" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавь звук открытия сундука" />
+    <MESSAGE value="Добавь звук на дверь, поправь баг рычага (задержка взаимодействия пока идет анимация), урон игрока, смерть игрока, фоновая музыка." />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавь звук на дверь, поправь баг рычага (задержка взаимодействия пока идет анимация), урон игрока, смерть игрока, фоновая музыка." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
