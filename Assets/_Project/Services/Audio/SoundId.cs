@@ -4,7 +4,8 @@
     {
         CoinTest,
         Footstep,
-        Dash
+        Dash,
+        Coin
     }
     
 }
