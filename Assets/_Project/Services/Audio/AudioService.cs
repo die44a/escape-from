@@ -239,6 +239,11 @@ namespace _Project.Services.Audio
             return _uiVolume;
         }
 
+        public void PlayDash()
+        {
+            PlaySound(SoundId.Dash);
+        }
+
         public void PlayFootstep()
         {
             if (!_soundMap.TryGetValue(SoundId.Footstep, out var clips))

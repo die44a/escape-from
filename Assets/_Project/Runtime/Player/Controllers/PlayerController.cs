@@ -144,6 +144,8 @@ namespace _Project.Runtime.Player.Controllers
 
             SetState(PlayerState.Dashing);
 
+            _audioService.PlayDash();
+            
             _movementController.Dash(_moveInput);
 
             yield return new WaitForSeconds(0.2f);
@@ -200,7 +202,7 @@ namespace _Project.Runtime.Player.Controllers
                 UpdateMoveState();
         }
 
-        
+
         private IEnumerator FootstepLoop()
         {
             while (true)

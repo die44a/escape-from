@@ -3,7 +3,8 @@
     public enum SoundId
     {
         CoinTest,
-        Footstep
+        Footstep,
+        Dash
     }
     
 }

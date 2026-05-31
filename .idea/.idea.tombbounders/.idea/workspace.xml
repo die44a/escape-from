@@ -6,6 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="032a9168-2021-43ab-bb5c-2a52ede3ee3d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/Assets/_Project/Runtime/Player/Controllers/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Runtime/Player/Controllers/PlayerController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Services/Audio/AudioService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Services/Audio/AudioService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Services/Audio/IAudioService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Services/Audio/IAudioService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Services/Audio/SoundId.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Services/Audio/SoundId.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +50,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/_Project/Prefabs/Player/Player.prefab" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Project/Resources/Animations/MapObjects/Brazier-Stone.anim" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Project/Resources/Animations/MapObjects/Brazier-Stone_0.controller" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://D:/!KroLL/work/VUZ/URFU/(ПП)-Проектный_практикум/project_3/tombbounders/Assets/_Project/Runtime/Player/Controllers/PlayerController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://D:/!KroLL/work/VUZ/URFU/(ПП)-Проектный_практикум/project_3/tombbounders/Assets/_Project/Runtime/Player/Controllers/PlayerController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://D:/!KroLL/work/VUZ/URFU/(ПП)-Проектный_практикум/project_3/tombbounders/Assets/_Project/Runtime/Player/Controllers/PlayerController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://D:/!KroLL/work/VUZ/URFU/(ПП)-Проектный_практикум/project_3/tombbounders/Assets/_Project/Runtime/Player/Controllers/PlayerController.cs" root0="SKIP_HIGHLIGHTING" />
@@ -171,7 +175,7 @@
       <workItem from="1777880649700" duration="541000" />
       <workItem from="1778056325238" duration="632000" />
       <workItem from="1778057003824" duration="733000" />
-      <workItem from="1780212079428" duration="13588000" />
+      <workItem from="1780212079428" duration="14335000" />
     </task>
     <task id="LOCAL-00001" summary="Тестовый коммит. надо удалить">
       <option name="closed" value="true" />
@@ -221,7 +225,15 @@
       <option name="project" value="LOCAL" />
       <updated>1780226687759</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Рефактор PlayerController.cs">
+      <option name="closed" value="true" />
+      <created>1780227020254</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1780227020255</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -272,7 +284,8 @@
     <MESSAGE value="Сделай звуки на шаги" />
     <MESSAGE value="Сделай звуки на шаги фикс" />
     <MESSAGE value="Баг фикс переключения звука между сменой состояний игрока." />
-    <option name="LAST_COMMIT_MESSAGE" value="Баг фикс переключения звука между сменой состояний игрока." />
+    <MESSAGE value="Рефактор PlayerController.cs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Рефактор PlayerController.cs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
