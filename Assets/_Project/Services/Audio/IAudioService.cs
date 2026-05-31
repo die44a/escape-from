@@ -17,5 +17,6 @@
         float GetMusicVolume();
         float GetSfxVolume();
         float GetUiVolume();
+        void PlayFootstep();
     }
 }

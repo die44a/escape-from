@@ -132,7 +132,8 @@ namespace _Project.Runtime.Player.Controllers
                 ? PlayerState.Walking
                 : PlayerState.Idle;
 
-            SetState(targetState);
+            if (CurrentState != targetState)
+                SetState(targetState);
         }
 
         private IEnumerator PerformDash()
@@ -215,34 +216,44 @@ namespace _Project.Runtime.Player.Controllers
             if (_footstepCoroutine != null)
                 return;
 
+            if (CurrentState != PlayerState.Walking)
+                return;
+
             _footstepCoroutine = StartCoroutine(FootstepLoop());
         }
 
         private void StopFootsteps()
         {
-            if (_footstepCoroutine == null)
-                return;
-
-            StopCoroutine(_footstepCoroutine);
-            _footstepCoroutine = null;
+            if (_footstepCoroutine != null)
+            {
+                StopCoroutine(_footstepCoroutine);
+                _footstepCoroutine = null;
+            }
         }
 
         private IEnumerator FootstepLoop()
         {
+            float timer = 0f;
+
             while (CurrentState == PlayerState.Walking)
             {
-                if (_moveInput.sqrMagnitude > _footstepStartThreshold)
+                if (_moveInput.sqrMagnitude > 0.01f && CurrentState != PlayerState.Dead)
                 {
-                    _audioService.PlaySound(SoundId.CoinTest);
-                    yield return new WaitForSeconds(_footstepInterval);
+                    timer += Time.deltaTime;
+
+                    if (timer >= _footstepInterval)
+                    {
+                        _audioService.PlayFootstep();
+                        timer = 0f;
+                    }
                 }
                 else
                 {
-                    yield return null;
+                    timer = 0f;
                 }
-            }
 
-            _footstepCoroutine = null;
+                yield return null;
+            }
         }
     }
 }

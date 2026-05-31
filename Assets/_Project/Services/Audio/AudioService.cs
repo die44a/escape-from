@@ -117,7 +117,7 @@ namespace _Project.Services.Audio
             return Mathf.Clamp01(_masterVolume * _uiVolume * Mathf.Clamp01(volumeScale));
         }
 
-        private static AudioClip PickRandomClip(AudioClip[] clips)
+        private AudioClip PickRandomClip(AudioClip[] clips)
         {
             if (clips == null || clips.Length == 0)
                 return null;
@@ -237,6 +237,41 @@ namespace _Project.Services.Audio
         public float GetUiVolume()
         {
             return _uiVolume;
+        }
+
+        public void PlayFootstep()
+        {
+            if (!_soundMap.TryGetValue(SoundId.Footstep, out var clips))
+                return;
+
+            var clip = PickRandomClip(clips);
+            if (clip == null)
+                return;
+
+            var entry = GetSoundEntry(SoundId.Footstep);
+
+            float pitch = 1f;
+
+            if (entry != null)
+            {
+                pitch = 1f + UnityEngine.Random.Range(-entry.PitchVariance, entry.PitchVariance);
+            }
+
+            float volume = GetEffectiveSfxVolume();
+            volume *= UnityEngine.Random.Range(0.9f, 1.0f);
+
+            _sfxPlayer.Play(clip, volume, pitch);
+        }
+
+        private SoundEntry GetSoundEntry(SoundId id)
+        {
+            foreach (var entry in _database.Sounds)
+            {
+                if (entry.Id == id)
+                    return entry;
+            }
+
+            return null;
         }
     }
 }

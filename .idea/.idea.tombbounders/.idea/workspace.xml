@@ -4,17 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="032a9168-2021-43ab-bb5c-2a52ede3ee3d" name="Changes" comment=".">
-      <change afterPath="$PROJECT_DIR$/Assets/_Project/Services/Audio.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_Project/Services/Audio/AudioInstaller.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_Project/Services/Audio/AudioInstaller.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_Project/Services/Audio/IAudioService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_Project/Services/Audio/IAudioService.cs.meta" afterDir="false" />
+    <list default="true" id="032a9168-2021-43ab-bb5c-2a52ede3ee3d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.tombbounders/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.tombbounders/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/ReflectionBaking/Zenject-ReflectionBaking.csproj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/Signals/Zenject-Signals.csproj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Zenject/Source/Zenject.csproj.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Project/Runtime/Player/Controllers/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Runtime/Player/Controllers/PlayerController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Services/Audio/AudioService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Services/Audio/AudioService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Services/Audio/Database/SoundEntry.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Services/Audio/Database/SoundEntry.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Services/Audio/IAudioService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Services/Audio/IAudioService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Services/Audio/Runtime/SfxPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Services/Audio/Runtime/SfxPlayer.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,9 +54,11 @@
     <setting file="file://$PROJECT_DIR$/Assets/_Project/Resources/Animations/MapObjects/Brazier-Stone_0.controller" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Project/Runtime/Player/Controllers/PlayerController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Project/Scenes/2.Core.unity" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Project/Services/Audio.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Project/Services/Audio/AudioInstaller.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Project/Services/Audio/AudioService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Project/Services/Audio/Configs/AudioSettings.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Project/Services/Audio/Database/AudioDatabase.asset" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Project/Services/Audio/Database/AudioDatabase.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Project/Services/Audio/Database/AudioEntry.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Project/Services/Audio/Database/Clips/Test/AudioTest.cs" root0="FORCE_HIGHLIGHTING" />
@@ -172,7 +170,7 @@
       <workItem from="1777880649700" duration="541000" />
       <workItem from="1778056325238" duration="632000" />
       <workItem from="1778057003824" duration="733000" />
-      <workItem from="1780212079428" duration="8565000" />
+      <workItem from="1780212079428" duration="11408000" />
     </task>
     <task id="LOCAL-00001" summary="Тестовый коммит. надо удалить">
       <option name="closed" value="true" />
@@ -190,7 +188,15 @@
       <option name="project" value="LOCAL" />
       <updated>1777795319363</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Добавь проработанную иерархию звуков и тестовую реализацию.">
+      <option name="closed" value="true" />
+      <created>1780221951398</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1780221951398</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -237,7 +243,8 @@
     <MESSAGE value="Сделай проверку. Попытка исправь баги." />
     <MESSAGE value="Перенеси вызов взаимодействия из PlayerInteractor.cs с дверьми через PlayerController.cs" />
     <MESSAGE value="." />
-    <option name="LAST_COMMIT_MESSAGE" value="." />
+    <MESSAGE value="Добавь проработанную иерархию звуков и тестовую реализацию." />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавь проработанную иерархию звуков и тестовую реализацию." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

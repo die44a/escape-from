@@ -5,8 +5,7 @@ namespace _Project.Services.Audio.Runtime
 {
     public class SfxPlayer : MonoBehaviour
     {
-        [SerializeField, Min(1)]
-        private int _poolSize = 8;
+        [SerializeField, Min(1)] private int _poolSize = 8;
 
         private readonly List<AudioSource> _sources = new();
         private int _currentIndex;
@@ -78,6 +77,24 @@ namespace _Project.Services.Audio.Runtime
             source.clip = clip;
             source.loop = false;
             source.volume = Mathf.Clamp01(volume);
+            source.Play();
+        }
+
+        public void Play(AudioClip clip, float volume = 1f, float pitch = 1f)
+        {
+            if (clip == null)
+                return;
+
+            EnsureInitialized();
+
+            var source = GetNextSource();
+            if (source == null)
+                return;
+
+            source.clip = clip;
+            source.loop = false;
+            source.volume = Mathf.Clamp01(volume);
+            source.pitch = Mathf.Clamp(pitch, 0.5f, 2f);
             source.Play();
         }
     }
