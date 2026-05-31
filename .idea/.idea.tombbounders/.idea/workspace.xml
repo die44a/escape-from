@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="032a9168-2021-43ab-bb5c-2a52ede3ee3d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.tombbounders/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.tombbounders/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Runtime/Core/Props/Coin.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Runtime/Core/Props/Coin.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Runtime/Core/Props/Chest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Runtime/Core/Props/Chest.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Project/Services/Audio/SoundId.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Services/Audio/SoundId.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -56,6 +56,7 @@
     <setting file="mock://D:/!KroLL/work/VUZ/URFU/(ПП)-Проектный_практикум/project_3/tombbounders/Assets/_Project/Runtime/Player/Controllers/PlayerController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://D:/!KroLL/work/VUZ/URFU/(ПП)-Проектный_практикум/project_3/tombbounders/Assets/_Project/Runtime/Player/Controllers/PlayerController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Project/Runtime/Player/Controllers/PlayerController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://D:/!KroLL/work/VUZ/URFU/(ПП)-Проектный_практикум/project_3/tombbounders/Assets/_Project/Runtime/Player/Controllers/PlayerWalletController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Project/Scenes/2.Core.unity" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Project/Services/Audio.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Project/Services/Audio/AudioInstaller.cs" root0="FORCE_HIGHLIGHTING" />
@@ -66,6 +67,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/_Project/Services/Audio/Database/AudioDatabase.asset" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Project/Services/Audio/Database/AudioDatabase.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Project/Services/Audio/Database/AudioEntry.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Project/Services/Audio/Database/Clips/Coin.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Project/Services/Audio/Database/Clips/Dash.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Project/Services/Audio/Database/Clips/Test/AudioTest.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Project/Services/Audio/Database/MusicEntry.cs" root0="FORCE_HIGHLIGHTING" />
@@ -176,7 +178,7 @@
       <workItem from="1777880649700" duration="541000" />
       <workItem from="1778056325238" duration="632000" />
       <workItem from="1778057003824" duration="733000" />
-      <workItem from="1780212079428" duration="16185000" />
+      <workItem from="1780212079428" duration="17501000" />
     </task>
     <task id="LOCAL-00001" summary="Тестовый коммит. надо удалить">
       <option name="closed" value="true" />
@@ -242,7 +244,15 @@
       <option name="project" value="LOCAL" />
       <updated>1780227775659</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Добавь звук на подбор монет как с земли, так и из сундука.">
+      <option name="closed" value="true" />
+      <created>1780237286255</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1780237286255</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -295,7 +305,8 @@
     <MESSAGE value="Баг фикс переключения звука между сменой состояний игрока." />
     <MESSAGE value="Рефактор PlayerController.cs" />
     <MESSAGE value="Добавь звуки на Dash" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавь звуки на Dash" />
+    <MESSAGE value="Добавь звук на подбор монет как с земли, так и из сундука." />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавь звук на подбор монет как с земли, так и из сундука." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -5,7 +5,8 @@
         CoinTest,
         Footstep,
         Dash,
-        Coin
+        Coin,
+        ChestOpen,
     }
     
 }
