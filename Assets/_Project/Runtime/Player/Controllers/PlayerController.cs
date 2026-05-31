@@ -69,6 +69,7 @@ namespace _Project.Runtime.Player.Controllers
             _interactAction.performed += OnInteractPerformed;
             _healthObservable.OnDeath += OnDeath;
             _attackAction.performed += OnAttack;
+            _footstepCoroutine = StartCoroutine(FootstepLoop());
         }
 
         private void OnDestroy()
@@ -129,7 +130,7 @@ namespace _Project.Runtime.Player.Controllers
             if (CurrentState == PlayerState.Dead)
                 return;
 
-            var targetState = _moveInput.sqrMagnitude > 0.01f
+            var targetState = _moveInput.sqrMagnitude > 0.1f
                 ? PlayerState.Walking
                 : PlayerState.Idle;
 
@@ -160,12 +161,10 @@ namespace _Project.Runtime.Player.Controllers
 
             CurrentState = newState;
             OnStateChanged?.Invoke(CurrentState);
-            HandleAudioState(newState);
         }
 
         private void OnDeath()
         {
-            StopFootsteps();
             SetState(PlayerState.Dead);
             _movementController.StopPhysics();
             _weaponSlot.DropWeapon();
@@ -182,7 +181,6 @@ namespace _Project.Runtime.Player.Controllers
         public void ResetPlayer(Vector3 spawnPosition)
         {
             StopAllCoroutines();
-            StopFootsteps();
 
             CurrentState = PlayerState.Idle;
             _moveInput = Vector2.zero;
@@ -193,6 +191,8 @@ namespace _Project.Runtime.Player.Controllers
             transform.position = spawnPosition;
 
             OnStateChanged?.Invoke(CurrentState);
+
+            _footstepCoroutine = StartCoroutine(FootstepLoop());
         }
 
         public void EndInteraction()
@@ -201,46 +201,15 @@ namespace _Project.Runtime.Player.Controllers
                 UpdateMoveState();
         }
 
-        private void HandleAudioState(PlayerState state)
-        {
-            if (state == PlayerState.Walking)
-            {
-                StartFootsteps();
-                return;
-            }
-
-            StopFootsteps();
-        }
-
-        private void StartFootsteps()
-        {
-            if (_isFootstepRunning)
-                return;
-
-            _isFootstepRunning = true;
-            _footstepCoroutine = StartCoroutine(FootstepLoop());
-        }
-
-        private void StopFootsteps()
-        {
-            _isFootstepRunning = false;
-
-            if (_footstepCoroutine != null)
-            {
-                StopCoroutine(_footstepCoroutine);
-                _footstepCoroutine = null;
-            }
-        }
-
+        
         private IEnumerator FootstepLoop()
         {
-            _audioService.PlayFootstep();
-
-            yield return new WaitForSeconds(_footstepInterval);
-
-            while (_isFootstepRunning)
+            while (true)
             {
-                if (_moveInput.sqrMagnitude > 0.01f && CurrentState != PlayerState.Dead)
+                bool isMoving = _moveInput.sqrMagnitude > 0.1f
+                                && CurrentState != PlayerState.Dead;
+
+                if (isMoving)
                 {
                     _audioService.PlayFootstep();
                     yield return new WaitForSeconds(_footstepInterval);
@@ -250,8 +219,6 @@ namespace _Project.Runtime.Player.Controllers
                     yield return null;
                 }
             }
-
-            _footstepCoroutine = null;
         }
     }
 }
