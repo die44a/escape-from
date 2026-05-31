@@ -24,6 +24,8 @@ namespace _Project.Services.Audio
         private float _sfxVolume;
         private float _uiVolume;
 
+        private MusicId? _currentMusicId;
+
         public AudioService(
             AudioDatabase database,
             AudioSettings settings,
@@ -185,8 +187,13 @@ namespace _Project.Services.Audio
 
         public void PlayMusic(MusicId musicId, bool loop = true)
         {
+            if (_currentMusicId.HasValue && _currentMusicId.Value == musicId)
+                return;
+
             if (!TryGetMusicClip(musicId, out var clip))
                 return;
+
+            _currentMusicId = musicId;
 
             _musicPlayer.Play(clip, loop);
             ApplyMusicVolume();
@@ -194,6 +201,7 @@ namespace _Project.Services.Audio
 
         public void StopMusic()
         {
+            _currentMusicId = null;
             _musicPlayer.Stop();
         }
 

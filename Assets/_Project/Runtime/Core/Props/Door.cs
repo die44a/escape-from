@@ -1,7 +1,9 @@
 using System;
 using System.Threading.Tasks;
 using _Project.Runtime.Interfaces;
+using _Project.Services.Audio;
 using UnityEngine;
+using Zenject;
 
 namespace _Project.Runtime.Core.Props
 {
@@ -22,6 +24,14 @@ namespace _Project.Runtime.Core.Props
         [SerializeField] private bool isLeverDoor;
 
         public bool IsInteractable => !isLeverDoor;
+
+        private IAudioService _audioService;
+
+        [Inject]
+        public void Construct(IAudioService audioService)
+        {
+            _audioService = audioService;
+        }
 
         public string GetInteractionLabel()
             => "Взаимодействовать с дверью";
@@ -71,6 +81,7 @@ namespace _Project.Runtime.Core.Props
                 return;
             }
 
+            _audioService.PlaySound(SoundId.Door);
             _animator.SetBool(IsOpen, open);
 
             await Task.Yield();

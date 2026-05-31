@@ -7,6 +7,11 @@
         Dash,
         Coin,
         ChestOpen,
+        Door,
+        Lever,
+        Damage,
+        DeathPlayer,
+        DeathMelee,
     }
     
 }
