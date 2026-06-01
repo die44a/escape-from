@@ -164,7 +164,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::_Project.Runtime.Player.Controllers.HealthTimeController
   maxHealthTime: 150
-  invulnerabilityDuration: 6
+  invulnerabilityDuration: 0.6
 --- !u!114 &125251029383181965
 MonoBehaviour:
   m_ObjectHideFlags: 0
