@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using _Project.Runtime.Core.Camera;
 using _Project.Runtime.Player.Controllers;
 using _Project.Services;
+using _Project.Services.Audio;
 using _Project.Services.Input;
 using _Project.Services.Scenes;
 using UnityEngine;
@@ -35,6 +36,8 @@ namespace _Project.Runtime.Core.Main
         
         public void RemoveListener(IGameListener listener)
             => _listeners.Remove(listener);
+        
+        [Inject] private IAudioService _audioService;
 
         public void PauseGame()
         {
@@ -98,6 +101,7 @@ namespace _Project.Runtime.Core.Main
 
             State = GameState.PLAY;
             _inputService.SwitchToGameplay();
+            _audioService.PlayMusic(MusicId.MainMenuTest);
         }   
 
         void IDisposable.Dispose()

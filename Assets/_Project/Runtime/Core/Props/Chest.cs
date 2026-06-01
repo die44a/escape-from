@@ -2,6 +2,8 @@ using System;
 using System.Collections;
 using _Project.Runtime.Interfaces;
 using UnityEngine;
+using _Project.Services.Audio;
+using Zenject;
 
 namespace _Project.Runtime.Core.Props
 {
@@ -10,15 +12,17 @@ namespace _Project.Runtime.Core.Props
         [SerializeField] private Collider2D interactableCollider;
         [SerializeField] private GameObject[] dropPrefabs;
 
-        [Header("Loot flight")]
-        [SerializeField] private float spawnHoldDuration = 0.12f;
+        [Header("Loot flight")] [SerializeField]
+        private float spawnHoldDuration = 0.12f;
+
         [SerializeField] private float flyDuration = 0.35f;
         [SerializeField] private float playerLandingSpread = 0.25f;
         [SerializeField] private float arcHeightMin = 0.3f;
         [SerializeField] private float arcHeightMax = 0.8f;
 
-        [Header("Wall collision")]
-        [SerializeField] private LayerMask obstacleLayers;
+        [Header("Wall collision")] [SerializeField]
+        private LayerMask obstacleLayers;
+
         [SerializeField] private float collisionCheckRadius = 0.25f;
         [SerializeField] private float wallPadding = 0.05f;
 
@@ -29,6 +33,14 @@ namespace _Project.Runtime.Core.Props
         private bool _isBusy;
         private static readonly int Open = Animator.StringToHash("open");
         private Animator _animator;
+
+        private IAudioService _audioService;
+
+        [Inject]
+        public void Construct(IAudioService audioService)
+        {
+            _audioService = audioService;
+        }
 
         private void Awake()
         {
@@ -50,6 +62,8 @@ namespace _Project.Runtime.Core.Props
         {
             _isBusy = true;
             _animator.SetTrigger(Open);
+
+            _audioService?.PlaySound(SoundId.ChestOpen);
 
             var chestPosition = (Vector2)transform.position;
             var playerPosition = (Vector2)initiator.transform.position;

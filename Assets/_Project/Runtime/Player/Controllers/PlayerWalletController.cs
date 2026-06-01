@@ -1,5 +1,6 @@
 using _Project.Runtime.Core.Props;
 using _Project.Runtime.Player.Main;
+using _Project.Services.Audio;
 using UnityEngine;
 using Zenject;
 
@@ -7,13 +8,15 @@ namespace _Project.Runtime.Player.Controllers
 {
     public class PlayerWalletController : MonoBehaviour
     {
-        [Header("Coin magnet")]
-        [SerializeField] private float magnetRadius = 0.3f;
+        [Header("Coin magnet")] [SerializeField]
+        private float magnetRadius = 0.3f;
+
         [SerializeField] private float magnetSpeed = 2f;
         [SerializeField] private float collectDistance = 0.2f;
         [SerializeField] private LayerMask coinLayers;
 
         [Inject] private PlayerStats _stats;
+        [Inject] private IAudioService _audioService;
 
         private readonly Collider2D[] _overlapBuffer = new Collider2D[32];
 
@@ -143,6 +146,21 @@ namespace _Project.Runtime.Player.Controllers
                 return;
 
             AddCoin(coin.type);
+            switch (coin.type)
+            {
+                case CoinType.Bronze:
+                    _audioService.PlaySound(SoundId.Coin);
+                    break;
+
+                case CoinType.Silver:
+                    _audioService.PlaySound(SoundId.Coin);
+                    break;
+
+                case CoinType.Gold:
+                    _audioService.PlaySound(SoundId.Coin);
+                    break;
+            }
+
             coin.Collect();
         }
 

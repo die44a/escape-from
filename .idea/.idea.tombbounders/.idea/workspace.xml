@@ -4,18 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="032a9168-2021-43ab-bb5c-2a52ede3ee3d" name="Changes" comment=".">
-      <change afterPath="$PROJECT_DIR$/Assets/_Project/Runtime/Core/Props/Barrel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_Project/Runtime/Core/Props/Barrel.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/ReflectionBaking/Zenject-ReflectionBaking.csproj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/Signals/Zenject-Signals.csproj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Zenject/Source/Zenject.csproj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Prefabs/MapObjects/Barrel-4_0.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Prefabs/MapObjects/Barrel-4_0.prefab" afterDir="false" />
+    <list default="true" id="032a9168-2021-43ab-bb5c-2a52ede3ee3d" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.tombbounders/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.tombbounders/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Project/Prefabs/Maps/Map 0.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Prefabs/Maps/Map 0.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Prefabs/Player/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Prefabs/Player/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Prefabs/UI/Props/GoldCoin.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Prefabs/UI/Props/GoldCoin.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Runtime/Core/Props/Door.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Runtime/Core/Props/Door.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Project/Scenes/2.Core.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scenes/2.Core.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Services/Audio/AudioService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Services/Audio/AudioService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Services/Audio/Database/AudioDatabase.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Services/Audio/Database/AudioDatabase.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +29,7 @@
     </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="feature/interaction" />
+        <entry key="$PROJECT_DIR$" value="dev" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -57,21 +51,36 @@
     <setting file="file://$PROJECT_DIR$/Assets/_Project/Prefabs/Player/Player.prefab" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Project/Resources/Animations/MapObjects/Brazier-Stone.anim" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Project/Resources/Animations/MapObjects/Brazier-Stone_0.controller" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://D:/!KroLL/work/VUZ/URFU/(ПП)-Проектный_практикум/project_3/tombbounders/Assets/_Project/Runtime/Menu/UI/MenuScreensController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/!KroLL/work/VUZ/URFU/(ПП)-Проектный_практикум/project_3/tombbounders/Assets/_Project/Runtime/Menu/UI/SettingsScreen.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Project/Runtime/Player/Controllers/PlayerController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock://D:/!KroLL/work/VUZ/URFU/(ПП)-Проектный_практикум/project_3/tombbounders/Assets/_Project/Scenes/2.Core.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Project/Scenes/2.Core.unity" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://D:/!KroLL/work/VUZ/URFU/(ПП)-Проектный_практикум/project_3/tombbounders/Assets/_Project/Scenes/2.Core.unity" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://D:/!KroLL/work/VUZ/URFU/(ПП)-Проектный_практикум/project_3/tombbounders/Assets/_Project/Scenes/2.Core.unity" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://D:/!KroLL/work/VUZ/URFU/(ПП)-Проектный_практикум/project_3/tombbounders/Assets/_Project/Scenes/2.Core.unity" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://D:/!KroLL/work/VUZ/URFU/(ПП)-Проектный_практикум/project_3/tombbounders/Assets/_Project/Scenes/2.Core.unity" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://D:/!KroLL/work/VUZ/URFU/(ПП)-Проектный_практикум/project_3/tombbounders/Assets/_Project/Scenes/2.Core.unity" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://D:/!KroLL/work/VUZ/URFU/(ПП)-Проектный_практикум/project_3/tombbounders/Assets/_Project/Sprites/Environment/Props/Barrel-6.png.meta" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://D:/!KroLL/work/VUZ/URFU/(ПП)-Проектный_практикум/project_3/tombbounders/Assets/_Project/Sprites/Environment/Props/Barrel-6.png.meta" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://D:/!KroLL/work/VUZ/URFU/(ПП)-Проектный_практикум/project_3/tombbounders/Assets/_Project/Sprites/Environment/Props/Barrel-6.png.meta" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://D:/!KroLL/work/VUZ/URFU/(ПП)-Проектный_практикум/project_3/tombbounders/Assets/_Project/Sprites/Environment/Props/Barrel-6.png.meta" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Project/Services/Audio.meta" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Project/Services/Audio/AudioInstaller.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Project/Services/Audio/AudioService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Project/Services/Audio/Configs/AudioSettings.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Project/Services/Audio/Database/AudioDatabase.asset" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Project/Services/Audio/Database/AudioDatabase.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Project/Services/Audio/Database/AudioEntry.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Project/Services/Audio/Database/Clips/Coin.meta" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Project/Services/Audio/Database/Clips/Dash.meta" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Project/Services/Audio/Database/Clips/Test/AudioTest.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Project/Services/Audio/Database/MusicEntry.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Project/Services/Audio/Database/SoundEntry.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Project/Services/Audio/IAudioService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Project/Services/Audio/MusicId.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Project/Services/Audio/Runtime/MusicPlayer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Project/Services/Audio/Runtime/SfxPlayer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Project/Services/Audio/Runtime/UISfxPlayer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Project/Services/Audio/SoundId.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://D:/!KroLL/work/VUZ/URFU/(ПП)-Проектный_практикум/project_3/tombbounders/Assets/_Project/Services/Settings/GameSettingsService.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Project/Sprites/Environment/Props/Barrel-6.png.meta" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="false" />
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -87,7 +96,7 @@
     &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;sounds&quot;,
     &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;D:/!KroLL/work/VUZ/URFU/(ПП)-Проектный_практикум/project_3/tombbounders&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
@@ -100,6 +109,18 @@
   }
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/testBuild\Tombbounders.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="D:\!KroLL\work\VUZ\URFU\(ПП)-Проектный_практикум\project_3\tombbounders\testBuild" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="ENV_FILE_PATHS" value="" />
+      <option name="REDIRECT_INPUT_PATH" value="" />
+      <option name="PTY_MODE" value="Auto" />
+      <option name="MIXED_MODE_DEBUG" value="0" />
+      <method v="2" />
+    </configuration>
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.3.11f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath D:\!KroLL\work\VUZ\URFU\(ПП)-Проектный_практикум\project_3\tombbounders -debugCodeOptimization" />
@@ -169,6 +190,8 @@
       <workItem from="1777880649700" duration="541000" />
       <workItem from="1778056325238" duration="632000" />
       <workItem from="1778057003824" duration="733000" />
+      <workItem from="1780212079428" duration="26286000" />
+      <workItem from="1780296610134" duration="2898000" />
     </task>
     <task id="LOCAL-00001" summary="Тестовый коммит. надо удалить">
       <option name="closed" value="true" />
@@ -186,7 +209,87 @@
       <option name="project" value="LOCAL" />
       <updated>1777795319363</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Добавь проработанную иерархию звуков и тестовую реализацию.">
+      <option name="closed" value="true" />
+      <created>1780221951398</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1780221951398</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Сделай звуки на шаги">
+      <option name="closed" value="true" />
+      <created>1780224865622</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1780224865622</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Сделай звуки на шаги фикс">
+      <option name="closed" value="true" />
+      <created>1780226233489</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1780226233489</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Баг фикс переключения звука между сменой состояний игрока.">
+      <option name="closed" value="true" />
+      <created>1780226687759</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1780226687759</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Рефактор PlayerController.cs">
+      <option name="closed" value="true" />
+      <created>1780227020254</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1780227020255</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Добавь звуки на Dash">
+      <option name="closed" value="true" />
+      <created>1780227775659</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1780227775659</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Добавь звук на подбор монет как с земли, так и из сундука.">
+      <option name="closed" value="true" />
+      <created>1780237286255</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1780237286255</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Добавь звук открытия сундука">
+      <option name="closed" value="true" />
+      <created>1780238356474</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1780238356474</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Добавь звук на дверь, поправь баг рычага (задержка взаимодействия пока идет анимация), урон игрока, смерть игрока, фоновая музыка.">
+      <option name="closed" value="true" />
+      <created>1780253775116</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1780253775116</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Добавь звук смерти врага, урона по врагу">
+      <option name="closed" value="true" />
+      <created>1780254957364</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1780254957365</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -233,24 +336,23 @@
     <MESSAGE value="Сделай проверку. Попытка исправь баги." />
     <MESSAGE value="Перенеси вызов взаимодействия из PlayerInteractor.cs с дверьми через PlayerController.cs" />
     <MESSAGE value="." />
-    <option name="LAST_COMMIT_MESSAGE" value="." />
+    <MESSAGE value="Добавь проработанную иерархию звуков и тестовую реализацию." />
+    <MESSAGE value="Сделай звуки на шаги" />
+    <MESSAGE value="Сделай звуки на шаги фикс" />
+    <MESSAGE value="Баг фикс переключения звука между сменой состояний игрока." />
+    <MESSAGE value="Рефактор PlayerController.cs" />
+    <MESSAGE value="Добавь звуки на Dash" />
+    <MESSAGE value="Добавь звук на подбор монет как с земли, так и из сундука." />
+    <MESSAGE value="Добавь звук открытия сундука" />
+    <MESSAGE value="Добавь звук на дверь, поправь баг рычага (задержка взаимодействия пока идет анимация), урон игрока, смерть игрока, фоновая музыка." />
+    <MESSAGE value="Добавь звук смерти врага, урона по врагу" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавь звук смерти врага, урона по врагу" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
-          <properties exception="System.OperationCanceledException" breakIfHandledByOtherCode="false" displayValue="System.OperationCanceledException" />
-          <option name="timeStamp" value="1" />
-        </breakpoint>
-        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
-          <properties exception="System.Threading.Tasks.TaskCanceledException" breakIfHandledByOtherCode="false" displayValue="System.Threading.Tasks.TaskCanceledException" />
-          <option name="timeStamp" value="2" />
-        </breakpoint>
-        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
-          <properties exception="System.Threading.ThreadAbortException" breakIfHandledByOtherCode="false" displayValue="System.Threading.ThreadAbortException" />
-          <option name="timeStamp" value="3" />
-        </breakpoint>
-      </breakpoints>
+      <default-breakpoints>
+        <breakpoint type="DotNet_Exception_Breakpoints" />
+      </default-breakpoints>
     </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">

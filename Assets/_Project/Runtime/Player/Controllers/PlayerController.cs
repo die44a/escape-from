@@ -1,12 +1,12 @@
 using System;
 using System.Collections;
-using _Project.Runtime.Core.Main;
 using _Project.Runtime.Player.Main;
 using _Project.Services;
 using _Project.Services.Input;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using Zenject;
+using _Project.Services.Audio;
 
 namespace _Project.Runtime.Player.Controllers
 {
@@ -19,7 +19,7 @@ namespace _Project.Runtime.Player.Controllers
         private PlayerMovementController _movementController;
         private PlayerInteractorController _interactorController;
         private WeaponSlot _weaponSlot;
-        
+
         public PlayerState CurrentState { get; private set; }
         public Vector2 MoveInput => _moveInput;
         public Vector2 LastDirection => _movementController.LastDirection;
@@ -34,19 +34,27 @@ namespace _Project.Runtime.Player.Controllers
         private InputAction _interactAction;
         private InputAction _attackAction;
 
+        private IAudioService _audioService;
+        private Coroutine _footstepCoroutine;
+        [SerializeField] private float _footstepInterval = 0.4f;
+        [SerializeField] private float _footstepStartThreshold = 0.01f;
+        private bool _isFootstepRunning;
+
         [Inject]
         private void Construct(
             PlayerMovementController movementController,
             IInputService inputService,
             IHealthObservable healthObservable,
             PlayerInteractorController interactorController,
-            WeaponSlot weaponSlot)
+            WeaponSlot weaponSlot,
+            IAudioService audioService)
         {
             _movementController = movementController;
             _inputService = inputService;
             _healthObservable = healthObservable;
             _interactorController = interactorController;
             _weaponSlot = weaponSlot;
+            _audioService = audioService;
         }
 
         private void Start()
@@ -55,11 +63,12 @@ namespace _Project.Runtime.Player.Controllers
             _dashAction = _inputService.GetAction(InputMaps.Gameplay, PlayerActions.Dash);
             _interactAction = _inputService.GetAction(InputMaps.Gameplay, PlayerActions.Interact);
             _attackAction = _inputService.GetAction(InputMaps.Gameplay, PlayerActions.Attack);
-            
+
             _dashAction.performed += OnDashPerformed;
             _interactAction.performed += OnInteractPerformed;
             _healthObservable.OnDeath += OnDeath;
             _attackAction.performed += OnAttack;
+            _footstepCoroutine = StartCoroutine(FootstepLoop());
         }
 
         private void OnDestroy()
@@ -73,10 +82,10 @@ namespace _Project.Runtime.Player.Controllers
         private void OnDashPerformed(InputAction.CallbackContext context)
         {
             if (CurrentState is PlayerState.Dashing
-                    or PlayerState.Interacting
-                    or PlayerState.Dead)
+                or PlayerState.Interacting
+                or PlayerState.Dead)
                 return;
-            
+
             if (!_movementController.IsDashReady)
             {
                 _movementController.NotifyDashFailed();
@@ -110,7 +119,7 @@ namespace _Project.Runtime.Player.Controllers
                 or PlayerState.Interacting
                 or PlayerState.Dead)
                 return;
-            
+
             UpdateMoveState();
             _movementController.ApplyMovement(_moveInput);
         }
@@ -124,7 +133,8 @@ namespace _Project.Runtime.Player.Controllers
                 ? PlayerState.Walking
                 : PlayerState.Idle;
 
-            SetState(targetState);
+            if (CurrentState != targetState)
+                SetState(targetState);
         }
 
         private IEnumerator PerformDash()
@@ -134,6 +144,8 @@ namespace _Project.Runtime.Player.Controllers
 
             SetState(PlayerState.Dashing);
 
+            _audioService.PlayDash();
+            
             _movementController.Dash(_moveInput);
 
             yield return new WaitForSeconds(0.2f);
@@ -163,7 +175,7 @@ namespace _Project.Runtime.Player.Controllers
         {
             if (CurrentState is PlayerState.Dead or PlayerState.Dashing)
                 return;
-            
+
             _weaponSlot.TryAttack();
         }
 
@@ -180,12 +192,34 @@ namespace _Project.Runtime.Player.Controllers
             transform.position = spawnPosition;
 
             OnStateChanged?.Invoke(CurrentState);
+
+            _footstepCoroutine = StartCoroutine(FootstepLoop());
         }
 
         public void EndInteraction()
         {
             if (CurrentState == PlayerState.Interacting)
                 UpdateMoveState();
+        }
+
+
+        private IEnumerator FootstepLoop()
+        {
+            while (true)
+            {
+                bool isMoving = _moveInput.sqrMagnitude > 0.1f
+                                && CurrentState != PlayerState.Dead;
+
+                if (isMoving)
+                {
+                    _audioService.PlayFootstep();
+                    yield return new WaitForSeconds(_footstepInterval);
+                }
+                else
+                {
+                    yield return null;
+                }
+            }
         }
     }
 }
