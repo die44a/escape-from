@@ -132,7 +132,17 @@ namespace _Project.Services.Audio
 
         private void ApplyMusicVolume()
         {
-            _musicPlayer.SetVolume(GetEffectiveMusicVolume());
+            var volume = GetEffectiveMusicVolume();
+
+            if (_currentMusicId.HasValue)
+            {
+                var entry = GetMusicEntry(_currentMusicId.Value);
+
+                if (entry != null)
+                    volume *= entry.DefaultVolume;
+            }
+
+            _musicPlayer.SetVolume(Mathf.Clamp01(volume));
         }
 
         private bool TryGetSoundClip(SoundId soundId, out AudioClip clip)
@@ -174,7 +184,14 @@ namespace _Project.Services.Audio
             if (!TryGetSoundClip(soundId, out var clip))
                 return;
 
-            _sfxPlayer.Play(clip, GetEffectiveSfxVolume(volumeScale));
+            var entry = GetSoundEntry(soundId);
+
+            var volume = GetEffectiveSfxVolume(volumeScale);
+
+            if (entry != null)
+                volume *= entry.DefaultVolume;
+
+            _sfxPlayer.Play(clip, volume);
         }
 
         public void PlayUISound(SoundId soundId, float volumeScale = 1f)
@@ -182,7 +199,14 @@ namespace _Project.Services.Audio
             if (!TryGetSoundClip(soundId, out var clip))
                 return;
 
-            _uiSfxPlayer.Play(clip, GetEffectiveUiVolume(volumeScale));
+            var entry = GetSoundEntry(soundId);
+
+            var volume = GetEffectiveUiVolume(volumeScale);
+
+            if (entry != null)
+                volume *= entry.DefaultVolume;
+
+            _uiSfxPlayer.Play(clip, volume);
         }
 
         public void PlayMusic(MusicId musicId, bool loop = true)
@@ -196,7 +220,15 @@ namespace _Project.Services.Audio
             _currentMusicId = musicId;
 
             _musicPlayer.Play(clip, loop);
-            ApplyMusicVolume();
+
+            var entry = GetMusicEntry(musicId);
+
+            var volume = GetEffectiveMusicVolume();
+
+            if (entry != null)
+                volume *= entry.DefaultVolume;
+
+            _musicPlayer.SetVolume(Mathf.Clamp01(volume));
         }
 
         public void StopMusic()
@@ -271,6 +303,10 @@ namespace _Project.Services.Audio
             }
 
             float volume = GetEffectiveSfxVolume();
+
+            if (entry != null)
+                volume *= entry.DefaultVolume;
+
             volume *= UnityEngine.Random.Range(0.9f, 1.0f);
 
             _sfxPlayer.Play(clip, volume, pitch);
@@ -279,6 +315,17 @@ namespace _Project.Services.Audio
         private SoundEntry GetSoundEntry(SoundId id)
         {
             foreach (var entry in _database.Sounds)
+            {
+                if (entry.Id == id)
+                    return entry;
+            }
+
+            return null;
+        }
+
+        private MusicEntry GetMusicEntry(MusicId id)
+        {
+            foreach (var entry in _database.Music)
             {
                 if (entry.Id == id)
                     return entry;
