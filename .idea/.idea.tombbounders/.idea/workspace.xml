@@ -122,7 +122,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="D:\programs\Unity\Hub\Editor\6000.3.11f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.3.11f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath D:\!KroLL\work\VUZ\URFU\(ПП)-Проектный_практикум\project_3\tombbounders -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="D:\!KroLL\work\VUZ\URFU\(ПП)-Проектный_практикум\project_3\tombbounders" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -134,7 +134,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="D:\programs\Unity\Hub\Editor\6000.3.11f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.3.11f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath D:\!KroLL\work\VUZ\URFU\(ПП)-Проектный_практикум\project_3\tombbounders -testResults Logs/results.xml -logFile Logs/Editor.log -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="D:\!KroLL\work\VUZ\URFU\(ПП)-Проектный_практикум\project_3\tombbounders" />
       <option name="PASS_PARENT_ENVS" value="1" />
