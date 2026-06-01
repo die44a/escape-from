@@ -66,9 +66,7 @@ namespace _Project.Runtime.Core.Levels
 
             _gameManager.LockInput();
             _healthTimeController.EnterSafeZone();
-
-            await _fader.FadeOutAsync(1f);
-
+            it
             await Task.Delay(500);
 
             _gameManager.ExitToMenu();
