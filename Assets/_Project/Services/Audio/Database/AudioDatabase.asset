@@ -15,7 +15,7 @@ MonoBehaviour:
   _sounds:
   - Clips:
     - {fileID: 8300000, guid: 5fe9d0b4f9a19694dacaac597b018d69, type: 3}
-    DefaultVolume: 10
+    DefaultVolume: 0.5
     Id: 0
     PitchVariance: 0.05
   - Clips:
@@ -23,12 +23,12 @@ MonoBehaviour:
     - {fileID: 8300000, guid: 14aff0e68b6dce7419997cba43be9d45, type: 3}
     - {fileID: 8300000, guid: ab3bebaf2feb335448e6c469c1146f2e, type: 3}
     - {fileID: 8300000, guid: 62a35f2948cd7ec4085f40fdebd13810, type: 3}
-    DefaultVolume: 0.03
+    DefaultVolume: 0.2
     Id: 1
     PitchVariance: 0.05
   - Clips:
     - {fileID: 8300000, guid: 5532b820f57bcc24fa5d4052f484bc0b, type: 3}
-    DefaultVolume: 30
+    DefaultVolume: 0.3
     Id: 2
     PitchVariance: 0.05
   - Clips:
@@ -39,12 +39,12 @@ MonoBehaviour:
     PitchVariance: 0.05
   - Clips:
     - {fileID: 8300000, guid: 554dd5cd901f2b345aae1fec8d7759bb, type: 3}
-    DefaultVolume: 30
+    DefaultVolume: 0.4
     Id: 4
     PitchVariance: 0.05
   - Clips:
     - {fileID: 8300000, guid: b0cac524f491f694d978b17a12c79c5b, type: 3}
-    DefaultVolume: 30
+    DefaultVolume: 0.4
     Id: 5
     PitchVariance: 0.05
   - Clips:
@@ -53,31 +53,31 @@ MonoBehaviour:
     - {fileID: 8300000, guid: b1ea3fbb73fd59b4cab342d599a966dd, type: 3}
     - {fileID: 8300000, guid: 05cc2145f729c6146890037480bf3978, type: 3}
     - {fileID: 8300000, guid: 6a6f8dde60fe5d246af94da2836831e4, type: 3}
-    DefaultVolume: 0.03
+    DefaultVolume: 0.45
     Id: 6
     PitchVariance: 0.05
   - Clips:
     - {fileID: 8300000, guid: 70fe722376d47114ca0004c88a158d42, type: 3}
-    DefaultVolume: 30
+    DefaultVolume: 100000000
     Id: 8
     PitchVariance: 0.05
   - Clips:
     - {fileID: 8300000, guid: face45bd028644849835a1fa1e0ff5c8, type: 3}
-    DefaultVolume: 30
+    DefaultVolume: 0.6
     Id: 7
     PitchVariance: 0.05
   - Clips:
     - {fileID: 8300000, guid: f4ab2dd02fb30a1419da15d6a5b06600, type: 3}
-    DefaultVolume: 30
+    DefaultVolume: 0.6
     Id: 9
     PitchVariance: 0.05
   - Clips:
     - {fileID: 8300000, guid: b7ce6993a0bf7b7459a680babc25343f, type: 3}
-    DefaultVolume: 30
+    DefaultVolume: 0.6
     Id: 10
     PitchVariance: 0.05
   _music:
   - Clips:
     - {fileID: 8300000, guid: a280d7933c9feb14f99679a2b2a20ce5, type: 3}
-    DefaultVolume: 0.003
+    DefaultVolume: 0.2
     Id: 0

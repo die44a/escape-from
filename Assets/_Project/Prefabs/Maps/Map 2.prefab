@@ -45287,6 +45287,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 6373269547981767192}
     m_Modifications:
     - target: {fileID: -7664661432858458129, guid: 73221923226753e418b4e7745b379081, type: 3}
+      propertyPath: inActivate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7664661432858458129, guid: 73221923226753e418b4e7745b379081, type: 3}
       propertyPath: targetDoor
       value: 
       objectReference: {fileID: 699717250826260603}
@@ -48758,6 +48762,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 6373269547981767192}
     m_Modifications:
+    - target: {fileID: -7664661432858458129, guid: 73221923226753e418b4e7745b379081, type: 3}
+      propertyPath: targetDoor
+      value: 
+      objectReference: {fileID: 130437815547104306}
     - target: {fileID: 713420294082939163, guid: 73221923226753e418b4e7745b379081, type: 3}
       propertyPath: m_Name
       value: Lever-Animated_0 (1)
@@ -48811,6 +48819,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 73221923226753e418b4e7745b379081, type: 3}
+--- !u!114 &4169068594095040541 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: -7664661432858458129, guid: 73221923226753e418b4e7745b379081, type: 3}
+  m_PrefabInstance: {fileID: 3204916712404185074}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6fcc0db3a5f4332ac8085bf6d21a2a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::_Project.Runtime.Core.Props.Lever
 --- !u!4 &5262220997091776850 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7313015495208318624, guid: 73221923226753e418b4e7745b379081, type: 3}
@@ -55324,6 +55343,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4769055258532402720}
     m_Modifications:
+    - target: {fileID: -705379146814001862, guid: 81fcfee5d00c8064d8cfb19f367c1b0f, type: 3}
+      propertyPath: isLeverDoor
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -705379146814001862, guid: 81fcfee5d00c8064d8cfb19f367c1b0f, type: 3}
+      propertyPath: requiredLevers.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -705379146814001862, guid: 81fcfee5d00c8064d8cfb19f367c1b0f, type: 3}
+      propertyPath: 'requiredLevers.Array.data[0]'
+      value: 
+      objectReference: {fileID: 4169068594095040541}
     - target: {fileID: 683615066654245562, guid: 81fcfee5d00c8064d8cfb19f367c1b0f, type: 3}
       propertyPath: m_Name
       value: Door Default
@@ -55381,6 +55412,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81fcfee5d00c8064d8cfb19f367c1b0f, type: 3}
+--- !u!114 &130437815547104306 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: -705379146814001862, guid: 81fcfee5d00c8064d8cfb19f367c1b0f, type: 3}
+  m_PrefabInstance: {fileID: 8645387257128706312}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ede5cb6765a464daa229c40631ad599, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::_Project.Runtime.Core.Props.Door
 --- !u!4 &807869553759981788 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8992761513977573844, guid: 81fcfee5d00c8064d8cfb19f367c1b0f, type: 3}
