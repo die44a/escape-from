@@ -1962,6 +1962,7 @@ Transform:
   - {fileID: 7346221010246456348}
   - {fileID: 3592843120989238988}
   - {fileID: 1101209507524042208}
+  - {fileID: 2233060378438567750}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!156049354 &1085102118271410600
@@ -47950,12 +47951,24 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -7457156627066370699, guid: ae1873baae080ba4dae5c269ccd06189, type: 3}
       propertyPath: dropPrefabs.Array.size
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: -7457156627066370699, guid: ae1873baae080ba4dae5c269ccd06189, type: 3}
       propertyPath: 'dropPrefabs.Array.data[0]'
       value: 
       objectReference: {fileID: 8104438642979179071, guid: bfff41b0031eb6e4fafc8039642c8ee4, type: 3}
+    - target: {fileID: -7457156627066370699, guid: ae1873baae080ba4dae5c269ccd06189, type: 3}
+      propertyPath: 'dropPrefabs.Array.data[1]'
+      value: 
+      objectReference: {fileID: 566713158322767198, guid: 7d37124c944abeb4096682d1cb26468c, type: 3}
+    - target: {fileID: -7457156627066370699, guid: ae1873baae080ba4dae5c269ccd06189, type: 3}
+      propertyPath: 'dropPrefabs.Array.data[2]'
+      value: 
+      objectReference: {fileID: 8104438642979179071, guid: bfff41b0031eb6e4fafc8039642c8ee4, type: 3}
+    - target: {fileID: -7457156627066370699, guid: ae1873baae080ba4dae5c269ccd06189, type: 3}
+      propertyPath: 'dropPrefabs.Array.data[3]'
+      value: 
+      objectReference: {fileID: 6811613904005190163, guid: b250c991e43022943b245b456c44d24f, type: 3}
     - target: {fileID: 1332884732730303394, guid: ae1873baae080ba4dae5c269ccd06189, type: 3}
       propertyPath: m_Name
       value: Chest-Animated-4_0
@@ -49637,7 +49650,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -7457156627066370699, guid: ae1873baae080ba4dae5c269ccd06189, type: 3}
       propertyPath: dropPrefabs.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: -7457156627066370699, guid: ae1873baae080ba4dae5c269ccd06189, type: 3}
       propertyPath: 'dropPrefabs.Array.data[0]'
@@ -49647,6 +49660,10 @@ PrefabInstance:
       propertyPath: 'dropPrefabs.Array.data[1]'
       value: 
       objectReference: {fileID: 5602745615766766781, guid: a5caae6287ecf72478f11215e171ca20, type: 3}
+    - target: {fileID: -7457156627066370699, guid: ae1873baae080ba4dae5c269ccd06189, type: 3}
+      propertyPath: 'dropPrefabs.Array.data[2]'
+      value: 
+      objectReference: {fileID: 566713158322767198, guid: 7d37124c944abeb4096682d1cb26468c, type: 3}
     - target: {fileID: 1332884732730303394, guid: ae1873baae080ba4dae5c269ccd06189, type: 3}
       propertyPath: m_Name
       value: Chest-Animated-4_0 (2)
@@ -52453,7 +52470,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -7457156627066370699, guid: ae1873baae080ba4dae5c269ccd06189, type: 3}
       propertyPath: dropPrefabs.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: -7457156627066370699, guid: ae1873baae080ba4dae5c269ccd06189, type: 3}
       propertyPath: 'dropPrefabs.Array.data[0]'
@@ -52467,6 +52484,10 @@ PrefabInstance:
       propertyPath: 'dropPrefabs.Array.data[2]'
       value: 
       objectReference: {fileID: 8104438642979179071, guid: bfff41b0031eb6e4fafc8039642c8ee4, type: 3}
+    - target: {fileID: -7457156627066370699, guid: ae1873baae080ba4dae5c269ccd06189, type: 3}
+      propertyPath: 'dropPrefabs.Array.data[3]'
+      value: 
+      objectReference: {fileID: 6811613904005190163, guid: d69bedf74bf6f734595aa69f1bd79230, type: 3}
     - target: {fileID: 1332884732730303394, guid: ae1873baae080ba4dae5c269ccd06189, type: 3}
       propertyPath: m_Name
       value: Chest-Animated-4_0 (4)
@@ -53441,6 +53462,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 6234335459717800390}
     m_Modifications:
+    - target: {fileID: -7457156627066370699, guid: ae1873baae080ba4dae5c269ccd06189, type: 3}
+      propertyPath: dropPrefabs.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: -7457156627066370699, guid: ae1873baae080ba4dae5c269ccd06189, type: 3}
+      propertyPath: 'dropPrefabs.Array.data[0]'
+      value: 
+      objectReference: {fileID: 566713158322767198, guid: 7d37124c944abeb4096682d1cb26468c, type: 3}
+    - target: {fileID: -7457156627066370699, guid: ae1873baae080ba4dae5c269ccd06189, type: 3}
+      propertyPath: 'dropPrefabs.Array.data[1]'
+      value: 
+      objectReference: {fileID: 5602745615766766781, guid: a5caae6287ecf72478f11215e171ca20, type: 3}
+    - target: {fileID: -7457156627066370699, guid: ae1873baae080ba4dae5c269ccd06189, type: 3}
+      propertyPath: 'dropPrefabs.Array.data[2]'
+      value: 
+      objectReference: {fileID: 5602745615766766781, guid: a5caae6287ecf72478f11215e171ca20, type: 3}
+    - target: {fileID: -7457156627066370699, guid: ae1873baae080ba4dae5c269ccd06189, type: 3}
+      propertyPath: 'dropPrefabs.Array.data[3]'
+      value: 
+      objectReference: {fileID: 566713158322767198, guid: 7d37124c944abeb4096682d1cb26468c, type: 3}
     - target: {fileID: 1332884732730303394, guid: ae1873baae080ba4dae5c269ccd06189, type: 3}
       propertyPath: m_Name
       value: Chest-Animated-4_0 (5)
@@ -54369,6 +54410,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 6234335459717800390}
     m_Modifications:
+    - target: {fileID: -7457156627066370699, guid: ae1873baae080ba4dae5c269ccd06189, type: 3}
+      propertyPath: dropPrefabs.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: -7457156627066370699, guid: ae1873baae080ba4dae5c269ccd06189, type: 3}
+      propertyPath: 'dropPrefabs.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8104438642979179071, guid: bfff41b0031eb6e4fafc8039642c8ee4, type: 3}
+    - target: {fileID: -7457156627066370699, guid: ae1873baae080ba4dae5c269ccd06189, type: 3}
+      propertyPath: 'dropPrefabs.Array.data[1]'
+      value: 
+      objectReference: {fileID: 566713158322767198, guid: 7d37124c944abeb4096682d1cb26468c, type: 3}
+    - target: {fileID: -7457156627066370699, guid: ae1873baae080ba4dae5c269ccd06189, type: 3}
+      propertyPath: 'dropPrefabs.Array.data[2]'
+      value: 
+      objectReference: {fileID: 8104438642979179071, guid: bfff41b0031eb6e4fafc8039642c8ee4, type: 3}
+    - target: {fileID: -7457156627066370699, guid: ae1873baae080ba4dae5c269ccd06189, type: 3}
+      propertyPath: 'dropPrefabs.Array.data[3]'
+      value: 
+      objectReference: {fileID: 5602745615766766781, guid: a5caae6287ecf72478f11215e171ca20, type: 3}
     - target: {fileID: 1332884732730303394, guid: ae1873baae080ba4dae5c269ccd06189, type: 3}
       propertyPath: m_Name
       value: Chest-Animated-4_0 (8)
@@ -55176,6 +55237,84 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 4486778887514916739, guid: 7d3363ee0e2c5f84b80ce4280b575b60, type: 3}
   m_PrefabInstance: {fileID: 8586040967182934339}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8588164373088183293
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4897798094067630873}
+    m_Modifications:
+    - target: {fileID: 3297269293346738555, guid: a0d0268707f923a4d86ec2880724de5f, type: 3}
+      propertyPath: addTime
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 3297269293346738555, guid: a0d0268707f923a4d86ec2880724de5f, type: 3}
+      propertyPath: goldCost
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3297269293346738555, guid: a0d0268707f923a4d86ec2880724de5f, type: 3}
+      propertyPath: bronzeCost
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3297269293346738555, guid: a0d0268707f923a4d86ec2880724de5f, type: 3}
+      propertyPath: silverCost
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7625198264614298811, guid: a0d0268707f923a4d86ec2880724de5f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.5112317
+      objectReference: {fileID: 0}
+    - target: {fileID: 7625198264614298811, guid: a0d0268707f923a4d86ec2880724de5f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -19.01358
+      objectReference: {fileID: 0}
+    - target: {fileID: 7625198264614298811, guid: a0d0268707f923a4d86ec2880724de5f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7625198264614298811, guid: a0d0268707f923a4d86ec2880724de5f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7625198264614298811, guid: a0d0268707f923a4d86ec2880724de5f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7625198264614298811, guid: a0d0268707f923a4d86ec2880724de5f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7625198264614298811, guid: a0d0268707f923a4d86ec2880724de5f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7625198264614298811, guid: a0d0268707f923a4d86ec2880724de5f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7625198264614298811, guid: a0d0268707f923a4d86ec2880724de5f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7625198264614298811, guid: a0d0268707f923a4d86ec2880724de5f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854810228153387818, guid: a0d0268707f923a4d86ec2880724de5f, type: 3}
+      propertyPath: m_Name
+      value: RuneStone-3_0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a0d0268707f923a4d86ec2880724de5f, type: 3}
+--- !u!4 &2233060378438567750 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7625198264614298811, guid: a0d0268707f923a4d86ec2880724de5f, type: 3}
+  m_PrefabInstance: {fileID: 8588164373088183293}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8645387257128706312
 PrefabInstance:
