@@ -16,11 +16,11 @@ MonoBehaviour:
   animatorOverride: {fileID: 22100000, guid: 8ac97913ab91e6348889fea1b839020b, type: 2}
   type: 1
   weaponName: "\u0411\u0440\u043E\u043D\u0437\u043E\u0432\u044B\u0439 \u043C\u0435\u0447"
-  attackRate: 1
-  damage: 11
-  knockbackForce: 5
+  attackRate: 0.85
+  damage: 14
+  knockbackForce: 5.3
   knockbackDuration: 0.3
   shape: 0
   boxSize: {x: 1.5, y: 0.5}
-  hitRadius: 0.5
+  hitRadius: 0.55
   hitEffectPrefab: {fileID: 0}
