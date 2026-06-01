@@ -79,5 +79,5 @@ MonoBehaviour:
   _music:
   - Clips:
     - {fileID: 8300000, guid: a280d7933c9feb14f99679a2b2a20ce5, type: 3}
-    DefaultVolume: 0.003
+    DefaultVolume: 0.03
     Id: 0
