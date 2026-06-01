@@ -1,28 +1,40 @@
 using System;
 using System.Threading.Tasks;
 using _Project.Runtime.Interfaces;
+using _Project.Services.Audio;
 using UnityEngine;
-using UnityEngine.Serialization;
+using Zenject;
 
 namespace _Project.Runtime.Core.Props
 {
     public class Door : MonoBehaviour, IInteractable
     {
         public SpriteRenderer Renderer { get; private set; }
+
         private Animator _animator;
+
         [SerializeField] private Collider2D interactableCollider;
 
         private static readonly int IsOpen = Animator.StringToHash("isOpen");
-        private bool _isOpen;
 
+        private bool _isOpen;
         private bool _isAnimating;
-        
+
         [SerializeField] private Lever[] requiredLevers;
         [SerializeField] private bool isLeverDoor;
-        
-        public bool IsInteractable => !isLeverDoor;
-        public string GetInteractionLabel() => "Open Door";
 
+        public bool IsInteractable => !isLeverDoor;
+
+        private IAudioService _audioService;
+
+        [Inject]
+        public void Construct(IAudioService audioService)
+        {
+            _audioService = audioService;
+        }
+
+        public string GetInteractionLabel()
+            => "Взаимодействовать с дверью";
 
         private void Awake()
         {
@@ -31,26 +43,75 @@ namespace _Project.Runtime.Core.Props
             interactableCollider.isTrigger = false;
         }
 
-        public async void Interact(GameObject initiator, Action onComplete)
+        public void Interact(GameObject initiator, Action onComplete)
         {
             if (_isAnimating) return;
-            
+
             onComplete?.Invoke();
-            
+
             if (isLeverDoor) return;
-            
-            if (!_isOpen || !IsBlocked())
-                await SetDoorStateAsync(!_isOpen);
+
+            SetDoorStateAsync(!_isOpen);
         }
 
-        public async void InteractFromLever(GameObject initiator, Action onComplete)
+        public void InteractFromLever(GameObject initiator, Action onComplete)
         {
             if (_isAnimating) return;
+
             onComplete?.Invoke();
+
             if (AreAllLeversActive() && !_isOpen)
-                await SetDoorStateAsync(true);
+            {
+                SetDoorStateAsync(true);
+            }
             else if (_isOpen && !IsBlocked())
-                await SetDoorStateAsync(false);
+            {
+                SetDoorStateAsync(false);
+            }
+        }
+
+        private async void SetDoorStateAsync(bool open)
+        {
+            if (_isAnimating) return;
+            _isAnimating = true;
+
+            if (!open && IsBlocked())
+            {
+                _isAnimating = false;
+                return;
+            }
+
+            _audioService.PlaySound(SoundId.Door);
+            _animator.SetBool(IsOpen, open);
+
+            await Task.Yield();
+
+            float duration = open ? 0.4f : 0.6f;
+
+            await Task.Delay(TimeSpan.FromSeconds(duration));
+
+            if (open)
+            {
+                interactableCollider.isTrigger = true;
+                _isOpen = true;
+            }
+            else
+            {
+                interactableCollider.isTrigger = false;
+
+                if (IsBlocked())
+                {
+                    _animator.SetBool(IsOpen, true);
+                    interactableCollider.isTrigger = true;
+                    _isOpen = true;
+                }
+                else
+                {
+                    _isOpen = false;
+                }
+            }
+
+            _isAnimating = false;
         }
 
         private bool IsBlocked()
@@ -61,68 +122,38 @@ namespace _Project.Runtime.Core.Props
             var count = interactableCollider.Overlap(filter, results);
 
             for (var i = 0; i < count; i++)
+            {
                 if (results[i].gameObject != gameObject)
                     return true;
+            }
 
             return false;
         }
 
-        private async Task SetDoorStateAsync(bool open)
-        {
-            _isAnimating = true;
-            _animator.SetBool(IsOpen, open);
-
-            await Task.Yield();
-            var stateInfo = _animator.GetCurrentAnimatorStateInfo(0);
-
-            if (open)
-            {
-                await Task.Delay(TimeSpan.FromSeconds(stateInfo.length * 0.4f));
-                _isOpen = true;
-                interactableCollider.isTrigger = true;
-            }
-            else
-            {
-                await Task.Delay(TimeSpan.FromSeconds(stateInfo.length * 0.6f));
-
-                if (IsBlocked())
-                {
-                    _isOpen = true;
-                    interactableCollider.isTrigger = true;
-                    _animator.SetBool(IsOpen, true);
-                }
-                else
-                {
-                    _isOpen = false;
-                    interactableCollider.isTrigger = false;
-                }
-            }
-
-            _isAnimating = false;
-        }
-
         private bool AreAllLeversActive()
         {
-            if (requiredLevers == null || requiredLevers.Length == 0) return false;
+            if (requiredLevers == null || requiredLevers.Length == 0)
+                return false;
 
             foreach (var lever in requiredLevers)
+            {
                 if (lever == null || !lever.inActivate)
                     return false;
+            }
 
             return true;
         }
 
-
         public void OnHoverEnter()
         {
-            var highlightColor = new Color(1.5f, 1.5f, 1.5f, 1f); // HDR White
-            if (!isLeverDoor) Renderer.color = highlightColor;
+            if (isLeverDoor) return;
+            Renderer.color = new Color(1.5f, 1.5f, 1.5f, 1f);
         }
 
         public void OnHoverExit()
         {
-            var normalColor = Color.white;
-            if (Renderer) Renderer.color = normalColor;
+            if (Renderer)
+                Renderer.color = Color.white;
         }
     }
 }

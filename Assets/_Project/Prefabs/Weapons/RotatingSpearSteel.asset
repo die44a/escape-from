@@ -15,7 +15,8 @@ MonoBehaviour:
   weaponSprite: {fileID: -3270264311987707132, guid: 5562adf8aa6d99b43ab261bbc0140227, type: 3}
   animatorOverride: {fileID: 22100000, guid: 4e7f4b9f015db154f876e855f481bc46, type: 2}
   type: 1
-  weaponName: RotatingSpearSteel
+  weaponName: "\u0412\u0440\u0430\u0449\u0430\u044E\u0449\u0435\u0435\u0441\u044F
+    \u043A\u043E\u043F\u044C\u0451"
   attackRate: 0.2
   damage: 15
   knockbackForce: 0.8

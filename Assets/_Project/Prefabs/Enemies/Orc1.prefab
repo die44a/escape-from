@@ -145,7 +145,7 @@ GameObject:
   - component: {fileID: 8105141067269303722}
   m_Layer: 15
   m_Name: Orc1
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -288,7 +288,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 009b6aba6afe84a038df8c1321572cea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::_Project.Runtime.Enemy.EnemyMovement
-  moveSpeed: 2
+  moveSpeed: 2.4
   knockbackDamping: 5
   useNoFrictionMaterial: 1
 --- !u!114 &4826734729170713357
@@ -303,7 +303,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 561e3803440a48148241b92d3fc3269c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::_Project.Runtime.Enemy.EnemyDamageController
-  maxHealth: 100
+  maxHealth: 160
 --- !u!114 &5754063309287907276
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -316,8 +316,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b1f5f74ea8f4052b42fed57933b90c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::_Project.Runtime.Enemy.MeleeEnemy
-  detectionRadius: 5
-  leashRadius: 5
+  detectionRadius: 5.5
+  leashRadius: 6
   playerMask:
     serializedVersion: 2
     m_Bits: 1024
@@ -327,7 +327,7 @@ MonoBehaviour:
   mapMask:
     serializedVersion: 2
     m_Bits: 2048
-  stopDistanceToPlayer: 0.7
+  stopDistanceToPlayer: 0.68
   attackCooldown: 1.5
   patrolTargetClearance: 0.2
   patrolTargetAttempts: 12
@@ -336,8 +336,8 @@ MonoBehaviour:
   maxWaitTime: 3
   stuckThreshold: 0.1
   stuckCheckInterval: 1
-  damageAmount: 3
-  knockbackForce: 5
+  damageAmount: 9
+  knockbackForce: 6
   knockbackDuration: 0.3
   attackRange: 0.76
   offsetDistance: 0.5

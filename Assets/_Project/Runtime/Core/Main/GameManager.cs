@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using _Project.Runtime.Core.Camera;
 using _Project.Runtime.Player.Controllers;
 using _Project.Services;
+using _Project.Services.Audio;
 using _Project.Services.Input;
 using _Project.Services.Scenes;
 using UnityEngine;
@@ -21,6 +22,11 @@ namespace _Project.Runtime.Core.Main
         [Inject] private SceneLoaderService _sceneLoader;
         
         public GameState State { get; private set; }
+        public bool IsInputLocked { get; private set; }
+
+        public void LockInput() => IsInputLocked = true;
+        public void UnlockInput() => IsInputLocked = false;
+        
         private readonly List<IGameListener> _listeners = new();
 
         private InputAction _pauseAction;
@@ -30,6 +36,8 @@ namespace _Project.Runtime.Core.Main
         
         public void RemoveListener(IGameListener listener)
             => _listeners.Remove(listener);
+        
+        [Inject] private IAudioService _audioService;
 
         public void PauseGame()
         {
@@ -50,6 +58,9 @@ namespace _Project.Runtime.Core.Main
 
         public void ResumeGame()
         {
+            if (IsInputLocked)
+                return;
+            
             if (State == GameState.PLAY)
                 return;
             
@@ -90,6 +101,7 @@ namespace _Project.Runtime.Core.Main
 
             State = GameState.PLAY;
             _inputService.SwitchToGameplay();
+            _audioService.PlayMusic(MusicId.MainMenuTest);
         }   
 
         void IDisposable.Dispose()

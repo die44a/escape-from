@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using _Project.Services.Audio;
 using UnityEngine;
 using Zenject;
 
@@ -8,27 +9,32 @@ namespace _Project.Runtime.Player.Controllers
     public class HealthTimeController : MonoBehaviour, IHealthObservable, IDamageable
     {
         [Inject] private IPlayerStatus _playerStatus;
-        
-        [SerializeField] private float maxHealthTime = 60f; 
+
+        [SerializeField] private float maxHealthTime = 60f;
         [SerializeField] private float invulnerabilityDuration = 0.7f;
-        
+
         private float _currentHealthTime;
         private float _timeModifier = 1;
         private bool _isInvulnerable;
         private bool _isDead;
-        
-        public event Action<float> OnHealthChanged; 
+
+        public event Action<float> OnHealthChanged;
         public event Action OnDeath;
-        public event Action OnHit; 
+        public event Action OnHit;
 
         public float CurrentHealth => _currentHealthTime;
         public float InvulnerabilityDuration => invulnerabilityDuration;
 
-        public void Construct(IPlayerStatus playerStatus)
+        public bool IsInSafeZone { get; private set; }
+        [Inject] private IAudioService _audioService;
+
+        [Inject]
+        public void Construct(IPlayerStatus playerStatus, IAudioService audioService)
         {
             _playerStatus = playerStatus;
+            _audioService = audioService;
         }
-        
+
         private void Start()
         {
             _currentHealthTime = maxHealthTime;
@@ -39,17 +45,30 @@ namespace _Project.Runtime.Player.Controllers
         {
             if (_isDead) return;
 
+            if (IsInSafeZone)
+                return;
+
             ReduceHealth(Time.deltaTime * _timeModifier);
+        }
+
+        public void EnterSafeZone()
+        {
+            IsInSafeZone = true;
+        }
+
+        public void ExitSafeZone()
+        {
+            IsInSafeZone = false;
         }
 
         public void ApplyDamage(float amount)
         {
             if (_isDead || _isInvulnerable || _playerStatus.IsInvulnerableState) return;
-            
+
             _currentHealthTime = Mathf.Max(_currentHealthTime - amount, 0);
             OnHealthChanged?.Invoke(_currentHealthTime);
-            OnHit?.Invoke(); 
-
+            OnHit?.Invoke();
+            _audioService?.PlaySound(SoundId.Damage);
             if (_currentHealthTime <= 0)
                 Die();
             else
@@ -67,7 +86,7 @@ namespace _Project.Runtime.Player.Controllers
         {
             _currentHealthTime -= amount;
             _currentHealthTime = Mathf.Max(_currentHealthTime, 0);
-        
+
             OnHealthChanged?.Invoke(_currentHealthTime);
 
             if (_currentHealthTime <= 0 && !_isDead)
@@ -79,16 +98,17 @@ namespace _Project.Runtime.Player.Controllers
         {
             _isDead = true;
             Debug.Log("Игрок погиб (время истекло)");
+            _audioService?.PlaySound(SoundId.DeathPlayer);
             OnDeath?.Invoke();
         }
-        
+
         public void SetTimeModifier(float multiplier)
-            => _timeModifier = Mathf.Max(multiplier, 0); 
+            => _timeModifier = Mathf.Max(multiplier, 0);
 
         public void AddTime(float amount)
         {
             if (_isDead || amount < 0) return;
-            _currentHealthTime = Mathf.Min(_currentHealthTime + amount, maxHealthTime);
+            _currentHealthTime += amount;
             OnHealthChanged?.Invoke(_currentHealthTime);
         }
     }

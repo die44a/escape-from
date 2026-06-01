@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: -7139073167503698709}
   - component: {fileID: 1428098998156590177}
   - component: {fileID: 2455698280724239087}
-  m_Layer: 8
+  m_Layer: 12
   m_Name: Trap-Spikes-Floor_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -129,7 +129,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f27275cd2663459e8797ca43967ede71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::_Project.Runtime.Core.Traps.SpikeTrap
-  damageAmount: 10
+  damageAmount: 15
+  knockbackForce: 4
+  knockbackDuration: 0.15
+  applyKnockback: 1
 --- !u!61 &1428098998156590177
 BoxCollider2D:
   m_ObjectHideFlags: 0

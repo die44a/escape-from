@@ -1,4 +1,6 @@
+using System.Collections;
 using _Project.Runtime.Core.Main;
+using _Project.Runtime.Menu.UI;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
@@ -34,10 +36,48 @@ namespace _Project.Runtime.Core.UI.Pause
             resumeButton.onClick.RemoveListener(OnResumeClicked);
             exitToMenuButton.onClick.RemoveListener(OnExitClicked);
         }
+        
+        private void Update()
+        {
+            if (!gameObject.activeSelf)
+                return;
+
+            if (!EventSystem.current)
+                return;
+
+            if (EventSystem.current.currentSelectedGameObject)
+                return;
+
+            if (resumeButton && resumeButton.gameObject.activeInHierarchy)
+                EventSystem.current.SetSelectedGameObject(resumeButton.gameObject);
+        }
 
         private void OnResumeClicked()
         {
+            if (_gameManager.IsInputLocked)
+                return;
+
             _gameManager.ResumeGame();
+        }
+        
+        private IEnumerator SelectDefaultNextFrame()
+        {
+            yield return null;
+
+            if (!EventSystem.current)
+                yield break;
+
+            EventSystem.current.SetSelectedGameObject(null);
+            EventSystem.current.SetSelectedGameObject(resumeButton.gameObject);
+
+            RefreshTextHovers();
+        }
+        
+        // ReSharper disable Unity.PerformanceAnalysis
+        private void RefreshTextHovers()
+        {
+            foreach (var hover in GetComponentsInChildren<ButtonTextHover>(true))
+                hover.RefreshVisual();
         }
 
         private void OnExitClicked()
@@ -48,9 +88,9 @@ namespace _Project.Runtime.Core.UI.Pause
         private void Show()
         {
             gameObject.SetActive(true);
-            
-            EventSystem.current.SetSelectedGameObject(null);
-            EventSystem.current.SetSelectedGameObject(resumeButton.gameObject);
+
+            StopAllCoroutines();
+            StartCoroutine(SelectDefaultNextFrame());
         }
 
         private void Hide()
@@ -58,7 +98,15 @@ namespace _Project.Runtime.Core.UI.Pause
             gameObject.SetActive(false);
         }
 
-        void IGamePauseListener.OnPauseGame() => Show();
+        void IGamePauseListener.OnPauseGame()
+        {
+            if (_gameManager.IsInputLocked)
+                return;
+
+            Show();
+        }
+        
+        
         void IGameResumeListener.OnResumeGame() => Hide();
     }
 }

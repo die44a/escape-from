@@ -1,5 +1,6 @@
 using _Project.Services;
 using _Project.Services.Scenes;
+using _Project.Services.Settings;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using Zenject;
@@ -33,6 +34,11 @@ namespace _Project.Global
                 .AsSingle()
                 .WithArguments(inputActions)
                 .NonLazy();
+            
+            Container.BindInterfacesAndSelfTo<GameSettingsService>()
+                .AsSingle().
+                NonLazy();
+
         }
 
 #if UNITY_EDITOR

@@ -52,6 +52,10 @@ namespace _Project.Runtime.Player.Installers
                 .FromComponentInHierarchy()
                 .AsSingle()
                 .NonLazy();
+
+            Container.BindInterfacesAndSelfTo<PlayerWalletController>()
+                .FromComponentInHierarchy()
+                .AsSingle();
             
             InstallConfigs();
             

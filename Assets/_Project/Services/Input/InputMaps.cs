@@ -14,4 +14,9 @@ namespace _Project.Services.Input
         public const string Pause = "Pause";
         public const string Attack = "Attack";
     }
+
+    public static class UiActions
+    {
+        public const string Cancel = "Cancel";
+    }
 }

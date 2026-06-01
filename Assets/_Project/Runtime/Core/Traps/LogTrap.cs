@@ -10,9 +10,15 @@ namespace _Project.Runtime.Core.Traps
         [SerializeField] private float knockbackDuration = 0.2f;
 
         [SerializeField] private bool applyKnockback = true;
+        protected readonly string EnemyTag = "Enemy";
 
         private void OnCollisionEnter2D(Collision2D collision)
         {
+            var root = collision.transform.root;
+            
+            if (collision.collider.CompareTag(EnemyTag))
+                return;
+            
             var damageable = collision.gameObject.GetComponentInParent<IDamageable>();
 
             if (damageable == null) return;

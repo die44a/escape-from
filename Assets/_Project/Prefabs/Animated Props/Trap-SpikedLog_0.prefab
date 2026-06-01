@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8292563621121359960}
   - component: {fileID: 5508023377386929248}
   - component: {fileID: -4023394558281225052}
-  m_Layer: 8
+  m_Layer: 12
   m_Name: Trap-SpikedLog_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -129,9 +129,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87f62d07c1354a41b2763e147b0508b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::_Project.Runtime.Core.Traps.SwingLogTrap
-  damageAmount: 8
-  knockbackForce: 4
-  knockbackDuration: 0.2
+  damageAmount: 20
+  knockbackForce: 5
+  knockbackDuration: 0.25
   applyKnockback: 1
 --- !u!61 &5508023377386929248
 BoxCollider2D:
