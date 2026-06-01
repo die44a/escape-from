@@ -16,7 +16,7 @@ namespace _Project.Runtime.Core.Traps
         {
             var root = collision.transform.root;
             
-            if (root.CompareTag(EnemyTag))
+            if (collision.collider.CompareTag(EnemyTag))
                 return;
             
             var damageable = collision.gameObject.GetComponentInParent<IDamageable>();
