@@ -119,6 +119,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d04f7cf6f8e176f45a266b041e495e5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::_Project.Runtime.Player.Controllers.PlayerController
+  _footstepInterval: 0.4
+  _footstepStartThreshold: 0.01
 --- !u!114 &-6113002115403245713
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -133,8 +135,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::_Project.Player.Runtime.PlayerMovementController
   moveSpeed: 4
   knockbackDamping: 5
-  dashForce: 8
-  dashCooldown: 1
+  dashForce: 9
+  dashCooldown: 1.2
 --- !u!114 &285267417064515586
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -161,8 +163,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec9cde6b4b77e0d41b898733fc11732b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::_Project.Runtime.Player.Controllers.HealthTimeController
-  maxHealthTime: 200
-  invulnerabilityDuration: 0.7
+  maxHealthTime: 150
+  invulnerabilityDuration: 0.6
 --- !u!114 &125251029383181965
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -244,7 +246,6 @@ MonoBehaviour:
   maskTransform: {fileID: 6574773599105863901}
   fillRenderer: {fileID: 722254556960587984}
   root: {fileID: 3326506829767514659}
-  maxWidth: 1
   fadeSpeed: 6
 --- !u!1 &3326506829767514659
 GameObject:
